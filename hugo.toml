@@ -1,4 +1,4 @@
-baseURL = 'https://adamnnagy.github.io/portfolio-2025-hugo/'
+baseURL = "https://adamnnagy.github.io/portfolio-2025-hugo/"
 languageCode = 'en-us'
 title = 'Adam Nagy Portfolio'
 theme = ""

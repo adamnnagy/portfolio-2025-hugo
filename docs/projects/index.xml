@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Adam Nagy Portfolio</title>
-    <link>https://adamnnagy.github.io/portfolio-2025-hugo/</link>
-    <description>Recent content on Adam Nagy Portfolio</description>
+    <title>Projects on Adam Nagy Portfolio</title>
+    <link>https://adamnnagy.github.io/portfolio-2025-hugo/projects/</link>
+    <description>Recent content in Projects on Adam Nagy Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Jul 2025 12:16:35 +0200</lastBuildDate>
-    <atom:link href="https://adamnnagy.github.io/portfolio-2025-hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://adamnnagy.github.io/portfolio-2025-hugo/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Documentary</title>
       <link>https://adamnnagy.github.io/portfolio-2025-hugo/projects/documentary/</link>
@@ -42,13 +42,6 @@
       <pubDate>Sun, 13 Jul 2025 10:48:35 +0200</pubDate>
       <guid>https://adamnnagy.github.io/portfolio-2025-hugo/projects/panteezis/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;panteézis&#34;&gt;Panteézis&lt;/h1&gt;</description>
-    </item>
-    <item>
-      <title>About &#43; Contact</title>
-      <link>https://adamnnagy.github.io/portfolio-2025-hugo/about/</link>
-      <pubDate>Sun, 13 Jul 2025 10:48:12 +0200</pubDate>
-      <guid>https://adamnnagy.github.io/portfolio-2025-hugo/about/</guid>
-      <description>&lt;p&gt;Hi, I&amp;rsquo;m Adam. I&amp;rsquo;m a creative technologist and designer.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

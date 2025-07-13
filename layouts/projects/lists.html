@@ -1,0 +1,26 @@
+{{ define "main" }}
+<section>
+	<h1>{{ .Title }}</h1>
+	<p>{{ .Content }}</p>
+
+	<ul class="project-list">
+		{{/* {{ range sort .Pages "Date" "desc" }} */}} {{ range .Pages }}
+
+		<li>
+			<h2 class="project-title">
+				<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+			</h2>
+			<p>{{.Params.description}}</p>
+			{{ with .Resources.GetMatch "cover.*" }}
+			<img
+				src="{{ .RelPermalink }}"
+				alt="{{ $.Title }}"
+				class="thumbnail"
+			/>
+			{{ end }}
+		</li>
+
+		{{ end }}
+	</ul>
+</section>
+{{ end }}
