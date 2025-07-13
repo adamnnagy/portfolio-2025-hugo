@@ -3,8 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>{{ .Title }}</title>
-		{{ $styles := resources.Get "css/main.scss" | css.Sass (dict "targetPath" "css/main.css" "outuptStyle" "compressed") |
-		resources.Fingerprint }}
+		{{ $styles := resources.Get "css/main.scss" | css.Sass (dict
+		"targetPath" "css/main.css" "outuptStyle" "compressed") |
+		resources.Fingerprint }} {{ $js := resources.Get "js/main.js" |
+		resources.Minify | resources.Fingerprint }}
 		<link
 			rel="stylesheet"
 			href="{{ $styles.Permalink }}"
@@ -16,5 +18,10 @@
 		{{ partial "header.html" . }}
 		<main class="container">{{ block "main" . }}{{ end }}</main>
 		{{ partial "footer.html" . }}
+		<script
+			src="{{ $js.Permalink }}"
+			integrity="{{ $js.Data.Integrity }}"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
