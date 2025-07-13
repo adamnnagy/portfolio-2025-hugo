@@ -1,0 +1,13 @@
+{{define "main"}}
+    <section>
+        <h1>Welcome to {{ .Site.Title }}</h1>
+        <p>This is my home page. Here's a list of my latest projects:</p>
+        <ul>
+            {{ range where .Site.RegularPages "Section" "projects"}}
+            <li>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a> - {{ .Params.description }}
+            </li>
+            {{ end }}
+        </ul>
+    </section>
+{{ end }}
