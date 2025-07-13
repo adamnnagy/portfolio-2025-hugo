@@ -1,0 +1,28 @@
+# Hugo generated files
+/public/
+/resources/_gen/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Dependency directories
+node_modules/
+vendor/
+
+# Local Hugo server files
+hugo_stats.json
+
+# Cache and temporary files
+*.log
+tmp/
+temp/
+.cache/
+
+# Environment files
+.env
+.env.local
