@@ -1,0 +1,33 @@
+body {
+  background-color: #3498db;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.projects-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; }
+  .projects-container .project {
+    height: 20rem;
+    background-color: #fff; }
+  @media screen and (max-width: 600px) {
+    .projects-container {
+      grid-template-columns: 1fr; } }
+.container {
+  width: 80%;
+  margin: 0 auto; }
+  @media (max-width: 600px) {
+    .container {
+      width: 100%; } }
+.site-nav {
+  background-color: #fff; }
+  .site-nav ul {
+    display: flex;
+    gap: 10px; }
+  .site-nav li {
+    text-decoration: none;
+    list-style-type: none; }
+  .site-nav a {
+    color: black;
+    text-decoration: none; }

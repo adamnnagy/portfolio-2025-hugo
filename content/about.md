@@ -4,4 +4,10 @@ draft = true
 title = 'About + Contact'
 +++
 
-Hi, I'm Adam. I'm a creative technologist and designer.
+## Who am I?
+
+Hi, I'm Adam. I'm a creative technologist and video editor.
+
+I am an Editor, Videographer and Musician living in Budapest, Hungary. I have skills in writing scripts and shooting video and then editing it.
+
+For some reason, biology and nature keep finding their way into my life.  I have collaborated extensively with scientist and artist to tell better stories - iGEM, a Paris-based international organisation committed to advancing the field of synthetic biology for a more resilient, sustainable world, Labocine, a

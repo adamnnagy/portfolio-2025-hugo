@@ -1,0 +1,14 @@
+$primary-color: #3498db;
+
+body {
+  background-color: $primary-color;
+  color: darken($primary-color, 50%);
+}
+
+// .container {
+//   width: 80%;
+//   margin: 0 auto;
+//   @media (max-width: 600px) {
+//     width: 100%;
+//   }
+// }

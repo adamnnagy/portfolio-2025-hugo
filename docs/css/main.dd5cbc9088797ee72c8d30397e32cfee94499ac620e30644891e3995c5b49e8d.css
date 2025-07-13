@@ -1,0 +1,20 @@
+body {
+  background-color: #3498db;
+  color: black; }
+
+.container {
+  width: 80%;
+  margin: 0 auto; }
+  @media (max-width: 600px) {
+    .container {
+      width: 100%; } }
+.site-nav ul {
+  display: flex;
+  gap: 10px; }
+
+.site-nav li {
+  text-decoration: none; }
+
+.site-nav a {
+  color: black;
+  text-decoration: none; }
