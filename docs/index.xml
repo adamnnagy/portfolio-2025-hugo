@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Adam Nagy Portfolio</title>
-    <link>https://adamnnagy.github.io/</link>
+    <link>https://adamnnagy.github.io/portfolio-2025-hugo/</link>
     <description>Recent content on Adam Nagy Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Jul 2025 10:48:20 +0200</lastBuildDate>
-    <atom:link href="https://adamnnagy.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://adamnnagy.github.io/portfolio-2025-hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Projects</title>
-      <link>https://adamnnagy.github.io/projects/</link>
+      <link>https://adamnnagy.github.io/portfolio-2025-hugo/projects/</link>
       <pubDate>Sun, 13 Jul 2025 10:48:20 +0200</pubDate>
-      <guid>https://adamnnagy.github.io/projects/</guid>
+      <guid>https://adamnnagy.github.io/portfolio-2025-hugo/projects/</guid>
       <description>&lt;p&gt;This is the Projects page.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About &#43; Contact</title>
-      <link>https://adamnnagy.github.io/about/</link>
+      <link>https://adamnnagy.github.io/portfolio-2025-hugo/about/</link>
       <pubDate>Sun, 13 Jul 2025 10:48:12 +0200</pubDate>
-      <guid>https://adamnnagy.github.io/about/</guid>
+      <guid>https://adamnnagy.github.io/portfolio-2025-hugo/about/</guid>
       <description>&lt;p&gt;Hi, I&amp;rsquo;m Adam. I&amp;rsquo;m a creative technologist and designer.&lt;/p&gt;</description>
     </item>
   </channel>
