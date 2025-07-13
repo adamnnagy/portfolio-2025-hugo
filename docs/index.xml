@@ -6,14 +6,21 @@
     <description>Recent content on Adam Nagy Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Jul 2025 10:48:35 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 13 Jul 2025 10:48:20 +0200</lastBuildDate>
     <atom:link href="https://adamnnagy.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Panteézis</title>
-      <link>https://adamnnagy.github.io/projects/panteezis/</link>
-      <pubDate>Sun, 13 Jul 2025 10:48:35 +0200</pubDate>
-      <guid>https://adamnnagy.github.io/projects/panteezis/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;panteézis&#34;&gt;Panteézis&lt;/h1&gt;</description>
+      <title>Projects</title>
+      <link>https://adamnnagy.github.io/projects/</link>
+      <pubDate>Sun, 13 Jul 2025 10:48:20 +0200</pubDate>
+      <guid>https://adamnnagy.github.io/projects/</guid>
+      <description>&lt;p&gt;This is the Projects page.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About &#43; Contact</title>
+      <link>https://adamnnagy.github.io/about/</link>
+      <pubDate>Sun, 13 Jul 2025 10:48:12 +0200</pubDate>
+      <guid>https://adamnnagy.github.io/about/</guid>
+      <description>&lt;p&gt;Hi, I&amp;rsquo;m Adam. I&amp;rsquo;m a creative technologist and designer.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
