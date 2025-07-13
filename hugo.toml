@@ -2,3 +2,4 @@ baseURL = 'https://adamnnagy.github.io/'
 languageCode = 'en-us'
 title = 'Adam Nagy Portfolio'
 theme = ""
+publishDir = "docs"
