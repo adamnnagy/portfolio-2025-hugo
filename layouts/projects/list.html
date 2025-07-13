@@ -7,12 +7,14 @@
 		{{ range sort .Pages "Date" "desc" }}
 
 		<li>
-			<h2 class="project-title">
-				<a href="{{ .RelPermalink }}">
-					{{ .Title }} | {{ .Params.role }}
-				</a>
-			</h2>
-			<p>{{.Params.description}}</p>
+			<div>
+                <h2 class="project-title">
+                    <a href="{{ .RelPermalink }}">
+                        {{ .Title }} | {{ .Params.role }}
+                    </a>
+                </h2>
+                <p>{{.Params.description}}</p>
+            </div>
 			{{ with .Resources.GetMatch "cover.*" }}
 			<img
 				src="{{ .RelPermalink }}"

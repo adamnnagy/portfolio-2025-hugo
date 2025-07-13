@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Adam Nagy Portfolio</title>
-    <link>http://localhost:58829/portfolio-2025-hugo/projects/</link>
+    <link>http://localhost:51579/portfolio-2025-hugo/projects/</link>
     <description>Recent content in Projects on Adam Nagy Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Jul 2025 15:31:25 +0200</lastBuildDate>
-    <atom:link href="http://localhost:58829/portfolio-2025-hugo/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:51579/portfolio-2025-hugo/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Music Making</title>
-      <link>http://localhost:58829/portfolio-2025-hugo/projects/music-making/</link>
+      <link>http://localhost:51579/portfolio-2025-hugo/projects/music-making/</link>
       <pubDate>Sun, 13 Jul 2025 15:31:25 +0200</pubDate>
-      <guid>http://localhost:58829/portfolio-2025-hugo/projects/music-making/</guid>
+      <guid>http://localhost:51579/portfolio-2025-hugo/projects/music-making/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;Perkupa&lt;/li&gt;&#xA;&lt;li&gt;Kiel Winde&lt;/li&gt;&#xA;&lt;li&gt;Juhász Zoli&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Documentary</title>
-      <link>http://localhost:58829/portfolio-2025-hugo/projects/documentary/</link>
+      <link>http://localhost:51579/portfolio-2025-hugo/projects/documentary/</link>
       <pubDate>Sun, 13 Jul 2025 12:16:35 +0200</pubDate>
-      <guid>http://localhost:58829/portfolio-2025-hugo/projects/documentary/</guid>
+      <guid>http://localhost:51579/portfolio-2025-hugo/projects/documentary/</guid>
       <description></description>
     </item>
     <item>
       <title>Aftermovies</title>
-      <link>http://localhost:58829/portfolio-2025-hugo/projects/aftermovies/</link>
+      <link>http://localhost:51579/portfolio-2025-hugo/projects/aftermovies/</link>
       <pubDate>Sun, 13 Jul 2025 12:16:28 +0200</pubDate>
-      <guid>http://localhost:58829/portfolio-2025-hugo/projects/aftermovies/</guid>
+      <guid>http://localhost:51579/portfolio-2025-hugo/projects/aftermovies/</guid>
       <description></description>
     </item>
     <item>
       <title>Labocine</title>
-      <link>http://localhost:58829/portfolio-2025-hugo/projects/labocine/</link>
+      <link>http://localhost:51579/portfolio-2025-hugo/projects/labocine/</link>
       <pubDate>Sun, 13 Jul 2025 12:15:46 +0200</pubDate>
-      <guid>http://localhost:58829/portfolio-2025-hugo/projects/labocine/</guid>
+      <guid>http://localhost:51579/portfolio-2025-hugo/projects/labocine/</guid>
       <description></description>
     </item>
     <item>
       <title>Igem Show Videos</title>
-      <link>http://localhost:58829/portfolio-2025-hugo/projects/igem-show-videos/</link>
+      <link>http://localhost:51579/portfolio-2025-hugo/projects/igem-show-videos/</link>
       <pubDate>Sun, 13 Jul 2025 11:30:45 +0200</pubDate>
-      <guid>http://localhost:58829/portfolio-2025-hugo/projects/igem-show-videos/</guid>
+      <guid>http://localhost:51579/portfolio-2025-hugo/projects/igem-show-videos/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;gj-show-videos--script-edit-sound-design--paris&#34;&gt;GJ Show videos | Script, Edit, Sound Design | Paris&lt;/h1&gt;&#xA;&lt;h2 id=&#34;the-world-expo-of-synthetic-biology&#34;&gt;The World Expo of Synthetic Biology&lt;/h2&gt;&#xA;&lt;p&gt;The iGEM Grand Jamboree is an event hosted in Paris each year. It is the World Expo of Synthetic Biology, attended by over 7000 people each year.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-mission-to-do-good&#34;&gt;A mission to do good&lt;/h2&gt;&#xA;&lt;p&gt;I have been responsible for many creative aspects of how synthetic biology is presented on video. Synthetic biology in itself is a complex and promising field of biology, that combines engineering and biotechnology to come up with solutions to problems. At the Grand Jamboree people focus on using this technology to offer solutions to our most pressing issues, climate change, pollution, food production and so on.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Panteézis</title>
-      <link>http://localhost:58829/portfolio-2025-hugo/projects/panteezis/</link>
+      <link>http://localhost:51579/portfolio-2025-hugo/projects/panteezis/</link>
       <pubDate>Sun, 13 Jul 2025 10:48:35 +0200</pubDate>
-      <guid>http://localhost:58829/portfolio-2025-hugo/projects/panteezis/</guid>
+      <guid>http://localhost:51579/portfolio-2025-hugo/projects/panteezis/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;panteézis&#34;&gt;Panteézis&lt;/h1&gt;</description>
     </item>
   </channel>
