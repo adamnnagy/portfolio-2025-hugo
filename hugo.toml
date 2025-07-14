@@ -3,3 +3,6 @@ languageCode = 'en-us'
 title = 'Adam Nagy Portfolio'
 theme = ""
 publishDir = "docs"
+
+[markup.goldmark.renderer]
+  unsafe = true

@@ -1,0 +1,6 @@
+{{ if .Get "title" }}
+<iframe class="igemvideo" title="{{ .Get "title"}}" src="https://video.igem.org/videos/embed/{{ .Get "id" }}" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+{{ else }}
+<iframe class="igemvideo" src="https://video.igem.org/videos/embed/{{ .Get "id" }}" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+{{ end }}
+    

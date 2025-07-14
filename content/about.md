@@ -2,11 +2,14 @@
 date = '2025-07-13T10:48:12+02:00'
 draft = true
 title = 'About + Contact'
+image = "images/about/avatar-oman.jpeg"
 +++
 
 ## Who am I?
 
 Hi, I'm Adam. I'm a creative technologist and video editor.
+
+{{% image src="../images/about/avatar-oman.jpeg" alt="Profile Image" class="profile-img" %}}
 
 I am an Editor, Videographer and Musician living in Budapest, Hungary. I have skills in writing scripts and shooting video and then editing it.
 
