@@ -7,7 +7,8 @@
             {{ range $index, $item := where .Site.RegularPages "Type" "projects" }}
             {{ $mediaItems := .Resources.Match "*.mp4" }}
             {{ range $mediaItems }}
-            <div class="film-frame" data-frame="{{ printf "%03d" $globalIndex }}">
+                <div class="film-frame" data-frame="{{ printf " %03d" $globalIndex }}">
+                <p class="name">{{ .Name }}</p>
                 {{ if eq .MediaType.SubType "mp4" }}
                 <video autoplay muted loop playsinline>
                     <source src="{{ .RelPermalink }}" type="video/mp4" />
