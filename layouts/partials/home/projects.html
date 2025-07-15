@@ -1,5 +1,5 @@
 <section class="home-projects">
-    <h1>Must see</h1>
+    <h1>Now playing</h1>
   <ul class="projects">
     {{ range first 4 (sort (where .Site.RegularPages "Type" "projects") "Params.priority" "desc") }}
     <a href="{{ .RelPermalink }}"><li class="project">

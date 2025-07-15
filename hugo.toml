@@ -1,6 +1,6 @@
 baseURL = "https://adamnnagy.github.io/portfolio-2025-hugo/"
 languageCode = 'en-us'
-title = 'Adam Nagy'
+title = 'Ádám Nagy'
 theme = ""
 publishDir = "docs"
 

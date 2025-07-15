@@ -7,7 +7,7 @@ image = "images/about/avatar-oman.jpeg"
 
 ## Who am I?
 
-Hi, I'm Adam. I'm a creative technologist and video editor.
+Hi, I'm Ádám. I'm a creative technologist and video editor.
 
 {{% image src="../images/about/avatar-oman.jpeg" alt="Profile Image" class="profile-img" %}}
 

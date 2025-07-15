@@ -8,7 +8,7 @@ description = ""
 image = ""
 +++
 
-# Adam Nagy is an Editor, Videographer, and Musician based in Budapest, Hungary. 
+# Ádám Nagy is an Editor, Videographer, and Musician based in Budapest, Hungary. 
 
 ## After switching from Mechatronics Engineering to Filmmaking at NYU Abu Dhabi at age 22, his career has spanned multiple countries across Europe, the Middle East, and Asia. 
 
