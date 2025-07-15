@@ -4,13 +4,20 @@
 
 		{{ range where .Site.RegularPages "Type" "projects" }}
 
-        {{ with .Resources.GetMatch "*.mp4" }}
+        {{ $media := .Resources.Match "*.*" }}
 
-		<video autoplay muted loop playsinline>
-			<source src="{{ .RelPermalink }}" type="video/mp4" />
-		</video>
+            {{ range $media }}
+
+                {{ if eq .MediaType.SubType "mp4" }}
+                    <video autoplay muted loop playsinline>
+                <source src="{{ .RelPermalink }}" type="video/mp4" />
+            </video>
+                {{ else if in (slice "jpg" "jpeg" "png" "webp") .MediaType.SubType }}
+                    <img src="{{ .RelPermalink }}" alt="{{ .Name }}">
+                {{ end }}
+
+            {{ end }}
         
-        {{end}}
         {{ end }}
 	</div>
 </section>
