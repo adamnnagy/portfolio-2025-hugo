@@ -4,6 +4,9 @@ $text-color: #fff;
 
 $film-frame-contrast: 0.8;
 
+$gallery-background-color: #c8c332;
+
+
 * {
 	color: $text-color;
 }
@@ -25,13 +28,13 @@ p {
 
 	width: 50%;
 
-	@media (max-width: 2400px) {
-		width: 80%;
+	@media (max-width: 1200px) {
+		width: 70%;
 	}
 
 	margin: 0 auto;
 	@media (max-width: 600px) {
-		width: 100%;
+		width: 80%;
 	}
 }
 
@@ -58,9 +61,6 @@ ul {
 	position: relative;
 	width: calc(100%-2rem);
 
-	@media (max-width: 600px) {
-	}
-
 	.background {
 		position: absolute;
 		top: 50%;
@@ -80,6 +80,26 @@ ul {
 		z-index: -1;
 	}
 	.content {
+		.roles {
+		}
+
+		@media (min-width: 1920px) {
+			display: flex;
+			align-items: baseline;
+			gap: 2rem;
+
+			.hero-title {
+				font-size: 30rem;
+				text-wrap-mode: nowrap;
+			}
+
+			p {
+				font-size: 2rem;
+				text-wrap-mode: nowrap;
+			}
+
+		}
+
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -90,15 +110,18 @@ ul {
 		> * {
 			opacity: 1;
 		}
+
 		h1 {
-			font-size: 4.5rem;
+			font-size: 7rem;
+            text-transform: uppercase;
 			margin: 0;
 			padding: 0;
-			::first-letter {
-				font-size: 2.5rem;
-				color: $secondary-color;
-			}
-		}
+
+            span { 
+                font-style: italic;
+// letter-spacing: 2rem;
+            }
+        }
 		p {
 			font-style: italic;
 			margin: 0;
@@ -108,6 +131,7 @@ ul {
 }
 
 .projects {
+    // width: 80%;
 	margin: 50px 0;
 	display: grid;
 	gap: 2rem;
@@ -133,23 +157,23 @@ ul {
 
 			.title {
 				position: absolute;
-				top: 40%;
+				top: 42%;
 				left: 50%;
-				transform: translate(-50%, -60%);
+				transform: translate(-50%, -58%);
 				padding: 0;
 				margin: 0;
 				text-transform: uppercase;
-				font-size: 4rem;
+				font-size: 2rem;
 			}
 
 			.role {
 				position: absolute;
-				top: 10%;
+				top: 12%;
 				left: 50%;
-				transform: translate(-50%, -90%);
+				transform: translate(-50%, -88%);
 				padding: 0;
 				margin: 0;
-				font-size: 1.5rem;
+				font-size: 1rem;
 			}
 
 			.description {
@@ -159,7 +183,8 @@ ul {
 				transform: translate(-50%, -20%);
 				padding: 0;
 				margin: 0;
-				font-size: 1.5rem;
+				font-size: 1rem;
+                font-style: italic;
 			}
 		}
 
@@ -209,14 +234,13 @@ ul {
 }
 
 .site-nav {
-    
 	background-color: $secondary-color;
 	margin: 0;
 	padding: 0;
 
 	ul {
 		margin: 0;
-		padding: 1rem 2rem;
+		padding: 1rem 0rem;
 		display: flex;
 		gap: 2rem;
 	}
@@ -261,7 +285,8 @@ ul {
 .auto-scroll-gallery {
 	position: relative;
 	overflow-x: auto;
-	background: #222;
+    overflow-y: hidden;
+	background: $gallery-background-color;
 	white-space: nowrap;
 	scroll-behavior: auto;
 	-ms-overflow-style: none;
@@ -343,7 +368,7 @@ ul {
 	text-align: left;
 	font-family: monospace;
 	font-size: 12px;
-	color: #aaa;
+	color: $primary-color;
 	letter-spacing: 1px;
 	opacity: 0.7;
 	position: absolute;

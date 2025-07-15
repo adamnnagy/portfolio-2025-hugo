@@ -1,7 +1,7 @@
 <section>
     <h1>Film strip</h1>
     <div class="auto-scroll-gallery">
-        <div class="reel-edge reel-left"></div>
+        {{/*  <div class="reel-edge reel-left"></div>  */}}
         <div class="gallery-strip">
             {{ $globalIndex := 0 }}
             {{ range $index, $item := where .Site.RegularPages "Type" "projects" }}
@@ -25,7 +25,7 @@
             {{ end }}
             
         </div>
-        <div class="reel-edge reel-right"></div>
+        {{/*  <div class="reel-edge reel-right"></div>  */}}
     </div>
 </section>
 
@@ -33,7 +33,7 @@
 
     document.addEventListener("DOMContentLoaded", function () {
 
-        const gallery = document.querySelector('.auto-scroll-gallery');
+        const gallery = document.querySelector('.gallery-strip');
 
         let isUserScrolling = false;
 
@@ -43,7 +43,7 @@
         gallery.addEventListener('mouseleave', () => isUserScrolling = false);
 
         if (gallery) {
-            let scrollSpeed = 0.9;
+            let scrollSpeed = 2;
 
             function autoScroll() {
                 if (!isUserScrolling) {
