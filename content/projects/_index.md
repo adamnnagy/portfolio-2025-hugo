@@ -5,4 +5,4 @@ title = 'Projects'
 description = "this is the projects page"
 +++
 
-This is the Projects page.
+This is the Projects page. For real.

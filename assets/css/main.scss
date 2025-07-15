@@ -61,6 +61,17 @@ ul {
 			left: 0;
 			z-index: -1;
 		}
+        .image-hover {
+            transition: filter 0.3s ease;
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            filter: grayscale(100%);
+
+        }
+        .image-hover:hover {
+            filter: grayscale(0%) brightness(1.2) contrast(1.1);
+        }
 	}
 
 	.project:nth-child(even) {

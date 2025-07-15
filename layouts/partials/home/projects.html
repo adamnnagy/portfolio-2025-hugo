@@ -1,0 +1,18 @@
+<section class="home-projects">
+  <ul class="projects">
+    {{ range first 4 (sort (where .Site.RegularPages "Type" "projects") "Params.priority" "desc") }}
+    <li class="project">
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <h6>{{ .Params.role }}</h6>
+      <p>{{ .Params.description }}</p>
+      {{ with .Resources.GetMatch "cover.*" }}
+      <img
+        src="{{ .RelPermalink }}"
+        alt="{{ $.Title }}"
+        class="thumbnail image-hover"
+      />
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+</section>

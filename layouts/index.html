@@ -1,23 +1,6 @@
 {{define "main"}}
 <section>
-	<h1>Welcome to {{ .Site.Title }}</h1>
-	<p>This is my home page. Here's a list of my latest projects:</p>
-	<ul class="projects">
-		{{ range first 4 (sort (where .Site.RegularPages "Type" "projects" )
-		"Params.priority" "desc")}}
-		<li class="project">
-            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-            <h6>{{ .Params.role }}</h6>
-			<p>{{ .Params.description }}</p>
-			{{ with .Resources.GetMatch "cover.*" }}
-			<img
-				src="{{ .RelPermalink }}"
-				alt="{{ $.Title }}"
-				class="thumbnail"
-			/>
-			{{end}}
-		</li>
-		{{ end }}
-	</ul>
+	{{ partial "home/intro.html" . }}
+    {{ partial "home/projects.html" . }}
 </section>
 {{ end }}
