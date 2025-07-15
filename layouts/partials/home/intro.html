@@ -1,7 +1,7 @@
-<section class="home-intro">
-  <h1>Welcome to {{ .Site.Title }}</h1>
-  <p>This is my home page. Here's a list of my latest projects:</p>
-  {{ with site.GetPage "sections/intro" }}
-    {{ .Content }}
-  {{ end }}
+<section>
+  <div class="intro-section">
+      {{ with site.GetPage "sections/intro" }}
+        {{ .Content }}
+      {{ end }}
+  </div>
 </section>

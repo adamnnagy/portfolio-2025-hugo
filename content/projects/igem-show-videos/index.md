@@ -3,7 +3,7 @@ date = '2025-07-13T11:30:45+02:00'
 draft = true
 title = 'iGEM Show Videos'
 description = "Show videos for iGEM"
-role = "Editor, Videographer, Scriptwriter"
+role = "Editor | Videographer | Scriptwriter"
 gallery = true
 +++
 

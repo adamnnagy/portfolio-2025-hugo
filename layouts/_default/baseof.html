@@ -16,7 +16,7 @@
 	</head>
 	<body>
 		{{ partial "header.html" . }}
-		<main class="container">{{ block "main" . }}{{ end }}</main>
+		<main>{{ block "main" . }}{{ end }}</main>
 		{{ partial "footer.html" . }}
 		<script
 			src="{{ $js.Permalink }}"

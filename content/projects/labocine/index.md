@@ -5,7 +5,7 @@ title = 'Labocine'
 priority = 0
 featured = false
 description = ""
-role = "Editor, Head of Video"
+role = "Editor | Head of Video"
 image = ""
 gallery = true
 +++

@@ -1,0 +1,273 @@
+@charset "UTF-8";
+* {
+  color: #fff; }
+
+body {
+  background-color: #222d35;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0; }
+
+p {
+  font-size: large; }
+
+.container {
+  padding: 0;
+  margin: 0 auto; }
+  @media (max-width: 600px) {
+    .container {
+      width: 100%; } }
+section {
+  width: 80%;
+  margin: 0 auto; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
+ul {
+  margin: 0;
+  padding: 2rem; }
+  ul li {
+    list-style: none; }
+
+.hero-banner {
+  position: relative;
+  width: 100vw; }
+  .hero-banner .background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    width: 100px;
+    height: 250px;
+    background-color: #aaa;
+    opacity: 0.5;
+    z-index: -1; }
+  .hero-banner .video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: -1; }
+  .hero-banner .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    .hero-banner .content > * {
+      opacity: 1; }
+    .hero-banner .content h1 {
+      font-size: 4.5rem;
+      margin: 0;
+      padding: 0; }
+      .hero-banner .content h1 ::first-letter {
+        font-size: 2.5rem;
+        color: #fff; }
+    .hero-banner .content p {
+      font-style: italic;
+      margin: 0;
+      padding: 0; }
+
+.projects {
+  margin: 50px 0;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr; }
+  @media screen and (max-width: px) {
+    .projects {
+      grid-template-columns: 1fr; } }
+  .projects .project {
+    height: 20rem;
+    padding: 2rem;
+    position: relative;
+    z-index: 0;
+    color: #fff; }
+    .projects .project h2 {
+      padding: 0;
+      margin: 0; }
+    .projects .project h6 {
+      padding: 0;
+      margin: 0; }
+    .projects .project img {
+      position: absolute;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1; }
+    .projects .project .image-hover {
+      transition: filter 0.3s ease;
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      filter: grayscale(50%); }
+    .projects .project .image-hover:hover {
+      filter: grayscale(0%) brightness(1.2) contrast(1); }
+  .projects .project:nth-child(even) {
+    transform: translateY(-50px); }
+
+.project-list {
+  padding: 0;
+  margin: 0; }
+  .project-list li {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 2rem 0;
+    list-style: none; }
+    .project-list li img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      grid-area: 1 / 2 / 2 / 3; }
+    .project-list li p {
+      grid-row: 2 / 3; }
+
+.site-nav {
+  background-color: #fff;
+  margin: 0;
+  padding: 0; }
+  .site-nav ul {
+    margin: 0;
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 2rem; }
+  .site-nav li {
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none; }
+  .site-nav a {
+    color: #222d35;
+    text-decoration: none; }
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto; }
+  .contact-section form input,
+  .contact-section form textarea {
+    width: 100%;
+    padding: 0.5rem; }
+  .contact-section form button {
+    background-color: black;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    cursor: pointer; }
+
+.auto-scroll-gallery {
+  position: relative;
+  overflow-x: auto;
+  background: #222;
+  white-space: nowrap;
+  scroll-behavior: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding: 18px 0; }
+
+.gallery-strip {
+  display: flex;
+  gap: 0.5rem;
+  animation: scroll-left 60s linear infinite; }
+
+.film-frame {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #111;
+  padding: 4px;
+  border: 4px solid #333;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4); }
+  .film-frame img,
+  .film-frame video {
+    flex: 0 0 auto;
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 2px;
+    filter: sepia(0.25) contrast(0.8);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    z-index: 1; }
+  .film-frame .name {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    padding: 2px;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    font-family: monospace;
+    font-size: 12px;
+    color: #aaa;
+    letter-spacing: 1px;
+    opacity: 0.7;
+    background-color: #111;
+    z-index: 5; }
+
+/* Sprocket holes (perforations) — pseudo-elements */
+.film-frame::before,
+.film-frame::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  height: 5px;
+  background-image: radial-gradient(circle, #888 2px, transparent 2px);
+  background-size: 10px 8px;
+  background-repeat: repeat-x;
+  background-position: center;
+  z-index: 2; }
+
+.film-frame::before {
+  content: attr(data-frame);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  font-family: monospace;
+  font-size: 12px;
+  color: #aaa;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  text-indent: -28px; }
+
+.film-frame::before {
+  top: -14px; }
+
+.film-frame::after {
+  bottom: -14px; }
+
+.reel-edge {
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  background: linear-gradient(to right, #111, transparent);
+  z-index: 1;
+  pointer-events: none; }
+
+.reel-left {
+  left: 0; }
+
+.reel-right {
+  right: 0;
+  background: linear-gradient(to left, #111, transparent); }
+
+.auto-scroll-gallery {
+  -ms-overflow-style: none;
+  scrollbar-width: none; }
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%); }
+  100% {
+    transform: translateX(-50%); } }

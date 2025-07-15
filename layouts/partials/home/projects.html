@@ -1,10 +1,13 @@
 <section class="home-projects">
+    <h1>Must see</h1>
   <ul class="projects">
     {{ range first 4 (sort (where .Site.RegularPages "Type" "projects") "Params.priority" "desc") }}
-    <li class="project">
-      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-      <h6>{{ .Params.role }}</h6>
-      <p>{{ .Params.description }}</p>
+    <a href="{{ .RelPermalink }}"><li class="project">
+      <div class="content">
+          <h3 class="role">{{ .Params.role }}</h3>
+          <h1 class="title">{{ .Title }}</h1>
+          <p class="description">{{ .Params.description }}</p>
+      </div>
       {{ with .Resources.GetMatch "cover.*" }}
       <img
         src="{{ .RelPermalink }}"
@@ -12,7 +15,7 @@
         class="thumbnail image-hover"
       />
       {{ end }}
-    </li>
+    </li></a>
     {{ end }}
   </ul>
 </section>

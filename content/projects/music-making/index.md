@@ -5,7 +5,7 @@ title = 'Music Making'
 priority = 0
 featured = false
 description = "The numerous projects I'm involved with as a Musician."
-role = "Composing, Session Musician"
+role = "Musician | Producer"
 image = ""
 gallery = true
 +++
