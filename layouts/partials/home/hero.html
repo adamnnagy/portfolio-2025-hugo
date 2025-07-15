@@ -1,0 +1,10 @@
+<section class="hero-banner">
+  <div class="hero-content">
+    <video autoplay muted loop playsinline class="hero-video" poster="images/hero.png">
+    <source src="{{ .Site.Params.heroVideo | relURL }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+    <h1>{{ .Site.Title }}</h1>
+    <a href="#contact" class="cta-button">Get in Touch</a>
+  </div>
+</section>

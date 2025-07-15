@@ -1,8 +1,13 @@
 baseURL = "https://adamnnagy.github.io/portfolio-2025-hugo/"
 languageCode = 'en-us'
-title = 'Adam Nagy Portfolio'
+title = 'Adam Nagy'
 theme = ""
 publishDir = "docs"
 
 [markup.goldmark.renderer]
   unsafe = true
+
+[params]
+heroBackground = "images/hero-bg.jpg"
+heroSubtitle = "Creative work across film, code and design"
+heroVideo = "videos/hero.mp4"

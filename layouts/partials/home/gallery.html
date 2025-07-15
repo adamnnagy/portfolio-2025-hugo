@@ -1,0 +1,16 @@
+<section class="auto-scroll-gallery">
+    <h1>gallery</h1>
+	<div class="gallery-strip">
+
+		{{ range where .Site.RegularPages "Type" "projects" }}
+
+        {{ with .Resources.GetMatch "*.mp4" }}
+
+		<video autoplay muted loop playsinline>
+			<source src="{{ .RelPermalink }}" type="video/mp4" />
+		</video>
+        
+        {{end}}
+        {{ end }}
+	</div>
+</section>

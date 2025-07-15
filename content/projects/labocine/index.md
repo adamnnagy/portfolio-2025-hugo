@@ -7,4 +7,5 @@ featured = false
 description = ""
 role = "Editor, Head of Video"
 image = ""
+gallery = true
 +++

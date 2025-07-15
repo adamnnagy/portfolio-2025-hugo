@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Adam Nagy Portfolio</title>
+    <title>Adam Nagy</title>
     <link>http://localhost:55911/portfolio-2025-hugo/</link>
-    <description>Recent content on Adam Nagy Portfolio</description>
+    <description>Recent content on Adam Nagy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Jul 2025 15:31:25 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 15 Jul 2025 10:07:05 +0200</lastBuildDate>
     <atom:link href="http://localhost:55911/portfolio-2025-hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intro</title>
+      <link>http://localhost:55911/portfolio-2025-hugo/sections/intro/</link>
+      <pubDate>Tue, 15 Jul 2025 10:07:05 +0200</pubDate>
+      <guid>http://localhost:55911/portfolio-2025-hugo/sections/intro/</guid>
+      <description>&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>Workflow</title>
+      <link>http://localhost:55911/portfolio-2025-hugo/sections/workflow/</link>
+      <pubDate>Tue, 15 Jul 2025 10:06:55 +0200</pubDate>
+      <guid>http://localhost:55911/portfolio-2025-hugo/sections/workflow/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Music Making</title>
       <link>http://localhost:55911/portfolio-2025-hugo/projects/music-making/</link>

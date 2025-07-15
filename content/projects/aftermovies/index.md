@@ -7,5 +7,5 @@ role = "Videographer, Editor"
 priority = 1
 featured = false
 image = ""
+gallery = true
 +++
-

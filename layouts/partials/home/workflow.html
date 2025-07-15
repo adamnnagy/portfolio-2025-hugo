@@ -1,0 +1,7 @@
+<section class="workflow-section">
+    <h2>My Workflow</h2>
+    {{ with site.GetPage "sections/workflow" }}
+        <h2>{{ .Title }}</h2>
+        {{ .Content }}
+    {{ end }}
+</section>

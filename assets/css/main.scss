@@ -1,4 +1,4 @@
-$primary-color: #3498db;
+$primary-color: #222d35;
 $secondary-color: #fff;
 $text-color: #fff;
 
@@ -134,4 +134,55 @@ ul {
 		color: $primary-color;
 		text-decoration: none;
 	}
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+.contact-section input, textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
+.contact-section button {
+  background-color: black;
+  color: $secondary-color;
+  padding: 0.75rem;
+  border: none;
+  cursor: pointer;
+}
+
+.auto-scroll-gallery {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+}
+
+.gallery-strip {
+  display: flex;
+  gap: 1rem;
+  animation: scroll-left 60s linear infinite;
+}
+
+.gallery-strip img,
+.gallery-strip video {
+  flex: 0 0 auto;
+  height: 400px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Optional: Disable scrollbar visibility */
+.auto-scroll-gallery::-webkit-scrollbar {
+  display: none;
+}
+.auto-scroll-gallery {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

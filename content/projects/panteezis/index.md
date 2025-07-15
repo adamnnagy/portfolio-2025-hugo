@@ -6,9 +6,8 @@ role = "Composer, Mix+Master"
 priority = 2
 featured = false
 image = ""
-+++
-
----
+gallery = true
++++---
 
 # Panteézis
 

@@ -7,6 +7,7 @@ featured = false
 description = "The numerous projects I'm involved with as a Musician."
 role = "Composing, Session Musician"
 image = ""
+gallery = true
 +++
 
 - Perkupa
