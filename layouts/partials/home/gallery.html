@@ -1,23 +1,60 @@
-<section class="auto-scroll-gallery">
-    <h1>gallery</h1>
-	<div class="gallery-strip">
+<section>
+    <h1>Film strip</h1>
+    <div class="auto-scroll-gallery">
+        <div class="reel-edge reel-left"></div>
+        <div class="gallery-strip">
 
-		{{ range where .Site.RegularPages "Type" "projects" }}
-
-        {{ $media := .Resources.Match "*.*" }}
-
-            {{ range $media }}
-
+            {{ range $index, $item := where .Site.RegularPages "Type" "projects" }}
+            {{ $mediaItems := .Resources.Match "*.mp4" }}
+            {{ range $mediaItems }}
+            <div class="film-frame" data-frame="{{ printf " %03d" $index }}">
                 {{ if eq .MediaType.SubType "mp4" }}
-                    <video autoplay muted loop playsinline>
-                <source src="{{ .RelPermalink }}" type="video/mp4" />
-            </video>
+                <video autoplay muted loop playsinline>
+                    <source src="{{ .RelPermalink }}" type="video/mp4" />
+                </video>
                 {{ else if in (slice "jpg" "jpeg" "png" "webp") .MediaType.SubType }}
-                    <img src="{{ .RelPermalink }}" alt="{{ .Name }}">
+                <img src="{{ .RelPermalink }}" alt="{{ .Name }}">
                 {{ end }}
+            </div>
+            {{ end }}
 
             {{ end }}
-        
-        {{ end }}
-	</div>
+
+        </div>
+        <div class="reel-edge reel-right"></div>
+    </div>
 </section>
+
+<script defer>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const gallery = document.querySelector('.auto-scroll-gallery');
+
+        let isUserScrolling = false;
+
+        gallery.addEventListener('wheel', () => isUserScrolling = true);
+        gallery.addEventListener('touchstart', () => isUserScrolling = true);
+        gallery.addEventListener('mouseenter', () => isUserScrolling = true);
+        gallery.addEventListener('mouseleave', () => isUserScrolling = false);
+
+        if (gallery) {
+            let scrollSpeed = 0.9;
+
+            function autoScroll() {
+                if (!isUserScrolling) {
+                    gallery.scrollLeft += scrollSpeed;
+
+                    if (gallery.scrollLeft + gallery.clientWidth >= gallery.scrollWidth) {
+                        gallery.scrollLeft = 0;
+                    }
+                }
+
+                requestAnimationFrame(autoScroll);
+            }
+
+            autoScroll();
+        }
+    });
+
+</script>
