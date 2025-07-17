@@ -11,3 +11,6 @@ publishDir = "public"
 heroBackground = "images/hero-bg.jpg"
 heroSubtitle = "Creative work across film, code and design"
 heroVideo = "videos/hero.mp4"
+
+relativeURLs = true
+canonifyURLs = true
