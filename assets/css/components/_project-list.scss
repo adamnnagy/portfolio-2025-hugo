@@ -8,6 +8,8 @@
 	.project-card {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
+        padding: 20px;
+        align-items: end;
 		gap: 1rem;
 		margin: 2rem 0;
 		list-style: none;
