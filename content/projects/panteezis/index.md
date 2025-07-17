@@ -5,17 +5,20 @@ description = 'A soundtrack exploring nature and modernity.'
 role = "Composer | Producer"
 priority = 2
 featured = false
+city = "Budapest"
 image = ""
 gallery = true
 +++
 
 ---
 
-## Panteézis | Composer | Budapest
+Panteézis is an album I composed for the exhibition of Gabriella Kovács, a Budapest-based painter. She paints in the style of Henri Rousseau -- Jungle might jump immediately to mind -- but she developed a style unique to her. The depth that I observed by looking at her paintings inspired me to write an original soundtrack to her series of exhibitions that took place in the spring and summer of 2023. 
 
-### Panteézis
+During this collaboration I presented her with various snippets of musical ideas that I came up with. Panteézis, or Pantheesis, is a dominance of nature over any man made artifact. An interesting fact that stuck with me through the years is this: nature would take approximately a century and a half to take back all the land that humanity has built on. This powerful 
 
-Panteézis is an album I composed for the exhibition of Gabriella Kovács, a Budapest-based painter.
+I was inspired by the music 
+
+The music played at 
 
 {{% instagram CuBnWKXoPvs %}}
 

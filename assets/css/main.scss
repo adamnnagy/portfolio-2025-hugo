@@ -4,7 +4,7 @@ $text-color: #fff;
 
 $film-frame-contrast: 0.8;
 
-$gallery-background-color: #c8c332;
+$gallery-background-color: #b9ccd3;
 
 
 * {
@@ -218,6 +218,7 @@ ul {
 	li {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
+        gap: 1rem;
 		// grid-template-rows: repeat(auto-fit, minmax(2rem, 1fr));
 		margin: 2rem 0;
 		list-style: none;

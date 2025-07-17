@@ -4,6 +4,7 @@ draft = true
 title = 'Aftermovies'
 description = "Aftermovies I created for the iGEM - Grand Theft Jamboree"
 role = "Videographer | Editor"
+city = ""
 priority = 1
 featured = false
 image = ""

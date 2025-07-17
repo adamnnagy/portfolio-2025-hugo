@@ -6,4 +6,6 @@ priority = 0
 featured = false
 description = ""
 image = ""
+role = ""
+city = ""
 +++
