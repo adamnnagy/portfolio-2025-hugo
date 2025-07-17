@@ -1,0 +1,138 @@
+// Film strip gallery
+
+.auto-scroll-gallery {
+	position: relative;
+	overflow-x: auto;
+    overflow-y: hidden;
+	background: $gallery-background-color;
+	white-space: nowrap;
+	scroll-behavior: auto;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	padding: 18px 0;
+}
+
+
+.gallery-strip {
+	display: flex;
+	gap: 0.5rem;
+	animation: scroll-left 60s linear infinite;
+}
+
+.film-frame {
+	position: relative;
+	display: flex;
+	align-items: center;
+	background: #111;
+	padding: 4px;
+	border: 4px solid #333;
+	border-radius: 4px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+
+	img,
+	video {
+		flex: 0 0 auto;
+		height: 200px;
+		width: auto;
+		object-fit: cover;
+		border-radius: 2px;
+		filter: sepia(0.25) contrast($film-frame-contrast);
+		transition: transform 0.3s ease, filter 0.3s ease;
+		z-index: 1;
+
+		:hover {
+		}
+	}
+
+	.name {
+		position: absolute;
+		left: 50%;
+		bottom: 0px;
+		padding: 2px;
+		transform: translate(-50%, -50%);
+		text-align: left;
+		font-family: monospace;
+		font-size: 12px;
+		color: #aaa;
+		letter-spacing: 1px;
+		opacity: 0.7;
+		background-color: #111;
+		z-index: 5;
+	}
+}
+
+/* Sprocket holes (perforations) — pseudo-elements */
+.film-frame::before,
+.film-frame::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 85%;
+	height: 5px;
+	background-image: radial-gradient(circle, #888 2px, transparent 2px);
+	background-size: 10px 8px;
+	background-repeat: repeat-x;
+	background-position: center;
+	z-index: 2;
+}
+
+.film-frame::before {
+	content: attr(data-frame);
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	text-align: left;
+	font-family: monospace;
+	font-size: 12px;
+	color: $primary-color;
+	letter-spacing: 1px;
+	opacity: 0.7;
+	position: absolute;
+	bottom: -28px;
+	left: 50%;
+	text-indent: -28px;
+}
+
+.film-frame::before {
+	top: -14px;
+}
+
+.film-frame::after {
+	bottom: -14px;
+}
+
+.reel-edge {
+	position: absolute;
+	top: 0;
+	width: 50px;
+	height: 100%;
+	background: linear-gradient(to right, #111, transparent);
+	z-index: 1;
+	pointer-events: none;
+}
+.reel-left {
+	left: 0;
+}
+.reel-right {
+	right: 0;
+	background: linear-gradient(to left, #111, transparent);
+}
+
+// /* Optional: Disable scrollbar visibility */
+// .auto-scroll-gallery::-webkit-scrollbar {
+// 	display: none;
+// }
+.auto-scroll-gallery {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+@keyframes scroll-left {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}

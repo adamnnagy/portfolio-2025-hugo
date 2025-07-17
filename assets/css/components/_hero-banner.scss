@@ -1,0 +1,72 @@
+.hero-banner {
+	position: relative;
+	width: calc(100%-2rem);
+
+	.background {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -25%);
+		width: 100px;
+		height: 250px;
+		background-color: #aaa;
+		opacity: 0.5;
+		z-index: -1;
+	}
+
+	.video {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		z-index: -1;
+	}
+	.content {
+		.roles {
+		}
+
+		@media (min-width: 1920px) {
+			display: flex;
+			align-items: baseline;
+			gap: 2rem;
+
+			.hero-title {
+				font-size: 30rem;
+				text-wrap-mode: nowrap;
+			}
+
+			p {
+				font-size: 2rem;
+				text-wrap-mode: nowrap;
+			}
+
+		}
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		text-align: center;
+
+		> * {
+			opacity: 1;
+		}
+
+		h1 {
+			font-size: 7rem;
+            text-transform: uppercase;
+			margin: 0;
+			padding: 0;
+
+            span { 
+                font-style: italic;
+// letter-spacing: 2rem;
+            }
+        }
+		p {
+			font-style: italic;
+			margin: 0;
+			padding: 0;
+		}
+	}
+}

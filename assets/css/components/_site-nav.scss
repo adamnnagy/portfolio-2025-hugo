@@ -1,0 +1,21 @@
+.site-nav {
+	background-color: $secondary-color;
+	margin: 0;
+	padding: 0;
+
+	ul {
+		margin: 0;
+		padding: 1rem 0rem;
+		display: flex;
+		gap: 2rem;
+	}
+	li {
+		margin: 0;
+		text-decoration: none;
+		list-style-type: none;
+	}
+	a {
+		color: $primary-color;
+		text-decoration: none;
+	}
+}
