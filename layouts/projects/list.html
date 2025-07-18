@@ -1,30 +1,27 @@
 {{ define "main" }}
 <section class="container">
-	<h1>{{ .Title }}</h1>
-	<p>{{ .Content }}</p>
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Content }}</p>
 
-	<ul class="project-list">
-		{{ range sort .Pages "Date" "desc" }}
+    <ul class="project-list">
+        {{ range sort .Pages "Date" "desc" }}
 
-		<li>
-			<div>
-                <h2 class="project-title">
-                    <a href="{{ .RelPermalink }}">
+        <a href="{{ .RelPermalink }}">
+            <li class="project-card">
+                <div>
+                    <h2 class="project-title">
                         {{ .Title }} | {{ .Params.role }}
-                    </a>
-                </h2>
-                <p>{{.Params.description}}</p>
-            </div>
-			{{ with .Resources.GetMatch "cover.*" }}
-			<img
-                src="{{ .RelPermalink }}"
-                alt="{{ $.Title }}"
-                class="thumbnail"
-            />
-			{{ end }}
-		</li>
+                    </h2>
+                    <p class="description">{{.Params.description}}</p>
+                    <p class="city">{{.Params.city}}</p>
+                </div>
+                {{ with .Resources.GetMatch "cover.*" }}
+                <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="thumbnail" />
+                {{ end }}
+            </li>
+        </a>
 
-		{{ end }}
-	</ul>
+        {{ end }}
+    </ul>
 </section>
 {{ end }}

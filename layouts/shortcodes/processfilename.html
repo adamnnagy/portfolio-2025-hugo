@@ -1,0 +1,8 @@
+{{ $fileName := .Name }} 
+
+{{ $withoutNumberAndHyphen := replaceRE "^\\d+-" "" $fileName }}
+{{ $withoutExtension := replaceRE "\\.mp3$" "" $withoutNumberAndHyphen }}
+{{ $withSpaces := replace $withoutExtension "-" " " }}
+{{ $titleCased := title $withSpaces }}
+
+{{ $titleCased }}

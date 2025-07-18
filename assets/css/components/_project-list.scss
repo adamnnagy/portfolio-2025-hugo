@@ -8,17 +8,17 @@
 	.project-card {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
-        padding: 20px;
-        align-items: end;
+		padding: 20px;
+		align-items: end;
 		gap: 1rem;
 		margin: 2rem 0;
 		list-style: none;
-        border-radius: 4px;
-        transition: background-color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-                    color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-                    transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-                    box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        // Using cubic-bezier for a more nuanced acceleration/deceleration.
+		border-radius: 4px;
+		transition: background-color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+			color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+			transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+			box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+		// Using cubic-bezier for a more nuanced acceleration/deceleration.
 
 		img {
 			width: 100%;
@@ -26,26 +26,21 @@
 			aspect-ratio: 16 / 9; /* Modern CSS property for aspect ratio */
 			object-fit: cover;
 			grid-area: 1 / 2 / 2 / 3;
-                        transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-			
+			transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 		}
 		.description {
 			grid-row: 2 / 3;
 		}
 		.city {
 			font-style: italic;
-                        transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); // Add transition for city opacity if you plan to change it
+			transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); // Add transition for city opacity if you plan to change it
 		}
-		// .city::before {
-		//     content: "\1F4CD ";
-		//     font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif;
-		// }
 
-        &:hover {
-            background-color: #34495e; /* Darker background on hover */
-            color: #ffffff; /* Brighter text color on hover */
-            transform: translateY(-5px); /* Lift the card slightly */
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* More pronounced shadow */
-        }
+		&:hover {
+			background-color: #34495e; /* Darker background on hover */
+			color: #ffffff; /* Brighter text color on hover */
+			transform: translateY(-5px); /* Lift the card slightly */
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* More pronounced shadow */
+		}
 	}
 }

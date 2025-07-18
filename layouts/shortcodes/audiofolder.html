@@ -8,7 +8,15 @@
         {{ range $files }}
         {{ if not .IsDir }}
         <li>
-            <p>{{ .Name }}</p>
+            {{ $fileName := .Name }}
+
+            {{ $withoutNumberAndHyphen := replaceRE "^\\d+-" "" $fileName }}
+            {{ $withoutExtension := replaceRE "\\.mp3$" "" $withoutNumberAndHyphen }}
+            {{ $withSpaces := replace $withoutExtension "-" " " }}
+            {{ $titleCased := title $withSpaces }}
+
+            <p>{{ $titleCased }}</p>
+
             <audio>
                 <source src="{{ $urlPrefix | relURL }}/{{ .Name | urlize }}" type="audio/mpeg">
             </audio>
@@ -35,179 +43,180 @@
             <audio></audio>
         </div>
     </div>
+</div>
 
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const audioElements = document.querySelectorAll('.spotify-player .song-list audio');
-            const songItems = document.querySelectorAll('.spotify-player .song-list li');
-            const controlAudio = document.querySelector('.spotify-player .player-controls audio');
-            const playPauseBtn = document.querySelector('.play-pause');
-            const prevBtn = document.querySelector('.prev-track');
-            const nextBtn = document.querySelector('.next-track');
-            const progressTrack = document.querySelector('.progress-track');
-            const progressFill = document.querySelector('.progress-fill');
-            const currentTimeDisplay = document.querySelector('.current-time');
-            const durationDisplay = document.querySelector('.duration');
-            let currentAudio = null;
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const audioElements = document.querySelectorAll('.spotify-player .song-list audio');
+        const songItems = document.querySelectorAll('.spotify-player .song-list li');
+        const controlAudio = document.querySelector('.spotify-player .player-controls audio');
+        const playPauseBtn = document.querySelector('.play-pause');
+        const prevBtn = document.querySelector('.prev-track');
+        const nextBtn = document.querySelector('.next-track');
+        const progressTrack = document.querySelector('.progress-track');
+        const progressFill = document.querySelector('.progress-fill');
+        const currentTimeDisplay = document.querySelector('.current-time');
+        const durationDisplay = document.querySelector('.duration');
+        let currentAudio = null;
 
-            // Format time in mm:ss
-            function formatTime(seconds) {
-                const minutes = Math.floor(seconds / 60);
-                seconds = Math.floor(seconds % 60);
-                return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-            }
+        // Format time in mm:ss
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            seconds = Math.floor(seconds % 60);
+            return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+        }
 
-            // Pause all audio elements except the one playing
-            function pauseOtherAudios(currentAudio) {
-                audioElements.forEach(audio => {
-                    if (audio !== currentAudio && !audio.paused) {
-                        audio.pause();
-                    }
-                });
-                songItems.forEach(item => item.classList.remove('active'));
-            }
-
-            // Update play/pause button state
-            function updatePlayPauseButton() {
-                if (currentAudio && !currentAudio.paused) {
-                    playPauseBtn.classList.add('playing');
-                } else {
-                    playPauseBtn.classList.remove('playing');
+        // Pause all audio elements except the one playing
+        function pauseOtherAudios(currentAudio) {
+            audioElements.forEach(audio => {
+                if (audio !== currentAudio && !audio.paused) {
+                    audio.pause();
                 }
-            }
-
-            // Update progress bar and time display
-            function updateProgress() {
-                if (!currentAudio || !currentAudio.duration) return;
-                const progress = (currentAudio.currentTime / currentAudio.duration) * 100;
-                progressFill.style.width = `${progress}%`;
-                currentTimeDisplay.textContent = formatTime(currentAudio.currentTime);
-                durationDisplay.textContent = formatTime(currentAudio.duration);
-            }
-
-            // Play a specific track
-            function playTrack(index) {
-                const audio = audioElements[index];
-                const songItem = songItems[index];
-                pauseOtherAudios(audio);
-                currentAudio = audio;
-                controlAudio.src = audio.src; // Sync control audio with selected track
-                controlAudio.play().catch(e => console.error('Error playing audio:', e));
-                audio.play().catch(e => console.error('Error playing audio:', e));
-                songItem.classList.add('active');
-                updatePlayPauseButton();
-                updateProgress();
-            }
-
-            // Song list click handler
-            songItems.forEach((item, index) => {
-                item.addEventListener('click', () => {
-                    if (currentAudio === audioElements[index] && !currentAudio.paused) {
-                        currentAudio.pause();
-                        controlAudio.pause();
-                    } else {
-                        playTrack(index);
-                    }
-                });
             });
+            songItems.forEach(item => item.classList.remove('active'));
+        }
 
-            // Audio event handlers
-            audioElements.forEach((audio, index) => {
-                audio.addEventListener('play', () => {
-                    pauseOtherAudios(audio);
-                    currentAudio = audio;
-                    controlAudio.src = audio.src;
-                    controlAudio.play().catch(e => console.error('Error playing control audio:', e));
-                    songItems[index].classList.add('active');
-                    updatePlayPauseButton();
-                    updateProgress();
-                });
+        // Update play/pause button state
+        function updatePlayPauseButton() {
+            if (currentAudio && !currentAudio.paused) {
+                playPauseBtn.classList.add('playing');
+            } else {
+                playPauseBtn.classList.remove('playing');
+            }
+        }
 
-                audio.addEventListener('seeked', () => {
-                    pauseOtherAudios(audio);
-                    currentAudio = audio;
-                    controlAudio.src = audio.src;
-                    controlAudio.currentTime = audio.currentTime;
-                    if (audio.paused) {
-                        audio.play().catch(e => console.error('Error playing audio after seek:', e));
-                        controlAudio.play().catch(e => console.error('Error playing control audio:', e));
-                    }
-                    songItems[index].classList.add('active');
-                    updatePlayPauseButton();
-                    updateProgress();
-                });
+        // Update progress bar and time display
+        function updateProgress() {
+            if (!currentAudio || !currentAudio.duration) return;
+            const progress = (currentAudio.currentTime / currentAudio.duration) * 100;
+            progressFill.style.width = `${progress}%`;
+            currentTimeDisplay.textContent = formatTime(currentAudio.currentTime);
+            durationDisplay.textContent = formatTime(currentAudio.duration);
+        }
 
-                audio.addEventListener('timeupdate', () => {
-                    controlAudio.currentTime = audio.currentTime;
-                    updateProgress();
-                });
+        // Play a specific track
+        function playTrack(index) {
+            const audio = audioElements[index];
+            const songItem = songItems[index];
+            pauseOtherAudios(audio);
+            currentAudio = audio;
+            controlAudio.src = audio.src; // Sync control audio with selected track
+            controlAudio.play().catch(e => console.error('Error playing audio:', e));
+            audio.play().catch(e => console.error('Error playing audio:', e));
+            songItem.classList.add('active');
+            updatePlayPauseButton();
+            updateProgress();
+        }
 
-                audio.addEventListener('pause', () => {
+        // Song list click handler
+        songItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                if (currentAudio === audioElements[index] && !currentAudio.paused) {
+                    currentAudio.pause();
                     controlAudio.pause();
-                    updatePlayPauseButton();
-                });
-
-                audio.addEventListener('ended', () => {
-                    currentAudio = null;
-                    controlAudio.src = '';
-                    updatePlayPauseButton();
-                    progressFill.style.width = '0%';
-                    currentTimeDisplay.textContent = '0:00';
-                    songItems[index].classList.remove('active');
-                });
-
-                audio.addEventListener('loadedmetadata', () => {
-                    if (audio === currentAudio) {
-                        durationDisplay.textContent = formatTime(audio.duration);
-                    }
-                });
-            });
-
-            // Control buttons
-            playPauseBtn.addEventListener('click', () => {
-                if (currentAudio) {
-                    if (!currentAudio.paused) {
-                        currentAudio.pause();
-                        controlAudio.pause();
-                    } else {
-                        currentAudio.play().catch(e => console.error('Error playing audio:', e));
-                        controlAudio.play().catch(e => console.error('Error playing control audio:', e));
-                    }
-                    updatePlayPauseButton();
-                } else if (audioElements.length > 0) {
-                    playTrack(0); // Play first track if none selected
+                } else {
+                    playTrack(index);
                 }
-            });
-
-            prevBtn.addEventListener('click', () => {
-                if (!currentAudio) return;
-                const currentIndex = Array.from(audioElements).indexOf(currentAudio);
-                const prevIndex = currentIndex > 0 ? currentIndex - 1 : audioElements.length - 1;
-                playTrack(prevIndex);
-            });
-
-            nextBtn.addEventListener('click', () => {
-                if (!currentAudio) return;
-                const currentIndex = Array.from(audioElements).indexOf(currentAudio);
-                const nextIndex = currentIndex < audioElements.length - 1 ? currentIndex + 1 : 0;
-                playTrack(nextIndex);
-            });
-
-            // Progress bar click handler
-            progressTrack.addEventListener('click', (e) => {
-                if (!currentAudio) return;
-                const rect = progressTrack.getBoundingClientRect();
-                const clickX = e.clientX - rect.left;
-                const width = rect.width;
-                const seekTime = (clickX / width) * currentAudio.duration;
-                currentAudio.currentTime = seekTime;
-                controlAudio.currentTime = seekTime;
-                if (currentAudio.paused) {
-                    currentAudio.play().catch(e => console.error('Error playing audio after seek:', e));
-                    controlAudio.play().catch(e => console.error('Error playing control audio:', e));
-                }
-                updateProgress();
             });
         });
-    </script>
+
+        // Audio event handlers
+        audioElements.forEach((audio, index) => {
+            audio.addEventListener('play', () => {
+                pauseOtherAudios(audio);
+                currentAudio = audio;
+                controlAudio.src = audio.src;
+                controlAudio.play().catch(e => console.error('Error playing control audio:', e));
+                songItems[index].classList.add('active');
+                updatePlayPauseButton();
+                updateProgress();
+            });
+
+            audio.addEventListener('seeked', () => {
+                pauseOtherAudios(audio);
+                currentAudio = audio;
+                controlAudio.src = audio.src;
+                controlAudio.currentTime = audio.currentTime;
+                if (audio.paused) {
+                    audio.play().catch(e => console.error('Error playing audio after seek:', e));
+                    controlAudio.play().catch(e => console.error('Error playing control audio:', e));
+                }
+                songItems[index].classList.add('active');
+                updatePlayPauseButton();
+                updateProgress();
+            });
+
+            audio.addEventListener('timeupdate', () => {
+                controlAudio.currentTime = audio.currentTime;
+                updateProgress();
+            });
+
+            audio.addEventListener('pause', () => {
+                controlAudio.pause();
+                updatePlayPauseButton();
+            });
+
+            audio.addEventListener('ended', () => {
+                currentAudio = null;
+                controlAudio.src = '';
+                updatePlayPauseButton();
+                progressFill.style.width = '0%';
+                currentTimeDisplay.textContent = '0:00';
+                songItems[index].classList.remove('active');
+            });
+
+            audio.addEventListener('loadedmetadata', () => {
+                if (audio === currentAudio) {
+                    durationDisplay.textContent = formatTime(audio.duration);
+                }
+            });
+        });
+
+        // Control buttons
+        playPauseBtn.addEventListener('click', () => {
+            if (currentAudio) {
+                if (!currentAudio.paused) {
+                    currentAudio.pause();
+                    controlAudio.pause();
+                } else {
+                    currentAudio.play().catch(e => console.error('Error playing audio:', e));
+                    controlAudio.play().catch(e => console.error('Error playing control audio:', e));
+                }
+                updatePlayPauseButton();
+            } else if (audioElements.length > 0) {
+                playTrack(0); // Play first track if none selected
+            }
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (!currentAudio) return;
+            const currentIndex = Array.from(audioElements).indexOf(currentAudio);
+            const prevIndex = currentIndex > 0 ? currentIndex - 1 : audioElements.length - 1;
+            playTrack(prevIndex);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (!currentAudio) return;
+            const currentIndex = Array.from(audioElements).indexOf(currentAudio);
+            const nextIndex = currentIndex < audioElements.length - 1 ? currentIndex + 1 : 0;
+            playTrack(nextIndex);
+        });
+
+        // Progress bar click handler
+        progressTrack.addEventListener('click', (e) => {
+            if (!currentAudio) return;
+            const rect = progressTrack.getBoundingClientRect();
+            const clickX = e.clientX - rect.left;
+            const width = rect.width;
+            const seekTime = (clickX / width) * currentAudio.duration;
+            currentAudio.currentTime = seekTime;
+            controlAudio.currentTime = seekTime;
+            if (currentAudio.paused) {
+                currentAudio.play().catch(e => console.error('Error playing audio after seek:', e));
+                controlAudio.play().catch(e => console.error('Error playing control audio:', e));
+            }
+            updateProgress();
+        });
+    });
+</script>

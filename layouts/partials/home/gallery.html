@@ -1,13 +1,13 @@
 <section>
-    <h1>Film strip</h1>
     <div class="auto-scroll-gallery">
-        {{/*  <div class="reel-edge reel-left"></div>  */}}
+        {{/* <div class="reel-edge reel-left"></div> */}}
         <div class="gallery-strip">
             {{ $globalIndex := 0 }}
             {{ range $index, $item := where .Site.RegularPages "Type" "projects" }}
             {{ $mediaItems := .Resources.Match "*.mp4" }}
+            {{/* {{ $mediaItems := .Resources.Match "(?i).*(.mp4|.jpeg|.jpg|.png)$" }} */}}
             {{ range $mediaItems }}
-                <div class="film-frame" data-frame="{{ printf " %03d" $globalIndex }}">
+            <div class="film-frame" data-frame="{{ printf " %03d" $globalIndex }}">
                 <p class="name">{{ .Name }}</p>
                 {{ if eq .MediaType.SubType "mp4" }}
                 <video autoplay muted loop playsinline>
@@ -17,15 +17,16 @@
                 <img src="{{ .RelPermalink }}" alt="{{ .Name }}">
                 {{ end }}
             </div>
-            
+
             {{ $globalIndex = add $globalIndex 1 }}
 
             {{ end }}
 
+
             {{ end }}
-            
+
         </div>
-        {{/*  <div class="reel-edge reel-right"></div>  */}}
+        {{/* <div class="reel-edge reel-right"></div> */}}
     </div>
 </section>
 
