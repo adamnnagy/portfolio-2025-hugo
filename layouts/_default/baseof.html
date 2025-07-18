@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<title>{{ .Title }}</title>
-		{{ $styles := resources.Get "/css/main.scss" | css.Sass (dict
-		"targetPath" "/css/main.css" "outuptStyle" "compressed") |
-		resources.Fingerprint }} 
-        
-		<link
-			rel="stylesheet"
-			href="{{ $styles.Permalink }}"
-			integrity="{{ $styles.Data.Integrity }}"
-		/>
-		<link rel="icon" href="static/images/favicon.ico" />
-	</head>
-	<body>
-		{{ partial "header.html" . }}
-		<main>{{ block "main" . }}{{ end }}</main>
-		{{ partial "footer.html" . }}
-        {{ $js := resources.Get "/js/main.js" | resources.Minify | resources.Fingerprint }}
-		<script
-			src="{{ $js.Permalink }}"
-			integrity="{{ $js.Data.Integrity }}"
-			crossorigin="anonymous"
-		></script>
-	</body>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>{{ .Title }}</title>
+
+    <link rel="icon" href="{{ " favicons/favicon.ico" | absURL }}" sizes="any">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ " favicons/apple-touch-icon.png" | absURL }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ " favicons/favicon-32x32.png" | absURL }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ " favicons/favicon-16x16.png" | absURL }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ "favicons/android-chrome-192x192.png" | absURL }}">
+    <link rel="icon" type="image/png" sizes="512x512" href="{{ "favicons/android-chrome-512x512.png" | absURL }}">
+    <link rel="manifest" href="{{ " favicons/site.webmanifest" | absURL }}">
+    
+    {{ $styles := resources.Get "/css/main.scss" | css.Sass (dict
+    "targetPath" "/css/main.css" "outuptStyle" "compressed") |
+    resources.Fingerprint }}
+
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" />
+    <link rel="icon" href="static/images/favicon.ico" />
+</head>
+
+<body>
+    {{ partial "header.html" . }}
+    <main>{{ block "main" . }}{{ end }}</main>
+    {{ partial "footer.html" . }}
+    {{ $js := resources.Get "/js/main.js" | resources.Minify | resources.Fingerprint }}
+    <script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+</body>
+
 </html>
