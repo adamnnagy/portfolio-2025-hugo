@@ -6,7 +6,7 @@ role = "Composer | Producer"
 priority = 2
 featured = false
 city = "Budapest"
-image = ""
+hero = "Panteezis-720p.mp4"
 gallery = true
 +++
 

@@ -5,13 +5,13 @@
     <meta charset="UTF-8" />
     <title>{{ .Title }}</title>
 
-    <link rel="icon" href="{{ " favicons/favicon.ico" | absURL }}" sizes="any">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ " favicons/apple-touch-icon.png" | absURL }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ " favicons/favicon-32x32.png" | absURL }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ " favicons/favicon-16x16.png" | absURL }}">
-    <link rel="icon" type="image/png" sizes="192x192" href="{{ "favicons/android-chrome-192x192.png" | absURL }}">
-    <link rel="icon" type="image/png" sizes="512x512" href="{{ "favicons/android-chrome-512x512.png" | absURL }}">
-    <link rel="manifest" href="{{ " favicons/site.webmanifest" | absURL }}">
+    <link rel="icon" href="{{ "favicons/favicon.ico" | relURL }}" sizes="any">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "favicons/apple-touch-icon.png" | relURL }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicons/favicon-32x32.png" | relURL }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicons/favicon-16x16.png" | relURL }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ "favicons/android-chrome-192x192.png" | relURL }}">
+    <link rel="icon" type="image/png" sizes="512x512" href="{{ "favicons/android-chrome-512x512.png" | relURL }}">
+    <link rel="manifest" href="{{ "favicons/site.webmanifest" | relURL }}">
     
     {{ $styles := resources.Get "/css/main.scss" | css.Sass (dict
     "targetPath" "/css/main.css" "outuptStyle" "compressed") |

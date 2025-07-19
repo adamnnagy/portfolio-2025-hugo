@@ -5,5 +5,5 @@ title = 'Workflow'
 priority = 0
 featured = false
 description = ""
-image = ""
+hero = ""
 +++

@@ -7,7 +7,7 @@ featured = false
 description = "The numerous projects I'm involved with as a Musician."
 role = "Musician | Producer"
 city = ""
-image = ""
+hero = ""
 gallery = true
 +++
 

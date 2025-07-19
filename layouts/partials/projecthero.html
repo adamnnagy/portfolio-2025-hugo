@@ -1,11 +1,11 @@
 <section class="hero-banner">
-    <video autoplay muted loop playsinline class="video" poster="images/hero.png">
-        <source src="{{ .Site.Params.heroVideo | relURL }}" type="video/mp4">
+    <video autoplay muted loop playsinline class="video">
+        <source src="{{ path.Join .projectDir .hero | relURL }}" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     <div class="background"></div>
     <div class="content">
-        <h1 class="title">Ádám <span>Nagy</span></h1>
+        <h1 class="title">{{.title}}</span></h1>
         <div class="roles">
             <p><code>00:00:00</code> Filmmaker</p>
             <p><code>00:00:01</code> Editor</p>

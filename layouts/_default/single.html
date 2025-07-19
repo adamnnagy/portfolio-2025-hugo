@@ -1,5 +1,13 @@
 {{ define "main" }}
+{{ partial "partials/projecthero.html" (dict 
+"hero" .Params.hero
+"projectDir" .File.Dir
+"title" .Params.title
+"role" .Params.role
+
+) }}
 <article class="container">
+
 
     {{ if .Params.role }}
     <h1>{{ .Params.title }} | {{ .Params.role }}</h1>

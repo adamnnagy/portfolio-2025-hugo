@@ -5,7 +5,7 @@ title = 'Intro'
 priority = 0
 featured = false
 description = ""
-image = ""
+hero = ""
 +++
 
 # Ádám Nagy is an Editor, Videographer, and Musician based in Budapest, Hungary. 

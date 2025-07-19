@@ -5,7 +5,7 @@ title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 priority = 0
 featured = false
 description = ""
-image = ""
+hero = ""
 role = ""
 city = ""
 +++

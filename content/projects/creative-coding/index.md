@@ -7,7 +7,7 @@ featured = false
 description = "Creative Coding projects"
 role = "Developer"
 city = "Abu Dhabi"
-image = ""
+hero = "cover.mp4"
 +++
 
 ---

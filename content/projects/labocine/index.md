@@ -7,6 +7,7 @@ featured = false
 description = ""
 role = "Editor | Head of Video"
 city = ""
-image = ""
+hero = "Labocine-720p.mp4"
+image = "Labocine-720p.mp4"
 gallery = true
 +++

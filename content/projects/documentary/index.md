@@ -7,7 +7,7 @@ role = "Editor"
 city = "Budapest, Abu Dhabi"
 priority = 0
 featured = false
-image = ""
+hero = "Shane-720p.mp4"
 +++
 
 # The Puppet Gene - A short documentary by Waleed Al Madani | Abu Dhabi | Assistant Editor

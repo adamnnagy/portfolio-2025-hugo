@@ -7,6 +7,6 @@ role = "Videographer | Editor"
 city = ""
 priority = 1
 featured = false
-image = ""
+hero = "iGEM-Aftermovie-720p.mp4"
 gallery = true
 +++
