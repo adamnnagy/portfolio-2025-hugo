@@ -13,12 +13,14 @@ Hi, I'm Ádám. I'm a creative technologist and video editor.
 
 {{% image src="../images/about/avatar-oman.jpeg" alt="Profile Image" class="profile-img" %}}
 
-{{% image src="../images/intro/ghana.jpeg" alt="Profile Image" class="profile-img" %}}
-{{% image src="../images/intro/music-01.jpeg" alt="Profile Image" class="profile-img" %}}
-{{% image src="../images/intro/music-02.jpeg" alt="Profile Image" class="profile-img" %}}
-{{% image src="../images/intro/nepal-01.jpeg" alt="Profile Image" class="profile-img" %}}
-{{% image src="../images/intro/nepal-02.jpeg" alt="Profile Image" class="profile-img" %}}
-{{% image src="../images/intro/war-machine.jpeg" alt="Profile Image" class="profile-img" %}}
+{{% image src="../images/intro/ghana.jpeg" alt="Profile Image" class="profile-img scroll-fade-in" %}}
+{{% image src="../images/intro/music-01.jpeg" alt="Profile Image" class="profile-img scroll-fade-in" %}}
+{{% image src="../images/intro/music-02.jpeg" alt="Profile Image" class="profile-img scroll-fade-in" %}}
+{{% image src="../images/intro/nepal-01.jpeg" alt="Profile Image" class="profile-img scroll-fade-in" %}}
+{{% image src="../images/intro/nepal-02.jpeg" alt="Profile Image" class="profile-img scroll-fade-in" %}}
+{{% image src="../images/intro/war-machine.jpeg" alt="Profile Image" class="profile-img scroll-fade-in" %}}
+
+
 
 ## I am an Editor, Videographer and Musician living in Budapest, Hungary. I have skills in writing scripts and shooting video and then editing it.
 
