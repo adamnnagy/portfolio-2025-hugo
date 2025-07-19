@@ -1,11 +1,13 @@
 {{define "main"}}
 
+<div class="fade-in-page">
 
-{{ partial "home/hero.html" . }}
+    {{ partial "home/hero.html" . }}
+</div>
 <div class="container">
-	{{ partial "home/intro.html" . }}
-    {{ partial "home/projects.html" . }}
-    {{ partial "home/workflow.html" . }}
-    {{ partial "home/contact.html" . }}
+{{ partial "home/intro.html" . }}
+    <section class="scroll-fade-in">{{ partial "home/projects.html" . }}</section>
+    <section class="scroll-fade-in">{{ partial "home/workflow.html" . }}</section>
+    <section class="scroll-fade-in">{{ partial "home/contact.html" . }}</section>
 </div>
 {{ end }}

@@ -2,6 +2,13 @@ $primary-color: #222d35;
 $secondary-color: #fff;
 $text-color: #fff;
 
+// for scroll animations
+
+:root {
+	--scroll-primary-color: #303f49;
+	--scroll-secondary-color: #ffffff;
+}
+
 $film-frame-contrast: 0.8;
 
 $gallery-background-color: #192126;

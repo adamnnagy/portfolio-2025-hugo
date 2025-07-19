@@ -1,14 +1,18 @@
 {{ define "main" }}
-  <h1>Projects</h1>
-  <ul>
-  {{ range .Pages }}
-    <li>
-      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-      <p>{{ .Params.description }}</p>
-      {{ with .Params.image }}
-        <img src="{{ . }}" alt="{{ $.Title }}" />
+  <section>
+      <h1>Projects</h1>
+      <ul>
+      {{ range .Pages }}
+        <article class="scroll-fade-in">
+            <li>
+              <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+              <p>{{ .Params.description }}</p>
+              {{ with .Params.image }}
+                <img src="{{ . }}" alt="{{ $.Title }}" />
+              {{ end }}
+            </li>
+        </article>
       {{ end }}
-    </li>
-  {{ end }}
-  </ul>
+      </ul>
+  </section>
 {{ end }}

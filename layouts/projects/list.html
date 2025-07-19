@@ -6,20 +6,22 @@
     <ul class="project-list">
         {{ range sort .Pages "Date" "desc" }}
 
-        <a href="{{ .RelPermalink }}">
-            <li class="project-card">
-                <div>
-                    <h2 class="project-title">
-                        {{ .Title }} | {{ .Params.role }}
-                    </h2>
-                    <p class="description">{{.Params.description}}</p>
-                    <p class="city">{{.Params.city}}</p>
-                </div>
-                {{ with .Resources.GetMatch "cover.*" }}
-                <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="thumbnail" />
-                {{ end }}
-            </li>
-        </a>
+        <article class="scroll-fade-in">
+            <a href="{{ .RelPermalink }}">
+                <li class="project-card">
+                    <div>
+                        <h2 class="project-title">
+                            {{ .Title }} | {{ .Params.role }}
+                        </h2>
+                        <p class="description">{{.Params.description}}</p>
+                        <p class="city">{{.Params.city}}</p>
+                    </div>
+                    {{ with .Resources.GetMatch "cover.*" }}
+                    <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="thumbnail" />
+                    {{ end }}
+                </li>
+            </a>
+        </article>
 
         {{ end }}
     </ul>

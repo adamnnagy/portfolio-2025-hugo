@@ -9,6 +9,7 @@
 @import "components/contact-form";
 @import "components/film-strip-gallery";
 @import "components/project-list";
+@import "components/intro-section";
 
 // 3. Page Specific Styles (if any)
 
@@ -144,4 +145,35 @@ ul {
 			}
 		}
 	}
+}
+
+.fade-in-page {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+
+  &.loaded {
+    opacity: 1;
+
+    // Only fade in page container, not children with scroll-fade-in
+    > :not(.scroll-fade-in) {
+      opacity: 1;
+    }
+  }
+}
+
+.scroll-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+
+.scroll-fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-color-text {
+  color: rgb(180, 180, 180); // start faded
+  transition: color 0.1s linear;
 }

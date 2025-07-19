@@ -1,21 +1,22 @@
 <section class="home-projects">
-<h1>Recent Projects</h1>
   <ul class="projects">
     {{ range first 4 (sort (where .Site.RegularPages "Type" "projects") "Params.priority" "desc") }}
-    <a href="{{ .RelPermalink }}"><li class="project">
-      <div class="content">
-          <h3 class="role">{{ .Params.role }}</h3>
-          <h1 class="title">{{ .Title }}</h1>
-          <p class="description">{{ .Params.description }}</p>
-      </div>
-      {{ with .Resources.GetMatch "cover.*" }}
-      <img
-        src="{{ .RelPermalink }}"
-        alt="{{ $.Title }}"
-        class="thumbnail image-hover"
-      />
-      {{ end }}
-    </li></a>
+    <article class="scroll-fade-in">
+        <a href="{{ .RelPermalink }}"><li class="project">
+          <div class="content">
+              <h3 class="role">{{ .Params.role }}</h3>
+              <h1 class="title">{{ .Title }}</h1>
+              <p class="description">{{ .Params.description }}</p>
+          </div>
+          {{ with .Resources.GetMatch "cover.*" }}
+          <img
+            src="{{ .RelPermalink }}"
+            alt="{{ $.Title }}"
+            class="thumbnail image-hover"
+          />
+          {{ end }}
+        </li></a>
+    </article>
     {{ end }}
   </ul>
 </section>
