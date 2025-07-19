@@ -8,27 +8,30 @@ window.addEventListener("load", () => {
 
 // scroll-fade-in
 
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
-      observer.unobserve(entry.target); // optional
+      entry.target.classList.remove('faded-out'); // Ensure it's not faded out
+    } else {
+      // Element is no longer intersecting
+      entry.target.classList.remove('visible');
+      entry.target.classList.add('faded-out'); // Add a class to fade it out
     }
   });
 }, {
-  rootMargin: '0px 0px -20% 0px', // 👈 Adjust this
-  threshold: 0
+  // Use a smaller rootMargin or no rootMargin for more immediate fade-out
+  // Consider adjusting threshold to trigger fade-out when it's still somewhat visible
+  rootMargin: '0px 0px -10% 0px', // Example: fades out when 10% of element is out of view from bottom
+  threshold: [0, 0.5, 1] // Multiple thresholds to get more precise intersection data
 });
 
-const transitionDelayBase = 100;
+const transitionDelayBase = 200;
 
 document.querySelectorAll('.scroll-fade-in').forEach((el, i) => {
-  el.style.transitionDelay = `${i * transitionDelayBase}ms`; // 100ms between elements
+  el.style.transitionDelay = `${i * transitionDelayBase}ms`;
   observer.observe(el);
 });
-
-
 
 // get variables
 
