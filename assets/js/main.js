@@ -1,38 +1,46 @@
-console.log("Asset pipeline JavaScript loaded!");
-
 // fade-in-page
 
 window.addEventListener("load", () => {
 	document.querySelector(".fade-in-page").classList.add("loaded");
 });
 
-// scroll-fade-in
 
+
+
+
+
+
+
+// scroll-fade-in
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
-      entry.target.classList.remove('faded-out'); // Ensure it's not faded out
+      entry.target.classList.remove('faded-out');
+      // After it becomes visible, ensure no future animation has a delay
+      // by *removing* the custom property.
+      // This will make 'var(--initial-delay, 0s)' resolve to 0s.
+      entry.target.style.removeProperty('--initial-delay');
+
     } else {
-      // Element is no longer intersecting
       entry.target.classList.remove('visible');
-      entry.target.classList.add('faded-out'); // Add a class to fade it out
+      entry.target.classList.add('faded-out');
+      // When fading out, we don't re-apply the initial delay.
+      // It should still have '--initial-delay' removed.
     }
   });
 }, {
-  // Use a smaller rootMargin or no rootMargin for more immediate fade-out
-  // Consider adjusting threshold to trigger fade-out when it's still somewhat visible
-  rootMargin: '0px 0px -10% 0px', // Example: fades out when 10% of element is out of view from bottom
-  threshold: [0, 0.5, 1] // Multiple thresholds to get more precise intersection data
+  rootMargin: '0px 0px 100px 0px', // Adjust this as needed for earlier trigger
+  threshold: 0
 });
 
 const transitionDelayBase = 200;
 
 document.querySelectorAll('.scroll-fade-in').forEach((el, i) => {
-  el.style.transitionDelay = `${i * transitionDelayBase}ms`;
+  // Set the custom property for the initial delay
+  el.style.setProperty('--initial-delay', `${i * transitionDelayBase}ms`);
   observer.observe(el);
 });
-
 // get variables
 
 function getCSSVariable(name) {
@@ -48,6 +56,10 @@ function hexToRgb(hex) {
   ];
 }
 
+
+
+
+
 // text-fade-in
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -55,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function updateTextColor() {
     const windowHeight = window.innerHeight;
-    const fadeUntilRatio = 0.8;
+    const fadeUntilRatio = 0.9;
 
     elements.forEach(el => {
       const rect = el.getBoundingClientRect();

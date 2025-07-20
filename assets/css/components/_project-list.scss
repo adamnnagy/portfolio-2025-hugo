@@ -7,13 +7,15 @@
 
 	.project-card {
 		display: grid;
-		grid-template-columns: 1fr 2fr;
+        height: 40vh;
+        background-color: rgba(0, 0, 0, 0.191);
+		grid-template-columns: 1fr;
 		padding: 20px;
-		align-items: end;
+		// align-items: end;
 		gap: 1rem;
 		margin: 2rem 0;
 		list-style: none;
-		border-radius: 4px;
+		border-radius: 20px;
 		transition: background-color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
 			color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
 			transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
@@ -25,7 +27,7 @@
 			height: auto;
 			aspect-ratio: 16 / 9; /* Modern CSS property for aspect ratio */
 			object-fit: cover;
-			grid-area: 1 / 2 / 2 / 3;
+			grid-area: 1 / 1 / 2 / 3;
 			transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 		}
 		.description {

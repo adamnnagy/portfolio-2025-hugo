@@ -161,28 +161,45 @@ ul {
 	}
 }
 
+// variables.scss
+$scroll-fade-speed: 1.6s;
+$scroll-fade-ease: ease;
+$scroll-fade-transform-offset: 20px;
+
+// YourComponent.scss
 .scroll-fade-in {
-	opacity: 0;
-	transform: translateY(20px);
-	will-change: opacity, transform;
-	transition: opacity 1.6s ease, transform 1.6s ease;
+  opacity: 0;
+  transform: translateY($scroll-fade-transform-offset);
+  will-change: opacity, transform;
+
+  // Define transitions for opacity and transform
+  // The 'transition-delay' will be set by the custom property.
+  // We apply the delay here only if the --initial-delay custom property is set.
+  transition: opacity $scroll-fade-speed $scroll-fade-ease var(--initial-delay, 0s),
+              transform $scroll-fade-speed $scroll-fade-ease var(--initial-delay, 0s);
+
+  // Fallback for browsers not supporting custom properties (rare now)
+  // For older browsers, you'd have to use the .is-initial-state class method
+  // transition-delay: var(--initial-delay, 0s); // This needs to be on each property for separate delays
 }
 
 .scroll-fade-in.visible {
-	opacity: 1;
-	transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
+  // Override the delay to 0s when visible
+  transition-delay: 0s; // This needs to be explicit for both properties or use shorthand
+  transition: opacity $scroll-fade-speed $scroll-fade-ease 0s,
+              transform $scroll-fade-speed $scroll-fade-ease 0s;
 }
 
 .scroll-fade-in.faded-out {
-	opacity: 0.5; /* Slightly faded out */
-	transform: translateY(
-		5px
-	); /* Or adjust transform for a different effect */
-	/* Ensure the transition properties are defined for this state as well */
-	transition: opacity 1.1s ease, transform 1.6s ease;
+  opacity: 0.3;
+  transform: translateY($scroll-fade-transform-offset * 2.5);
+  // Ensure no delay when fading out
+  transition-delay: 0s;
+  transition: opacity $scroll-fade-speed $scroll-fade-ease 0s,
+              transform $scroll-fade-speed $scroll-fade-ease 0s;
 }
 
-.scroll-color-text {
-	color: rgb(180, 180, 180); // start faded
-	transition: color 0.1s linear;
+.about-image {
 }
