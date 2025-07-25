@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "fonts";
 
 // 2. Components
 @import "components/audio-player";
@@ -9,6 +10,7 @@
 @import "components/contact-form";
 @import "components/film-strip-gallery";
 @import "components/project-list";
+@import "components/home-project-list";
 @import "components/intro-section";
 
 // 3. Page Specific Styles (if any)
@@ -20,9 +22,17 @@
 body {
 	background-color: $primary-color;
 	color: darken($primary-color, 100%);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: $regular-font;
 	padding: 0;
 	margin: 0;
+
+    > section {
+
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $title-font;
 }
 
 p {
@@ -44,10 +54,12 @@ p {
 	}
 }
 
-section {
+body > section {
 	// padding: 2rem;
 	margin: 0 auto;
 	// max-width: 1200px;
+    padding: 2rem 0rem;
+
 }
 
 a {
@@ -63,89 +75,7 @@ ul {
 	}
 }
 
-.home-projects {
-	h1 {
-		margin: 0;
-		padding: 0;
-	}
-	.projects {
-		// width: 80%;
-		// margin: 50px 0;
-		display: grid;
-		gap: 2rem;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
 
-		@media screen and (max-width: 1200px) {
-			grid-template-columns: 1fr;
-		}
-
-		.project {
-			padding: 2rem;
-			// background-color: $secondary-color;
-			position: relative;
-			z-index: 0;
-			color: $text-color;
-
-			.content {
-				text-align: center;
-
-				.title {
-					position: absolute;
-					top: 42%;
-					left: 50%;
-					transform: translate(-50%, -58%);
-					padding: 0;
-					margin: 0;
-					text-transform: uppercase;
-					font-size: 2rem;
-				}
-
-				.role {
-					position: absolute;
-					top: 12%;
-					left: 50%;
-					transform: translate(-50%, -88%);
-					padding: 0;
-					margin: 0;
-					font-size: 1rem;
-				}
-
-				.description {
-					position: absolute;
-					top: 80%;
-					left: 50%;
-					transform: translate(-50%, -20%);
-					padding: 0;
-					margin: 0;
-					font-size: 1rem;
-					font-style: italic;
-				}
-			}
-
-			img {
-				position: absolute;
-				object-fit: cover;
-				width: 100%; /* Make the image fill the container's width */
-				height: auto; /* Let the height adjust automatically to maintain aspect ratio */
-				aspect-ratio: 27 / 40; /* Modern CSS property for aspect ratio */
-				top: 0;
-				left: 0;
-				z-index: -1;
-			}
-			.image-hover {
-				transition: filter 0.3s ease;
-				position: relative;
-				display: inline-block;
-				overflow: hidden;
-				filter: grayscale(50%) brightness(0.6);
-			}
-			.image-hover:hover {
-				filter: grayscale(0%) brightness(1.2) contrast(1);
-			}
-		}
-	}
-}
 
 .fade-in-page {
 	opacity: 0;
@@ -162,44 +92,48 @@ ul {
 }
 
 // variables.scss
-$scroll-fade-speed: 1.6s;
+$scroll-fade-speed: 1.3s;
 $scroll-fade-ease: ease;
 $scroll-fade-transform-offset: 20px;
 
 // YourComponent.scss
 .scroll-fade-in {
-  opacity: 0;
-  transform: translateY($scroll-fade-transform-offset);
-  will-change: opacity, transform;
+	opacity: 0;
+	transform: translateY($scroll-fade-transform-offset);
+	will-change: opacity, transform;
 
-  // Define transitions for opacity and transform
-  // The 'transition-delay' will be set by the custom property.
-  // We apply the delay here only if the --initial-delay custom property is set.
-  transition: opacity $scroll-fade-speed $scroll-fade-ease var(--initial-delay, 0s),
-              transform $scroll-fade-speed $scroll-fade-ease var(--initial-delay, 0s);
+	// Define transitions for opacity and transform
+	// The 'transition-delay' will be set by the custom property.
+	// We apply the delay here only if the --initial-delay custom property is set.
+	transition: opacity $scroll-fade-speed $scroll-fade-ease
+			var(--initial-delay, 0s),
+		transform $scroll-fade-speed $scroll-fade-ease var(--initial-delay, 0s);
 
-  // Fallback for browsers not supporting custom properties (rare now)
-  // For older browsers, you'd have to use the .is-initial-state class method
-  // transition-delay: var(--initial-delay, 0s); // This needs to be on each property for separate delays
+	// Fallback for browsers not supporting custom properties (rare now)
+	// For older browsers, you'd have to use the .is-initial-state class method
+	// transition-delay: var(--initial-delay, 0s); // This needs to be on each property for separate delays
 }
 
 .scroll-fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-  // Override the delay to 0s when visible
-  transition-delay: 0s; // This needs to be explicit for both properties or use shorthand
-  transition: opacity $scroll-fade-speed $scroll-fade-ease 0s,
-              transform $scroll-fade-speed $scroll-fade-ease 0s;
+	opacity: 1;
+	transform: translateY(0);
+	// Override the delay to 0s when visible
+	transition-delay: 0s; // This needs to be explicit for both properties or use shorthand
+	transition: opacity $scroll-fade-speed $scroll-fade-ease 0s,
+		transform $scroll-fade-speed $scroll-fade-ease 0s;
 }
 
 .scroll-fade-in.faded-out {
-  opacity: 0.3;
-  transform: translateY($scroll-fade-transform-offset * 2.5);
-  // Ensure no delay when fading out
-  transition-delay: 0s;
-  transition: opacity $scroll-fade-speed $scroll-fade-ease 0s,
-              transform $scroll-fade-speed $scroll-fade-ease 0s;
+	opacity: 0.3;
+	transform: translateY($scroll-fade-transform-offset * 2.5);
+	// Ensure no delay when fading out
+	transition-delay: 0s;
+	transition: opacity $scroll-fade-speed $scroll-fade-ease 0s,
+		transform $scroll-fade-speed $scroll-fade-ease 0s;
 }
 
-.about-image {
+.content-image {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem;
 }

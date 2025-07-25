@@ -1,13 +1,17 @@
 .project-list {
 	padding: 0;
 	margin: 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+
 	a {
 		display: block;
 	}
 
 	.project-card {
 		display: grid;
-        height: 40vh;
         background-color: rgba(0, 0, 0, 0.191);
 		grid-template-columns: 1fr;
 		padding: 20px;

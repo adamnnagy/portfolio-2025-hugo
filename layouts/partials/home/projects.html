@@ -2,7 +2,7 @@
   <ul class="projects">
     {{ range first 4 (sort (where .Site.RegularPages "Type" "projects") "Params.priority" "desc") }}
     <article class="scroll-fade-in">
-        <a href="{{ .RelPermalink }}"><li class="project">
+        <a href="{{ .RelPermalink }}"><li class="project-card">
           <div class="content">
               <h3 class="role">{{ .Params.role }}</h3>
               <h1 class="title">{{ .Title }}</h1>

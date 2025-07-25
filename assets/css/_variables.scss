@@ -1,6 +1,10 @@
 $primary-color: #222d35;
-$secondary-color: #fff;
+$secondary-color: #eeeeee;
 $text-color: #fff;
+
+	
+$title-font: "Inter", sans-serif;
+$regular-font: Arial, Helvetica, sans-serif;
 
 // for scroll animations
 
@@ -12,3 +16,41 @@ $text-color: #fff;
 $film-frame-contrast: 0.8;
 
 $gallery-background-color: #192126;
+
+// Responsive breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+$large-desktop: 1440px;
+$xl-desktop: 1920px;
+
+// Mixins for media queries
+@mixin mobile {
+    @media (max-width: #{$mobile - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$mobile}) and (max-width: #{$tablet - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet-up {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin large-desktop {
+    @media (min-width: #{$large-desktop}) {
+        @content;
+    }
+}

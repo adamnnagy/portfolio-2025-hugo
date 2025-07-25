@@ -1,3 +1,11 @@
 .intro-section {
-    
+    position: relative;
+    margin: 5rem auto;
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
 }

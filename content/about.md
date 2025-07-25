@@ -11,14 +11,14 @@ Hi, I'm Ádám. I'm a creative technologist and video editor.
 
 
 
-{{% image src="../images/about/avatar-oman.jpeg" alt="Profile Image" class="about-img" %}}
+{{% image src="../images/about/avatar-oman.jpeg" alt="Profile Image" class="content-image" %}}
 
-{{% image src="../images/intro/ghana.jpeg" alt="Profile Image" class="about-img scroll-fade-in" %}}
-{{% image src="../images/intro/music-01.jpeg" alt="Profile Image" class="about-img scroll-fade-in" %}}
-{{% image src="../images/intro/music-02.jpeg" alt="Profile Image" class="about-img scroll-fade-in" %}}
-{{% image src="../images/intro/nepal-01.jpeg" alt="Profile Image" class="about-img scroll-fade-in" %}}
-{{% image src="../images/intro/nepal-02.jpeg" alt="Profile Image" class="about-img scroll-fade-in" %}}
-{{% image src="../images/intro/war-machine.jpeg" alt="Profile Image" class="about-img scroll-fade-in" %}}
+{{% image src="../images/intro/ghana.jpeg" alt="Profile Image" class="content-image scroll-fade-in" %}}
+{{% image src="../images/intro/music-01.jpeg" alt="Profile Image" class="content-image scroll-fade-in" %}}
+{{% image src="../images/intro/music-02.jpeg" alt="Profile Image" class="content-image scroll-fade-in" %}}
+{{% image src="../images/intro/nepal-01.jpeg" alt="Profile Image" class="content-image scroll-fade-in" %}}
+{{% image src="../images/intro/nepal-02.jpeg" alt="Profile Image" class="content-image scroll-fade-in" %}}
+{{% image src="../images/intro/war-machine.jpeg" alt="Profile Image" class="content-image scroll-fade-in" %}}
 
 
 

@@ -69,16 +69,19 @@
 		}
 
 		.roles {
+              font-feature-settings: "zero", "ss01", "tnum";
 		}
 
 		.title {
+            font-family: $title-font;
+            font-weight: 500;
 			font-size: 7rem;
 			text-transform: uppercase;
 			margin: 0;
 			padding: 0;
 
 			span {
-				font-style: italic;
+				// font-style: italic;
 				// letter-spacing: 2rem;
 			}
 		}
