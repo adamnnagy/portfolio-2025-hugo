@@ -1,8 +1,13 @@
 <section class="hero-banner">
+    {{ if strings.HasSuffix .Site.Params.heroVideo ".mp4" }}
     <video autoplay muted loop playsinline class="video" poster="images/hero.png">
         <source src="{{ .Site.Params.heroVideo | relURL }}" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+    
+    {{ else }}
+    <img src="{{ .Stie.Params.heroVideo | relURL}}" alt="hero image">
+    {{ end }}
     <div class="background"></div>
     <div class="content">
         <h1 class="title">Ádám <span>Nagy</span></h1>
