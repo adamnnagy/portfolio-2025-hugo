@@ -1,1 +1,11 @@
-<img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" class="{{ .Get "class" }}">
+{{ $src := .Get "src" | relURL }}
+{{ $alt := .Get "alt" | default "" }}
+{{ $class := .Get "class" | default "" }}
+
+<figure class="{{ $class }}">
+  <img 
+    src="{{ $src }}" 
+    alt="{{ $alt }}" 
+    loading="lazy" 
+    class="{{ $class }}">
+</figure>

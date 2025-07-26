@@ -26,12 +26,16 @@ body {
 	padding: 0;
 	margin: 0;
 
-    > section {
-
-    }
+	> section {
+	}
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: $title-font;
 }
 
@@ -58,8 +62,7 @@ body > section {
 	// padding: 2rem;
 	margin: 0 auto;
 	// max-width: 1200px;
-    padding: 2rem 0rem;
-
+	padding: 2rem 0rem;
 }
 
 a {
@@ -74,8 +77,6 @@ ul {
 		list-style: none;
 	}
 }
-
-
 
 .fade-in-page {
 	opacity: 0;
@@ -133,7 +134,19 @@ $scroll-fade-transform-offset: 20px;
 }
 
 .content-image {
-    width: 100%;
-    height: auto;
-    margin: 1rem auto;
+	width: 100%;
+	height: auto;
+	margin: 1rem auto;
+}
+
+figure {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #888;
+  font-style: italic;
+  margin-top: 0.4rem;
 }

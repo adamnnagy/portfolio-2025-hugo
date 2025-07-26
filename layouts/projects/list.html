@@ -1,14 +1,14 @@
 {{ define "main" }}
-<section class="container">
+<section class="container fade-in-page">
     <h1>{{ .Title }}</h1>
     <p>{{ .Content }}</p>
 
     <ul class="project-list">
         {{ range sort .Pages "Date" "desc" }}
 
+        <li class="project-card">
         <article class="scroll-fade-in">
             <a href="{{ .RelPermalink }}">
-                <li class="project-card">
                     <div>
                         <h2 class="project-title">
                             {{ .Title }} | {{ .Params.role }}
@@ -19,9 +19,9 @@
                     {{ with .Resources.GetMatch "cover.*" }}
                     <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="thumbnail" />
                     {{ end }}
-                </li>
-            </a>
-        </article>
+                </a>
+            </article>
+        </li>
 
         {{ end }}
     </ul>

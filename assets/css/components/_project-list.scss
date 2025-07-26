@@ -2,12 +2,17 @@
 	padding: 0;
 	margin: 0;
 
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(3, 1fr);
 
-    @m
-    
+	@include mobile {
+		grid-template-columns: 1fr;
+	}
+
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 	a {
 		display: block;
@@ -15,10 +20,9 @@
 
 	.project-card {
 		display: grid;
-        background-color: rgba(0, 0, 0, 0.191);
+		background-color: rgba(0, 0, 0, 0.191);
 		grid-template-columns: 1fr;
 		padding: 20px;
-		// align-items: end;
 		gap: 1rem;
 		margin: 2rem 0;
 		list-style: none;

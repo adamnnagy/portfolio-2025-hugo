@@ -10,26 +10,13 @@
 	color: white;
 
 	.background {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: linear-gradient(
-			to top,
-			rgba(0, 0, 0, 0.783),
-			rgba(0, 0, 0, 0.3),
-			transparent
-		);
+		@include absolute-cover;
+		@include gradient-overlay(to top, rgba(0, 0, 0, 0.783));
 		z-index: 1;
 	}
 
 	.video {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
+		@include absolute-cover;
 		object-fit: cover;
 		z-index: 0;
 	}
@@ -73,12 +60,8 @@
 		}
 
 		.title {
-            font-family: $title-font;
-            font-weight: 700;
+            @include title-text;
 			font-size: 7rem;
-			text-transform: uppercase;
-			margin: 0;
-			padding: 0;
 
 			span {
 				// font-style: italic;
