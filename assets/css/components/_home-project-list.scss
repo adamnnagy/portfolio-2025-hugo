@@ -12,7 +12,7 @@
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
 
-		@media screen and (max-width: 1200px) {
+		@include tablet {
 			grid-template-columns: 1fr;
 		}
 
