@@ -1,29 +1,42 @@
 {{ define "main" }}
-<section class="container fade-in-page">
-    <h1>{{ .Title }}</h1>
+<div class="hero">
+
+    <section class="fade-in-page">
+        {{ partial "partials/projecthero.html" (dict
+
+        "hero" .Params.hero
+        "title" .Title
+
+        ) }}
+    </section>
+
+    <section class="container">
 
 
-    <ul class="project-list">
-        {{ range sort .Pages "Date" "desc" }}
+        <ul class="project-list">
+            {{ range sort .Pages "Date" "desc" }}
+            {{ if not .Params.draft }}
 
-        <li class="project-card">
-        <article class="scroll-fade-in">
-            <a href="{{ .RelPermalink }}">
-                    <div>
-                        <h2 class="project-title">
-                            {{ .Title }} | {{ .Params.role }}
-                        </h2>
-                        <p class="description">{{.Params.description}}</p>
-                        <p class="city">{{.Params.city}}</p>
-                    </div>
-                    {{ with .Resources.GetMatch "cover.*" }}
-                    <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="thumbnail" />
-                    {{ end }}
-                </a>
-            </article>
-        </li>
+            <li class="project-card">
+                <article class="scroll-fade-in">
+                    <a href="{{ .RelPermalink }}">
+                        <div>
+                            <h2 class="project-title">
+                                {{ .Title }} | {{ .Params.role }}
+                            </h2>
+                            <p class="description">{{.Params.description}}</p>
+                            <p class="city">{{.Params.city}}</p>
+                        </div>
+                        {{ with .Resources.GetMatch "cover.*" }}
+                        <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="thumbnail" />
+                        {{ end }}
+                    </a>
+                </article>
+            </li>
 
-        {{ end }}
-    </ul>
-</section>
+            {{ end }}
+            {{ end }}
+        </ul>
+    </section>
+</div>
 {{ end }}

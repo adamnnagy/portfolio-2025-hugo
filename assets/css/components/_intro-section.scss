@@ -1,11 +1,16 @@
 .intro-section {
     position: relative;
-    margin: 5rem auto;
+    // margin: 5rem auto;
     .content {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        // align-items: center;
         height: 100%;
+
+        li {
+            font-size: 1rem;
+            list-style-type: disc;
+        }
     }
 }

@@ -57,6 +57,8 @@
 
 		.roles {
               font-feature-settings: "zero", "ss01", "tnum";
+              font-size: 4rem;
+              text-align: left;
 		}
 
 		.title {
@@ -69,10 +71,10 @@
 			}
 		}
 
-		@media (min-width: 1920px) {
+		@media (min-width: 1280px) {
 			display: flex;
-			align-items: baseline;
-			gap: 2rem;
+            flex-direction: column;
+			// gap: 2rem;
 
 			.hero-title {
 				font-size: 30rem;
@@ -80,7 +82,7 @@
 			}
 
 			p {
-				font-size: 2rem;
+				font-size: 1.5rem;
 				text-wrap-mode: nowrap;
 			}
 		}

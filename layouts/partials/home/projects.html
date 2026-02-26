@@ -1,22 +1,27 @@
-<section class="home-projects">
-  <ul class="projects">
-    {{ range first 4 (sort (where .Site.RegularPages "Type" "projects") "Params.priority" "desc") }}
-    <article class="scroll-fade-in">
-        <a href="{{ .RelPermalink }}"><li class="project-card">
-          <div class="content">
-              <h3 class="role">{{ .Params.role }}</h3>
-              <h1 class="title">{{ .Title }}</h1>
-              <p class="description">{{ .Params.description }}</p>
-          </div>
-          {{ with .Resources.GetMatch "cover.*" }}
-          <img
-            src="{{ .RelPermalink }}"
-            alt="{{ $.Title }}"
-            class="thumbnail image-hover"
-          />
-          {{ end }}
-        </li></a>
-    </article>
-    {{ end }}
-  </ul>
-</section>
+<div class="home-projects">
+    <ul class="projects">
+        {{ range first 4 (sort (where .Site.RegularPages "Type" "projects") "Params.priority" "desc") }}
+
+        {{ if .Params.featured }}
+
+        <li>
+            <article class="scroll-fade-in">
+                <a href="{{ .RelPermalink }}">
+                    <div class="project-card">
+                        <div class="content">
+                            <h3 class="role">{{ .Params.role }}</h3>
+                            <h1 class="title">{{ .Title }}</h1>
+                            <p class="description">{{ .Params.city }}</p>
+                        </div>
+                        {{ with .Resources.GetMatch "cover.*" }}
+                        <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="thumbnail image-hover" />
+                        {{ end }}
+                    </div>
+                </a>
+                <p class="description">{{ .Params.description }}</p>
+            </article>
+        </li>
+        {{ end }}
+        {{ end }}
+    </ul>
+</div>

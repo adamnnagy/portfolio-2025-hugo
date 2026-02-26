@@ -4,7 +4,7 @@ draft = true
 title = 'Documentary'
 description = "WWF and Shane documentaries, NYU Abu Dhabi Interactive Media - 24X"
 role = "Editor"
-city = "Budapest, Abu Dhabi"
+city = "Budapest/Abu Dhabi/Remote"
 priority = 0
 featured = false
 hero = "Shane-720p.mp4"
@@ -29,3 +29,5 @@ Lili Pilári is directing her first shadow puppet theater performance where fish
 While she takes us in to a journey of magic and art in making her show, we get a glimpse on behind the makings of such a beautiful craft. 
 
 https://www.almadani.me/the-puppet-gene
+
+# Olympic Dark Horse - Shane Tusup

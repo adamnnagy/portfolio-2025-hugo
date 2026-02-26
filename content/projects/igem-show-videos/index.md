@@ -4,7 +4,7 @@ draft = true
 title = 'iGEM Show Videos'
 description = "Show videos for iGEM"
 role = "Editor | Videographer | Scriptwriter"
-city = ""
+city = "Paris/Remote"
 gallery = true
 +++
 

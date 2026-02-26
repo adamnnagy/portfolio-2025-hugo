@@ -4,13 +4,15 @@ title = 'Panteézis'
 description = 'A soundtrack exploring nature and modernity.'
 role = "Composer | Producer"
 priority = 2
-featured = false
+draft = false
+featured = true
 city = "Budapest"
 hero = "Panteezis-720p.mp4"
 gallery = true
 +++
 
-## Panteézis is an album I composed for the exhibition of Gabriella Kovács, a Budapest-based painter. 
+# Panteézis
+An album I composed for the exhibition of Gabriella Kovács, a Budapest-based painter. 
 
 {{% image src="images/intro/nepal-01.jpeg" alt="Profile Image" class="content-image scroll-fade-in" %}}
 
@@ -24,7 +26,7 @@ During this collaboration I presented her with various snippets of musical ideas
 
 I was inspired by the music
 
-# The music played at
+# Ithaka
 
 {{< audiofolder folder="panteezis" >}}
 

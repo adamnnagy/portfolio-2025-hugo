@@ -1,6 +1,6 @@
 +++
 date = '2025-07-13T10:48:12+02:00'
-draft = true
+draft = false
 title = 'About + Contact'
 hero = "images/about/avatar-oman.jpeg"
 +++

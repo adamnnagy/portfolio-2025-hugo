@@ -1,20 +1,23 @@
 .home-projects {
-
-	
 	h1 {
 		margin: 0;
 		padding: 0;
 	}
 	.projects {
-        @include reset-spacing;
+		@include reset-spacing;
 		display: grid;
-		gap: 1rem;
+		gap: 5rem;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
 
 		@include tablet {
 			grid-template-columns: 1fr;
 		}
+
+        li {
+            // display: grid;
+            // grid-template-columns: 1fr 1fr;
+            // gap: 1rem;
+        }
 
 		.project-card {
 			position: relative;
@@ -26,7 +29,7 @@
 
 				.title {
 					position: absolute;
-					top: 42%;
+					top: 50%;
 					left: 50%;
 					transform: translate(-50%, -58%);
 					padding: 0;
@@ -37,7 +40,7 @@
 
 				.role {
 					position: absolute;
-					top: 12%;
+					top: 5%;
 					left: 50%;
 					transform: translate(-50%, -88%);
 					padding: 0;
@@ -47,7 +50,7 @@
 
 				.description {
 					position: absolute;
-					top: 80%;
+					top: 90%;
 					left: 50%;
 					transform: translate(-50%, -20%);
 					padding: 0;
