@@ -12,7 +12,8 @@
                         <div class="content">
                             <h3 class="role">{{ .Params.role }}</h3>
                             <h1 class="title">{{ .Title }}</h1>
-                            <p class="description">{{ .Params.city }}</p>
+                            <p class="description">{{ .Params.description }} <br>
+                            <i>{{ .Params.city }}</i></p>
                         </div>
                         {{ with .Resources.GetMatch "cover.*" }}
                         <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="thumbnail image-hover" />
