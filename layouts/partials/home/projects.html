@@ -1,3 +1,4 @@
+<h1>Featured</h1>
 <div class="home-projects">
     <ul class="projects">
         {{ range first 4 (sort (where .Site.RegularPages "Type" "projects") "Params.priority" "desc") }}
