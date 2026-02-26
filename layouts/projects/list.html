@@ -14,7 +14,7 @@
 
 
         <ul class="project-list">
-            {{ range sort .Pages "Date" "desc" }}
+            {{ range sort .Pages .Params.year "desc" }}
             {{ if not .Params.draft }}
 
             <li class="project-card">
@@ -25,7 +25,7 @@
                                 {{ .Title }} | {{ .Params.role }}
                             </h2>
                             <p class="description">{{.Params.description}}</p>
-                            <p class="city">{{.Params.city}}</p>
+                            <p class="city">{{ .Params.year }} - {{.Params.city}}</p>
                         </div>
                         {{ with .Resources.GetMatch "cover.*" }}
                         <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="thumbnail" />

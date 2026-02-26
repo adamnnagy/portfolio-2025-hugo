@@ -1,13 +1,14 @@
 .hero-banner {
 	position: relative;
 	// width: calc(100%-2rem);
-	height: 50vh; // Adjust height as needed
 	overflow: hidden;
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
 	padding-bottom: 2rem; // space below text
 	color: white;
+
+	margin-bottom: $hero-banner-margin-bottom; // space below banner
 
 	.background {
 		@include absolute-cover;
@@ -43,7 +44,7 @@
 		max-width: 1200px;
 		transform: translate(-50%, -50%);
 		text-align: center;
-        z-index: 2;
+		z-index: 2;
 
 		> * {
 			opacity: 1;
@@ -56,13 +57,13 @@
 		}
 
 		.roles {
-              font-feature-settings: "zero", "ss01", "tnum";
-              font-size: 4rem;
-              text-align: left;
+			font-feature-settings: "zero", "ss01", "tnum";
+			font-size: 4rem;
+			text-align: left;
 		}
 
 		.title {
-            @include title-text;
+			@include title-text;
 			font-size: 7rem;
 
 			span {
@@ -73,7 +74,7 @@
 
 		@media (min-width: 1280px) {
 			display: flex;
-            flex-direction: column;
+			flex-direction: column;
 			// gap: 2rem;
 
 			.hero-title {
@@ -87,4 +88,15 @@
 			}
 		}
 	}
+
+	@include desktop {
+		height: calc(100vh - var(--nav-height, 200px));
+	}
+
+	@include mobile {
+		height: Max(50vh, 400px); // Adjust height as needed
+	}
 }
+
+
+// 

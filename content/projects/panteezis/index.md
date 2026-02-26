@@ -2,13 +2,14 @@
 date = '2025-07-13T10:48:35+02:00'
 title = 'Panteézis'
 description = 'A soundtrack exploring nature and modernity.'
-role = "Composer | Producer"
+role = "Composer"
 priority = 2
 draft = false
 featured = true
 city = "Budapest"
 hero = "Panteezis-720p.mp4"
 gallery = true
+year = 2023
 +++
 
 # Panteézis

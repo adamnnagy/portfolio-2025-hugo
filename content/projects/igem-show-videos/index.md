@@ -1,9 +1,10 @@
 +++
 date = '2025-07-13T11:30:45+02:00'
-draft = true
+draft = false
 title = 'iGEM Show Videos'
-description = "Show videos for iGEM"
-role = "Editor | Videographer | Scriptwriter"
+description = "Start to finish cinematic event videos"
+role = "Video Creator"
+year = 2025
 city = "Paris/Remote"
 gallery = true
 +++

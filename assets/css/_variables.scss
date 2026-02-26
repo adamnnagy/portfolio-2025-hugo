@@ -5,6 +5,7 @@ $text-color: #fff;
 	
 $title-font: "Inter", sans-serif;
 $regular-font: "Inter", Helvetica, Arial, sans-serif;
+$regular-font-size: 1.5rem;
 // $regular-font: "Times New Roman", serif;
 
 // for scroll animations
@@ -18,3 +19,8 @@ $film-frame-contrast: 0.8;
 
 $gallery-background-color: #192126;
 
+// heights
+
+$uniform-padding: 3rem 0rem;
+$hero-banner-margin-bottom: 3rem; // use same value as $uniform-padding
+$site-nav-height: 1.5rem;
