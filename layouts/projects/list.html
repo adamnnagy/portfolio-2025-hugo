@@ -17,9 +17,9 @@
             {{ range sort .Pages .Params.year "desc" }}
             {{ if not .Params.draft }}
 
-            <li class="project-card">
+            <a href="{{ .RelPermalink }}">
+                    <li class="project-card">
                 <article class="scroll-fade-in">
-                    <a href="{{ .RelPermalink }}">
                         <div>
                             <h2 class="project-title">
                                 {{ .Title }} | {{ .Params.role }}
@@ -27,12 +27,12 @@
                             <p class="description">{{.Params.description}}</p>
                             <p class="city">{{ .Params.year }} - {{.Params.city}}</p>
                         </div>
-                        {{ with .Resources.GetMatch "cover.*" }}
-                        <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="thumbnail" />
-                        {{ end }}
-                    </a>
-                </article>
-            </li>
+                    </article>
+                    {{ with .Resources.GetMatch "cover.*" }}
+                    <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="thumbnail" />
+                    {{ end }}
+                </li>
+                </a>
 
             {{ end }}
             {{ end }}

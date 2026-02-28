@@ -60,15 +60,22 @@
 				}
 			}
 
-			img {
+            .video-container {
+                position: relative;
+                width: 100%;
+                aspect-ratio: 27 / 40;
+                overflow: hidden;
+				z-index: -1;
+
+            }
+
+			.thumbnail {
 				position: absolute;
-				object-fit: cover;
-				width: 100%; /* Make the image fill the container's width */
-				height: auto; /* Let the height adjust automatically to maintain aspect ratio */
-				aspect-ratio: 27 / 40; /* Modern CSS property for aspect ratio */
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
 				top: 0;
 				left: 0;
-				z-index: -1;
 			}
 			.image-hover {
 				transition: filter 0.3s ease;
@@ -76,9 +83,9 @@
 				display: inline-block;
 				overflow: hidden;
 				filter: grayscale(50%) brightness(0.6);
-			}
-			.image-hover:hover {
-				filter: grayscale(0%) brightness(1.2) contrast(1);
+                &:hover {
+                    filter: grayscale(0%) brightness(1.2) contrast(1);
+                }
 			}
 		}
 	}

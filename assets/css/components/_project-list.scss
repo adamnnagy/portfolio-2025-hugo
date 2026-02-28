@@ -22,7 +22,9 @@
 		display: grid;
 		background-color: rgba(0, 0, 0, 0.191);
 		grid-template-columns: 1fr;
-		padding: 20px;
+
+        // background-color: aqua;
+		
 		gap: 1rem;
 		margin: 2rem 0;
 		list-style: none;
@@ -33,16 +35,28 @@
 			box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 		// Using cubic-bezier for a more nuanced acceleration/deceleration.
 
-		img {
-			width: 100%;
-			height: auto;
-			aspect-ratio: 16 / 9; /* Modern CSS property for aspect ratio */
-			object-fit: cover;
-			grid-area: 1 / 1 / 2 / 3;
-			transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-		}
+        article {
+            padding: 0 20px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9; /* Modern CSS property for aspect ratio */
+            object-fit: cover;
+            grid-area: 1 / 1 / 2 / 3;
+            transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            position: relative;
+            
+            align-self: end;
+        }
+
         .project-title {
+            @include reset-spacing;
+            
             font-weight: 200;
+            
+
         }
 		.description {
 			grid-row: 2 / 3;
