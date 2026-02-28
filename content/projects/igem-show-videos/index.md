@@ -2,7 +2,7 @@
 date = '2025-07-13T11:30:45+02:00'
 draft = false
 featured = true
-priority = 1
+priority = 2
 title = 'iGEM'
 description = "Start to finish cinematic event videos"
 role = "Video Producer"

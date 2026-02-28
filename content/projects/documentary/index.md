@@ -1,12 +1,12 @@
 +++
 date = '2025-07-13T12:16:35+02:00'
 draft = false
+featured = true
 title = 'Freelancing'
 description = "Documentary shorts"
 role = "Editor"
 city = "Budapest/Abu Dhabi/Remote"
 priority = 1
-featured = true
 hero = "Shane-720p.mp4"
 year = 2019
 +++

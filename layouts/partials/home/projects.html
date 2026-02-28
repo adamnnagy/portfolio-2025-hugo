@@ -1,7 +1,7 @@
 <h1>Featured</h1>
 <div class="home-projects">
     <ul class="projects">
-        {{ range first 4 (sort (where .Site.RegularPages "Type" "projects") "Params.priority" "desc") }}
+        {{ range first 4 (sort (where .Site.RegularPages "Type" "projects") "Params.year" "desc") }}
 
         {{ if .Params.featured }}
 
@@ -10,8 +10,10 @@
                 <a href="{{ .RelPermalink }}">
                     <div class="project-card">
                         <div class="content">
-                            <h3 class="role">{{ .Params.role }}</h3>
-                            <h1 class="title">{{ .Title }}</h1>
+                            <div class="main-text">
+                                <h1 class="title">{{ .Title }}</h1>
+                                <h3 class="role">{{ .Params.role }}</h3>
+                            </div>
                             <p class="description">{{ .Params.description }} <br>
                                 <i>{{ .Params.city }}</i>
                             </p>
@@ -22,10 +24,8 @@
 
                         <div class="video-container image-hover">
                             {{ if $video }}
-                            <video
-                                class="thumbnail "
-                                {{ with $poster }}poster="{{ .RelPermalink }}"{{ end }}
-                                autoplay loop muted playsinline>
+                            <video class="thumbnail " {{ with $poster }}poster="{{ .RelPermalink }}" {{ end }} autoplay
+                                loop muted playsinline>
                                 <source src="{{ $video.RelPermalink }}" type="video/mp4">
                             </video>
                             {{ else if $poster }}

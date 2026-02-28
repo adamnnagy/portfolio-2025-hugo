@@ -1,12 +1,18 @@
 <section class="hero-banner">
-    {{ if strings.HasSuffix .Site.Params.heroVideo ".mp4" }}
-    <video autoplay muted loop playsinline class="video" poster="images/hero.png">
-        <source src="{{ .Site.Params.heroVideo | relURL }}" type="video/mp4">
+
+    {{ $video := "videos/hero.mp4" }}
+    {{ $poster := "images/hero.png" }}
+
+    {{ if $video }}
+
+    <video autoplay muted loop playsinline class="video" poster="{{ $poster }}">
+        <source src="{{ $video }}" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-    
+
     {{ else }}
-    <img src="{{ .Site.Params.heroVideo | relURL}}" alt="hero image">
+
+    <img src="{{ $poster }}" alt="hero image">
     {{ end }}
     <div class="background"></div>
     <div class="content">

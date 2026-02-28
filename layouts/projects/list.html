@@ -18,8 +18,8 @@
             {{ if not .Params.draft }}
 
             <a href="{{ .RelPermalink }}">
-                    <li class="project-card">
-                <article class="scroll-fade-in">
+                <li class="project-card">
+                    <article class="scroll-fade-in">
                         <div>
                             <h2 class="project-title">
                                 {{ .Title }} | {{ .Params.role }}
@@ -32,7 +32,7 @@
                     <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="thumbnail" />
                     {{ end }}
                 </li>
-                </a>
+            </a>
 
             {{ end }}
             {{ end }}
