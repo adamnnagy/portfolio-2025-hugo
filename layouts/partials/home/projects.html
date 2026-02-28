@@ -13,11 +13,27 @@
                             <h3 class="role">{{ .Params.role }}</h3>
                             <h1 class="title">{{ .Title }}</h1>
                             <p class="description">{{ .Params.description }} <br>
-                            <i>{{ .Params.city }}</i></p>
+                                <i>{{ .Params.city }}</i>
+                            </p>
                         </div>
-                        {{ with .Resources.GetMatch "cover.*" }}
-                        <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="thumbnail image-hover" />
-                        {{ end }}
+
+                        {{ $video := .Resources.GetMatch "cover.mp4" }}
+                        {{ $poster := .Resources.GetMatch "cover.png" }}
+
+                        <div class="video-container image-hover">
+                            {{ if $video }}
+                            <video
+                                class="thumbnail "
+                                {{ with $poster }}poster="{{ .RelPermalink }}"{{ end }}
+                                autoplay loop muted playsinline>
+                                <source src="{{ $video.RelPermalink }}" type="video/mp4">
+                            </video>
+                            {{ else if $poster }}
+                            {{ with .Resources.GetMatch "cover.png" }}
+                            <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="thumbnail image-hover" />
+                            {{ end }}
+                            {{ end }}
+                        </div>
                     </div>
                 </a>
             </article>
