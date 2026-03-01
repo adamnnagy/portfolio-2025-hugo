@@ -2,7 +2,8 @@
 date = '2025-07-13T10:48:12+02:00'
 draft = false
 title = 'About + Contact'
-hero = "images/about/avatar-oman.jpeg"
+description = "about"
+hero = "videos/projects-hero.mp4"
 +++
 
 # Who am I?
