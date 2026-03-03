@@ -15,18 +15,19 @@ gallery = true
 
 # Labocine
 
-I was working here as a Head of Video.
+LABOCINE stands for LABOratory + CINEma. Even though it now has many identities (a platform, a magazine, a portal, an archive, a network) I mainly used it as a streaming service with monthly issues. The monthly issues all have themes that relate to scientific concepts, and they curate films that relate to it. They have 100,000 members and 136,000 Intagram followers.
 
-## My role
+I was at Labocine as a Head of Video from 2019 to 2021, working on promoting the monthly issues and handling the main communication channels. 
+
+# My role
 
 * Edit the weekly newsletter and set up the campaign on Mailchimp. 
 
 * Set up Facebook ads for the monthly issues.
 
-* Manage the company instagram account.
+* Edit the monthly trailer for the current issue.
 
-* Create content for posting on instagram.
-
-* 
+* Manage the company instagram account and create content for posting on Instagram https://www.instagram.com/labocine/.
 
 {{% image src="images/labocine/labocine-01.jpeg" alt="issue-61" class="content-image" %}}
+

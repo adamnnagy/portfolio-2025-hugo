@@ -13,19 +13,23 @@ year = 2023
 +++
 
 # Panteézis
-An album I composed for the exhibition of Gabriella Kovács, a Budapest-based painter. 
+
+An album I composed for the exhibition Ithaka that featured Gabriella Kovács' paintings, who is a Budapest-based painter. 
+
+<!-- picture from the event - ask from Szandi? Gabi? alternatively a picture taken at Vadon -->
+
+{{% image src="images/intro/nepal-01.jpeg" alt="Profile Image" class="content-image scroll-fade-in" %}}
+<!-- picture from the event - ask from Szandi? Gabi? -->
+
+I wrote ambient music that captures the mood of her exhibits.
 
 {{% image src="images/intro/nepal-01.jpeg" alt="Profile Image" class="content-image scroll-fade-in" %}}
 
-She paints in the style of Henri Rousseau -- Jungle might jump immediately to mind -- but she developed a style unique to her. The depth that I observed by looking at her paintings inspired me to write an original soundtrack to her series of exhibitions that took place in the spring and summer of 2023.
+Working closely with the artist I composed what became Panteézis, or Pantheesis, which is the dominance of nature over man-made artifacts.
 
 {{% image src="images/intro/nepal-01.jpeg" alt="Profile Image" class="content-image scroll-fade-in" %}}
 
-During this collaboration I presented her with various snippets of musical ideas that I came up with. Panteézis, or Pantheesis, is a dominance of nature over any man made artifact. An interesting fact that stuck with me through the years is this: nature would take approximately a century and a half to take back all the land that humanity has built on. This powerful
-
-{{% image src="images/intro/nepal-01.jpeg" alt="Profile Image" class="content-image scroll-fade-in" %}}
-
-I was inspired by the music
+I was inspired by the music of Ólafur Arnalds, Hermanos Gutiérrez and the Thievery Corporation.
 
 # Ithaka
 
@@ -34,8 +38,6 @@ I was inspired by the music
 {{% instagram CuBnWKXoPvs %}}
 
 {{% instagram CuHQh7pIlrY %}}
-
-https://www.instagram.com/p//?img_index=10
 
 https://artplatz.hu/kovacs-gabriella-ellart/
 

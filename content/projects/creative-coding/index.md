@@ -10,8 +10,6 @@ city = "Abu Dhabi"
 hero = "creative-coding-720p.mp4"
 +++
 
----
-
 I dabbled a lot in creative coding projects during my time at NYU Abu Dhabi. The Interactive Media program of the Arts and Humanities was only just starting outin 2016 when I took my first class, Communications Lab.
 
 During my time at the program, I made Arduino applications to interactive websites to animations and even a web series. It was a lot of fun, but I can only include the highlights here.
@@ -26,9 +24,9 @@ I fell in love with the idea of expressing emotions using technology, and this i
 
 My thesis project at NYU Abu Dhabi, built in Unreal Engine 4.
 
-{{% image src="images/creative-coding/freeshipping-01.jpg" alt="VR experience screenshot" class="content-image" %}}
-{{% image src="images/creative-coding/freeshipping-02.jpg" alt="VR experience screenshot" class="content-image" %}}
-{{% image src="images/creative-coding/freeshipping-03.jpg" alt="VR experience screenshot" class="content-image" %}}
+{{% image src="images/creative-coding/freeshipping-01.jpg" alt="A screenshot from the VR experience" class="content-image" %}}
+{{% image src="images/creative-coding/freeshipping-02.jpg" alt="A screenshot from the VR experience" class="content-image" %}}
+{{% image src="images/creative-coding/freeshipping-03.jpg" alt="A screenshot from the VR experience" class="content-image" %}}
 
 ## Interactive exploration of racial biasing
 

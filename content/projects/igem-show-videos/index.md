@@ -12,13 +12,9 @@ city = "Paris/Remote"
 gallery = true
 +++
 
----
-
 # iGEM
 
 iGEM is an international not-for-profit organization dedicated to advancing the field of synthetic biology to find solutions for a healthier, more resilient and sustainable world.
-
-
 
 They organize:
 * competition
@@ -31,39 +27,28 @@ So just to demonstrate my excellent capability for communication, let me explain
 
 It's playing LEGO with genes, and you're building organisms. The LEGO blocks - the genes - will eventually decide how the organisms will look like and how they are going to behave. 
 
-Think of DNA as blueprints, where genes are the building blocks that encode behavior. Genes can be also broken down into even smaller blocks that do certain specific stuff. It turns out, once you have "blocks that do certain specific stuff", and you start using them in that way, you are doing engineering, and you're not doing "just biology".
+Now onto the videos.
 
-It's kind of like playing with Legos. 
+These two videos are great introductions to the field and the type of videos I create for iGEM. 
 
-## Now come on... isn't this something like GMO? and isn't GMO supposed to be bad?
+# The Show videos
+Script, Edit, Sound Design | Paris
 
-Well, let's not get into the nitty gritty of it. It is kind of like GMO. But, GMO is not always bad. And yes, this is coming from a guy who rejects the idea of aura readings and astronomy and all the esoteric stuff. I even wrote a song about that.
+Each year, a huge synthetic biology expo taking place in Paris, at the Porte de Versailles Expo Centre. It's called the Grand Jamboree. Each year, there's a big show - think videos, theatrics, even cold sparks amid the scientific conferences and presentations. There are over 4500 people who attend.
 
-# GJ Show videos | Script, Edit, Sound Design | Paris
+The videos are screened on an array of wide LED screen (6144px * 1024px), and then later they are adapted to smaller formats.
 
-### The World Expo of Synthetic Biology
+## The Super wide Village videos, opening videos
 
-The iGEM Grand Jamboree is an event hosted in Paris each year. It is the World Expo of Synthetic Biology, attended by over 7000 people each year. 
+These videos is document synthetic biology projects that achieved success in environmental, technological or healthcare. 
 
-### A mission to do good
-
-I have been responsible for many creative aspects of how synthetic biology is presented on video. Synthetic biology in itself is a complex and promising field of biology, that combines engineering and biotechnology to come up with solutions to problems. At the Grand Jamboree people focus on using this technology to offer solutions to our most pressing issues, climate change, pollution, food production and so on. 
-
-### Videos as centrepieces of Storytelling
-
-My work here supports the communication about this mission. I provide the emotional undertone that these issues deserve. Storytelling engages people with these issues better than any explanation could. This is why there’s such a huge emphasis on bringing serious projection equipment to support this content. Videos are the centrepieces of the show and continue to engage the crowds who attend the Grand Jamboree. 
-
-### The Super wide Village videos, opening videos
-
-The LED wall is an over the top Ultra-Panavision 70. The aspect ratio is x : x and I was accounting for it in the process of coming up with videos. I used split screens. 
-
-### Scripts and Mood
-
-These videos were born out of the Covid era. In 2021 iGEM hosted its annual Grand Jamboree online and focus shifted from in-person presentations to video. It was a logical step for iGEM to produce its own videos about its mission. The videos remained in the in-person event of 2022, but they needed a revision. I developed the look and the atmosphere for this new, more cinematic iGEM. The scripts and the visuals reflect a more sincere approach to commitments towards sustainability and social good. The challenge here was to balance fatigue and ennui over the topics of climate change and environmental cleanup. How to talk about these topics in 2022? It has been over 50 years since the topics has entered public consciousness, and over 30 years since concerns over climate change gained widespread awareness. 
+They are the real hard hitters at the Grand Jamboree. They help unite the field - the technological aspects with the overarching goals of the program. 
 
 ## 2022:
 
-{{% igemvideo id="iy1SiRR5uryrUsYZ7kkkGm" %}}
+<!-- what are these videos?  -->
+
+{{% igemvideo id="iy1SiRR5uryrUsYZ7kkkGm" class="content-image" %}}
 
 {{% igemvideo id="8qHgta6RqZquPraqEwfzCu" %}}
 
@@ -80,20 +65,39 @@ These videos were born out of the Covid era. In 2021 iGEM hosted its annual Gran
 
 
 
-**There is a clear evolution of production value that now includes the graphics and script.**
+# Live Show video inspired by the Olympics
 
-### Live Show video inspired by the Olympics
-
-2024 marked a big year in the history of Paris. The city hosted the Olympic Games and the whole world was watching. iGEM decided to create its own version of the passing of the Olympic flame.
+2024 marked a big year in Paris. The city hosted the Olympic Games and the whole world was watching. iGEM decided to create its own version of the passing of the Olympic flame.
 
 The Biobrick Trophy used for 18 years was filled up with the names of the previous winners. A new Biobrick Trophy was designed and it replaced the old Biobrick Trophy at the final day of the Grand Jamboree.
 
 
 {{% youtube id="vhIWPh47qiE"%}}
 
+# 2025 - The live show continued
 
-### iGEM, Synthetic Biology intro | Script, Edit | Paris
+## Values of iGEM - Biobricks
+
+Further bricks were created and filmed for this live show. 
+
+# Arrival of Gemy
+
+<!-- picture of Gemy on the Seine -->
+
+## The shoot
+
+Gemy is the mascot of iGEM. The arrival of Gemy to Paris was filmed on the river Seine on a sunny September morning in 2025. Two crews followed the boat on bikes and a third crew boarded the boat to capture close-ups. 
+
+I was part of both crews. How? I was on a bike on the first leg then on the return trip I hopped on the boat on a docking station near the Eiffel Tower (Port de Javel Haut to be exact). My crew had a couple stops along the river.
+
+You can watch the resulting video here:
+
+<!-- link to video -->
+
+
+# iGEM, Synthetic Biology intro | Script, Edit | Paris
 
 This one is special. I took the video from pitch to projection, and now this video lives also as a regular 16x9 video. 
 
 {{% igemvideo id="83jnAnhpuLQHRLgHsTLJWB"%}}
+
