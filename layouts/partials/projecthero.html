@@ -1,12 +1,25 @@
 <section class="hero-banner fade-in-page">
     
+    {{ $src := path.Join .projectDir .hero }}
+
+    {{ if strings.HasSuffix $src ".mp4" }}
+    
+    {{/*  check if src is video or image  */}}
     <video autoplay muted loop playsinline class="video">
         {{/* construct path manually to avoid inconsistent behavior with relURL/absURL when relativeURLs is true */}}
-        {{ $src := path.Join .projectDir .hero }}
+
+
         <source src="{{ .Site.BaseURL | absLangURL }}{{ $src }}" type="video/mp4">
         
         Your browser does not support the video tag.
     </video>
+
+    {{ else }}
+
+    <img src="{{ .Site.BaseURL | absLangURL }}{{ $src }}" alt="asdf" class="video">
+
+    {{ end }}
+
     <div class="background"></div>
     <div class="content">
         <h1 class="title">{{.title}}</span></h1>
@@ -15,3 +28,4 @@
         </div>
     </div>
 </section>
+

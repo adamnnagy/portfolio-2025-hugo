@@ -1,6 +1,6 @@
 +++
 date = '2025-07-13T12:15:46+02:00'
-draft = false
+draft = true
 title = 'Labocine'
 priority = 1
 featured = true
@@ -15,4 +15,18 @@ gallery = true
 
 # Labocine
 
-I was working here
+I was working here as a Head of Video.
+
+## My role
+
+* Edit the weekly newsletter and set up the campaign on Mailchimp. 
+
+* Set up Facebook ads for the monthly issues.
+
+* Manage the company instagram account.
+
+* Create content for posting on instagram.
+
+* 
+
+{{% image src="images/labocine/labocine-01.jpeg" alt="issue-61" class="content-image" %}}

@@ -15,6 +15,7 @@
 
         <ul class="project-list">
             {{ range sort .Pages .Params.year "desc" }}
+            
             {{ if not .Params.draft }}
 
             <a href="{{ .RelPermalink }}">
@@ -25,7 +26,11 @@
                                 {{ .Title }} | {{ .Params.role }}
                             </h2>
                             <p class="description">{{.Params.description}}</p>
+                            {{ if .Params.year }}
                             <p class="city">{{ .Params.year }} - {{.Params.city}}</p>
+                            {{ else }}
+                            <p class="city">{{.Params.city}}</p>
+                            {{ end }}
                         </div>
                     </article>
                     {{ with .Resources.GetMatch "cover.*" }}

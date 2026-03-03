@@ -1,6 +1,6 @@
 +++
 date = '2025-07-13T12:16:35+02:00'
-draft = false
+draft = true
 featured = true
 title = 'Freelancing'
 description = "Documentary shorts"

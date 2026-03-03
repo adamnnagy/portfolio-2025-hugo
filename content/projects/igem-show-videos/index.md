@@ -1,6 +1,6 @@
 +++
 date = '2025-07-13T11:30:45+02:00'
-draft = false
+draft = true
 featured = true
 priority = 2
 title = 'iGEM'
@@ -14,7 +14,32 @@ gallery = true
 
 ---
 
-## GJ Show videos | Script, Edit, Sound Design | Paris
+# iGEM
+
+iGEM is an international not-for-profit organization dedicated to advancing the field of synthetic biology to find solutions for a healthier, more resilient and sustainable world.
+
+
+
+They organize:
+* competition
+* education
+* open, collaborative community
+
+## Synthetic Biology?
+
+So just to demonstrate my excellent capability for communication, let me explain to you what Synthetic Biology is. 
+
+It's playing LEGO with genes, and you're building organisms. The LEGO blocks - the genes - will eventually decide how the organisms will look like and how they are going to behave. 
+
+Think of DNA as blueprints, where genes are the building blocks that encode behavior. Genes can be also broken down into even smaller blocks that do certain specific stuff. It turns out, once you have "blocks that do certain specific stuff", and you start using them in that way, you are doing engineering, and you're not doing "just biology".
+
+It's kind of like playing with Legos. 
+
+## Now come on... isn't this something like GMO? and isn't GMO supposed to be bad?
+
+Well, let's not get into the nitty gritty of it. It is kind of like GMO. But, GMO is not always bad. And yes, this is coming from a guy who rejects the idea of aura readings and astronomy and all the esoteric stuff. I even wrote a song about that.
+
+# GJ Show videos | Script, Edit, Sound Design | Paris
 
 ### The World Expo of Synthetic Biology
 
@@ -45,9 +70,6 @@ These videos were born out of the Covid era. In 2021 iGEM hosted its annual Gran
 {{% igemvideo id="iy1SiRR5uryrUsYZ7kkkGm" %}}
 
 {{% igemvideo id="q4Dw22EbtLv9HZWYc3D2Yi" %}}
-
-
-
 
 
 ## 2024:
