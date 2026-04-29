@@ -16,7 +16,7 @@
         <ul class="project-list">
             {{ range sort .Pages .Params.year "desc" }}
             
-            {{ if not .Params.draft }}
+            {{/*  {{ if not .Params.draft }}  */}}
 
             <a href="{{ .RelPermalink }}">
                 <li class="project-card">
@@ -39,7 +39,7 @@
                 </li>
             </a>
 
-            {{ end }}
+            {{/*  {{ end }}  */}}
             {{ end }}
         </ul>
     </section>

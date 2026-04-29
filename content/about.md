@@ -8,17 +8,15 @@ hero = "videos/about-hero.mp4"
 
 # Hi, I'm Ádám. 
 
-(Don't worry about the accents on the A, you can simply pronounce it as you would "Adam".)
-
-I turn ideas into videos and music, currently based in Budapest.
+I turn ideas into videos and music (and sometimes code). Currently I'm based in Budapest.
 
 # BIO
 
-I started out writing film reviews and scripts for my own sake, and during my time at NYU Abu Dhabi I quickly turned to video editing. Nowadays I dabble in everything from pre-production ideation to color-grading in post-production. You know, jack of all trades, master of... well, maybe some!
+I worked extensively as an editor and all-around creative on many projects with iGEM Europe. and freelancing and I'm open to collaborations anywhere in Europe. I'm mainly based in Budapest, but I have always worked in international contexts. 
+
+It all started out with writing film reviews and scripts for my own sake in 2013. Then, during my time at NYU Abu Dhabi I quickly turned to video editing. Nowadays I dabble in everything from pre-production ideation to color-grading in post-production. You know, jack of all trades, master of... well, maybe some!
 
 I like stories that are told in new and innovative ways, that don't discount fun and humour. 
-
-As of late I worked closely with iGEM Europe, a non-profit based in Paris to create videos for their annual Grand Jamboree. I work on-site as part of the video team, taking ideas from pre-production all the way to the finishing touches. 
 
 {{% image src="images/intro/editing-02.jpg" alt="Profile Image" class="content-image scroll-fade-in" %}}
 
@@ -26,7 +24,13 @@ _Editing intensly at the 2022 Grand Jamboree in Paris - this is as cinematic as 
 
 {{% image src="images/intro/editing-01.jpg" alt="Profile Image" class="content-image scroll-fade-in" %}}
 
-I spent most of my professional career in an international context. 
+* I studied in NYU Abu Dhabi
+* was Assistant Editor in Haifa, Israel for Happy Holidays (1)
+* Head of Video for Labocine, based in New York (I was remote)
+* Video Producer for iGEM  (Paris)
+* I 
+
+(1) the shooting was disrupted by Covid unfortunately.
 
 Since graduating from New York University Abu Dhabi, I worked with international companies with diverse backgrounds. My work has brought me to places like Haifa and Paris and I have seen Sweden, Austria, Brussels and New York - and in fact biology labs from all over the world - through the videos I edited.
 
@@ -55,6 +59,8 @@ In the past, I also created interactive experiences: a board game for students i
 {{% image src="images/intro/videography-05.jpg" alt="Profile Image" class="content-image scroll-fade-in" %}}
 
 I use the Adobe Suite to accomplish most of my post-production goals. I use Premiere Pro, Photoshop, After Effects and Davinci Resolve for video and graphics and Ableton 12 for music production.
+
+I am also a certified Pro Tools User. 
 
 {{% image src="images/intro/music-01.jpeg" alt="Profile Image" class="content-image scroll-fade-in" %}}
 {{% image src="images/intro/music-02.jpeg" alt="Profile Image" class="content-image scroll-fade-in" %}}
