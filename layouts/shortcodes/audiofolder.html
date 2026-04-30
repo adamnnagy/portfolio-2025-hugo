@@ -7,7 +7,7 @@
     <ul class="song-list">
         {{ range $files }}
         {{ if not .IsDir }}
-        <li>
+        <li data-src="{{ $urlPrefix | relURL }}/{{ .Name | urlize }}">
             {{ $fileName := .Name }}
 
             {{ $withoutNumberAndHyphen := replaceRE "^\\d+-" "" $fileName }}
@@ -17,13 +17,14 @@
 
             <p>{{ $titleCased }}</p>
 
-            <audio>
+            {{/* <audio>
                 <source src="{{ $urlPrefix | relURL }}/{{ .Name | urlize }}" type="audio/mpeg">
-            </audio>
+            </audio> */}}
         </li>
         {{ end }}
         {{ end }}
     </ul>
+    <audio class="main-audio"></audio>
     <div class="player-controls">
         <div class="progress-bar">
             <div class="progress-track">
@@ -48,175 +49,96 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        const audioElements = document.querySelectorAll('.spotify-player .song-list audio');
-        const songItems = document.querySelectorAll('.spotify-player .song-list li');
-        const controlAudio = document.querySelector('.spotify-player .player-controls audio');
-        const playPauseBtn = document.querySelector('.play-pause');
-        const prevBtn = document.querySelector('.prev-track');
-        const nextBtn = document.querySelector('.next-track');
-        const progressTrack = document.querySelector('.progress-track');
-        const progressFill = document.querySelector('.progress-fill');
+        const audio = document.querySelector('.main-audio');
+        const songItems = document.querySelectorAll('.song-list li');
         const currentTimeDisplay = document.querySelector('.current-time');
         const durationDisplay = document.querySelector('.duration');
-        let currentAudio = null;
 
-        // Format time in mm:ss
-        function formatTime(seconds) {
-            const minutes = Math.floor(seconds / 60);
-            seconds = Math.floor(seconds % 60);
-            return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-        }
+        let currentIndex = -1;
 
-        // Pause all audio elements except the one playing
-        function pauseOtherAudios(currentAudio) {
-            audioElements.forEach(audio => {
-                if (audio !== currentAudio && !audio.paused) {
-                    audio.pause();
-                }
-            });
-            songItems.forEach(item => item.classList.remove('active'));
-        }
-
-        // Update play/pause button state
-        function updatePlayPauseButton() {
-            if (currentAudio && !currentAudio.paused) {
-                playPauseBtn.classList.add('playing');
-            } else {
-                playPauseBtn.classList.remove('playing');
-            }
-        }
-
-        // Update progress bar and time display
-        function updateProgress() {
-            if (!currentAudio || !currentAudio.duration) return;
-            const progress = (currentAudio.currentTime / currentAudio.duration) * 100;
-            progressFill.style.width = `${progress}%`;
-            currentTimeDisplay.textContent = formatTime(currentAudio.currentTime);
-            durationDisplay.textContent = formatTime(currentAudio.duration);
-        }
-
-        // Play a specific track
         function playTrack(index) {
-            const audio = audioElements[index];
-            const songItem = songItems[index];
-            pauseOtherAudios(audio);
-            currentAudio = audio;
-            controlAudio.src = audio.src; // Sync control audio with selected track
-            controlAudio.play().catch(e => console.error('Error playing audio:', e));
-            audio.play().catch(e => console.error('Error playing audio:', e));
-            songItem.classList.add('active');
-            updatePlayPauseButton();
-            updateProgress();
+            if (index === currentIndex) return;
+
+            currentIndex = index;
+
+            const item = songItems[index];
+            const src = item.dataset.src;
+
+            // Reset + load new track
+            audio.pause();
+            audio.src = src;
+            audio.load(); // ensures metadata resets cleanly
+            audio.currentTime = 0;
+
+            audio.play().catch(console.error);
+
+            // UI
+            songItems.forEach(i => i.classList.remove('active'));
+            item.classList.add('active');
         }
 
-        // Song list click handler
         songItems.forEach((item, index) => {
             item.addEventListener('click', () => {
-                if (currentAudio === audioElements[index] && !currentAudio.paused) {
-                    currentAudio.pause();
-                    controlAudio.pause();
+                if (index === currentIndex && !audio.paused) {
+                    audio.pause();
                 } else {
                     playTrack(index);
                 }
             });
         });
 
-        // Audio event handlers
-        audioElements.forEach((audio, index) => {
-            audio.addEventListener('play', () => {
-                pauseOtherAudios(audio);
-                currentAudio = audio;
-                controlAudio.src = audio.src;
-                controlAudio.play().catch(e => console.error('Error playing control audio:', e));
-                songItems[index].classList.add('active');
-                updatePlayPauseButton();
-                updateProgress();
-            });
-
-            audio.addEventListener('seeked', () => {
-                pauseOtherAudios(audio);
-                currentAudio = audio;
-                controlAudio.src = audio.src;
-                controlAudio.currentTime = audio.currentTime;
-                if (audio.paused) {
-                    audio.play().catch(e => console.error('Error playing audio after seek:', e));
-                    controlAudio.play().catch(e => console.error('Error playing control audio:', e));
-                }
-                songItems[index].classList.add('active');
-                updatePlayPauseButton();
-                updateProgress();
-            });
-
-            audio.addEventListener('timeupdate', () => {
-                controlAudio.currentTime = audio.currentTime;
-                updateProgress();
-            });
-
-            audio.addEventListener('pause', () => {
-                controlAudio.pause();
-                updatePlayPauseButton();
-            });
-
-            audio.addEventListener('ended', () => {
-                currentAudio = null;
-                controlAudio.src = '';
-                updatePlayPauseButton();
-                progressFill.style.width = '0%';
-                currentTimeDisplay.textContent = '0:00';
-                songItems[index].classList.remove('active');
-            });
-
-            audio.addEventListener('loadedmetadata', () => {
-                if (audio === currentAudio) {
-                    durationDisplay.textContent = formatTime(audio.duration);
-                }
-            });
-        });
-
-        // Control buttons
-        playPauseBtn.addEventListener('click', () => {
-            if (currentAudio) {
-                if (!currentAudio.paused) {
-                    currentAudio.pause();
-                    controlAudio.pause();
-                } else {
-                    currentAudio.play().catch(e => console.error('Error playing audio:', e));
-                    controlAudio.play().catch(e => console.error('Error playing control audio:', e));
-                }
-                updatePlayPauseButton();
-            } else if (audioElements.length > 0) {
-                playTrack(0); // Play first track if none selected
+        // Controls
+        document.querySelector('.play-pause').addEventListener('click', () => {
+            if (currentIndex === -1) {
+                playTrack(0);
+            } else if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
             }
         });
 
-        prevBtn.addEventListener('click', () => {
-            if (!currentAudio) return;
-            const currentIndex = Array.from(audioElements).indexOf(currentAudio);
-            const prevIndex = currentIndex > 0 ? currentIndex - 1 : audioElements.length - 1;
-            playTrack(prevIndex);
+        document.querySelector('.prev-track').addEventListener('click', () => {
+            if (currentIndex === -1) return;
+            const prev = currentIndex > 0 ? currentIndex - 1 : songItems.length - 1;
+            playTrack(prev);
         });
 
-        nextBtn.addEventListener('click', () => {
-            if (!currentAudio) return;
-            const currentIndex = Array.from(audioElements).indexOf(currentAudio);
-            const nextIndex = currentIndex < audioElements.length - 1 ? currentIndex + 1 : 0;
-            playTrack(nextIndex);
+        document.querySelector('.next-track').addEventListener('click', () => {
+            if (currentIndex === -1) return;
+            const next = currentIndex < songItems.length - 1 ? currentIndex + 1 : 0;
+            playTrack(next);
         });
 
-        // Progress bar click handler
+
+
+        // Progress
+        const progressFill = document.querySelector('.progress-fill');
+        const progressTrack = document.querySelector('.progress-track');
+
+        audio.addEventListener('timeupdate', () => {
+            if (!audio.duration) return;
+
+            const progress = (audio.currentTime / audio.duration) * 100;
+            progressFill.style.width = `${progress}%`;
+
+            currentTimeDisplay.textContent = formatTime(audio.currentTime);
+        });
+
+        audio.addEventListener('loadedmetadata', () => {
+            durationDisplay.textContent = formatTime(audio.duration);
+        });
+
         progressTrack.addEventListener('click', (e) => {
-            if (!currentAudio) return;
             const rect = progressTrack.getBoundingClientRect();
-            const clickX = e.clientX - rect.left;
-            const width = rect.width;
-            const seekTime = (clickX / width) * currentAudio.duration;
-            currentAudio.currentTime = seekTime;
-            controlAudio.currentTime = seekTime;
-            if (currentAudio.paused) {
-                currentAudio.play().catch(e => console.error('Error playing audio after seek:', e));
-                controlAudio.play().catch(e => console.error('Error playing control audio:', e));
-            }
-            updateProgress();
+            const percent = (e.clientX - rect.left) / rect.width;
+            audio.currentTime = percent * audio.duration;
         });
+
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            seconds = Math.floor(seconds % 60);
+            return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+        }
     });
 </script>

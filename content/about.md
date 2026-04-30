@@ -16,7 +16,7 @@ I worked extensively as an editor and all-around creative on many projects with 
 
 It all started out with writing film reviews and scripts for my own sake in 2013. Then, during my time at NYU Abu Dhabi I quickly turned to video editing. Nowadays I dabble in everything from pre-production ideation to color-grading in post-production. You know, jack of all trades, master of... well, maybe some!
 
-I like stories that are told in new and innovative ways, that don't discount fun and humour. 
+I like to tell stories in new and innovative ways that don't discount fun and humour.
 
 {{% image src="images/intro/editing-02.jpg" alt="Profile Image" class="content-image scroll-fade-in" %}}
 
