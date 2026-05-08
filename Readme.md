@@ -17,3 +17,5 @@ To Do:
 [] Panteezis page
 [] remaster / remix panteezis
 [] add glitch animations to titles / headers if possible 
+[] style: full width for youtube videos and other blocks / make classes so they can be dynamic
+[] 

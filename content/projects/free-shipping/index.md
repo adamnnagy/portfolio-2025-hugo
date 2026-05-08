@@ -2,7 +2,7 @@
 date = '2025-07-16T13:17:24+02:00'
 draft = true
 title = 'Creative Coding'
-priority = 0
+priority = 1
 featured = false
 description = "Creative Coding projects"
 role = "Developer"

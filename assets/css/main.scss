@@ -172,3 +172,20 @@ figcaption {
 	font-style: italic;
 	margin-top: 0.4rem;
 }
+
+.image-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.image-grid.one-col {
+    grid-template-columns: 1fr;
+}
+
+.image-grid.two-col {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.image-grid.three-col {
+    grid-template-columns: repeat(3, 1fr);
+}
