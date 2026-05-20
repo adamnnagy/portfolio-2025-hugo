@@ -206,6 +206,8 @@ The projects combined archival footage, team-submitted media, stock material, an
 
 ## 2022
 
+**Role** Concept, Script, Editing, Storyboarding, Sound Design
+
 {{% igemvideo id="iy1SiRR5uryrUsYZ7kkkGm" class="content-image" %}}
 
 {{% igemvideo id="8qHgta6RqZquPraqEwfzCu" %}}
@@ -216,7 +218,7 @@ The projects combined archival footage, team-submitted media, stock material, an
 
 ### Responsibility
 
-This year I was the only person apart from the CEO responsible for the video content for the Grand Jamboree. In addition, I worked closely with another editor for creating the final delivery.
+This year I was the only person on the video team. I worked closely with the CEO on writing the script and with another editor for editing the final delivery.
 
 We set out to create 9 + 3 videos that talked about the main challenges that iGEM competitors were tackling using synthetic biology: Climate Crisis, Environment, Bioremediation, Food and Nutrition, Diagnostics, Therapeutics, Biomanufacturing, Foundational Advance and Software and AI.
 
@@ -243,5 +245,4 @@ I developed the **visual style** by incorporating influences from Ron Fricke fil
 
 ### Outcomes
 
-These videos were widely celebrated. The leadership loved it, as it was a new form of communication for the company. The audience was immersed in the topics that they were working for and the videos were met with awe during the final day award show. Board members and entrepreneurs in attendance were very happy with the production value that the team 
-
+These videos were widely celebrated. The leadership and the board loved it, as it was a new form of communication for the company. It was a whole new experience for the audience - it was not another science presentation but a cinematic video. I received a personal commendation from the CEO in the form of a trophy.
