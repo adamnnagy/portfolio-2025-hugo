@@ -22,24 +22,32 @@ Recording of a live session for my band in the countryside of Hungary.
 
 The project combined songwriting, live performance, cinematography, recording techniques and mixing and mastering.
 
-Planning the session started months in advance. The band would arrive days ahead and rehearse, and even write songs on the spot. The recording equipment was carried down to the set by them. The crew arrived the day before the recording to run tests with audio and lighting.
+## Pre-production
 
-Overnight and during the morning the band finished songs that were written during the current retreat.
+Planning for the session started months in advance. The band arrived several days early to rehearse and write new material on-site. The recording equipment was carried down to the location by the band members themselves. The crew arrived the day before the shoot to test the audio setup and lighting.
 
-The recording session took place during a single day. In the end, we ended up recording 5 songs.
+Overnight and during the morning the band finalized songs that were written during the retreat.
 
-The crew worked with a lightweight, minimal equipment so that it wouldn't be intrusive to the performances but could still capture the most amount of sound. Sony A7 IV on a gimbal and 2 Neewer variable lights with matte boxes.
+## The recording
 
-All of the instruments were tracked live with a combination of live monitoring and digital recording, some parts were re-recorded in post. The drums were captured with a 4 microphone setup (kick, snare, stereo overheads), the guitars, bass and vocals were monitored through a PA but were capture through a digital interface.
+The recording session itself took place during a single day during which we recorded 5 songs.
 
-The audio bleed that went into the drum microphones were either masked with other frequencies and removed with AI stem separation. This resulted in a cleaner and more accurate mixdown.
+The crew worked with a lightweight, minimal setup so to remain unobtrusive during the performances while still capturing high quality footage. The video setup consisted of a Sony A7 IV mounted on a gimbal alongside 2 Neewer variable lights with matte boxes.
 
-After the crew handed over the files, I handled all aspects of post-production. I rerecorded vocals, mixed and mastered the audio, and color corrected the video (solved the problem of light imbalance between the recording area / background).
+All instruments were tracked live with a combination of live monitoring and digital recording, while some parts were re-recorded in post. The drums were captured with a 4 microphone setup (kick, snare, stereo overheads). Guitars, bass and vocals were monitored through a PA system but were recorded through a digital interface.
 
-I handled promoting the results on social media and uploading to Spotify / YouTube / Instagram.
+## Handling audio bleed
+
+The audio bleed that went into the drum microphones were either masked with other frequencies and removed with AI-assisted stem separation, resulting in a cleaner and more accurate mix.
+
+## Post-production
+
+After the crew handed over the footage and recordings, I handled all aspects of post-production. I re-recorded vocals, mixed and mastered the audio, and color corrected the video including balancing the light between the performance area and background.
+
+I also handled promotion on social media and distribution across Spotify / YouTube / Instagram.
 
 # Results
 
-The reels that promoted the track on Instagram reached way above the follower count of the band. Nothing went viral, yet we had high view counts on all of these reels. 
+The reels that promoted the track on Instagram reached beyond the band's follower count. While none of the videos went viral, all of the reels had high view counts relative to the band's size.
 
-The YouTube videos performed fairly well, as it earned the band about 1000 unique viewers and 1500 total views. For a band this size, these metrics are quite high.
+The YouTube videos also performed fairly well, as they generated about 1000 unique viewers and 1500 total views. For a band this size, these are strong engagement metrics.
