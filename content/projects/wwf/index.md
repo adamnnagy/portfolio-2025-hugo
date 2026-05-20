@@ -2,56 +2,64 @@
 date = '2025-07-13T12:16:35+02:00'
 draft = true
 featured = true
-title = 'Freelancing'
+title = 'WWF shorts'
 description = "Documentary shorts"
 role = "Editor"
 city = "Budapest/Abu Dhabi/Remote"
 priority = 1
-hero = "Shane-720p.mp4"
+hero = "Marchegg,-Austria-720p.mp4"
 year = 2019
 +++
 
-# The Puppet Gene
-A short documentary by Waleed Al Madani | Abu Dhabi | Assistant Editor
-
-## Role 
-
-
-## Synopsis:
-
-Lili Pilári is directing her first shadow puppet theater performance where fish and sea mammals meet in the oceans’ deepest and best underwater circus (Sea show) to watch some wholesome talents in singing and gymnastics. With the help of her brother Áron and her parents Gábor Pilári & Zsuzsanna Vajda, she seeks to spread love and joy in the hearts of the kids in their magical family run puppet theater located in the small city of Pécs on the southern Hungarian border.
-
-While she takes us in to a journey of magic and art in making her show, we get a glimpse on behind the makings of such a beautiful craft.
-
-## Runtime
-
-12’ - Hungary, 2019
-Hungarian (Arabic and English subtitles Available)
-
-## Selections:
-
-Cinalfama Lisbon Screening and Awards (Lisbon, 2019)
-
-
-https://www.almadani.me/the-puppet-gene
-
-# Olympic Dark Horse - Shane Tusup
+# Overview
 
 Director: Ádám Miklósi, Arrabona Studios
 
-## Synopsis
-A YouTube documentary series with plans to become a Netflix documentary about the comeback of Shane Tusup into coaching swimmers for the Tokyo Olympics. 
+These videos were parts of a campaign to stop the EU Council from overturning the EU Nature Restoration Law, that aims to reverse biodiversity loss in European habitats.
 
-## More details
+This video was filmed during a press trip to 'Auenreservat Marchegg' and 'Donauauen' national parks in Austria, the 'Tivedens nationalpark' in Sweden, and in Brussels in front of the EU Council.
 
-After the highly publicized divorce from Katinka Hosszu, Tusup decided to take a break from coaching and returned to the US. Then, in 2019, he decided to make a comeback. Moving back to Hungary, he started coaching several swimmers. Liliana Szilagyi was one of these swimmers.
+# My Role
 
-# WWF mini docs
+- Editing: creating a narrative structure
+- Audio Editing
 
-Director: Ádám Miklósi, Arrabona Studios
+# Auenreservat Marchegg and Donauauen
 
-## The EU Green Deal
+The Austrian national park Auenreservat Marchegg is using grazing in its restoration efforts. They re-introduced wild horses into the area who are reversing the declining biodiversity. This is showing a way of dealing with biodiversity loss and restoring nature. 
 
-Restoration Laws
+In the Donauauen National Park river restoration is taking place that restored previously cut-off side branches of the Danube.
 
-# 
+<!-- add pictures -->
+
+# Tivedens nationalpark
+
+In the Tivedens nationalpark, Sweden, experts talk about the alternatives to clearcutting / clearfelling that they use in the forests of Tiveden. Clearcutting is the dominant practice in forestry in the EU and it is the most damaging forest biodiversity. Sweden is especially guilty of doing very little to conserve old forests and habitats. The video highlights the efficiency of alternative practices and also about using forests for tourism to provide for communities that leaves forests intact.
+
+<!-- add pictures -->
+
+# Run4Destruction
+
+A short parody video in front of the EU Council that satirizes MEPs who are voting against the EU Nature Restoration Law.
+
+<!-- add pictures -->
+
+# Process
+
+First, I selected the more important parts from the interviews for the director. The two of us worked closely to compress the over 2 hour long interviews into 5 minutes to create an interesting narrative for the client.
+
+I added cinematic B-roll that was captured on site and I edited the audio stems provided by the director to create a cinematic bed.
+
+Given that the videos would be watched in full during the campaigning for the Restoration Law, I had the liberty to follow a more traditional documentary format instead of the modern social media format that relies on hooks and creating tension for audience retention.
+
+My goal was to capture the arguments for preserving biodiversity as well as the beauty of nature.
+
+# Results
+
+On June 17, 2024, the EU Restoration Law was adapted by the EU Environmental Council and it became a law. 
+
+The videos were vital parts of the internal campaign ran by the WWF. 
+
+<!-- One of the videos became available on YouTube.
+
+{{% youtube id="H7O2UdOk1Ic" %}} -->

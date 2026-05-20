@@ -10,27 +10,27 @@ city = "Abu Dhabi"
 hero = "creative-coding-720p.mp4"
 +++
 
-I dabbled a lot in creative coding projects during my time at NYU Abu Dhabi. The Interactive Media program of the Arts and Humanities was only just starting outin 2016 when I took my first class, Communications Lab.
+# Free Shipping - VR (Overview)
 
-During my time at the program, I made Arduino applications to interactive websites to animations and even a web series. It was a lot of fun, but I can only include the highlights here.
-
-I even edited a short video for the NYUAD Interactive Media Program: 
-
-{{ youtube id="YwRGvnerj_w" }}
-
-I fell in love with the idea of expressing emotions using technology, and this is a field I'd love to explore more in the future.
-
-# Free Shipping - VR
-
-My thesis project at NYU Abu Dhabi, built in Unreal Engine 4.
+My thesis project at NYU Abu Dhabi, built in Unreal Engine 4. I worked on this project for three semesters, from January 2018 to 2019 May.
 
 {{% image src="images/creative-coding/freeshipping-01.jpg" alt="A screenshot from the VR experience" class="content-image" %}}
 {{% image src="images/creative-coding/freeshipping-02.jpg" alt="A screenshot from the VR experience" class="content-image" %}}
 {{% image src="images/creative-coding/freeshipping-03.jpg" alt="A screenshot from the VR experience" class="content-image" %}}
 
+# My role
+
+- VR Programmer
+- Experience designer
+- Story writer
+
+I made this VR experience from scratch in Unreal Engine. I designed some models, outsourced some, I wrote the logic and interactions for the objects that are featured in the game.
+
+
+
 ## Interactive exploration of racial biasing
 
-I gamified the experience of unconscious biasing. Inspired by games like "Papers Please", "Undertale", "Train", the player is doing a mundane job using morally questionable biases to do well.
+I gamified the experience of unconscious/racial biasing. Inspired by games like "Papers Please", "Undertale", "Train", the player is doing a mundane job using morally questionable biases to do well.
 
 * In "Papers Please" you play as a border control officer. 
 

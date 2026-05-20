@@ -14,56 +14,56 @@ year = 2023
 
 # Panteézis | 2023
 
-Panteézis is an album I wrote for Ithaka, the exhibition by the Budapest-based painter, Gabriella Kovács.
+*Panteézis* is an ambient album I composed for *Ithaka*, an exhibition by the Budapest-based painter Gabriella Kovács.
 
 {{< audiofolder folder="panteezis" >}}
 
-It serves the exhibition as a soundtrack to elevate the interaction between the audience and artwork.
+Created as a companion piece to the exhibition, the music was designed to deepen the interaction between the audience and the paintings, turning the gallery into a more immersive audiovisual experience.
 
 <div class="image-grid two-col">
 
 {{% image src="images/panteezis/ithaka/ithaka-01.jpg" alt="Gabriella Kovács at the opening" class="content-image scroll-fade-in" %}}
 
-{{% image src="images/panteezis/ithaka/ithaka-02.jpg" alt="Profile Image" class="content-image scroll-fade-in" %}}
+{{% image src="images/panteezis/ithaka/ithaka-02.jpg" alt="Paintings from the Ithaka exhibition" class="content-image scroll-fade-in" %}}
 
 </div>
 
 # Process / Workflow
 
-My goal was to write music that helps the interaction between the audience and the paintings to create a unified experience. I set out to write ambient music that captures the mood of the paintings and works as a soundtrack. 
+The goal of the project was to create music that could exist in dialogue with the paintings rather than simply accompany them. I approached the album as a soundtrack to the exhibition — one that would reflect the atmosphere, textures, and emotional tone of the visual work while maintaining its own identity as a listening experience.
 
 ## Preproduction
 
-This was my first time composing ambient music. As an inspiration, I looked at art produced by prominent players of the field, Ólafur Arnalds, Hermanos Gutiérrez, Thievery Corporation, Nils Frahm.
+This project marked my first exploration into ambient composition. During the research and development phase, I drew inspiration from artists such as Ólafur Arnalds, Hermanos Gutiérrez, Thievery Corporation, and Nils Frahm, studying how texture, repetition, and space can shape emotional perception.
 
-## Instruments
+## Instruments & Production
 
-My acoustic guitar and bass both show the wooden textures of their materials, they were both obvious choices for the subject matter.
+The organic textures of acoustic guitar and bass became central to the sonic palette of the album, echoing the tactile qualities of the paintings themselves.
 
-I first developed demos using the looper on the Boss DD-20 and the rest of my pedalboard. I used reverbs and delays and layering instruments to develop an organic, yet modern sound.
+I developed the early sketches and demos using the looping functions of the Boss DD-20 Giga Delay alongside my pedalboard setup. Through layered delays, reverbs, and looping techniques, I built an atmospheric sound that balanced organic instrumentation with modern production aesthetics.
 
-Ableton Live was my go-to DAW software.
+Ableton Live served as the primary production environment throughout the project.
 
-# Performance: Agave | 2026
+# Outcome - Performance: Agave | 2026
 
-Gabriella Kovács approached me a second time in 2026 to perform music at her exhibition. I decided to perform the Panteézis album, but this time live.
+In 2026, Gabriella Kovács invited me to return and perform music live for her exhibition *Agave*. For these performances, I adapted the *Panteézis* material into a live set built around real-time looping and layered improvisation.
 
-Using various live looping techniques that combine physical devices and Ableton Live, I performed the album as a set on two occasions including the finissage.
+Combining hardware looping devices with Ableton Live, I performed the album live on multiple occasions, including the exhibition’s finissage.
 
 {{% youtube id="PJm_b0rna_8" %}}
 
 <div class="image-grid two-col">
 
-{{% image src="images/panteezis/agave/agave-01.jpg" alt="Profile Image" class="content-image scroll-fade-in" %}}
+{{% image src="images/panteezis/agave/agave-01.jpg" alt="Live performance at the Agave exhibition" class="content-image scroll-fade-in" %}}
 
-{{% image src="images/panteezis/agave/agave-02.jpg" alt="Profile Image" class="content-image scroll-fade-in" %}}
+{{% image src="images/panteezis/agave/agave-02.jpg" alt="Audience and performance setup at Agave" class="content-image scroll-fade-in" %}}
 
 </div>
 
 {{% instagram DWzG-P5F1-4 %}}
 
-https://artplatz.hu/kovacs-gabriella-ellart/
+Further reading:
 
-https://youngart.hu/kollekcio/kovacs-gabriella-ellart
-
-https://kovacsgabriellaart.com/artworks/?filter=1&term=1#/
+* [ArtPlatz – Gabriella Kovács Exhibition Feature](https://artplatz.hu/kovacs-gabriella-ellart/)
+* [Youngart – Gabriella Kovács Collection](https://youngart.hu/kollekcio/kovacs-gabriella-ellart)
+* [Gabriella Kovács Official Portfolio](https://kovacsgabriellaart.com/artworks/?filter=1&term=1#/)

@@ -11,10 +11,10 @@ now shortcode {{% raw %}} {{% /raw %}} is defined, so that any type of html can 
 
 To Do: 
 [x] Audio Folder - reset audio.currentTime when skipped
-[] iGEM project page
+[] check iGEM project page
 [] Music Making / bands project page ? -> mixing
 [] Labocine final check
-[] Panteezis page
+[] check Panteezis page
 [] remaster / remix panteezis
 [] add glitch animations to titles / headers if possible 
 [] style: full width for youtube videos and other blocks / make classes so they can be dynamic

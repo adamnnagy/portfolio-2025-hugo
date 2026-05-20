@@ -34,24 +34,3 @@ Cinalfama Lisbon Screening and Awards (Lisbon, 2019)
 
 
 https://www.almadani.me/the-puppet-gene
-
-# Olympic Dark Horse - Shane Tusup
-
-Director: Ádám Miklósi, Arrabona Studios
-
-## Synopsis
-A YouTube documentary series with plans to become a Netflix documentary about the comeback of Shane Tusup into coaching swimmers for the Tokyo Olympics. 
-
-## More details
-
-After the highly publicized divorce from Katinka Hosszu, Tusup decided to take a break from coaching and returned to the US. Then, in 2019, he decided to make a comeback. Moving back to Hungary, he started coaching several swimmers. Liliana Szilagyi was one of these swimmers.
-
-# WWF mini docs
-
-Director: Ádám Miklósi, Arrabona Studios
-
-## The EU Green Deal
-
-Restoration Laws
-
-# 
