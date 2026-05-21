@@ -1,7 +1,6 @@
 baseURL = "https://adamnnagy.github.io/portfolio-2025-hugo/"
 languageCode = 'en-us'
 title = 'Ádám Nagy'
-theme = ""
 publishDir = "public"
 
 [markup.goldmark.renderer]
