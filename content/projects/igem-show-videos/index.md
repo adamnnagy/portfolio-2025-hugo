@@ -61,18 +61,6 @@ I developed the script and edited the piece to communicate complex ideas through
 
 {{% igemvideo id="83jnAnhpuLQHRLgHsTLJWB" class=""%}}
 
-### Concept Origins
-
-The idea for this video came to me during the script development process for the 2024 event.
-
-I wanted to steer away from the dense, information-heavy explainer videos that we were planning at the time and create a video that introduced a simple narrative that aimed for emotional impact.
-
-In 2022, Jason Kelly, the CEO of Ginkgo Bioworks, gave a talk at the Grand Jamboree. He presented a narrative that biology is the most sophisticated technology on the planet, more sophisticated than mechanical or informational technology. It repairs itself, grows from basic materials like water and air, it replicates itself and builds sophisticated structures at the microscopic scale.
-
-{{% image src="images/igem/jason.jpg" alt="placeholder" class="content-image" %}}
-
-I decided to expand this powerful idea into a full-length video.
-
 ### Process
 
 I wrote the first draft of the script which was then extended by our creative team. Once finalized, I edited the video, added sound effects, commissioned the voice over and it premiered at the Grand Jamboree 2024. After the event I adapted the video into a 16x9 online version.

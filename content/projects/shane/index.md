@@ -41,9 +41,10 @@ However, this partnership did not end well. Swimmers slowly left Tusup's team, t
 {{% image src="images/shane/shane-06.jpg" alt="A screenshot from the VR experience" class="content-image" %}}
 </div>
 
+{{% image src="images/shane/shane-03.jpg" alt="A screenshot from the VR experience" class="content-image" %}}
+
 Tusup since abandoned the project and doesn't coach swimmers anymore.
 
-{{% image src="images/shane/shane-03.jpg" alt="A screenshot from the VR experience" class="content-image" %}}
 
 # Process
 
