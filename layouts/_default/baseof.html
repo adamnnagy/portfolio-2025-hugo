@@ -6,10 +6,10 @@
 </head>
 
 <body>
-        {{ partial "header.html" . }}
-        
-        <main>{{ block "main" . }}{{ end }}</main>
-        {{ partial "footer.html" . }}
+    {{ partial "header.html" . }}
+
+    <main>{{ block "main" . }}{{ end }}</main>
+    {{ partial "footer.html" . }}
     {{ $js := resources.Get "/js/main.js" | resources.Minify | resources.Fingerprint }}
     <script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous" defer></script>
 </body>
