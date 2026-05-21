@@ -1,9 +1,9 @@
 +++
 date = '2025-07-13T11:30:45+02:00'
-draft = true
+draft = false
 featured = true
 priority = 1
-title = 'iGEM Videos'
+title = 'iGEM | Creative Video Production'
 description = "Start to finish cinematic event videos"
 role = "Video Producer"
 year = 2025
@@ -12,46 +12,15 @@ city = "Paris/Remote"
 gallery = true
 +++
 
-# Video Production at [iGEM](https://igem.org/)
+# [iGEM](https://igem.org/) | Creative Video Production
 
-At [iGEM](https://igem.org/), I worked as a Video Producer producing large-scale visuals for live events and scientific explainer videos for one of the world’s largest synthetic biology organizations.
+At [iGEM](https://igem.org/), I worked as a Video Producer producing large-scale visuals for live events and scientific explainer videos for one of the world’s largest synthetic biology organizations, screened during the annual Grand Jamboree in Paris, attended by more than 4,500 participants from around the world.
 
-My work focused on translating complex scientific ideas into emotionally engaging narratives for both live audiences and online platforms. The projects ranged from cinematic brand videos to ultra-wide stage videos screened during the annual Grand Jamboree in Paris, attended by more than 4,500 participants from around the world.
+Splitting my time between Paris and Budapest, my work focused on translating complex scientific ideas into emotionally engaging narratives for both live audiences and online platforms through concept development, scriptwriting, and end-to-end post-production.
 
 <!-- pictures -->
 
----
-
-# Scope of Work / Role
-
-- Scriptwriting and editorial development
-- Video editing and post-production
-- Live-show visual production
-- Production coordination
-- Workflow automation
-- Delivery for LED stages and online platforms
-- Sound design and mixing
-- Adapting final videos for online use
-
-In this hybrid role, I worked on-site in Paris on concepts, filming videos, and editing under tight production timelines. When not in Paris, I was handling pre- and post-production and planning on-site workflows for better efficiency.
-
-In 2021 I started out as a video editor but quickly became the primary videographer and general media lead. My responsibilities eventually expanded to production coordination, freelancer management, and workflow design.
-
-I collaborated closely with the President and CEO of iGEM, Nemanja Stiepovic and the Director of Production, Orsolya Szantho. I also collaborated with [Glitch Studio](https://glitchworks.org/) and [Causa Studio](https://causa.studio/) during the production process as well as the on-site production crew.
-
-
-# Output
-
 Each year, the production team delivers approximately 30-40 videos for the event. There are 4-5 flagship videos, 7-9 longer form videos and up to 20 transition videos.
-
-In 2025, my contributions included
-
-- 3 main videos
-- 15 transition videos
-- 7 interviews
-- 2 concept videos, including the closing video
-
-The videos listed here are selected works from my time at iGEM.
 
 # Story & Brand Videos
 
@@ -140,6 +109,8 @@ These projects required balancing cinematic pacing with the practical constraint
 <!-- picture -->
 
 **Role:** Concept, Editor, Cinematographer, Sound Designer, Color Grading, VFX
+
+I collaborated closely with the President and CEO of iGEM, Nemanja Stiepovic and the Director of Production, Orsolya Szantho. I also collaborated with [Glitch Studio](https://glitchworks.org/) and [Causa Studio](https://causa.studio/) during the production process as well as the on-site production crew.
 
 This video was designed to transform the award ceremony into a show that is memorable and cinematic. The video tells the story of the Biobrick Trophy (The Grand Prize of the Jamboree), and how it arrives to Paris each year. In the video, it is accompanied by metaphorical representations of the values that are carried with it, pictured as glowing bricks.
 
