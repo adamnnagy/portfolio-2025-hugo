@@ -2,6 +2,7 @@
 date = '2026-05-11T11:57:06+02:00'
 draft = true
 title = 'Dobodel Live Session | Perkupa'
+role = "Director"
 
 priority = 0
 featured = false

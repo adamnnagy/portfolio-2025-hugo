@@ -12,7 +12,7 @@ gallery = true
 year = 2023
 +++
 
-# Panteézis | 2023
+# Panteézis
 
 *Panteézis* is an ambient album I composed for *Ithaka*, an exhibition by the Budapest-based painter Gabriella Kovács.
 
@@ -44,7 +44,7 @@ I developed the early sketches and demos using the looping functions of the Boss
 
 Ableton Live served as the primary production environment throughout the project.
 
-# Outcome - Performance: Agave | 2026
+# Outcome - Performance: Agave
 
 In 2026, Gabriella Kovács invited me to return and perform music live for her exhibition *Agave*. For these performances, I adapted the *Panteézis* material into a live set built around real-time looping and layered improvisation.
 
