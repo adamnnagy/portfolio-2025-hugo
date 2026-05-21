@@ -1,6 +1,6 @@
 +++
 date = '2026-05-11T11:57:06+02:00'
-draft = true
+draft = false
 title = 'Dobodel Live Session | Perkupa'
 role = "Director"
 
@@ -9,7 +9,6 @@ featured = false
 description = ""
 
 hero = ""
-role = ""
 city = ""
 +++
 

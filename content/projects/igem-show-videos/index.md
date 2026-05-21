@@ -14,57 +14,56 @@ gallery = true
 
 # Video Production at [iGEM](https://igem.org/)
 
-At [iGEM](https://igem.org/), I worked as a Video Producer producing scientific explainer videos and large-scale visuals for live events for one of the world’s largest synthetic biology organizations.
+At [iGEM](https://igem.org/), I worked as a Video Producer producing large-scale visuals for live events and scientific explainer videos for one of the world’s largest synthetic biology organizations.
 
-My work focused on translating complex scientific ideas into emotionally engaging narratives for both live audiences and online platforms. The projects ranged from cinematic brand films to ultra-wide stage videos screened during the annual Grand Jamboree in Paris, attended by more than 4,500 participants from around the world.
+My work focused on translating complex scientific ideas into emotionally engaging narratives for both live audiences and online platforms. The projects ranged from cinematic brand videos to ultra-wide stage videos screened during the annual Grand Jamboree in Paris, attended by more than 4,500 participants from around the world.
 
 <!-- pictures -->
 
 ---
 
-# Scope of Work
+# Scope of Work / Role
 
-* Scriptwriting and editorial development
-* Video editing and post-production
-* Live-show visual production
-* Production coordination
-* Delivery for LED stages and online platforms
-* Sound design and mixing
-* Adapting final videos to online use
+- Scriptwriting and editorial development
+- Video editing and post-production
+- Live-show visual production
+- Production coordination
+- Workflow automation
+- Delivery for LED stages and online platforms
+- Sound design and mixing
+- Adapting final videos for online use
 
-# My role
+In this hybrid role, I worked on-site in Paris on concepts, filming videos, and editing under tight production timelines. When not in Paris, I was handling pre- and post-production and planning on-site workflows for better efficiency.
 
-This is a hybrid role. I spent a lot of time in Paris, working on-site on concepts, filming videos and edit under tight production timelines, and do most of the post-production remotely.
+In 2021 I started out as a video editor but quickly became the primary videographer and general media lead. My responsibilities eventually expanded to production coordination, freelancer management, and workflow design.
 
-I collaborated closely with the President and CEO of iGEM, Nemanja Stiepovic and the Director of Production, Orsolya Szantho. I also collaborated with [Glitch Studio](https://glitchworks.org/) and [Causa Studio](https://causa.studio/) during the production process as well as the production crew who filmed on site. 
+I collaborated closely with the President and CEO of iGEM, Nemanja Stiepovic and the Director of Production, Orsolya Szantho. I also collaborated with [Glitch Studio](https://glitchworks.org/) and [Causa Studio](https://causa.studio/) during the production process as well as the on-site production crew.
 
-I operated throughout the entire production pipeline, from concept development to delivery. I started out as a video editor but quickly became the primary videographer and general media lead. My responsibilities eventually expended to production coordination, freelancer management and workflow design.
 
 # Output
 
 Each year, the production team delivers approximately 30-40 videos for the event. There are 4-5 flagship videos, 7-9 longer form videos and up to 20 transition videos.
 
-In 2025, my contributions included 
-- 3 main videos 
+In 2025, my contributions included
+
+- 3 main videos
 - 15 transition videos
 - 7 interviews
 - 2 concept videos, including the closing video
 
----
+The videos listed here are selected works from my time at iGEM.
 
-# Story & Brand Films
+# Story & Brand Videos
 
 These projects focused on communicating the vision, values, and cultural identity of iGEM and the broader field of synthetic biology.
 
 The challenge was balancing scientific accuracy with cinematic storytelling accessible to broader audiences.
 
----
-
-## Synthetic Biology
+## iGEM | The Heart of Synthetic Biology
 
 **Role:** Scriptwriting, Editing
 
-This film introduces the broader vision of synthetic biology: a field that applies engineering principles to biology and has the potential to transform manufacturing, medicine, agriculture, and sustainability.
+This video introduced the broader vision of synthetic biology: a field that applies engineering principles to biology and has the potential to transform manufacturing, medicine, agriculture, and sustainability.
 
 I developed the script and edited the piece to communicate complex ideas through concise narration and emotionally driven visuals.
 
@@ -76,55 +75,61 @@ I developed the script and edited the piece to communicate complex ideas through
 
 ### Concept Origins
 
-With this video, I wanted to steer away from the dense, information-heavy explainer videos and create a video that introduced a simple narrative that aimed for emotional impact.
+The idea for this video came to me during the script development process for the 2024 event.
+
+I wanted to steer away from the dense, information-heavy explainer videos that we were planning at the time and create a video that introduced a simple narrative that aimed for emotional impact.
 
 In 2022, Jason Kelly, the CEO of Ginkgo Bioworks, gave a talk at the Grand Jamboree. He presented a narrative that biology is the most sophisticated technology on the planet, more sophisticated than mechanical or informational technology. It repairs itself, grows from basic materials like water and air, it replicates itself and builds sophisticated structures at the microscopic scale.
 
-I decided to expand this powerful idea to a full-length video.
+I decided to expand this powerful idea into a full-length video.
 
-### Production Timeline
+### Process
 
-I wrote the first draft of the script which was then edited by other stakeholders. Once approved, I edited the video in a couple of days, added sound effects, commissioned the Voice Over and it premiered at the Grand Jamboree 2024. After the event I adapted the video into a 16x9 online version.
+I wrote the first draft of the script which was then extended by our creative team. Once finalized, I edited the video, added sound effects, commissioned the voice over and it premiered at the Grand Jamboree 2024. After the event I adapted the video into a 16x9 online version.
 
-The video received an update the next year by adding a middle part section that didn't exist before. The updated video featured a different voice artist due to scheduling constraints.
+### 2025 update
 
-### Result
+The video received an update in 2025 that added a middle section that didn't exist before. The updated video featured a different voice artist due to scheduling constraints.
+
+### Outcome
 
 The video was praised by stakeholders and the board. With the rewrite in 2025, the video became a core piece of storytelling of iGEM and the field.
 
 ---
 
-## iGEMers
+## iGEMers - The Heart of Synthetic Biology
 
 **Role:** Concept Development, Writing, Editing
 
-A manifesto-style brand film centered around the people participating in iGEM.
+A manifesto-style brand video centered around the people participating in iGEM.
 
 The goal of the piece was to define the mindset, optimism, and ambition of the community through a more emotional and identity-driven format inspired by classic brand storytelling campaigns.
 
 The video aimed to articulate the values and identity of iGEM through the format of a manifesto.
 
+{{% igemvideo id="3dMheRrL9JdqbZNQGTdfdF" class="content-image"%}}
+
 {{% youtube id="5Ll1FCzycXU"%}}
 
 ### Process
 
-- created a pre-visualizer that helped the scriptwriting and storyboarding. 
-- refined performance with Voice Over artists
+- created a pre-visualizer that helped the scriptwriting and storyboarding.
+- refined performance with voice over artists
 - adapted the video to event screen and online formats
 
-### Result
+### Outcome
 
-The video premiered at the first day of the Grand Jamboree as the opening video of the event. The video talked to all iGEMers present, students, professors, researchers, entrepreneurs. The audience responded enthusiastically during the screening, helping establish the tone for the Opening Show.
+The video premiered at the first day of the Grand Jamboree as the opening video of the event. The video talked to all iGEMers present, students, professors, researchers, entrepreneurs. The audience responded enthusiastically during the screening, establishing the tone for the Opening Show.
 
 ---
 
-# Grand Jamboree Show Films
+# Live Show & Stage Production
 
 **2024–2025**
 
-Each year, the [iGEM Grand Jamboree](https://jamboree.igem.org/) transforms part of the Paris Expo Porte de Versailles into a large-scale scientific conference and live event environment.
+Each year, the [iGEM Grand Jamboree](https://jamboree.igem.org/) transforms part of the Paris Expo Porte de Versailles into a large-scale scientific expo on synthetic biology.
 
-The show films were created specifically for ultra-wide LED stage installations and designed to support keynote moments, award ceremonies, and thematic transitions throughout the program.
+The show videos were created specifically for ultra-wide LED stage installations and designed to support keynote moments, award ceremonies, and thematic transitions throughout the program.
 
 These projects required balancing cinematic pacing with the practical constraints of live event timing, stage production, and unconventional screen formats.
 
@@ -134,29 +139,32 @@ These projects required balancing cinematic pacing with the practical constraint
 
 <!-- picture -->
 
-**Role** Concept / Editor / Cinematographer / Sound Designer / Color Grading, VFX
+**Role:** Concept, Editor, Cinematographer, Sound Designer, Color Grading, VFX
 
-This video was designed to transform the award ceremony into a show that is memorable and cinematic. The video tells the story of the Biobrick Trophy (The Grand Prize of the Jamboree), how it arrives to Paris and the values that are carried with it as glowing bricks. 
+This video was designed to transform the award ceremony into a show that is memorable and cinematic. The video tells the story of the Biobrick Trophy (The Grand Prize of the Jamboree), and how it arrives to Paris each year. In the video, it is accompanied by metaphorical representations of the values that are carried with it, pictured as glowing bricks.
+
+<!-- pictures -->
 
 An additional comedic sequence featured the iGEM mascot, Gemy, arriving to Paris by boat.
 
+<!-- pictures -->
+
 ### The Value Bricks
 
-Large glowing Lego bricks were developed for the shoot that represented each value. The story is simple: these bricks / values are brought to Paris each year and unite at the Grand Jamboree.
+Large glowing Lego bricks were made for the shoot that represented each value. These were 3D printed and were rigged with LED lights. The story is simple: these bricks / values are brought to Paris each year and unite at the Grand Jamboree.
+
+<!-- pictures -->
+
+<!-- list the values -->
 
 ### The live elements
 
-At the live show, the bricks lit up at a specific time as the video was playing, creating an on-site spectacle. (04:54)
-
-In a surprise video, the mascot of iGEM, a giant microbe called Gemy brings the Biobrick Trophy to the Porte de Versailles venue. (06:15)
-
 {{% igemvideo id="pM4iha2sRi3F8R32nLvmHy" %}}
 
-### Inspiration
+As the video was playing at the live show, the bricks lit up at a specific time and the video feed went live. This created an on-site spectacle. (visible at 04:54 in the embedded video)
 
-In 2024, Paris hosted the Olympic Games, which inspired the concept for a ceremonial film centered around the transition from the original Biobrick Trophy to a redesigned version introduced at the Grand Jamboree.
+In a surprise video that was played after a staged dramatic intermission, the mascot of iGEM, a giant microbe called Gemy brings the Biobrick Trophy to the Porte de Versailles venue. (visible at 06:15 in the embedded video)
 
-<!-- link to the horse sequence? -->
 
 ### Challenges
 
@@ -176,11 +184,10 @@ The lights that were emitted from the bricks had to be compensated for in post-p
 
 1. VFX
 
-The titles of the values were added to the bricks in post. 
+The titles of the values were added to the bricks in post.
 Stabilization was need on many shots without using tracking points.
 
-
-### Results
+### Outcome
 
 This video was by far the most successful video at the event. It turned the show into a spectacle and resulted in standing ovation from the audience.
 
@@ -202,12 +209,11 @@ The editorial challenge was synthesizing large amounts of team-submitted scienti
 - closing narration
 - cinematic closing sequence before handing over awards
 
-The projects combined archival footage, team-submitted media, stock material, and motion graphics into unified visual narratives. I searched for fresh-looking stock footage and royalty-free music that wasn't overused (yet). I went through hundreds, if not thousands of videos of projects that were made by teams to find the best cutaways. The footage also varied significantly in frame rates, color quality, and editing, requiring extensive normalization in post-production. 
-
+The projects combined archival footage, team-submitted media, stock material, and motion graphics into unified visual narratives. I searched for fresh-looking stock footage and royalty-free music that wasn't yet overused. I went through hundreds, if not thousands, of videos of projects that were made by teams to find the best cutaways. The footage also varied significantly in frame rates, color quality, and editing, requiring extensive normalization in post-production.
 
 ## 2022
 
-**Role** Concept, Script, Editing, Storyboarding, Sound Design
+**Role:** Concept, Script, Editing, Storyboarding, Sound Design
 
 {{% igemvideo id="iy1SiRR5uryrUsYZ7kkkGm" class="content-image" %}}
 
@@ -217,22 +223,21 @@ The projects combined archival footage, team-submitted media, stock material, an
 
 {{% igemvideo id="q4Dw22EbtLv9HZWYc3D2Yi" %}}
 
-### Responsibility
-
-This year I was the only person on the video team. I worked closely with the CEO on writing the script and with another editor for editing the final delivery.
+This year, I was the only person on the video team. I worked closely with the CEO on writing the script and with another editor for editing the final delivery.
 
 We set out to create 9 + 3 videos that talked about the main challenges that iGEM competitors were tackling using synthetic biology: Climate Crisis, Environment, Bioremediation, Food and Nutrition, Diagnostics, Therapeutics, Biomanufacturing, Foundational Advance and Software and AI.
 
 Three videos were transitions between the 3 acts of the final day award show: Planet, People, Technology.
 
-The goal was to incorporate 3 elements:
-- what each challenge represents 
+The goal was to incorporate three elements:
+
+- what each challenge represents
 - how is synthetic biology involved
 - efforts that iGEM teams make to tackle these challenges
 
 ### Challenges
 
-Synthetic biology is a relatively niche scientific field. There are only a few examples for its mainstream adoption. For the people working with synthetic biology the concepts are obvious, yet they are complicated enough that they can deter the casual observer to learn more. 
+Synthetic biology is a relatively niche scientific field. There are only a few examples for its mainstream adoption. For the people working with synthetic biology the concepts are obvious, yet they are complicated enough that they can deter the casual observer to learn more.
 
 **Translating highly scientific language** into a script that could carry the runtime was an obvious challenge. Sometimes this required the tone to be more cinematic so that the narration didn't turn into definitions.
 
@@ -240,8 +245,7 @@ Synthetic biology is a relatively niche scientific field. There are only a few e
 
 **Sound design** played a core role in making the videos as cinematic as possible.
 
-I developed the **visual style** by incorporating influences from Ron Fricke films, [Samsara](https://en.wikipedia.org/wiki/Samsara_(2011_film)) and [Baraka](https://en.wikipedia.org/wiki/Baraka_(film)), especially the famous [food sequence](https://www.youtube.com/watch?v=k56NBsZXjr8).
-
+I developed the **visual style** by incorporating influences from Ron Fricke films [Samsara](<https://en.wikipedia.org/wiki/Samsara_(2011_film)>) and [Baraka](<https://en.wikipedia.org/wiki/Baraka_(film)>), especially the famous [food sequence](https://www.youtube.com/watch?v=k56NBsZXjr8).
 
 ### Outcomes
 

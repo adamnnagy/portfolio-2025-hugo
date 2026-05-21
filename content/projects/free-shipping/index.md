@@ -1,10 +1,10 @@
 +++
 date = '2025-07-16T13:17:24+02:00'
 draft = true
-title = 'Creative Coding'
+title = 'Free Shipping VR'
 priority = 1
 featured = false
-description = "Creative Coding projects"
+description = "VR Thesis Project @ NYU"
 role = "Developer"
 city = "Abu Dhabi"
 hero = "creative-coding-720p.mp4"

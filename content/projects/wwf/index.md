@@ -1,6 +1,6 @@
 +++
 date = '2025-07-13T12:16:35+02:00'
-draft = true
+draft = false
 featured = true
 title = 'WWF shorts'
 description = "Documentary shorts"
@@ -15,22 +15,22 @@ year = 2019
 
 Director: Ádám Miklósi, Arrabona Studios
 
-These videos were parts of a campaign to stop the EU Council from overturning the EU Nature Restoration Law, that aims to reverse biodiversity loss in European habitats.
+These videos were parts of a campaign to stop the EU Council from overturning the Nature Restoration Law in the European Union, a law that aims to reverse biodiversity loss in European habitats.
 
-This video was filmed during a press trip to 'Auenreservat Marchegg' and 'Donauauen' national parks in Austria, the 'Tivedens nationalpark' in Sweden, and in Brussels in front of the EU Council.
-
-# My Role
-
-- Editing: creating a narrative structure
-- Audio Editing
+The videos were filmed during press trips to 'Auenreservat Marchegg' and 'Donauauen' national parks in Austria, the 'Tivedens nationalpark' in Sweden, and in Brussels in front of the EU Council. They were shown in internal campaign events and some of them were shared on Social Media and YouTube.
 
 # Auenreservat Marchegg and Donauauen
 
-The Austrian national park Auenreservat Marchegg is using grazing in its restoration efforts. They re-introduced wild horses into the area who are reversing the declining biodiversity. This is showing a way of dealing with biodiversity loss and restoring nature. 
+The Austrian national park [Auenreservat Marchegg](https://www.wwf.at/artikel/das-wwf-auenreservat-marchegg/) is using grazing in its restoration efforts. They re-introduced wild horses into the area who are reversing the declining biodiversity. This is showing a way of dealing with biodiversity loss and restoring nature. 
 
-In the Donauauen National Park river restoration is taking place that restored previously cut-off side branches of the Danube.
+In the [Donau-Auen National Park](https://www.donauauen.at/) river restoration is taking place that restored previously cut-off side branches of the Danube.
 
 <!-- add pictures -->
+
+## Full video
+
+{{% youtube id="H7O2UdOk1Ic" %}}
+
 
 # Tivedens nationalpark
 
@@ -46,7 +46,9 @@ A short parody video in front of the EU Council that satirizes MEPs who are voti
 
 # Process
 
-First, I selected the more important parts from the interviews for the director. The two of us worked closely to compress the over 2 hour long interviews into 5 minutes to create an interesting narrative for the client.
+I was working with combination of proxies and original media through the project. I adapted the organizational structure of the director, as he requested to have the project file at the end of the editing process.
+
+First, I initial selections from the interviews and filtered out stronger story beats for the director. The two of us worked closely to compress the over 2 hour long interviews into a 5 minute long video to create an interesting narrative and hit all the talking points of WWF.
 
 I added cinematic B-roll that was captured on site and I edited the audio stems provided by the director to create a cinematic bed.
 
@@ -54,12 +56,12 @@ Given that the videos would be watched in full during the campaigning for the Re
 
 My goal was to capture the arguments for preserving biodiversity as well as the beauty of nature.
 
+The final part of the project consisted of polishing hte interviews and the cuts and then handing over the project for coloring.
+
 # Results
 
 On June 17, 2024, the EU Restoration Law was adapted by the EU Environmental Council and it became a law. 
 
 The videos were vital parts of the internal campaign ran by the WWF. 
 
-<!-- One of the videos became available on YouTube.
-
-{{% youtube id="H7O2UdOk1Ic" %}} -->
+<!-- One of the videos became available on YouTube. -->

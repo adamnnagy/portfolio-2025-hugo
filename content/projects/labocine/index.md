@@ -1,6 +1,6 @@
 +++
 date = '2025-07-13T12:15:46+02:00'
-draft = true
+draft = false
 title = 'Labocine'
 priority = 1
 featured = true
@@ -25,29 +25,20 @@ Labocine is a streaming platform and online publication focused on the intersect
 
 My role combined editorial, creative, technical, and marketing responsibilities across the platform’s monthly publishing cycle.
 
-## Creative Approach for the Science New Wave
-
-I approached each issue so that each clip and scene that went into the trailer reinforced the issue in some way. 
-
-I applied the principle that good music + pretty footage + interesting links between clips will result in a trailer that's fun to watch and one that draws in the audience. 
-
-I aimed to carefully set the mood of each trailer. Science for me is amusement, discovery, curiosity, awe, and humor. It's the beauty of blueprints, of graphs, of nature and movement. Science for me is embracing the strange and unusual phenomena. Science is raw, unprocessed, yet intricate.
-
-The CEO of Labocine, Alexis Gambis is the founder of the Science New Wave. This aims to create a new language of scientific cinema. Here's the [manifesto](https://www.sciencenewwave.com/manifesto) of the Science New Wave: 
-
-"The SNW Central Dogma is built on 6 fundamental traits yet, as any other living organism, it will keep evolving.
-trait #1: Culture is Science. Science is Culture.
-trait #2: Diversity feeds the ecosystem
-trait #3: Experiments become Cinema
-trait #4: Structure dictates function.
-trait #5: Science & Story never collide.
-trait #6: WE ARE ALL MESSENGERS"
 
 ### Video Production & Editing
 
 I edited the monthly trailers for each issue, creating promotional videos that introduced the scientific themes and highlighted featured films. These trailers were used across Labocine’s website, newsletter, and social media channels.
 
-<!-- add selected trailers here -->
+I approached the trailer for each issue so that each clip in it reinforced the monthly issue in some way. 
+
+I applied the principle that interesting association between clips will result in a trailer that's fun to watch and one that draws in the audience.
+
+It was very important for the trailers to communicate the novelty of Labocine and to position the streaming service as a unique product on the market. I aimed to carefully set the atmosphere for each trailer to connect scientific concepts to a strong mood.
+
+[Labocine Trailer Playlist](https://www.youtube.com/watch?v=gcjfBtfwZ0c&list=PLXR8zBVrOFRdAnmGJbkC4H5pcwkHE0p54)
+
+<!-- embed this? -->
 
 ### Newsletter & Editorial Communication
 
@@ -65,6 +56,6 @@ I managed the platform’s Instagram presence, creating visual content and promo
 
 To streamline the editing process, I wrote a custom script that automatically downloaded all films associated with the current issue into an organized local workflow. This significantly reduced preparation time for trailer editing and content production.
 
-## Selected Work
+<!-- The main inspiration for this was the ebook Automate Everyday Tasks with Python. -->
 
-[Labocine Trailer Playlist](https://www.youtube.com/watch?v=gcjfBtfwZ0c&list=PLXR8zBVrOFRdAnmGJbkC4H5pcwkHE0p54)
+I used python and Beautifulsoup and Selenium to achieve this. Since the videos were hidden behind a login screen, I used web scraping and browser automation. This essentially turned the task of manually downloading source videos to launching a script, saving up to 2 hours / issue.
