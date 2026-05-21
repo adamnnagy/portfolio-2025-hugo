@@ -10,6 +10,10 @@ permissions:
   contents: read
   pages: write
   id-token: write
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 concurrency:
   group: pages
@@ -19,14 +23,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
+        with:
+          submodules: recursive
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'v0.143.1'
-          extended: false
+          hugo-version: '0.143.1'
+          extended: true
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
