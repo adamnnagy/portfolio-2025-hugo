@@ -47,7 +47,7 @@ My projects have taken me from Budapest to Paris, Haifa, Abu Dhabi, New York, an
 
 I’m comfortable working in international and interdisciplinary teams, both remotely and on-location.
 
-# Skills / Tools ✅
+# Skills / Tools
 
 {{% image src="images/intro/videography-05.jpg" alt="Profile Image" class="content-image scroll-fade-in" %}}
 
@@ -82,9 +82,8 @@ I’m comfortable working in international and interdisciplinary teams, both rem
 * Mailchimp audience management for Budapest-based Náncsi Néni
 * Creating campaigns for the CRM of Janssen Hungary
 * Establishing automation workflows for post-production and file management
-* 
 
-# Fun Fact  ✅
+# Fun Fact
 
 
 In 2015 the movie War Machine was having its principle photography in Abu Dhabi, UAE - and this is how I got on the silver screen.

@@ -12,15 +12,32 @@ city = "Paris/Remote"
 gallery = true
 +++
 
-# [iGEM](https://igem.org/) | Creative Video Production
+- [Story & Brand Videos](#story--brand-videos)
+- [Live Show & Stage Production](#live-show--stage-production)
+- [Explainer Videos](#explainer-videos)
+
+<!-- <a id="top"></a> -->
+
+# [iGEM](https://igem.org/) | Creative Video Production {#top}
 
 At [iGEM](https://igem.org/), I worked as a Video Producer producing large-scale visuals for live events and scientific explainer videos for one of the world’s largest synthetic biology organizations, screened during the annual Grand Jamboree in Paris, attended by more than 4,500 participants from around the world.
 
+<div class="image-grid two-col">
+{{% image src="images/igem/igem-01.jpg" alt="placeholder" class="content-image" %}}
+{{% image src="images/igem/igem-02.jpg" alt="placeholder" class="content-image" %}}
+</div>
+
 Splitting my time between Paris and Budapest, my work focused on translating complex scientific ideas into emotionally engaging narratives for both live audiences and online platforms through concept development, scriptwriting, and end-to-end post-production.
 
-<!-- pictures -->
+<div class="image-grid three-col">
+{{% image src="images/igem/editing-01.jpg" alt="placeholder" class="content-image" %}}
+{{% image src="images/igem/editing-02.jpg" alt="placeholder" class="content-image" %}}
+{{% image src="images/igem/workshop-01.jpg" alt="placeholder" class="content-image" %}}
+</div>
 
 Each year, the production team delivers approximately 30-40 videos for the event. There are 4-5 flagship videos, 7-9 longer form videos and up to 20 transition videos.
+
+[Back to top](#top)
 
 # Story & Brand Videos
 
@@ -32,15 +49,17 @@ The challenge was balancing scientific accuracy with cinematic storytelling acce
 
 **Role:** Scriptwriting, Editing
 
+<div class="image-grid three-col">
+{{% image src="images/igem/synbio-video/synbio-video-02.jpeg" alt="placeholder" class="content-image" %}}
+{{% image src="images/igem/synbio-video/synbio-video-03.jpeg" alt="placeholder" class="content-image" %}}
+{{% image src="images/igem/synbio-video/synbio-video-01.jpeg" alt="placeholder" class="content-image" %}}
+</div>
+
 This video introduced the broader vision of synthetic biology: a field that applies engineering principles to biology and has the potential to transform manufacturing, medicine, agriculture, and sustainability.
 
 I developed the script and edited the piece to communicate complex ideas through concise narration and emotionally driven visuals.
 
-<div class="image-grid one-col">
-
-{{% igemvideo id="83jnAnhpuLQHRLgHsTLJWB" class="content-image"%}}
-
-</div>
+{{% igemvideo id="83jnAnhpuLQHRLgHsTLJWB" class=""%}}
 
 ### Concept Origins
 
@@ -49,6 +68,8 @@ The idea for this video came to me during the script development process for the
 I wanted to steer away from the dense, information-heavy explainer videos that we were planning at the time and create a video that introduced a simple narrative that aimed for emotional impact.
 
 In 2022, Jason Kelly, the CEO of Ginkgo Bioworks, gave a talk at the Grand Jamboree. He presented a narrative that biology is the most sophisticated technology on the planet, more sophisticated than mechanical or informational technology. It repairs itself, grows from basic materials like water and air, it replicates itself and builds sophisticated structures at the microscopic scale.
+
+{{% image src="images/igem/jason.jpg" alt="placeholder" class="content-image" %}}
 
 I decided to expand this powerful idea into a full-length video.
 
@@ -92,6 +113,8 @@ The video premiered at the first day of the Grand Jamboree as the opening video 
 
 ---
 
+[Back to top](#top)
+
 # Live Show & Stage Production
 
 **2024–2025**
@@ -106,7 +129,7 @@ These projects required balancing cinematic pacing with the practical constraint
 
 ## The Biobrick Trophy | 2025
 
-<!-- picture -->
+{{% image src="images/igem/brick-01.jpg" alt="placeholder" class="content-image" %}}
 
 **Role:** Concept, Editor, Cinematographer, Sound Designer, Color Grading, VFX
 
@@ -114,11 +137,17 @@ I collaborated closely with the President and CEO of iGEM, Nemanja Stiepovic and
 
 This video was designed to transform the award ceremony into a show that is memorable and cinematic. The video tells the story of the Biobrick Trophy (The Grand Prize of the Jamboree), and how it arrives to Paris each year. In the video, it is accompanied by metaphorical representations of the values that are carried with it, pictured as glowing bricks.
 
-<!-- pictures -->
+<div class="image-grid two-col">
+{{% image src="images/igem/glowing-brick-01.jpg" alt="glowing bricks held by iGEM staff" class="content-image" %}}
+{{% image src="images/igem/glowing-brick-02.jpg" alt="glowing bricks placed in a heart shape during the live event" class="content-image" %}}
+</div>
 
-An additional comedic sequence featured the iGEM mascot, Gemy, arriving to Paris by boat.
+An additional comedic sequence featured the iGEM mascot, Gemy, arriving to Paris by boat, and then appearing live at the venue.
 
-<!-- pictures -->
+<div class="image-grid two-col">
+{{% image src="images/igem/gemy.jpg" alt="Gemy, the mascot of iGEM entering the venue" class="content-image" %}}
+{{% image src="images/igem/gemy.jpg" alt="placeholder" class="content-image" %}}
+</div>
 
 ### The Value Bricks
 
@@ -135,7 +164,6 @@ Large glowing Lego bricks were made for the shoot that represented each value. T
 As the video was playing at the live show, the bricks lit up at a specific time and the video feed went live. This created an on-site spectacle. (visible at 04:54 in the embedded video)
 
 In a surprise video that was played after a staged dramatic intermission, the mascot of iGEM, a giant microbe called Gemy brings the Biobrick Trophy to the Porte de Versailles venue. (visible at 06:15 in the embedded video)
-
 
 ### Challenges
 
@@ -164,9 +192,13 @@ This video was by far the most successful video at the event. It turned the show
 
 ---
 
-# Explainer & “Village” Videos
+[Back to top](#top)
 
-**2022–2024 | Co-Writing, Editing**
+# Explainer Videos
+
+{{% image src="images/igem/villages.jpg" alt="placeholder" class="content-image" %}}
+
+## 2024 | Co-Writing, Editing
 
 These videos introduced thematic “villages” within the iGEM competition, highlighting developments in healthcare, sustainability, environmental science, and biotechnology.
 
@@ -182,23 +214,33 @@ The editorial challenge was synthesizing large amounts of team-submitted scienti
 
 The projects combined archival footage, team-submitted media, stock material, and motion graphics into unified visual narratives. I searched for fresh-looking stock footage and royalty-free music that wasn't yet overused. I went through hundreds, if not thousands, of videos of projects that were made by teams to find the best cutaways. The footage also varied significantly in frame rates, color quality, and editing, requiring extensive normalization in post-production.
 
-## 2022
+## 2022 | Direction, Writing, Editing
 
 **Role:** Concept, Script, Editing, Storyboarding, Sound Design
 
-{{% igemvideo id="iy1SiRR5uryrUsYZ7kkkGm" class="content-image" %}}
+{{% image src="images/igem/villages/villages-02.jpeg" alt="placeholder" class="content-image" %}}
+{{% image src="images/igem/villages/villages-03.jpeg" alt="placeholder" class="content-image" %}}
+{{% image src="images/igem/villages/villages-01.jpeg" alt="placeholder" class="content-image" %}}
+
+<!-- {{% igemvideo id="iy1SiRR5uryrUsYZ7kkkGm" class="content-image" %}}
 
 {{% igemvideo id="8qHgta6RqZquPraqEwfzCu" %}}
 
 {{% igemvideo id="iy1SiRR5uryrUsYZ7kkkGm" %}}
 
-{{% igemvideo id="q4Dw22EbtLv9HZWYc3D2Yi" %}}
+{{% igemvideo id="q4Dw22EbtLv9HZWYc3D2Yi" %}} -->
 
 This year, I was the only person on the video team. I worked closely with the CEO on writing the script and with another editor for editing the final delivery.
 
 We set out to create 9 + 3 videos that talked about the main challenges that iGEM competitors were tackling using synthetic biology: Climate Crisis, Environment, Bioremediation, Food and Nutrition, Diagnostics, Therapeutics, Biomanufacturing, Foundational Advance and Software and AI.
 
 Three videos were transitions between the 3 acts of the final day award show: Planet, People, Technology.
+
+<div class="image-grid three-col">
+{{% image src="images/igem/villages/act-01.jpeg" alt="placeholder" class="content-image" %}}
+{{% image src="images/igem/villages/act-02.jpeg" alt="placeholder" class="content-image" %}}
+{{% image src="images/igem/villages/act-03.jpeg" alt="placeholder" class="content-image" %}}
+</div>
 
 The goal was to incorporate three elements:
 

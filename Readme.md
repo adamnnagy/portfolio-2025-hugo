@@ -29,3 +29,5 @@ To Do:
 [] Project: Free shipping - change hero video and image
 [] Project: Dobodel Live: Add hero image and video
 [] Project: Labocine: Add images and videos
+[] Project: iGEM: Formatting
+[] Layout: add back to the top button to all pages

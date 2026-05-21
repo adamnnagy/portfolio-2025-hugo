@@ -11,19 +11,19 @@
     </section>
 
     <section class="container">
-
-
+        <h1>Selected works</h1>
         <ul class="project-list">
-            {{ range sort .Pages .Params.year "desc" }}
-            
-            {{/*  {{ if not .Params.draft }}  */}}
+
+            {{ range sort .Pages ".Params.priority" "asc" }}
+
+            {{/* {{ if not .Params.draft }} */}}
 
             <a href="{{ .RelPermalink }}">
                 <li class="project-card">
                     <article class="scroll-fade-in">
                         <div>
                             <h2 class="project-title">
-                                {{ .Title }} | {{ .Params.role }}
+                                {{ .Title }} | {{ .Params.role }} {{ .Params.priority }}
                             </h2>
                             <p class="description">{{.Params.description}}</p>
                             {{ if .Params.year }}
@@ -39,7 +39,7 @@
                 </li>
             </a>
 
-            {{/*  {{ end }}  */}}
+            {{/* {{ end }} */}}
             {{ end }}
         </ul>
     </section>

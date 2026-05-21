@@ -6,6 +6,7 @@
 "role" .Params.role
 
 ) }}
+
 <article class="container scroll-fade-in">
 
 
@@ -15,8 +16,13 @@
     <h1>{{ .Title }}</h1>
     {{ end }}  */}}
 
-    <p>{{ .Params.description }}</p>
-    <hr>
+    {{/*  <p>{{ .Params.description }}</p>
+    <hr>  */}}
     {{ .Content }}
+
+    <footer>
+  <a href="#top">Back to top</a>
+</footer>
 </article>
+
 {{ end }}

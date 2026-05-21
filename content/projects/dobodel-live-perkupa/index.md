@@ -4,7 +4,7 @@ draft = false
 title = 'Dobodel Live Session | Perkupa'
 role = "Director"
 
-priority = 0
+priority = 2
 featured = false
 description = ""
 

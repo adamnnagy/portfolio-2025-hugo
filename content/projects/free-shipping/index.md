@@ -14,10 +14,12 @@ hero = "creative-coding-720p.mp4"
 
 My thesis project at NYU Abu Dhabi, built in Unreal Engine 4. I worked on this project for three semesters, from January 2018 to 2019 May.
 
-{{% image src="images/creative-coding/freeshipping-01.jpg" alt="A screenshot from the VR experience" class="content-image" %}}
-{{% image src="images/creative-coding/freeshipping-02.jpg" alt="A screenshot from the VR experience" class="content-image" %}}
-{{% image src="images/creative-coding/freeshipping-03.jpg" alt="A screenshot from the VR experience" class="content-image" %}}
+{{% image src="images/free-shipping/freeshipping-01.jpg" alt="A screenshot from the VR experience" class="content-image" %}}
+{{% image src="images/free-shipping/freeshipping-02.jpg" alt="A screenshot from the VR experience" class="content-image" %}}
+{{% image src="images/free-shipping/freeshipping-03.jpg" alt="A screenshot from the VR experience" class="content-image" %}}
 
+{{% image src="images/free-shipping/freeshipping-code-01.jpg" alt="A screenshot from the VR experience" class="content-image" %}}
+{{% image src="images/free-shipping/freeshipping-code-02.jpg" alt="A screenshot from the VR experience" class="content-image" %}}
 # My role
 
 - VR Programmer

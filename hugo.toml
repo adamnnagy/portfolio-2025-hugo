@@ -7,6 +7,10 @@ publishDir = "public"
 [markup.goldmark.renderer]
   unsafe = true
 
+[markup.goldmark.parser.attribute]
+  block = true
+  title = true
+
 [params]
 heroBackground = "images/hero-bg.jpg"
 heroSubtitle = "Creative work across film, code and design"
