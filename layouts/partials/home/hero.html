@@ -5,14 +5,24 @@
 
     {{ if $video }}
 
-    <video autoplay muted loop playsinline class="video" poster="{{ $poster }}">
+    {{ with resources.Get $poster }}
+      {{ $posterOptimized := .Resize "1920x webp q75" }}
+      <video autoplay muted loop playsinline class="video" poster="{{ $posterOptimized.RelPermalink }}">
+    {{ else }}
+      <video autoplay muted loop playsinline class="video" poster="{{ $poster }}">
+    {{ end }}
         <source src="{{ $video }}" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
     {{ else }}
 
-    <img src="{{ $poster }}" alt="hero image">
+    {{ with resources.Get $poster }}
+      {{ $posterOptimized := .Resize "1920x webp q75" }}
+      <img src="{{ $posterOptimized.RelPermalink }}" alt="hero image">
+    {{ else }}
+      <img src="{{ $poster }}" alt="hero image">
+    {{ end }}
     {{ end }}
     <div class="background"></div>
     <div class="content">

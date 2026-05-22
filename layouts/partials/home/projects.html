@@ -21,17 +21,27 @@
 
                         {{ $video := .Resources.GetMatch "cover.mp4" }}
                         {{ $poster := .Resources.GetMatch "cover.png" }}
+                        {{ if not $poster }}
+                          {{ $poster = .Resources.GetMatch "cover.jpg" }}
+                        {{ end }}
+                        {{ if not $poster }}
+                          {{ $poster = .Resources.GetMatch "cover.jpeg" }}
+                        {{ end }}
 
                         <div class="video-container image-hover">
                             {{ if $video }}
-                            <video class="thumbnail " {{ with $poster }}poster="{{ .RelPermalink }}" {{ end }} autoplay
+                            {{ with $poster }}
+                            <video class="thumbnail " poster="{{ (.Resize "600x webp q75").RelPermalink }}" autoplay
                                 loop muted playsinline>
                                 <source src="{{ $video.RelPermalink }}" type="video/mp4">
                             </video>
-                            {{ else if $poster }}
-                            {{ with .Resources.GetMatch "cover.png" }}
-                            <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="thumbnail image-hover" />
+                            {{ else }}
+                            <video class="thumbnail " autoplay loop muted playsinline>
+                                <source src="{{ $video.RelPermalink }}" type="video/mp4">
+                            </video>
                             {{ end }}
+                            {{ else if $poster }}
+                            <img src="{{ (.Resize "600x webp q75").RelPermalink }}" alt="{{ $.Title }}" class="thumbnail image-hover" />
                             {{ end }}
                         </div>
                     </div>

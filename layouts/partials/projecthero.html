@@ -1,15 +1,31 @@
 <section class="hero-banner fade-in-page">
 
-    {{ $src := path.Join .projectDir .hero }}
-
-    {{/*  {{ if strings.HasSuffix $src ".mp4" }}  */}}
+    {{/* Determine the hero path - handle both root-level and content-relative paths */}}
+    {{ $heroParam := .Params.hero }}
+    {{ $src := $heroParam }}
+    {{ if not (strings.HasPrefix $heroParam "/") }}
+      {{/* If not absolute, make it relative to content directory */}}
+      {{ if eq .Kind "section" }}
+        {{/* For section pages, try root level first */}}
+        {{ $src = $heroParam }}
+      {{ else }}
+        {{/* For regular pages, join with file directory */}}
+        {{ $src = path.Join .File.Dir $heroParam }}
+      {{ end }}
+    {{ end }}
 
     {{/* check if src is video or image */}}
+    {{ $poster := .Resources.GetMatch "cover.png" }}
+    {{ if not $poster }}
+      {{ $poster = .Resources.GetMatch "cover.jpg" }}
+    {{ end }}
+    {{ if not $poster }}
+      {{ $poster = .Resources.GetMatch "cover.jpeg" }}
+    {{ end }}
+    
     <video autoplay muted loop playsinline class="video"
-        poster="{{ .Site.BaseURL | absLangURL }}{{ path.Join .projectDir }}/cover.jpg"
-        data-debug="DEBUG: {{ .Site.BaseURL | absLangURL }}{{ path.Join .projectDir }}.jpg">
+        {{ with $poster }}poster="{{ (.Resize "1920x webp q75").RelPermalink }}"{{ end }}>
         {{/* construct path manually to avoid inconsistent behavior with relURL/absURL when relativeURLs is true */}}
-
 
         <source src="{{ .Site.BaseURL | absLangURL }}{{ $src }}" type="video/mp4">
 
@@ -19,9 +35,9 @@
     {{/*  {{ end }}  */}}
     <div class="background"></div>
     <div class="content">
-        <h1 class="title">{{.title}}</span></h1>
+        <h1 class="title">{{ .Params.title }}<span></span></h1>
         <div class="roles">
-            <h2>{{ .role }}</h2>
+            <h2>{{ .Params.role }}</h2>
         </div>
     </div>
 </section>

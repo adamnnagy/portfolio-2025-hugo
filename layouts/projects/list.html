@@ -2,12 +2,7 @@
 <div class="hero">
 
     <section class="fade-in-page">
-        {{ partial "partials/projecthero.html" (dict
-
-        "hero" .Params.hero
-        "title" .Title
-
-        ) }}
+        {{ partial "partials/projecthero.html" . }}
     </section>
 
     <section class="container">
@@ -34,7 +29,8 @@
                         </div>
                     </article>
                     {{ with .Resources.GetMatch "cover.*" }}
-                    <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="thumbnail" />
+                    {{ $optimized := .Resize "600x webp q75" }}
+                    <img src="{{ $optimized.RelPermalink }}" alt="{{ $.Title }}" class="thumbnail" width="{{ $optimized.Width }}" height="{{ $optimized.Height }}" />
                     {{ end }}
                 </li>
             </a>

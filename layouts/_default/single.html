@@ -1,11 +1,5 @@
 {{ define "main" }}
-{{ partial "partials/projecthero.html" (dict 
-"hero" .Params.hero
-"projectDir" .File.Dir
-"title" .Params.title
-"role" .Params.role
-
-) }}
+{{ partial "partials/projecthero.html" . }}
 
 <article class="container scroll-fade-in">
 

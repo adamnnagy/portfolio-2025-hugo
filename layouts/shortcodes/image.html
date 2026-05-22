@@ -1,11 +1,19 @@
-{{ $src := .Get "src" | relURL }}
+{{ $src := .Get "src" }}
 {{ $alt := .Get "alt" | default "" }}
 {{ $class := .Get "class" | default "" }}
+{{ $width := .Get "width" | default "1200" }}
 
-<figure class="{{ $class }}">
-  <img 
-    src="{{ $src }}" 
-    alt="{{ $alt }}" 
-    loading="lazy" 
-    class="{{ $class }}">
-</figure>
+{{ with resources.Get $src }}
+  {{ $optimized := .Resize (printf "%sx webp q75" $width) }}
+  <figure class="{{ $class }}">
+    <img 
+      src="{{ $optimized.RelPermalink }}" 
+      alt="{{ $alt }}" 
+      loading="lazy" 
+      class="{{ $class }}" 
+      width="{{ $optimized.Width }}"
+      height="{{ $optimized.Height }}">
+  </figure>
+{{ else }}
+  <!-- Image not found in assets: {{ $src }} -->
+{{ end }}

@@ -43,6 +43,11 @@ Overnight and during the morning the band finalized songs that were written duri
 
 The recording session itself took place during a single day during which we recorded 5 songs.
 
+<div class="image-grid two-col">
+{{% image src="images/dobodel-live/dobodel-13.jpeg" alt="placeholder" class="content-image" %}}
+{{% image src="images/dobodel-live/dobodel-14.jpeg" alt="placeholder" class="content-image" %}}
+</div>
+
 The crew worked with a lightweight, minimal setup so to remain unobtrusive during the performances while still capturing high quality footage. The video setup consisted of a Sony A7 IV mounted on a gimbal alongside 2 Neewer variable lights with matte boxes.
 
 <div class="image-grid three-col">

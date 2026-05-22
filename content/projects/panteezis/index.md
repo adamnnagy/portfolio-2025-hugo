@@ -16,10 +16,18 @@ year = 2023
 
 *Panteézis* is an ambient album I composed for *Ithaka*, an exhibition by the Budapest-based painter Gabriella Kovács.
 
-{{< audiofolder folder="panteezis" >}}
+{{< audioplayer folder="panteezis" >}}
 
 Created as a companion piece to the exhibition, the music was designed to deepen the interaction between the audience and the paintings, turning the gallery into a more immersive audiovisual experience.
 
+<div class="image-grid three-col">
+
+{{% image src="images/panteezis/ithaka/ithaka-03.jpg" alt="Gabriella Kovács at the opening" class="content-image scroll-fade-in" %}}
+
+{{% image src="images/panteezis/ithaka/ithaka-04.jpg" alt="Paintings from the Ithaka exhibition" class="content-image scroll-fade-in" %}}
+{{% image src="images/panteezis/ithaka/ithaka-05.jpg" alt="Paintings from the Ithaka exhibition" class="content-image scroll-fade-in" %}}
+
+</div>
 <div class="image-grid two-col">
 
 {{% image src="images/panteezis/ithaka/ithaka-01.jpg" alt="Gabriella Kovács at the opening" class="content-image scroll-fade-in" %}}
@@ -31,6 +39,8 @@ Created as a companion piece to the exhibition, the music was designed to deepen
 # Process / Workflow
 
 The goal of the project was to create music that could exist in dialogue with the paintings rather than simply accompany them. I approached the album as a soundtrack to the exhibition — one that would reflect the atmosphere, textures, and emotional tone of the visual work while maintaining its own identity as a listening experience.
+
+<!-- workflow pictures -->
 
 ## Preproduction
 
