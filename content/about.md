@@ -8,25 +8,21 @@ hero = "videos/about-hero.mp4"
 
 # Hi, I'm Ádám. 
 
-I'm a Budapest-based video producer and editor working across science communication, culture and music.
-
-My work combines strong visuals with a polished audio track to achieve a cinematic language that explains concepts in an engaging manner. 
-
-I work across directing, editing, composing, mixing/mastering and create development.
+I'm a Budapest-based creative technologist and video editor working across science communication, culture and music.
 
 # Selected experience
 
 I worked extensively as an editor and all-around creative on many projects with iGEM Europe.
 
-I am a video editor with over 6 years of experience, I also understand technical concepts pretty easily with a background in engineering — I even coded this website.
+I'm a creative technologist with over 6 years of experience. I understand technical concepts easily with a background in engineering — I even coded this website.
 
-In the past, I created interactive experiences: a board game for students in Nepal (and elsewhere), an interactive musical experience and a Virtual Reality experience that premiered at the NYU Abu Dhabi Capstone Festival in 2019.
+In the past, I created interactive experiences: a board game for students in Nepal, an interactive musical experience, and a Virtual Reality experience, the latter premiered at the NYU Abu Dhabi Capstone Festival in 2019.
 
 * Video Producer for iGEM (Paris)
 * Assistant Editor for Happy Holidays (Haifa, Israel)
 * Head of Video for Labocine, based in New York (I was remote but extensively ate bagels during that time)
-* Editor on a satire piece of EU MEPs racing to destroy the planet (Brussels, commissioned by WWF)
-* Music making (in the countryside)
+* Video Editor on a satire piece of EU MEPs racing to destroy the planet (Brussels, commissioned by WWF)
+* Leading a band and recording a live session
 * VR experience on racial biasing (Abu Dhabi)
 * Designed a Board Game in a collaboration with Karkahana (Kathmandu, Nepal)
 * Designed automated greenhouse with a PLC control system (Miskolc, Hungary)
@@ -84,7 +80,6 @@ I’m comfortable working in international and interdisciplinary teams, both rem
 * Establishing automation workflows for post-production and file management
 
 # Fun Fact
-
 
 In 2015 the movie War Machine was having its principle photography in Abu Dhabi, UAE - and this is how I got on the silver screen.
 
