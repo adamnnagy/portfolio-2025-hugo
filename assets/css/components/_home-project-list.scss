@@ -6,14 +6,14 @@
 	.projects {
 		@include reset-spacing;
 		display: grid;
+		grid-template-columns: 1fr;
 		gap: 5rem;
-		grid-template-columns: 1fr 1fr;
 
-		@include tablet {
-			grid-template-columns: 1fr;
+		@include tablet-up {
+			grid-template-columns: 1fr 1fr;
 		}
 
-		li {
+        li {
 			// display: grid;
 			// grid-template-columns: 1fr 1fr;
 			// gap: 1rem;
@@ -28,19 +28,28 @@
 				text-align: center;
 
 				.main-text {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -58%);
-                    padding: 0;
-                    margin: 0;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -58%);
+					padding: 0;
+					margin: 0;
+
 					.title {
 						text-transform: uppercase;
 						font-size: 2rem;
+                        @include mobile {
+                            font-size: 1rem;
+                        }
 					}
 
 					.role {
-						font-size: 1rem;
+						font-size: 1.5rem;
+						@include reset-spacing;
+
+						@include mobile {
+							font-size: 0.8rem;
+						}
 					}
 				}
 
@@ -48,11 +57,14 @@
 					position: absolute;
 					top: 90%;
 					left: 50%;
-					transform: translate(-50%, -20%);
+					transform: translate(-50%, -50%);
 					padding: 0;
 					margin: 0;
 					font-size: 1rem;
-					// font-style: italic;
+
+                    @include tablet-down {
+                        font-size: 0.7rem;
+                    }
 				}
 
 				transition: text-shadow 0.3 ease;
@@ -62,7 +74,7 @@
 			.video-container {
 				position: relative;
 				width: 100%;
-				aspect-ratio: 27 / 40;
+				aspect-ratio: 16 / 9;
 				overflow: hidden;
 				z-index: -1;
 
@@ -80,6 +92,11 @@
 					opacity: 0.4; /* Adjust this to control grain intensity */
 					pointer-events: none; /* Allows clicking through to the video/links */
 				}
+
+				@include tablet-up {
+					aspect-ratio: 27 / 40;
+				}
+
 			}
 
 			.thumbnail {

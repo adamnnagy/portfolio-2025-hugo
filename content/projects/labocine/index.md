@@ -55,7 +55,7 @@ It was very important for the trailers to communicate the novelty of Labocine an
 
 <!-- [Labocine Trailer Playlist](https://www.youtube.com/watch?v=gcjfBtfwZ0c&list=PLXR8zBVrOFRdAnmGJbkC4H5pcwkHE0p54) -->
 
-<!-- embed this? -->
+{{% youtube id="gcjfBtfwZ0c" %}}
 
 ### Newsletter & Editorial Communication - The Weekly Waves
 
