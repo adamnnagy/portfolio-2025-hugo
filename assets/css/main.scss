@@ -49,28 +49,29 @@ h6 {
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 2.5rem;
     text-transform: lowercase;
     font-weight: 900;
+
+    @include tablet-up {
+        font-size: 3.5rem;
+    }
+
+    @include desktop {
+        font-size: 5rem;
+    }
 }
 
 p {
-	font-size: large;
+	font-size: 1rem;
+
+	@include tablet-up {
+		font-size: 1.1rem;
+	}
 }
 
 .container {
-	padding: 0;
-
-	width: 50%;
-
-	@media (max-width: 1200px) {
-		width: 70%;
-	}
-
-	margin: 0 auto;
-	@media (max-width: 600px) {
-		width: 80%;
-	}
+	@include container;
 
 	section {
 		padding: $uniform-padding;
@@ -92,7 +93,12 @@ a {
 
 ul {
 	margin: 0;
-	padding: 0 2rem;
+	padding: 0 1rem;
+
+	@include tablet-up {
+		padding: 0 2rem;
+	}
+
 	li {
 		list-style: none;
 	}

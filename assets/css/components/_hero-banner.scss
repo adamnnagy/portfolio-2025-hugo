@@ -58,13 +58,39 @@
 
 		.roles {
 			font-feature-settings: "zero", "ss01", "tnum";
-			font-size: 4rem;
-			text-align: left;
+			font-size: 1rem;
+			text-align: center;
+            font-weight: 200;
+
+
+			@include tablet-up {
+				font-size: 2.5rem;
+			}
+
+			@include desktop {
+				font-size: 3.5rem;
+			}
+
+			@include large-desktop {
+				font-size: 4rem;
+			}
 		}
 
 		.title {
 			@include title-text;
-			font-size: 7rem;
+			font-size: 2.5rem;
+
+			@include tablet-up {
+				font-size: 4rem;
+			}
+
+			@include desktop {
+				font-size: 5.5rem;
+			}
+
+			@include large-desktop {
+				font-size: 7rem;
+			}
 
 			span {
 				// font-style: italic;
@@ -72,10 +98,9 @@
 			}
 		}
 
-		@media (min-width: 1280px) {
+		@include large-desktop {
 			display: flex;
 			flex-direction: column;
-			// gap: 2rem;
 
 			.hero-title {
 				font-size: 30rem;
@@ -89,8 +114,14 @@
 		}
 	}
 
+	height: calc(100vh - var(--nav-height, 200px));
+
 	@include desktop {
 		height: calc(100vh - var(--nav-height, 200px));
+	}
+
+	@include tablet {
+		height: Max(70vh, 500px);
 	}
 
 	@include mobile {
@@ -111,5 +142,4 @@
 		opacity: 0.6; /* Adjust this to control grain intensity */
 		pointer-events: none; /* Allows clicking through to the video/links */
 	}
-
 }

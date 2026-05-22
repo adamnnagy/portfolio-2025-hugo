@@ -42,29 +42,49 @@
         img {
             width: 100%;
             height: auto;
-            aspect-ratio: 16 / 9; /* Modern CSS property for aspect ratio */
+            aspect-ratio: 16 / 9;
             object-fit: cover;
             grid-area: 1 / 1 / 2 / 3;
             transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             position: relative;
-            
             align-self: end;
         }
 
         .project-title {
             @include reset-spacing;
-            
             font-weight: 200;
-            
+            font-size: 1.2rem;
 
+            @include tablet-up {
+                font-size: 1.4rem;
+            }
+
+            @include desktop {
+                font-size: 1.6rem;
+            }
         }
-		.description {
-			grid-row: 2 / 3;
-		}
-		.city {
-			font-style: italic;
-			transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); // Add transition for city opacity if you plan to change it
-		}
+
+        .description {
+            font-size: 0.95rem;
+
+            @include tablet-up {
+                font-size: 1rem;
+            }
+        }
+
+        .city {
+            font-size: 0.9rem;
+            font-style: italic;
+            transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+            @include tablet-up {
+                font-size: 0.95rem;
+            }
+        }
+
+        .description {
+            grid-row: 2 / 3;
+        }
 
 		&:hover {
 			background-color: #34495e; /* Darker background on hover */

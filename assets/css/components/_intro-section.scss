@@ -9,8 +9,20 @@
         height: 100%;
 
         li {
-            font-size: 1rem;
+            font-size: 0.95rem;
             list-style-type: disc;
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+
+            @include tablet-up {
+                font-size: 1.05rem;
+                margin-bottom: 0.75rem;
+            }
+
+            @include desktop {
+                font-size: 1.1rem;
+                margin-bottom: 1rem;
+            }
         }
     }
 }
