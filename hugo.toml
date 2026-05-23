@@ -1,4 +1,4 @@
-baseURL = "https://adamnagy.studio/"
+baseURL = "https://adamnagy.studio"
 languageCode = 'en-us'
 title = 'Ádám Nagy'
 publishDir = "public"
