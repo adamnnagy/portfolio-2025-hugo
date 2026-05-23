@@ -10,6 +10,6 @@ hero = ""
 
 # I'm an Editor, Videographer, and Musician based in Budapest, Hungary.
 
-* 7 years of creative experience
+<!-- * 7 years of creative experience
 * Editing, Motion Graphics, Music
-* Remote / Hybrid working
+* Remote / Hybrid working -->

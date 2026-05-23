@@ -69,7 +69,7 @@ h1 {
 }
 
 p {
-	font-size: 1rem;
+	font-size: 1.2rem;
 
 	@include tablet-up {
 		font-size: 1.1rem;
@@ -199,7 +199,9 @@ figcaption {
 }
 
 .image-grid.two-col {
-	@include tablet {
+    grid-template-columns: 1fr;
+
+	@include tablet-up {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }

@@ -1,6 +1,6 @@
 +++
 date = '2025-07-13T12:16:35+02:00'
-draft = true
+draft = false
 featured = true
 title = 'Olympic Dark Horse'
 description = "Documentary shorts"

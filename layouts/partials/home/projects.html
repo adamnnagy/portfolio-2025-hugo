@@ -1,4 +1,4 @@
-<h1>Featured</h1>
+<h1>Featured projects</h1>
 <div class="home-projects">
     <ul class="projects">
         {{ range first 4 (sort (where .Site.RegularPages "Type" "projects") "Params.year" "desc") }}
