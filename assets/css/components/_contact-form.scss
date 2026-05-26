@@ -1,32 +1,42 @@
 // Contact form
 
 .contact-section {
-    h1 {
-        margin: 0;
-        font-size: 1.8rem;
+	@include tablet-up {
+		margin: auto;
+	}
+	h1 {
+		margin: 0;
+		font-size: 1.8rem;
 
-        @include tablet-up {
-            font-size: 2.5rem;
-        }
+		@include tablet-up {
+			font-size: 2.5rem;
+		}
 
-        @include desktop {
-            font-size: 3rem;
-        }
-    }
+		@include desktop {
+			font-size: 3rem;
+		}
+	}
 	form {
 		display: flex;
-        flex-direction: column;
-        justify-content: center;
+		flex-direction: column;
+		justify-content: center;
 		gap: 1rem;
-		margin: auto;
+		// margin: auto;
 		max-width: 600px;
 
 		@include tablet-up {
 			gap: 1.25rem;
 		}
 
+		div {
+			@include tablet-up {
+				display: flex;
+				gap: 1rem;
+			}
+		}
 		input,
 		textarea {
+			@include reset-spacing;
 			color: $primary-color;
 			width: 100%;
 			padding: 0.75rem;
