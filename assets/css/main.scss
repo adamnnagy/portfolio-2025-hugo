@@ -68,6 +68,24 @@ h1 {
 	}
 }
 
+h2 {
+	font-size: 2.5rem;
+	text-transform: lowercase;
+	font-weight: 900;
+
+    @include reset-spacing;
+
+    margin: 0.5rem auto;
+
+	@include tablet-up {
+		font-size: 3.5rem;
+	}
+
+	@include desktop {
+		font-size: 3.5rem;
+	}
+}
+
 p {
 	font-size: 1.2rem;
 
