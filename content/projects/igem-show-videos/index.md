@@ -29,6 +29,8 @@ At [iGEM](https://igem.org/), I worked as a Video Producer producing large-scale
 
 Splitting my time between Paris and Budapest, my work focused on translating complex scientific ideas into emotionally engaging narratives for both live audiences and online platforms through concept development, scriptwriting, and end-to-end post-production.
 
+<!-- picture about me in budapest? -->
+
 <div class="image-grid three-col">
 {{% image src="images/igem/editing-01.jpg" alt="placeholder" class="content-image" %}}
 {{% image src="images/igem/editing-02.jpg" alt="placeholder" class="content-image" %}}

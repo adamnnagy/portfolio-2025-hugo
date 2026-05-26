@@ -3,7 +3,7 @@ date = '2025-07-13T12:16:35+02:00'
 draft = false
 featured = true
 title = 'WWF shorts'
-description = "Documentary shorts"
+description = "Campaign videos for Nature Restoration Law"
 role = "Editor"
 city = "Budapest/Abu Dhabi/Remote"
 priority = 1
@@ -72,14 +72,17 @@ The video highlights the efficiency of alternative practices and also about usin
 <div class="image-grid two-col">
 {{% image src="images/wwf/wwf-sweden-08.jpg" alt="placeholder" class="content-image" %}}
 {{% image src="images/wwf/wwf-sweden-02.jpg" alt="placeholder" class="content-image" %}}
-{{% image src="images/wwf/wwf-sweden-04.jpg" alt="placeholder" class="content-image" %}}
 </div>
 
 # Run4Destruction
 
 A short parody video in front of the EU Council that satirizes MEPs who are voting against the EU Nature Restoration Law.
 
-<!-- add pictures -->
+<div class="image-grid three-col">
+{{% image src="images/wwf/wwf-sweden-08.jpg" alt="placeholder" class="content-image" %}}
+{{% image src="images/wwf/wwf-sweden-08.jpg" alt="placeholder" class="content-image" %}}
+{{% image src="images/wwf/wwf-sweden-02.jpg" alt="placeholder" class="content-image" %}}
+</div>
 
 # Process
 
