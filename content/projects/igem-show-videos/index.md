@@ -3,12 +3,12 @@ date = '2025-07-13T11:30:45+02:00'
 draft = false
 featured = true
 priority = 1
-title = 'iGEM | Creative Video Production'
+title = 'iGEM'
 description = "Start to finish cinematic event videos"
-role = "Video Producer"
+role = "Creative Video Producer"
 year = 2025
 hero = "iGEM.mp4"
-city = "Paris/Remote"
+city = "Paris"
 gallery = true
 +++
 
@@ -20,24 +20,20 @@ gallery = true
 
 # [iGEM](https://igem.org/) | Creative Video Production {#top}
 
-At [iGEM](https://igem.org/), I worked as a Video Producer producing large-scale visuals for live events and scientific explainer videos for one of the world’s largest synthetic biology organizations, screened during the annual Grand Jamboree in Paris, attended by more than 4,500 participants from around the world.
+At [iGEM](https://igem.org/), I worked as a Video Producer producing large-scale visuals for one of the world’s largest synthetic biology organization, screened during the annual Grand Jamboree in Paris that is attended by more than 4,500 participants from around the world.
 
 <div class="image-grid two-col">
 {{% image src="images/igem/igem-01.jpg" alt="placeholder" class="content-image" %}}
 {{% image src="images/igem/igem-02.jpg" alt="placeholder" class="content-image" %}}
 </div>
 
-Splitting my time between Paris and Budapest, my work focused on translating complex scientific ideas into emotionally engaging narratives for both live audiences and online platforms through concept development, scriptwriting, and end-to-end post-production.
-
-<!-- picture about me in budapest? -->
+Splitting my time between Paris and Budapest, my work focused on translating complex scientific ideas into emotionally engaging narratives for both live audiences and online platforms. My role reached through concept development, scriptwriting, and end-to-end post-production.
 
 <div class="image-grid three-col">
 {{% image src="images/igem/editing-01.jpg" alt="placeholder" class="content-image" %}}
 {{% image src="images/igem/editing-02.jpg" alt="placeholder" class="content-image" %}}
 {{% image src="images/igem/workshop-01.jpg" alt="placeholder" class="content-image" %}}
 </div>
-
-Each year, the production team delivers approximately 30-40 videos for the event. There are 4-5 flagship videos, 7-9 longer form videos and up to 20 transition videos.
 
 [Back to top](#top)
 
@@ -57,9 +53,9 @@ The challenge was balancing scientific accuracy with cinematic storytelling acce
 {{% image src="images/igem/synbio-video/synbio-video-01.jpeg" alt="placeholder" class="content-image" %}}
 </div>
 
-This video introduced the broader vision of synthetic biology: a field that applies engineering principles to biology and has the potential to transform manufacturing, medicine, agriculture, and sustainability.
+I decided to produce this video to balance the information heavy explainer videos that followed it during the Award Show of 2024. This video introduced the broader vision of synthetic biology: a field that applies engineering principles to biology and has the potential to transform manufacturing, medicine, agriculture, and sustainability.
 
-I developed the script and edited the piece to communicate complex ideas through concise narration and emotionally driven visuals.
+The key challenge of this project was cinematic accuracy, communicating the hope that comes from scientific progress without being trite. I developed the script and edited the piece to communicate complex ideas through concise narration and emotionally driven visuals. 
 
 {{% igemvideo id="83jnAnhpuLQHRLgHsTLJWB" class=""%}}
 

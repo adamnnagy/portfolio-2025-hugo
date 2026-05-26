@@ -5,7 +5,7 @@ title = 'Music Making'
 priority = 1
 featured = false
 description = "The numerous projects I'm involved with as a Musician."
-role = "Musician | Producer"
+role = "Musician"
 city = "Budapest"
 hero = "hero.mp4"
 +++

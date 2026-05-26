@@ -1,12 +1,14 @@
 +++
 date = '2025-07-13T12:16:35+02:00'
-draft = false
-featured = true
 title = 'WWF shorts'
 description = "Campaign videos for Nature Restoration Law"
 role = "Editor"
-city = "Budapest/Abu Dhabi/Remote"
-priority = 1
+city = "Budapest/Remote"
+
+draft = false
+featured = true
+priority = 3
+
 hero = "Marchegg,-Austria-720p.mp4"
 year = 2019
 +++

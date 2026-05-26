@@ -2,13 +2,15 @@
 date = '2025-07-13T12:16:35+02:00'
 draft = false
 featured = true
+priority = 2
+
 title = 'Olympic Dark Horse'
-description = "Documentary shorts"
+description = "Documentary short"
 role = "Editor"
 city = "Budapest"
-priority = 1
-hero = "Shane-720p.mp4"
 year = 2019
+
+hero = "Shane-720p.mp4"
 +++
 
 # Olympic Dark Horse - Shane Tusup

@@ -1,7 +1,7 @@
 +++
 date = '2025-07-13T12:16:35+02:00'
 draft = true
-featured = true
+featured = false
 title = 'Puppet Gene'
 description = ""
 role = "Assistant Editor"
