@@ -1,7 +1,7 @@
 {{ if .Get "title" }}
-<iframe class="embedded-video" title="{{ .Get " title"}}" src="https://video.igem.org/videos/embed/{{ .Get " id" }}"
+<iframe class="embedded-video" title="{{ .Get "title"}}" src="https://video.igem.org/videos/embed/{{ .Get "id" }}"
     frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
 {{ else }}
-<iframe class="embedded-video" src="https://video.igem.org/videos/embed/{{ .Get " id" }}" frameborder="0" allowfullscreen=""
+<iframe class="embedded-video" src="https://video.igem.org/videos/embed/{{ .Get "id" }}" frameborder="0" allowfullscreen=""
     sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
 {{ end }}
