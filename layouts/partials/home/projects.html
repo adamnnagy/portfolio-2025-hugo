@@ -1,10 +1,14 @@
 <h1>Featured projects</h1>
 <div class="home-projects">
     <ul class="projects">
-        {{ range first 4 (sort (where .Site.RegularPages "Type" "projects") "Params.year" "desc") }}
 
-        {{ if .Params.featured }}
+        {{ $projects := where .Site.RegularPages "Type" "projects" }}
+        {{ $featured := where $projects "Params.featured" true }}
+        {{ $sorted := sort $featured "Params.priority" "asc" }}
+        {{ $top := first 4 $sorted }}
 
+        {{ range $top }}
+        
         <li>
             <article class="scroll-fade-in">
                 <a href="{{ .RelPermalink }}">
@@ -22,16 +26,16 @@
                         {{ $video := .Resources.GetMatch "cover.mp4" }}
                         {{ $poster := .Resources.GetMatch "cover.png" }}
                         {{ if not $poster }}
-                          {{ $poster = .Resources.GetMatch "cover.jpg" }}
+                        {{ $poster = .Resources.GetMatch "cover.jpg" }}
                         {{ end }}
                         {{ if not $poster }}
-                          {{ $poster = .Resources.GetMatch "cover.jpeg" }}
+                        {{ $poster = .Resources.GetMatch "cover.jpeg" }}
                         {{ end }}
 
                         <div class="video-container image-hover">
                             {{ if $video }}
                             {{ with $poster }}
-                            <video class="thumbnail " poster="{{ (.Resize "600x webp q75").RelPermalink }}" autoplay
+                            <video class="thumbnail " poster="{{ (.Resize " 600x webp q75").RelPermalink }}" autoplay
                                 loop muted playsinline>
                                 <source src="{{ $video.RelPermalink }}" type="video/mp4">
                             </video>
@@ -41,7 +45,8 @@
                             </video>
                             {{ end }}
                             {{ else if $poster }}
-                            <img src="{{ (.Resize "600x webp q75").RelPermalink }}" alt="{{ $.Title }}" class="thumbnail image-hover" />
+                            <img src="{{ ($poster.Resize " 600x webp q75").RelPermalink }}" alt="{{ $.Title }}"
+                                class="thumbnail image-hover" />
                             {{ end }}
                         </div>
                     </div>
@@ -49,6 +54,9 @@
             </article>
         </li>
         {{ end }}
-        {{ end }}
     </ul>
+
 </div>
+<a href="{{ " projects/" | relURL }}">
+    <h2>All Projects</h2>
+</a>
