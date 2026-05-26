@@ -75,10 +75,10 @@ h2 {
 
     @include reset-spacing;
 
-    margin: 0.5rem auto;
+    margin: 0.2rem auto;
 
 	@include tablet-up {
-		font-size: 3.5rem;
+		font-size: 2.5rem;
 	}
 
 	@include desktop {
