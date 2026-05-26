@@ -36,7 +36,7 @@
 					margin: 0;
 
 					.title {
-						text-transform: uppercase;
+						text-transform: none;
 						font-size: 2rem;
                         @include mobile {
                             font-size: 1rem;
