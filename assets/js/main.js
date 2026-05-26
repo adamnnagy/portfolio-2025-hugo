@@ -16,8 +16,13 @@ const observer = new IntersectionObserver(
 				// This will make 'var(--initial-delay, 0s)' resolve to 0s.
 				entry.target.style.removeProperty("--initial-delay");
 			} else {
-				entry.target.classList.remove("visible");
-				entry.target.classList.add("faded-out");
+
+                // TURN THESE ON FOR EFFECT APPLIED WHEN SCROLLING UP
+
+				// entry.target.classList.remove("visible");
+				// entry.target.classList.add("faded-out");
+
+
 				// When fading out, we don't re-apply the initial delay.
 				// It should still have '--initial-delay' removed.
 			}

@@ -152,7 +152,7 @@ $scroll-fade-transform-offset: 20px;
 .scroll-fade-in {
 	opacity: 0;
 	transform: translateY($scroll-fade-transform-offset);
-	will-change: opacity, transform;
+	// will-change: opacity, transform;
 
 	// Define transitions for opacity and transform
 	// The 'transition-delay' will be set by the custom property.
