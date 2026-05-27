@@ -40,7 +40,13 @@ Created as a companion piece to the exhibition, the music was designed to deepen
 
 The goal of the project was to create music that could exist in dialogue with the paintings rather than simply accompany them. I approached the album as a soundtrack to the exhibition — one that would reflect the atmosphere, textures, and emotional tone of the visual work while maintaining its own identity as a listening experience.
 
-<!-- workflow pictures -->
+<div class="image-grid two-col">
+
+{{% image src="images/panteezis/ithaka/werk-01.jpg" alt="Gabriella Kovács at the opening" class="content-image scroll-fade-in" %}}
+
+{{% image src="images/panteezis/ithaka/werk-02.jpg" alt="Paintings from the Ithaka exhibition" class="content-image scroll-fade-in" %}}
+
+</div>
 
 ## Preproduction
 
