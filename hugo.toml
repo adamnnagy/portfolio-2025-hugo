@@ -17,3 +17,5 @@ heroVideo = "videos/hero.mp4"
 
 relativeURLs = true
 canonifyURLs = true
+
+googleAnalytics = "G-7Y6CBE25PD"
