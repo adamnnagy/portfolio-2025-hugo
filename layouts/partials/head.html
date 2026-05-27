@@ -10,7 +10,7 @@
 <link rel="manifest" href="{{ "favicons/site.webmanifest" | relURL }}">
 
 {{ $styles := resources.Get "/css/main.scss" | css.Sass (dict
-"targetPath" "/css/main.css" "outuptStyle" "compressed") |
+"targetPath" "/css/main.css" "outputStyle" "compressed") |
 resources.Fingerprint }}
 
 
@@ -19,15 +19,11 @@ resources.Fingerprint }}
 <meta name="theme-color" content="#ffffff">
 
 <style>
-
-@font-face {
-    font-family: 'Inter';
-    src: url('{{ "fonts/InterVariable.ttf" | relURL }}') format("truetype-variations");
-    font-weight: 100 900;
-    font-display: swap;
-}
-
-
+    @font-face {
+        font-family: 'Inter';
+        src: url('{{ "fonts/InterVariable.ttf" | relURL }}') format("truetype-variations");
+        font-weight: 100 900;
+        font-display: swap;
+    }
 </style>
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
-<link rel="icon" href="static/images/favicon.ico" />
