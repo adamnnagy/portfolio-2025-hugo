@@ -7,27 +7,31 @@ title = 'iGEM'
 description = "Start to finish cinematic event videos"
 role = "Creative Video Producer"
 year = 2025
-hero = "iGEM.mp4"
+hero = "cover.mp4"
 city = "Paris"
 gallery = true
 +++
+<div class="page-navigation">
 
 - [Story & Brand Videos](#story--brand-videos)
 - [Live Show & Stage Production](#live-show--stage-production)
 - [Explainer Videos](#explainer-videos)
 
-<!-- <a id="top"></a> -->
+---
+</div>
 
-# [iGEM](https://igem.org/) | Creative Video Production {#top}
+# iGEM | Creative Video Production {#top}
 
-At [iGEM](https://igem.org/), I worked as a Video Producer producing large-scale visuals for one of the world’s largest synthetic biology organization, screened during the annual Grand Jamboree in Paris that is attended by more than 4,500 participants from around the world.
+I worked on producing large-scale visuals for [iGEM](https://igem.org/), one of the world’s largest synthetic biology organization, that were screened during the annual Grand Jamboree in Paris, attended by more than 4,500 participants from around the world.
 
 <div class="image-grid two-col">
 {{% image src="images/igem/igem-01.jpg" alt="placeholder" class="content-image" %}}
 {{% image src="images/igem/igem-02.jpg" alt="placeholder" class="content-image" %}}
+{{% video src="images/igem/main-stage.mp4" alt="placeholder" class="content-image" %}}
+
 </div>
 
-Splitting my time between Paris and Budapest, my work focused on translating complex scientific ideas into emotionally engaging narratives for both live audiences and online platforms. My role reached through concept development, scriptwriting, and end-to-end post-production.
+Splitting my time between Paris and Budapest, my work focused on translating complex scientific ideas into emotionally engaging narratives for both live audiences and online platforms. My role spanned concept development, scriptwriting, and end-to-end post-production.
 
 <div class="image-grid three-col">
 {{% image src="images/igem/editing-01.jpg" alt="placeholder" class="content-image" %}}
@@ -35,13 +39,15 @@ Splitting my time between Paris and Budapest, my work focused on translating com
 {{% image src="images/igem/workshop-01.jpg" alt="placeholder" class="content-image" %}}
 </div>
 
+For long I was the one man team of video production, recording and editing each video myself. The moment we started expanding the team the bigger our ambitions got, resulting in higher production value and more interesting storytelling. I felt an ownership of each project, feeling that it became personally important for me to finish them. Each project inspired me to be flexible and agile and to be open to new ideas.
+
 [Back to top](#top)
 
 # Story & Brand Videos
 
 These projects focused on communicating the vision, values, and cultural identity of iGEM and the broader field of synthetic biology.
 
-The challenge was balancing scientific accuracy with cinematic storytelling accessible to broader audiences.
+The challenge was balancing scientific accuracy and cinematic storytelling that is accessible to broader audiences.
 
 ## iGEM | The Heart of Synthetic Biology
 
@@ -53,23 +59,17 @@ The challenge was balancing scientific accuracy with cinematic storytelling acce
 {{% image src="images/igem/synbio-video/synbio-video-01.jpeg" alt="placeholder" class="content-image" %}}
 </div>
 
-I decided to produce this video to balance the information heavy explainer videos that followed it during the Award Show of 2024. This video introduced the broader vision of synthetic biology: a field that applies engineering principles to biology and has the potential to transform manufacturing, medicine, agriculture, and sustainability.
+I came up with the idea for this video to balance the information heavy explainer videos that followed it during the Award Show of 2024. This video introduced the broader vision of synthetic biology: a field that applies engineering principles to genetic engineering and has the potential to transform manufacturing, medicine, agriculture, and sustainability.
 
-The key challenge of this project was cinematic accuracy, communicating the hope that comes from scientific progress without being trite. I developed the script and edited the piece to communicate complex ideas through concise narration and emotionally driven visuals. 
+The key challenge of this project was scientific accuracy that is communicated in a cinematic format without being trite. I developed the script and edited the piece to communicate complex ideas through concise narration and emotionally driven visuals. 
 
 {{% igemvideo id="83jnAnhpuLQHRLgHsTLJWB" class=""%}}
 
 ### Process
 
-I wrote the first draft of the script which was then extended by our creative team. Once finalized, I edited the video, added sound effects, commissioned the voice over and it premiered at the Grand Jamboree 2024. After the event I adapted the video into a 16x9 online version.
+I wrote the first draft of the script which was then extended by other members of the creative team. I edited and produced the video and it premiered at the Grand Jamboree 2024. After the event I adapted the video into a 16x9 web version.
 
-### 2025 update
-
-The video received an update in 2025 that added a middle section that didn't exist before. The updated video featured a different voice artist due to scheduling constraints.
-
-### Outcome
-
-The video was praised by stakeholders and the board. With the rewrite in 2025, the video became a core piece of storytelling of iGEM and the field.
+The video was praised by stakeholders and the board and it became a core piece of storytelling of iGEM and the field.
 
 ---
 
@@ -81,16 +81,13 @@ A manifesto-style brand video centered around the people participating in iGEM.
 
 The goal of the piece was to define the mindset, optimism, and ambition of the community through a more emotional and identity-driven format inspired by classic brand storytelling campaigns.
 
-The video aimed to articulate the values and identity of iGEM through the format of a manifesto.
-
 {{% igemvideo id="3dMheRrL9JdqbZNQGTdfdF" class="content-image"%}}
-
-{{% youtube id="5Ll1FCzycXU"%}}
 
 ### Process
 
 - created a pre-visualizer that helped the scriptwriting and storyboarding.
 - refined performance with voice over artists
+- 
 - adapted the video to event screen and online formats
 
 ### Outcome
@@ -114,10 +111,10 @@ These projects required balancing cinematic pacing with the practical constraint
 ---
 
 ## The Biobrick Trophy | 2025
-
+**Role:** Concept, Editor, Cinematographer, Sound Designer, Color Grading, VFX
 {{% image src="images/igem/brick-01.jpg" alt="placeholder" class="content-image" %}}
 
-**Role:** Concept, Editor, Cinematographer, Sound Designer, Color Grading, VFX
+
 
 I collaborated closely with the President and CEO of iGEM, Nemanja Stiepovic and the Director of Production, Orsolya Szantho. I also collaborated with [Glitch Studio](https://glitchworks.org/) and [Causa Studio](https://causa.studio/) during the production process as well as the on-site production crew.
 
@@ -151,9 +148,7 @@ As the video was playing at the live show, the bricks lit up at a specific time 
 
 In a surprise video that was played after a staged dramatic intermission, the mascot of iGEM, a giant microbe called Gemy brings the Biobrick Trophy to the Porte de Versailles venue. (visible at 06:15 in the embedded video)
 
-### Challenges
-
-1. Filming the bricks and locations
+### Filming the world in Paris
 
 3D printed and rigged with LED lights, the bricks were custom-built for the video and the live show.
 
@@ -161,16 +156,11 @@ The filming took place in Paris and the shots were set in different parts of the
 
 Combining these locations with aerial stock footage of different cities created the effect of the bricks being all around the world.
 
-1. The lights and color correction
+### The lights and color correction
 
 The lights that were emitted from the bricks had to be compensated for in post-production. Some of the colors didn't show up on camera or they were not color accurate and these issues had to be fixed in post.
 
-<!-- before / after? -->
-
-1. VFX
-
 The titles of the values were added to the bricks in post.
-Stabilization was need on many shots without using tracking points.
 
 ### Outcome
 
