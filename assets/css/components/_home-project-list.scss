@@ -5,6 +5,7 @@
 	}
 	.projects {
 		@include reset-spacing;
+        @include reset-list;
 		display: grid;
 		grid-template-columns: 1fr;
 		gap: 5rem;
@@ -13,7 +14,7 @@
 			grid-template-columns: 1fr 1fr;
 		}
 
-        li {
+		li {
 			// display: grid;
 			// grid-template-columns: 1fr 1fr;
 			// gap: 1rem;
@@ -38,9 +39,9 @@
 					.title {
 						text-transform: none;
 						font-size: 2rem;
-                        @include mobile {
-                            font-size: 1rem;
-                        }
+						@include mobile {
+							font-size: 1rem;
+						}
 					}
 
 					.role {
@@ -61,15 +62,16 @@
 					padding: 0;
 					margin: 0;
 					font-size: 1rem;
-                    width: 100%;
+					width: 100%;
 
-                    @include tablet-down {
-                        font-size: 0.7rem;
-                    }
+					@include tablet-down {
+						font-size: 0.7rem;
+					}
 				}
 
-				transition: text-shadow 0.3 ease;
 				text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.8);
+
+				
 			}
 
 			.video-container {
@@ -97,7 +99,6 @@
 				@include tablet-up {
 					aspect-ratio: 27 / 40;
 				}
-
 			}
 
 			.thumbnail {
@@ -120,4 +121,9 @@
 			}
 		}
 	}
+}
+
+.learn-more-link {
+	text-align: center;
+	margin-top: 6rem;
 }

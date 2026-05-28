@@ -13,6 +13,8 @@
 	li {
 		@include reset-list;
 		text-decoration: none;
+
+        @include hover-blur;
 	}
 	a {
 		color: $primary-color;
