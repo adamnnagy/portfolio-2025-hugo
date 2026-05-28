@@ -65,7 +65,7 @@ h1 {
 	}
 
 	@include desktop {
-		font-size: 5rem;
+		font-size: 4rem;
 	}
 }
 
@@ -130,7 +130,7 @@ ul {
 
 	li {
 		// list-style: none;
-        padding-bottom: 1rem;
+        // padding-bottom: 1rem;
 		@include reset-spacing;
 	}
 }
@@ -195,7 +195,7 @@ $scroll-fade-transform-offset: 20px;
 .content-image {
 	width: 100%;
 	height: auto;
-	margin: 1rem auto;
+	// margin: 1rem auto;
 }
 
 .embedded-video {
@@ -205,7 +205,7 @@ $scroll-fade-transform-offset: 20px;
 }
 
 figure {
-	margin: 1.5rem 0;
+	margin: 1rem 0;
 	text-align: center;
 }
 
