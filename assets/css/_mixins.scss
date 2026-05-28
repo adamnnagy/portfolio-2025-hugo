@@ -1,93 +1,93 @@
 // Typography mixins
 @mixin title-text {
-    font-family: $title-font;
-    font-weight: 900;
-    text-transform: uppercase;
-    margin: 0;
-    padding: 0;
+	font-family: $title-font;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
 }
 
 @mixin body-text {
-    font-family: $regular-font;
-    font-weight: 400;
-    line-height: 1.6;
+	font-family: $regular-font;
+	font-weight: 400;
+	line-height: 1.6;
 }
 
 // Layout mixins
 @mixin flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 @mixin flex-column {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 @mixin absolute-cover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 // Interactive elements
 @mixin button-base {
-    padding: 0.75rem 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    text-decoration: none;
-    display: inline-block;
+	padding: 0.75rem 1rem;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	text-decoration: none;
+	display: inline-block;
 }
 
 @mixin hover-lighten($color: $secondary-color, $amount: 10%) {
-    transition: background 0.2s ease;
-    &:hover {
-        background: lighten($color, $amount);
-    }
+	transition: background 0.2s ease;
+	&:hover {
+		background: lighten($color, $amount);
+	}
 }
 
 // Form elements
 @mixin input-base {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid lighten($primary-color, 20%);
-    border-radius: 4px;
-    font-family: $regular-font;
-    font-size: 1rem;
-    
-    &:focus {
-        outline: none;
-        border-color: $primary-color;
-        box-shadow: 0 0 0 2px rgba($primary-color, 0.2);
-    }
+	width: 100%;
+	padding: 0.5rem;
+	border: 1px solid lighten($primary-color, 20%);
+	border-radius: 4px;
+	font-family: $regular-font;
+	font-size: 1rem;
+
+	&:focus {
+		outline: none;
+		border-color: $primary-color;
+		box-shadow: 0 0 0 2px rgba($primary-color, 0.2);
+	}
 }
 
 // Spacing mixins
 @mixin section-spacing {
-    padding: 2rem 1rem;
-    
-    @include tablet-up {
-        padding: 3rem 2rem;
-    }
-    
-    @include desktop {
-        padding: 4rem 2rem;
-    }
+	padding: 2rem 1rem;
+
+	@include tablet-up {
+		padding: 3rem 2rem;
+	}
+
+	@include desktop {
+		padding: 4rem 2rem;
+	}
 }
 
 @mixin container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-    
-    @include tablet-up {
-        padding: 0 2rem;
-    }
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 1rem;
+
+	@include tablet-up {
+		padding: 0 2rem;
+	}
 }
 
 // Visual effects
@@ -96,25 +96,33 @@
 }
 
 @mixin box-shadow-light {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 @mixin box-shadow-medium {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@mixin hover-blur {
+
+	transition: filter 0.8s ease;
+
+	&:hover {
+		filter: blur(4px);
+	}
 }
 
 // Reset mixins
 @mixin reset-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 @mixin reset-spacing {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
-
 
 // Responsive breakpoints
 $mobile: 480px;
@@ -125,37 +133,37 @@ $xl-desktop: 1920px;
 
 // Mixins for media queries
 @mixin mobile {
-    @media (max-width: #{$mobile - 1px}) {
-        @content;
-    }
+	@media (max-width: #{$mobile - 1px}) {
+		@content;
+	}
 }
 
 @mixin tablet {
-    @media (min-width: #{$mobile}) and (max-width: #{$tablet - 1px}) {
-        @content;
-    }
+	@media (min-width: #{$mobile}) and (max-width: #{$tablet - 1px}) {
+		@content;
+	}
 }
 
 @mixin tablet-down {
-    @media (max-width: #{$tablet - 1px}) {
-        @content;
-    }
+	@media (max-width: #{$tablet - 1px}) {
+		@content;
+	}
 }
 
 @mixin tablet-up {
-    @media (min-width: #{$tablet}) {
-        @content;
-    }
+	@media (min-width: #{$tablet}) {
+		@content;
+	}
 }
 
 @mixin desktop {
-    @media (min-width: #{$desktop}) {
-        @content;
-    }
+	@media (min-width: #{$desktop}) {
+		@content;
+	}
 }
 
 @mixin large-desktop {
-    @media (min-width: #{$large-desktop}) {
-        @content;
-    }
+	@media (min-width: #{$large-desktop}) {
+		@content;
+	}
 }
