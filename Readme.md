@@ -38,3 +38,4 @@ To Do:
 [x] Layout: add back to the top button to all pages
 [] Layout: Segment projects?
 [] Music Making / bands project page ? -> mixing
+[] FIX: video.html shortcode
