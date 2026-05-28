@@ -17,6 +17,7 @@ To Do:
 [] Content: Panteezis page - workflow pictures
 [x] Project: Labocine: Add images and videos
 [x] Content: Labocine pictures
+[] Content: iGEM cover video - remove girl with blur
 [x] remaster / remix panteezis
 [] Project: Free shipping - change hero video and image
 [] Project: Dobodel Live: Add hero image and video
