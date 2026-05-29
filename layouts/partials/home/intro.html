@@ -1,9 +1,7 @@
 <div class="intro-section">
 
-    <div class="content scroll-color-text">
-        {{ with site.GetPage "sections/intro" }}
-        {{ .Content }}
-        {{ end }}
-    </div>
+    {{ with site.GetPage "sections/intro" }}
+    {{ .Content }}
+    {{ end }}
     
 </div>
