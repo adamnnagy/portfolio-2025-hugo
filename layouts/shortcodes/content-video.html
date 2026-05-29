@@ -1,0 +1,11 @@
+{{ $src := .Get "src" }}
+{{ $type := .Get "type" | default "video/mp4" }}
+{{ $class := .Get "class" | default "" }}
+
+
+<figure class="content-video {{ $class }}">
+    <video autoplay muted loop playsinline class="content-video-player">
+        <source src="{{ $src | absURL }}" type="{{ $type }}">
+        Your browser does not support the video tag.
+    </video>
+</figure>
