@@ -69,30 +69,35 @@
 
 // Spacing mixins
 @mixin section-spacing {
-	padding: 2rem 1rem;
-
-	@include tablet-up {
-		padding: 3rem 2rem;
+	@include tablet-down {
+		padding: $uniform-padding-tablet-down;
 	}
 
-	@include desktop {
-		padding: 4rem 2rem;
+	@include tablet-up {
+		padding: $uniform-padding-tablet-up;
 	}
 }
 
 @mixin container {
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 1rem;
+	@include tablet-down {
+		padding: $uniform-padding-tablet-down;
+	}
 
 	@include tablet-up {
-		padding: 0 2rem;
+		padding: $uniform-padding-tablet-up;
 	}
 }
 
+
 // Visual effects
-@mixin gradient-overlay($direction: to top, $start: rgba(0, 0, 0, 0.6), $end: transparent) {
-    background: linear-gradient($direction, $start, rgba(0, 0, 0, 0.3), $end);
+@mixin gradient-overlay(
+	$direction: to top,
+	$start: rgba(0, 0, 0, 0.6),
+	$end: transparent
+) {
+	background: linear-gradient($direction, $start, rgba(0, 0, 0, 0.3), $end);
 }
 
 @mixin box-shadow-light {
@@ -104,7 +109,6 @@
 }
 
 @mixin hover-blur {
-
 	transition: filter 0.8s ease;
 
 	&:hover {
