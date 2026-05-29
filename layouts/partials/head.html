@@ -14,6 +14,8 @@
 resources.Fingerprint }}
 
 
+{{ partial "partials/google-analytics.html" . }}
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
@@ -22,6 +24,18 @@ resources.Fingerprint }}
     @font-face {
         font-family: 'Inter';
         src: url('{{ "fonts/InterVariable.ttf" | relURL }}') format("truetype-variations");
+        font-weight: 100 900;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'Neue Regarde';
+        src: url('{{ "fonts/neue_regrade_variable.ttf" | relURL }}') format("truetype-variations");
+        font-weight: 100 900;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'Monum';
+        src: url('{{ "fonts/monum-vf.ttf" | relURL }}') format("truetype-variations");
         font-weight: 100 900;
         font-display: swap;
     }

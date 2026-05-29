@@ -1,2 +1,18 @@
-// Font-face declaration moved to layouts/partials/head.html
+$title-font: "Inter", sans-serif;
+$regular-font: "Inter", Helvetica, Arial, sans-serif;
+
+// $title-font: "Neue Regarde", sans-serif;
+// $regular-font: "Neue Regarde", Helvetica, Arial, sans-serif;
+
+// $title-font: "Monum", sans-serif;
+// $regular-font: "Monum", Helvetica, Arial, sans-serif;
+
+
+// $regular-font: "Times New Roman", serif;// Font-face declaration moved to layouts/partials/head.html
 // where Hugo templating syntax works properly
+
+$regular-font-size: 1.3rem;
+$heading-font-size: 2rem;
+// $heading-one-font-size: $heading-font-size * 1.2;
+// $heading-two-font-size: $heading-font-size * 1.1;
+

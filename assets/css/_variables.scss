@@ -2,12 +2,6 @@ $primary-color: #131415;
 $secondary-color: #f4f4f4;
 $text-color: #fff;
 
-	
-$title-font: "Inter", sans-serif;
-$regular-font: "Inter", Helvetica, Arial, sans-serif;
-$regular-font-size: 1rem;
-// $regular-font: "Times New Roman", serif;
-
 // for scroll animations
 
 :root {
@@ -19,8 +13,19 @@ $film-frame-contrast: 0.8;
 
 $gallery-background-color: #192126;
 
-// heights
+// paddings
 
-$uniform-padding: 3rem 0rem;
-$hero-banner-margin-bottom: 3rem; // use same value as $uniform-padding
-$site-nav-height: 1.5rem;
+$padding-horizontal-tablet-up: 12rem;
+$padding-horizontal-tablet-down: 4rem;
+
+$uniform-padding-tablet-up: 1.5rem $padding-horizontal-tablet-up;
+$uniform-padding-tablet-down: 2rem $padding-horizontal-tablet-down;
+
+$nav-padding-tablet-up: 1rem $padding-horizontal-tablet-up;
+$nav-padding-tablet-down: 1rem $padding-horizontal-tablet-down;
+
+$footer-padding-tablet-up: 1rem $padding-horizontal-tablet-up;
+$footer-padding-tablet-down: 1rem $padding-horizontal-tablet-down;
+// $nav-padding: 0rem 5rem;
+$hero-banner-margin-bottom: 1.5rem; // use same value as $uniform-padding
+// $site-nav-height: 1.5rem;

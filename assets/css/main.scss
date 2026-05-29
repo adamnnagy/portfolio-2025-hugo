@@ -6,12 +6,14 @@
 @import "components/audio-player";
 @import "components/film-strip-gallery";
 @import "components/site-nav";
+@import "components/site-footer";
 @import "components/hero-banner";
 @import "components/contact-form";
 @import "components/film-strip-gallery";
 @import "components/project-list";
 @import "components/home-project-list";
 @import "components/intro-section";
+@import "components/single-project-page.scss";
 
 // 3. Page Specific Styles (if any)
 
@@ -34,6 +36,8 @@ body {
 	color: darken($primary-color, 100%);
 	font-family: $regular-font;
 	font-size: $regular-font-size;
+	font-weight: 200;
+	line-height: 150%;
 	padding: 0;
 	margin: 0;
 
@@ -53,44 +57,48 @@ h6 {
 h1 {
 	font-size: 2.5rem;
 	text-transform: lowercase;
-	font-weight: 900;
+	font-weight: 700;
+    line-height: 100%;
 
-    @include reset-spacing;
+	@include reset-spacing;
 
-    margin: 0.5rem auto;
+	margin: 1rem auto;
 
 	@include tablet-up {
 		font-size: 3.5rem;
 	}
 
 	@include desktop {
-		font-size: 5rem;
+		// font-size: 4rem;
+		font-size: $heading-font-size;
+
 	}
 }
 
 h2 {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	text-transform: lowercase;
-	font-weight: 900;
+	font-weight: 400;
+    line-height: 1.2;
 
-    @include reset-spacing;
+	@include reset-spacing;
 
-    margin: 0.2rem auto;
+	margin: 1rem auto;
 
 	@include tablet-up {
 		font-size: 2.5rem;
 	}
 
 	@include desktop {
-		font-size: 3.5rem;
+		// font-size: 3.5rem;
+        font-size: $heading-font-size;
 	}
 }
 
 p {
-	font-size: 1.2rem;
+	font-size: $regular-font-size;
 
 	@include tablet-up {
-		font-size: 1.1rem;
 	}
 }
 
@@ -98,7 +106,7 @@ p {
 	@include container;
 
 	section {
-		padding: $uniform-padding;
+		// padding: $uniform-padding;
 	}
 }
 
@@ -106,26 +114,30 @@ body > section {
 	// padding: 2rem;
 	margin: 0 auto;
 	// max-width: 1200px;
-	padding: $uniform-padding;
+    @include section-spacing;
 }
 
 a {
 	color: $text-color;
 	text-decoration: underline;
+
+	// @include hover-blur;
 }
 
 ul {
-@include reset-spacing;
+	@include reset-spacing;
 	// margin: 0;
 	// padding: 0 1rem;
 
+	padding: 0 1rem;
 	@include tablet-up {
-		padding: 0 2rem;
 	}
 
 	li {
-		list-style: none;
-        @include reset-spacing;
+		// list-style: none;
+		// padding-bottom: 1rem;
+		@include reset-spacing;
+        line-height: 120%;
 	}
 }
 
@@ -189,7 +201,7 @@ $scroll-fade-transform-offset: 20px;
 .content-image {
 	width: 100%;
 	height: auto;
-	margin: 1rem auto;
+	// margin: 1rem auto;
 }
 
 .embedded-video {
@@ -199,7 +211,7 @@ $scroll-fade-transform-offset: 20px;
 }
 
 figure {
-	margin: 1.5rem 0;
+	margin: 1rem 0;
 	text-align: center;
 }
 
@@ -208,33 +220,4 @@ figcaption {
 	color: #888;
 	font-style: italic;
 	margin-top: 0.4rem;
-}
-
-.image-grid {
-	display: grid;
-	gap: 1rem;
-	grid-template-columns: 1fr;
-}
-
-.image-grid.two-col {
-    grid-template-columns: 1fr;
-
-	@include tablet-up {
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-
-.image-grid.three-col {
-	@include tablet {
-		grid-template-columns: repeat(2, 1fr);
-		> :nth-child(3n) {
-			grid-column: span 2;
-		}
-	}
-	@include mobile {
-		grid-template-columns: 1fr;
-	}
-	@include tablet-up {
-		grid-template-columns: repeat(3, 1fr);
-	}
 }

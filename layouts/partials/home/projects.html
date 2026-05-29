@@ -8,7 +8,7 @@
         {{ $top := first 4 $sorted }}
 
         {{ range $top }}
-        
+
         <li>
             <article class="scroll-fade-in">
                 <a href="{{ .RelPermalink }}">
@@ -56,7 +56,7 @@
         {{ end }}
     </ul>
 
+    <a href="{{ "projects/" | relURL }}">
+        <h3 class="learn-more-link">more projects</h2>
+    </a>
 </div>
-<a href="{{ " projects/" | relURL }}">
-    <h2>All Projects</h2>
-</a>

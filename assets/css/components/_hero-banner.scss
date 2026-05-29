@@ -10,6 +10,32 @@
 
 	margin-bottom: $hero-banner-margin-bottom; // space below banner
 
+    height: calc(100vh - var(--nav-height, 200px));
+
+	@include desktop {
+		height: calc(100vh - var(--nav-height, 200px));
+	}
+
+	@include tablet-down {
+		// height: Max(50vh, 400px); // Adjust height as needed
+		height: calc(100vh - var(--nav-height, 400px));
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		inset: 0;
+		background: white;
+		filter: url(#noiseFilter);
+		mix-blend-mode: overlay;
+		opacity: 0.6; /* Adjust this to control grain intensity */
+		pointer-events: none; /* Allows clicking through to the video/links */
+	}
+
 	.background {
 		@include absolute-cover;
 		@include gradient-overlay(to top, rgba(0, 0, 0, 0.783));
@@ -61,6 +87,7 @@
 			font-size: 1rem;
 			text-align: center;
 			font-weight: 200;
+			line-height: normal;
 
 			@include tablet-up {
 				font-size: 2.5rem;
@@ -113,29 +140,5 @@
 		}
 	}
 
-	height: calc(100vh - var(--nav-height, 200px));
-
-	@include desktop {
-		height: calc(100vh - var(--nav-height, 200px));
-	}
-
-	@include tablet-down {
-		// height: Max(50vh, 400px); // Adjust height as needed
-		height: calc(100vh - var(--nav-height, 400px));
-	}
-
-	&::after {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		inset: 0;
-		background: white;
-		filter: url(#noiseFilter);
-		mix-blend-mode: overlay;
-		opacity: 0.6; /* Adjust this to control grain intensity */
-		pointer-events: none; /* Allows clicking through to the video/links */
-	}
+	
 }
