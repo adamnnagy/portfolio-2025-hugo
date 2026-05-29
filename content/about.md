@@ -10,6 +10,8 @@ hero = "videos/about-hero.mp4"
 
 I'm a Budapest-based creative technologist and video editor working across science communication, culture and music.
 
+{{% image src="images/intro/ghana.jpeg" alt="Profile Image" class="content-image scroll-fade-in" %}}
+
 # Selected experience
 
 I worked extensively as an editor and all-around creative on many projects with iGEM Europe.
@@ -18,18 +20,52 @@ I'm a creative technologist with over 6 years of experience. I understand techni
 
 In the past, I created interactive experiences: a board game for students in Nepal, an interactive musical experience, and a Virtual Reality experience, the latter premiered at the NYU Abu Dhabi Capstone Festival in 2019.
 
-* Video Producer for iGEM (Paris)
-* Assistant Editor for Happy Holidays (Haifa, Israel)
-* Head of Video for Labocine, based in New York (I was remote but extensively ate bagels during that time)
-* Video Editor on a satire piece of EU MEPs racing to destroy the planet (Brussels, commissioned by WWF)
-* Leading a band and recording a live session
-* VR experience on racial biasing (Abu Dhabi)
-* Designed a Board Game in a collaboration with Karkahana (Kathmandu, Nepal)
-* Designed automated greenhouse with a PLC control system (Miskolc, Hungary)
+- Video Producer for iGEM (Paris)
+- Assistant Editor for Happy Holidays (Haifa, Israel)
+- Head of Video for Labocine, based in New York (I was remote but extensively ate bagels during that time)
+- Video Editor on a satire piece of EU MEPs racing to destroy the planet (Brussels, commissioned by WWF)
+- Leading a band and recording a live session
+- VR experience on racial biasing (Abu Dhabi)
+- Designed a Board Game in a collaboration with Karkahana (Kathmandu, Nepal)
+- Designed automated greenhouse with a PLC control system (Miskolc, Hungary)
 
-{{% image src="images/intro/editing-02.jpg" alt="Profile Image" class="content-image scroll-fade-in" %}}
+# International Work
 
-_Editing intensly at the 2022 Grand Jamboree in Paris - this is as cinematic as editing gets._
+My projects have taken me from Budapest to Paris, Haifa, Abu Dhabi, New York, and across numerous creative communities throughout Europe.
+
+{{% image src="images/intro/videography-05.jpg" alt="Profile Image" class="content-image scroll-fade-in" %}}
+
+I’m comfortable working in international and interdisciplinary teams, both remotely and on-location.
+
+# Skills / Tools
+
+## Video:
+
+- Premiere Pro
+- After Effects
+- Davinci Resolve
+
+## Images/Design
+
+- Photoshop
+- Lightroom
+- Figma
+
+## Audio
+
+- Ableton Live
+- Pro Tools
+- Audition
+- Izotope RX
+
+## Other
+
+- Creative Coding (Processing, Arduino)
+- Hugo / Static websites
+- Interactive Media
+- VR Production (Unreal Engine)
+
+<!-- {{% image src="images/intro/editing-02.jpg" alt="Profile Image" class="content-image scroll-fade-in" %}}
 
 {{% image src="images/intro/editing-01.jpg" alt="Profile Image" class="content-image scroll-fade-in" %}}
 
@@ -37,41 +73,9 @@ _Editing intensly at the 2022 Grand Jamboree in Paris - this is as cinematic as 
 
 {{% image src="images/intro/filmmaking-03.jpg" alt="Profile Image" class="content-image scroll-fade-in" %}}
 
-# International Work
-
-My projects have taken me from Budapest to Paris, Haifa, Abu Dhabi, New York, and across numerous creative communities throughout Europe.
-
-I’m comfortable working in international and interdisciplinary teams, both remotely and on-location.
-
-# Skills / Tools
-
-{{% image src="images/intro/videography-05.jpg" alt="Profile Image" class="content-image scroll-fade-in" %}}
-
-## Video:
-* Premiere Pro
-* After Effects
-* Davinci Resolve
-
-## Images/Design
-* Photoshop
-* Lightroom
-* Figma
-
-## Audio
-* Ableton Live
-* Pro Tools
-* Audition
-* Izotope RX
-
-## Other
-* Creative Coding (Processing, Arduino)
-* Hugo / Static websites
-* Interactive Media
-* VR Production (Unreal Engine)
-
 
 {{% image src="images/intro/music-01.jpeg" alt="Profile Image" class="content-image scroll-fade-in" %}}
-{{% image src="images/intro/music-02.jpeg" alt="Profile Image" class="content-image scroll-fade-in" %}}
+{{% image src="images/intro/music-02.jpeg" alt="Profile Image" class="content-image scroll-fade-in" %}} -->
 
 # Additional Work
 
