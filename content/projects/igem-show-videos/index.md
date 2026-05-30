@@ -187,7 +187,3 @@ The key challenge of this project was **scientific accuracy that is communicated
 The video was praised by the board and the stakeholders and **it became a core piece of storytelling of iGEM and the field**.
 
 {{% igemvideo id="83jnAnhpuLQHRLgHsTLJWB" class=""%}}
-
----
-
-[Back to top](#top)
