@@ -30,7 +30,9 @@ jobs:
           python-version: '3.12'
 
       - name: Scrape Letterboxd count
-        run: python3 scripts/letterboxd.py
+        run: python3 scripts/stats.py
+        env:
+          LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
