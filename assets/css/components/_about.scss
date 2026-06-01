@@ -1,0 +1,320 @@
+// _about.scss
+// About page styles — import in main.scss with @import "about";
+
+.about {
+	// ─── Header ───────────────────────────────────────────────────────────────
+
+	h1,
+	h2,
+	h3 {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+
+		&::after {
+			content: "";
+			flex: 1;
+			height: 1px;
+			background: rgba($text-color, 0.12);
+		}
+	}
+
+    .container {
+        padding: 0.5rem $padding-horizontal-tablet-down;
+        
+        @include tablet-up {
+            padding: 0.5rem $padding-horizontal-tablet-up;
+        }
+    }
+
+	&__header {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 2rem;
+		align-items: end;
+		margin-bottom: 3rem;
+		padding-bottom: 2rem;
+		border-bottom: 1px solid rgba($text-color, 0.12);
+
+		@include tablet-up {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	&__name {
+		font-family: $title-font;
+		font-size: 3rem;
+		font-weight: 700;
+		line-height: 1;
+		letter-spacing: -1px;
+		text-transform: lowercase;
+
+		@include tablet-up {
+			font-size: 4rem;
+		}
+
+		@include desktop {
+			font-size: 5rem;
+		}
+
+		em {
+			font-style: italic;
+			font-weight: 400;
+			opacity: 0.5;
+		}
+	}
+
+	&__tagline {
+		font-family: $regular-font;
+		font-size: 0.75rem;
+		line-height: 1.8;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		opacity: 0.6;
+	}
+
+	// ─── Geo strip ────────────────────────────────────────────────────────────
+
+	&__geo {
+		display: flex;
+		gap: 6px;
+		flex-wrap: wrap;
+		margin-top: 1rem;
+	}
+
+	&__geo-dot {
+		font-family: $regular-font;
+		font-size: 0.7rem;
+		padding: 3px 10px;
+		border: 1px solid rgba($text-color, 0.2);
+		border-radius: 20px;
+		text-decoration: none;
+		opacity: 0.7;
+
+		&--home {
+			opacity: 1;
+			border-color: rgba($text-color, 0.5);
+			font-weight: 600;
+		}
+	}
+
+	// ─── Stats ────────────────────────────────────────────────────────────────
+
+	&__stats {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 12px;
+		margin-bottom: 2.5rem;
+
+		@include tablet-up {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
+	&__stat {
+		padding: 1rem;
+		border: 1px solid rgba($text-color, 0.1);
+		border-radius: 4px;
+	}
+
+	&__stat-n {
+		font-family: $title-font;
+		font-size: 2.2rem;
+		font-weight: 700;
+		line-height: 1;
+	}
+
+	&__stat-lbl {
+		font-family: $regular-font;
+		font-size: 0.65rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		opacity: 0.5;
+		margin-top: 4px;
+	}
+
+	// ─── Section ──────────────────────────────────────────────────────────────
+
+	&__section {
+		margin-bottom: 3rem;
+	}
+
+	&__section-label {
+		font-family: $regular-font;
+		font-size: 0.65rem;
+		text-transform: uppercase;
+		letter-spacing: 0.14em;
+		opacity: 0.4;
+		margin-bottom: 1rem;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+
+		&::after {
+			content: "";
+			flex: 1;
+			height: 1px;
+			background: rgba($text-color, 0.12);
+		}
+	}
+
+	// ─── Experience table ─────────────────────────────────────────────────────
+
+	&__exp-grid {
+		display: grid;
+		gap: 0;
+	}
+
+	&__exp-row {
+		display: grid;
+		grid-template-columns: 70px 1fr;
+		gap: 12px;
+		padding: 10px 0;
+		border-bottom: 1px solid rgba($text-color, 0.08);
+		align-items: start;
+
+		@include tablet-up {
+			grid-template-columns: 80px 1fr 90px;
+		}
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+
+	&__exp-tag {
+		font-family: $regular-font;
+		font-size: 0.65rem;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+		opacity: 0.35;
+		padding-top: 2px;
+	}
+
+	&__exp-role {
+		font-family: $regular-font;
+		font-size: 0.9rem;
+		font-weight: 600;
+		line-height: 1.4;
+	}
+
+	&__exp-org {
+		font-family: $regular-font;
+		font-size: 0.8rem;
+		opacity: 0.5;
+		margin-top: 2px;
+	}
+
+	&__exp-loc {
+		font-family: $regular-font;
+		font-size: 0.75rem;
+		opacity: 0.4;
+		font-style: italic;
+		text-align: right;
+		display: none;
+
+		@include tablet-up {
+			display: block;
+		}
+	}
+
+	// ─── Skills ───────────────────────────────────────────────────────────────
+
+	&__skills-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.5rem;
+
+		@include tablet-up {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
+	&__skill-cat-name {
+		font-family: $regular-font;
+		font-size: 0.65rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		opacity: 0.4;
+		margin-bottom: 10px;
+	}
+
+	&__skill-tag {
+		display: inline-block;
+		font-family: $regular-font;
+		font-size: 0.7rem;
+		padding: 3px 9px;
+		border: 1px solid rgba($text-color, 0.2);
+		border-radius: 3px;
+		margin: 2px;
+		opacity: 0.75;
+		text-decoration: none;
+	}
+
+	// ─── Additional work ──────────────────────────────────────────────────────
+
+	&__extra-row {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		gap: 1rem;
+		padding: 9px 0;
+		border-bottom: 1px solid rgba($text-color, 0.08);
+		font-size: 0.85rem;
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+
+	&__extra-label {
+		opacity: 0.5;
+		font-size: 0.8rem;
+	}
+
+	// ─── Socials ──────────────────────────────────────────────────────────────
+
+	&__socials {
+		display: flex;
+		gap: 12px;
+		flex-wrap: wrap;
+		margin-top: 1rem;
+	}
+
+	&__social-link {
+		font-family: $regular-font;
+		font-size: 0.75rem;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		text-decoration: none;
+		padding: 5px 14px;
+		border: 1px solid rgba($text-color, 0.25);
+		border-radius: 3px;
+		opacity: 0.7;
+		transition:
+			opacity 0.2s ease,
+			border-color 0.2s ease;
+
+		&:hover {
+			opacity: 1;
+			border-color: rgba($text-color, 0.6);
+		}
+	}
+
+	// ─── Fun fact ─────────────────────────────────────────────────────────────
+
+	&__funfact {
+		font-family: $regular-font;
+		font-size: 0.85rem;
+		line-height: 1.8;
+		opacity: 0.65;
+		padding: 1rem 1.25rem;
+		border-left: 2px solid rgba($text-color, 0.2);
+
+		strong {
+			font-weight: 600;
+			opacity: 1;
+			color: $text-color;
+		}
+	}
+}

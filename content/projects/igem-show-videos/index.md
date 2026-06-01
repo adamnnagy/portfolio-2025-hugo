@@ -40,8 +40,6 @@ Working between Paris and Budapest, I led projects ranging from scientific expla
 {{% image src="images/igem/workshop-01.jpg" alt="placeholder" class="content-image" %}}
 </div>
 
----
-
 # Explainer Videos
 
 **Role:** Direction, Concept, Script, Editing, Storyboarding, Sound Design
@@ -89,8 +87,6 @@ I developed the **visual style** by incorporating influences from Ron Fricke fil
 These videos were widely celebrated and **laid the groundwork for the cinematic award show**. The leadership and the board loved it, as it was a new form of communication for the company. It was a whole new experience for the audience - it was not just another science expo, but a cinematic show. **I received a personal commendation from the CEO in the form of a trophy.**
 
 [Back to top](#top)
-
----
 
 # Live Show & Stage Production | The Biobrick Trophy
 
@@ -149,8 +145,6 @@ The titles of the values were added to the bricks in post.
 
 [Back to top](#top)
 
----
-
 # Story & Brand Videos
 
 These projects focused on communicating **the vision, values, and cultural identity** of iGEM and the broader field of synthetic biology.
@@ -178,8 +172,6 @@ The video was praised by the board and the stakeholders and **it became a refere
 {{% igemvideo id="83jnAnhpuLQHRLgHsTLJWB" class=""%}}
 
 [Back to top](#top)
-
----
 
 # Tools & Techniques
 

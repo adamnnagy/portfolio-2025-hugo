@@ -1,13 +1,15 @@
-{{define "main"}}
+{{ define "main" }}
 
 <div class="fade-in-page">
     {{ partial "home/hero.html" . }}
 </div>
+
 <section class="container">{{ partial "home/intro.html" . }}</section>
 
 <section class="container">{{ partial "home/showreel.html" .}}</section>
 
 <section class="container" class="scroll-fade-in">{{ partial "home/projects.html" . }}</section>
 {{/* <section class="container" class="scroll-fade-in">{{ partial "home/workflow.html" . }}</section> */}}
-<section class="container" class="scroll-fade-in">{{ partial "home/contact.html" . }}</section>
+<section class="container" class="scroll-fade-in">{{ partial "sections/contact.html" . }}</section>
+
 {{ end }}

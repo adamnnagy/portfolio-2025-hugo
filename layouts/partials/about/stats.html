@@ -1,0 +1,60 @@
+{{/* Stats */}}
+<div class="about__stats scroll-fade-in">
+    <div class="about__stat">
+        <div class="about__stat-n" id="years-of-experience">6+</div>
+        <div class="about__stat-lbl">Years experience</div>
+    </div>
+    <div class="about__stat">
+        <div class="about__stat-n">7</div>
+        <div class="about__stat-lbl">Countries worked in</div>
+    </div>
+    <div class="about__stat">
+        <div class="about__stat-n" id="coffee-counter">-</div>
+        <div class="about__stat-lbl">Coffees had while working</div>
+    </div>
+    <div class="about__stat">
+        <div class="about__stat-n">1</div>
+        <div class="about__stat-lbl">Silver screen appearances</div>
+    </div>
+</div>
+
+<script>
+    (function () {
+        // Epoch: rough start of remote work (Labocine era). Adjust if needed.
+        const epoch = new Date('2019-10-01T09:00:00').getTime();
+        // Rate: ~3 coffee per day → 86400 seconds in day → 3.5 coffees every ~86400 seconds
+        const coffeeIntervalsMs = 86400 / 3.5 * 1000;
+
+        function getYearsOfExperience() {
+
+            const yearMs = 365.16 * 24 * 3600 * 1000;
+            
+            const elapsed = Date.now() - epoch;
+
+            return Math.max(0, Math.floor(elapsed / yearMs))
+
+        }
+
+        function getCoffeeCount() {
+            const elapsed = Date.now() - epoch;
+            return Math.max(0, Math.floor(elapsed / coffeeIntervalsMs));
+        }
+
+        function updateCoffeeCount() {
+            const el = document.getElementById('coffee-counter');
+            if (el) el.textContent = getCoffeeCount().toLocaleString();
+        }
+
+        function updateYears() {
+
+            const el = document.getElementById('years-of-experience');
+            if (el) el.textContent = getYearsOfExperience().toLocaleString() + "+";
+            
+        }
+
+        updateCoffeeCount();
+        // Tick every second so it feels live without hammering the browser
+        setInterval(updateCoffeeCount, 1000);
+        setInterval(updateYears, 1000);
+    })();
+</script>

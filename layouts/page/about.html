@@ -1,0 +1,76 @@
+{{ define "main" }}
+{{ partial "partials/projecthero.html" . }}
+
+<div class="about">
+    
+    {{/* ── Intro copy from markdown front matter ── */}}
+    <section class="container">
+        {{ partial "about/welcome.html" . }}
+    </section>
+    
+    <section class="container">
+        {{ partial "about/stats.html" . }}
+    </section>
+    
+    
+    {{/* ── Intro copy from markdown front matter ── */}}
+    <section class="content-page container">
+        {{ .Content }}
+    </section>
+    
+    {{/* ── About panel ── */}}
+    <section class="container">
+    
+    
+    
+    
+        {{/* Experience — data lives in page front matter as .Params.experience */}}
+        {{ with .Params.experience }}
+        <div class="about__section scroll-fade-in">
+            <div class="about__section-label">Experience</div>
+            <div class="about__exp-grid">
+                {{ range . }}
+                {{ partial "about/experience.html" . }}
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    
+    
+    
+        {{/*  Other work
+        <div class="about__section scroll-fade-in">
+            <div class="about__section-label">Other work</div>
+    
+            <div class="about__extra-row">
+                <span>Mailchimp audience management</span>
+                <span class="about__extra-label">Náncsi Néni, Budapest</span>
+            </div>
+            <div class="about__extra-row">
+                <span>CRM campaign creation</span>
+                <span class="about__extra-label">Janssen Hungary</span>
+            </div>
+            <div class="about__extra-row">
+                <span>Post-production automation + file management workflows</span>
+                <span class="about__extra-label">Self-directed</span>
+            </div>
+    
+        </div>  */}}
+    
+    </section>
+    
+    <section class="container">
+        {{ partial "about/tools.html" . }}
+    </section>
+    
+    <section class="container">
+        {{ partial "about/socials.html" . }}
+    </section>
+    
+    {{/* Contact partial */}}
+    <section class="container">
+        {{ partial "sections/contact.html" . }}
+    </section>
+</div>
+
+{{ end }}
