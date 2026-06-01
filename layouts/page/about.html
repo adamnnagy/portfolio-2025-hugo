@@ -36,6 +36,18 @@
         </div>
         {{ end }}
 
+        
+        {{ with .Params.education }}
+        <div class="about__section scroll-fade-in">
+            <div class="about__section-label">Education</div>
+            <div class="about__exp-grid">
+                {{ range . }}
+                {{ partial "about/experience.html" . }}
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+
 
 
         {{/* Other work

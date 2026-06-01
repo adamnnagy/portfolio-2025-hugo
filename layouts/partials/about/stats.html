@@ -13,8 +13,17 @@
         <div class="about__stat-lbl">Coffees had while working</div>
     </div>
     <div class="about__stat">
+        <div class="about__stat-n" id="water-counter">-</div>
+        <div class="about__stat-lbl">Litres of Water since 18</div>
+    </div>
+    <div class="about__stat">
         <div class="about__stat-n">1</div>
         <div class="about__stat-lbl">Silver screen appearances</div>
+    </div>
+    <div class="about__stat">
+        {{ $lb := site.Data.letterboxd }}
+        <div class="about__stat-n">{{ $lb.count }}</div>
+        <div class="about__stat-lbl">Films watched (based on Letterboxd account)</div>
     </div>
 </div>
 
@@ -22,13 +31,18 @@
     (function () {
         // Epoch: rough start of remote work (Labocine era). Adjust if needed.
         const epoch = new Date('2019-10-01T09:00:00').getTime();
-        // Rate: ~3 coffee per day → 86400 seconds in day → 3.5 coffees every ~86400 seconds
+
+        const epochWater = new Date('2010-10-30T09:00:00').getTime();
+        // Rate: ~3.5 coffee per day → 86400 seconds in day → 3.5 coffees every ~86400 seconds
         const coffeeIntervalsMs = 86400 / 3.5 * 1000;
+
+        // Rate: ~3.5 litres of water per day → 86400 seconds in day → 3.5 coffees every ~86400 seconds
+        const waterIntervalsMs = 86400 / 3.5 * 1000;
 
         function getYearsOfExperience() {
 
             const yearMs = 365.16 * 24 * 3600 * 1000;
-            
+
             const elapsed = Date.now() - epoch;
 
             return Math.max(0, Math.floor(elapsed / yearMs))
@@ -40,21 +54,34 @@
             return Math.max(0, Math.floor(elapsed / coffeeIntervalsMs));
         }
 
+        function getWaterCount() {
+            const elapsed = Date.now() - epochWater;
+            return Math.max(0, Math.floor(elapsed / waterIntervalsMs));
+        }
+
         function updateCoffeeCount() {
             const el = document.getElementById('coffee-counter');
             if (el) el.textContent = getCoffeeCount().toLocaleString();
+        }
+
+        function updateWaterCount() {
+            const el = document.getElementById('water-counter');
+            if (el) el.textContent = getWaterCount().toLocaleString();
         }
 
         function updateYears() {
 
             const el = document.getElementById('years-of-experience');
             if (el) el.textContent = getYearsOfExperience().toLocaleString() + "+";
-            
+
         }
 
         updateCoffeeCount();
+        updateWaterCount();
+        updateYears();
         // Tick every second so it feels live without hammering the browser
         setInterval(updateCoffeeCount, 1000);
+        setInterval(updateWaterCount, 1000);
         setInterval(updateYears, 1000);
     })();
 </script>

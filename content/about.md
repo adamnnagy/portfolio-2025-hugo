@@ -51,6 +51,16 @@ tag = "2017"
 role = "Automated greenhouse + PLC control system"
 org = "Engineering project"
 location = "Miskolc"
+[[params.education]]
+tag = "2019"
+role = "Film and New Media, minor: Interactive Media"
+org = "New York University"
+location = "Abu Dhabi"
+[[params.education]]
+tag = "2017"
+role = "Mechatronics Engineer"
+org = "University of Miskolc"
+location = "Miskolc"
 +++
 
 # Hi, I'm Ádám. 
@@ -58,6 +68,8 @@ location = "Miskolc"
 Hi, I'm Ádám, Budapest-based creative technologist and video editor working across science communication, culture, and music. I bring an engineering background to creative work, which means I understand technical concepts quickly, collaborate well across disciplines, and yes, I coded this website.
 
 {{% image src="images/intro/ghana.jpeg" alt="Profile Image" class="content-image scroll-fade-in" %}}
+
+And yes, I do drink a lot of water. Gotta stay hydrated!
 
 # Experience
 
@@ -77,9 +89,9 @@ Over six years working internationally on video, interactive media, and creative
 
 I helped [nature restoration efforts in the EU]({{< relref "/projects/wwf/" >}}) to be committed to legislation.
 
-# Education
+<!-- # Education
 - B.A. in Film & New Media, New York University
-- B.Sc. in Mechatronics Engineering, University of Miskolc
+- B.Sc. in Mechatronics Engineering, University of Miskolc -->
 
 <!-- {{% image src="images/intro/editing-02.jpg" alt="Profile Image" class="content-image scroll-fade-in" %}}
 
@@ -93,11 +105,11 @@ I helped [nature restoration efforts in the EU]({{< relref "/projects/wwf/" >}})
 {{% image src="images/intro/music-01.jpeg" alt="Profile Image" class="content-image scroll-fade-in" %}}
 {{% image src="images/intro/music-02.jpeg" alt="Profile Image" class="content-image scroll-fade-in" %}} -->
 
-# Other Work
+<!-- # Other Work
 
 - Mailchimp audience management for Náncsi Néni (Budapest)
 - CRM campaigns for Janssen Hungary
-- Post-production automation and file management workflows
+- Post-production automation and file management workflows -->
 
 # Fun Fact
 
