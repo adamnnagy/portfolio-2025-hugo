@@ -126,7 +126,7 @@
 
 	&__stat-lbl {
 		font-family: $regular-font;
-		font-size: 0.65rem;
+		font-size: $regular-font-size;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		opacity: 0.5;
@@ -141,7 +141,7 @@
 
 	&__section-label {
 		font-family: $regular-font;
-		font-size: 0.65rem;
+		font-size: $regular-font-size;
 		text-transform: uppercase;
 		letter-spacing: 0.14em;
 		opacity: 0.4;
@@ -193,7 +193,7 @@
 
 	&__exp-role {
 		font-family: $regular-font;
-		font-size: 0.9rem;
+		font-size: $regular-font-size;
 		font-weight: 600;
 		line-height: 1.4;
 	}
