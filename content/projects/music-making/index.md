@@ -1,13 +1,17 @@
 +++
+title = 'Music Making'
+description = "The numerous projects I'm involved with as a Musician."
 date = '2025-07-13T15:31:25+02:00'
 draft = true
-title = 'Music Making'
+
 priority = 1
 featured = false
-description = "The numerous projects I'm involved with as a Musician."
-role = "Musician"
+year = 0
 city = "Budapest"
+
+role = "Musician"
 hero = "hero.mp4"
+gallery = false
 +++
 
 # Perkupa

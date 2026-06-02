@@ -1,4 +1,7 @@
-<h1>Featured projects</h1>
+<div class="home-projects__header">
+    <div class="home-projects__label">Selected work</div>
+    <h1 class="home-projects__title">Featured projects</h1>
+</div>
 <div class="home-projects">
     <ul class="projects">
 
@@ -56,7 +59,5 @@
         {{ end }}
     </ul>
 
-    <a href="{{ "projects/" | relURL }}">
-        <h3 class="learn-more-link">more projects</h3>
-    </a>
+    <a class="home-projects__all-link" href="{{ "projects/" | relURL }}">All projects →</a>
 </div>

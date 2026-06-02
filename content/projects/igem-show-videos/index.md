@@ -1,14 +1,16 @@
 +++
-date = '2025-07-13T11:30:45+02:00'
-draft = false
-featured = true
-priority = 1
 title = 'iGEM'
 description = "Start to finish cinematic event videos"
-role = "Creative Video Producer"
+date = '2025-07-13T11:30:45+02:00'
+draft = false
+
+priority = 1
+featured = true
 year = 2025
-hero = "cover.mp4"
 city = "Paris"
+
+role = "Creative Video Producer"
+hero = "cover.mp4"
 gallery = true
 +++
 

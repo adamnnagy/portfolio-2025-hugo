@@ -1,14 +1,17 @@
 +++
-date = '2025-07-13T12:16:35+02:00'
-draft = true
-featured = false
 title = 'Puppet Gene'
 description = ""
-role = "Assistant Editor"
-city = "Abu Dhabi"
+date = '2025-07-13T12:16:35+02:00'
+draft = true
+
 priority = 5
-hero = ""
+featured = false
 year = 2019
+city = "Abu Dhabi"
+
+role = "Assistant Editor"
+hero = ""
+gallery = false
 +++
 
 # The Puppet Gene

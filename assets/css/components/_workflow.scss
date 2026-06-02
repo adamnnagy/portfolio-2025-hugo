@@ -1,0 +1,73 @@
+// _workflow.scss
+
+.workflow-section {
+	&__label {
+		font-family: $regular-font;
+		font-size: 0.7rem;
+		text-transform: uppercase;
+		letter-spacing: 0.14em;
+		opacity: 0.4;
+		margin-bottom: 1rem;
+	}
+
+	&__title {
+		margin-bottom: 3rem;
+		padding: 0;
+	}
+
+	&__steps {
+		display: grid;
+		grid-template-columns: 1fr;
+
+		@include tablet-up {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include desktop {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+}
+
+.workflow-step {
+	padding: 2rem 0;
+	border-top: 1px solid rgba($text-color, 0.12);
+
+	@include tablet-up {
+		padding: 2rem 2rem 2rem 0;
+	}
+
+	&:last-child {
+		border-bottom: 1px solid rgba($text-color, 0.12);
+
+		@include tablet-up {
+			border-bottom: none;
+		}
+	}
+
+	&__number {
+		display: block;
+		font-size: 0.75rem;
+		font-weight: 200;
+		opacity: 0.35;
+		margin-bottom: 1rem;
+	}
+
+	&__title {
+		font-family: $title-font;
+		font-size: 1.3rem;
+		font-weight: 700;
+		text-transform: lowercase;
+		margin: 0 0 0.75rem;
+		padding: 0;
+		line-height: 1.1;
+	}
+
+	&__desc {
+		font-family: $regular-font;
+		font-size: 0.9rem;
+		line-height: 1.75;
+		opacity: 0.55;
+		margin: 0;
+	}
+}

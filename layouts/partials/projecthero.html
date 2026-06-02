@@ -35,9 +35,15 @@
     {{/*  {{ end }}  */}}
     <div class="background"></div>
     <div class="content">
-        <h1 class="title">{{ .Params.title }}<span></span></h1>
+        <h1 class="title" data-scenes='{{ site.Data.scene_headings.scenes | jsonify }}'><span>{{ .Params.title }}</span></h1>
         <div class="roles">
-            <h2>{{ .Params.role }}</h2>
+            {{ if .Params.roles }}
+            {{ range $i, $role := .Params.roles }}
+            <p><code>{{ printf "00:00:%02d" $i }}</code> {{ $role }}</p>
+            {{ end }}
+            {{ else if .Params.role }}
+            <p><code>00:00:00</code> {{ .Params.role }}</p>
+            {{ end }}
         </div>
     </div>
 </section>

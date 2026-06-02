@@ -1,6 +1,73 @@
 // _single-project-page.scss
 
 .content-page {
+	padding-top: 2rem;
+	padding-bottom: 5rem;
+
+	@include tablet-up {
+		padding-top: 2.5rem;
+		padding-bottom: 7rem;
+	}
+
+	h1,
+	h2,
+	h3 {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		margin-top: 4rem;
+		margin-bottom: 1.5rem;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&::after {
+			content: "";
+			flex: 1;
+			height: 1px;
+			background: rgba($text-color, 0.12);
+		}
+	}
+
+	h1 {
+		font-size: 1.6rem;
+		font-weight: 600;
+
+		@include tablet-up {
+			font-size: 2rem;
+		}
+	}
+
+	h2 {
+		font-size: 1.15rem;
+		font-weight: 400;
+
+		@include tablet-up {
+			font-size: 1.4rem;
+		}
+	}
+
+	h3 {
+		font-size: 0.75rem;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 0.14em;
+		margin-top: 3rem;
+	}
+
+	p {
+		margin-bottom: 1.75rem;
+		line-height: 1.85;
+		opacity: 0.75;
+		// max-width: 72ch;
+	}
+
+	strong {
+		font-weight: 700;
+		opacity: 1;
+	}
+
 	.image-grid {
 		display: grid;
 		gap: 1rem;
@@ -33,16 +100,6 @@
 		}
 	}
 
-	.page-navigation {
-		ul {
-			@include reset-list;
-			display: flex;
-			justify-content: space-between;
-			margin-bottom: 1.5rem;
-			gap: 0.5rem;
-		}
-	}
-
 	figure.content-video {
 		position: relative;
 		width: 100%;
@@ -55,31 +112,54 @@
 		}
 	}
 
-	strong {
-		font-weight: 700;
-	}
-
 	figure.wide {
 		aspect-ratio: auto;
 	}
 
-	h1,
-	h2,
-	h3 {
-		display: flex;
-		align-items: center;
-		gap: 10px;
+	.page-navigation {
+		margin-top: 5rem;
+		padding-top: 2rem;
+		border-top: 1px solid rgba($text-color, 0.1);
 
-		&::after {
-			content: "";
-			flex: 1;
-			height: 1px;
-			background: rgba($text-color, 0.12);
+		ul {
+			@include reset-list;
+			display: flex;
+			justify-content: space-between;
+			gap: 1rem;
+		}
+
+		a {
+			text-decoration: none;
+			font-family: $regular-font;
+			font-size: 0.7rem;
+			text-transform: uppercase;
+			letter-spacing: 0.12em;
+			opacity: 0.4;
+			transition: opacity 0.2s ease;
+
+			&:hover {
+				opacity: 1;
+			}
 		}
 	}
 
-	p {
-		margin-bottom: 2rem;
-		line-height: 1.75;
+	footer {
+		margin-top: 4rem;
+		padding-top: 2rem;
+		border-top: 1px solid rgba($text-color, 0.1);
+
+		a {
+			text-decoration: none;
+			font-family: $regular-font;
+			font-size: 0.7rem;
+			text-transform: uppercase;
+			letter-spacing: 0.12em;
+			opacity: 0.4;
+			transition: opacity 0.2s ease;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
 	}
 }

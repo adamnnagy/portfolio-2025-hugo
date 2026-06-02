@@ -1,13 +1,17 @@
 +++
+title = 'Creative Coding'
+description = "Creative Coding projects"
 date = '2025-07-16T13:17:24+02:00'
 draft = true
-title = 'Creative Coding'
+
 priority = 4
 featured = false
-description = "Creative Coding projects"
-role = "Developer"
+year = 0
 city = "Abu Dhabi"
+
+role = "Developer"
 hero = "creative-coding-720p.mp4"
+gallery = false
 +++
 
 I dabbled a lot in creative coding projects during my time at NYU Abu Dhabi. The Interactive Media program of the Arts and Humanities was only just starting out in 2016 when I took my first class, Communications Lab.

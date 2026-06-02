@@ -89,6 +89,8 @@
 		.title {
 			@include title-text;
 			font-size: 2.5rem;
+			cursor: default;
+			white-space: nowrap;
 
 			@include tablet-up {
 				font-size: 4rem;
@@ -101,6 +103,7 @@
 			@include large-desktop {
 				font-size: 7rem;
 			}
+
 		}
 
 		@include large-desktop {

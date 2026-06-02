@@ -1,13 +1,17 @@
 +++
+title = 'Free Shipping VR'
+description = "VR Thesis Project @ NYU"
 date = '2025-07-16T13:17:24+02:00'
 draft = true
-title = 'Free Shipping VR'
+
 priority = 1
 featured = false
-description = "VR Thesis Project @ NYU"
-role = "Developer"
+year = 0
 city = "Abu Dhabi"
+
+role = "Developer"
 hero = ""
+gallery = false
 +++
 
 # Free Shipping - VR (Overview)

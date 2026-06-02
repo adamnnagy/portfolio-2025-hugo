@@ -106,6 +106,88 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 });
 
+// scene heading scramble on title hover
+
+(function () {
+	const title = document.querySelector(".hero-banner .title");
+	if (!title) return;
+
+	const scenes = JSON.parse(title.dataset.scenes || "[]") || [];
+	if (!scenes.length) return;
+
+	const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ. -";
+	const SCRAMBLE_MS = 350;
+	const HOLD_MS = 750;
+
+	const originalHTML = title.innerHTML;
+	const originalText = title.textContent;
+
+	let isHovered = false;
+	let rafId = null;
+	let timerId = null;
+	let sceneIndex = 0;
+
+	function cancel() {
+		if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
+		if (timerId) { clearTimeout(timerId); timerId = null; }
+	}
+
+	function scrambleTo(target, onDone) {
+		const start = performance.now();
+		function frame(now) {
+			const progress = Math.min((now - start) / SCRAMBLE_MS, 1);
+			const settled = Math.floor(progress * target.length);
+			let out = "";
+			for (let i = 0; i < target.length; i++) {
+				if (i < settled) {
+					out += target[i];
+				} else if (target[i] === " ") {
+					out += " ";
+				} else {
+					out += CHARS[Math.floor(Math.random() * CHARS.length)];
+				}
+			}
+			title.textContent = out;
+			if (progress < 1) {
+				rafId = requestAnimationFrame(frame);
+			} else {
+				title.textContent = target;
+				if (onDone) onDone();
+			}
+		}
+		rafId = requestAnimationFrame(frame);
+	}
+
+	function showNextScene() {
+		if (!isHovered) return;
+		const next = scenes[sceneIndex % scenes.length];
+		sceneIndex++;
+		scrambleTo(next, () => {
+			if (!isHovered) { restoreTitle(); return; }
+			timerId = setTimeout(showNextScene, HOLD_MS);
+		});
+	}
+
+	function restoreTitle() {
+		scrambleTo(originalText, () => {
+			title.innerHTML = originalHTML;
+		});
+	}
+
+	title.addEventListener("mouseenter", () => {
+		isHovered = true;
+		sceneIndex = 0;
+		cancel();
+		showNextScene();
+	});
+
+	title.addEventListener("mouseleave", () => {
+		isHovered = false;
+		cancel();
+		restoreTitle();
+	});
+})();
+
 // get navbar height
 
 const nav = document.querySelector(".site-nav");

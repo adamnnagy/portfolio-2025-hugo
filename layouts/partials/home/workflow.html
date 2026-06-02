@@ -1,6 +1,19 @@
+{{ with site.GetPage "sections/workflow" }}
 <section class="workflow-section">
-    {{ with site.GetPage "sections/workflow" }}
-        <h1>{{ .Title }}</h2>
-        {{ .Content }}
+    <div class="workflow-section__label">Process</div>
+    <h1 class="workflow-section__title">{{ .Title }}</h1>
+    {{ if .Params.steps }}
+    <div class="workflow-section__steps">
+        {{ range .Params.steps }}
+        <div class="workflow-step">
+            <code class="workflow-step__number">{{ .number }}</code>
+            <h3 class="workflow-step__title">{{ .title }}</h3>
+            <p class="workflow-step__desc">{{ .description }}</p>
+        </div>
+        {{ end }}
+    </div>
+    {{ else }}
+    {{ .Content }}
     {{ end }}
 </section>
+{{ end }}

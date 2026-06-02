@@ -1,15 +1,17 @@
 +++
-date = '2025-07-13T10:48:35+02:00'
 title = 'Panteézis'
 description = 'A soundtrack to evolving nature.'
-role = "Composer"
-priority = 2
+date = '2025-07-13T10:48:35+02:00'
 draft = true
+
+priority = 2
 featured = true
+year = 2023
 city = "Budapest"
+
+role = "Composer"
 hero = "Panteezis-720p.mp4"
 gallery = true
-year = 2023
 +++
 
 # Panteézis

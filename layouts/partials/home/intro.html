@@ -1,7 +1,12 @@
+{{ with site.GetPage "sections/intro" }}
 <div class="intro-section">
-
-    {{ with site.GetPage "sections/intro" }}
+    {{ if .Params.statement }}
+    <p class="intro-section__statement">{{ .Params.statement }}</p>
+    {{ if .Params.sub }}
+    <p class="intro-section__sub">{{ .Params.sub }}</p>
+    {{ end }}
+    {{ else }}
     {{ .Content }}
     {{ end }}
-    
 </div>
+{{ end }}

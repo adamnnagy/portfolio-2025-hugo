@@ -1,18 +1,28 @@
-<h1>Let's work together!</h1>
 <div id="contact" class="contact-section">
-    <form method="POST" action="https://formspree.io/f/mnnjgegq">
-        <div>
-            <label>Name:
+    <div class="contact-section__header">
+        <div class="contact-section__label">Get in touch</div>
+        <h2 class="contact-section__title">Let's work together</h2>
+        <p class="contact-section__sub">Have a project in mind? Drop me a message and I'll get back to you.</p>
+    </div>
+    <form class="contact-section__form" method="POST" action="https://formspree.io/f/mnnjgegq">
+        <div class="contact-section__row">
+            <label class="contact-section__field">
+                <span class="contact-section__field-label">Name</span>
                 <input type="text" name="name" required placeholder="Steven Spielberg">
             </label>
-            <label>Email:
+            <label class="contact-section__field">
+                <span class="contact-section__field-label">Email</span>
                 <input type="email" name="_replyto" required placeholder="steve@cinema.com">
             </label>
         </div>
-        <label>Message:
-            <textarea name="message" rows="5" placeholder="Hey, I have some feedback on the edit you sent..."
-                required></textarea>
+        <label class="contact-section__field">
+            <span class="contact-section__field-label">Project type</span>
+            <input type="text" name="project_type" placeholder="Film, music video, podcast, other...">
         </label>
-        <button type="submit">Send</button>
+        <label class="contact-section__field">
+            <span class="contact-section__field-label">Tell me about your project</span>
+            <textarea name="message" rows="6" placeholder="What are you making, what's the vision, when do you need it?" required></textarea>
+        </label>
+        <button type="submit">Send message</button>
     </form>
 </div>

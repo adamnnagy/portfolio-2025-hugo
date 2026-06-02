@@ -1,15 +1,8 @@
 +++
 date = '2025-07-15T10:07:05+02:00'
-draft = true
+draft = false
 title = 'Intro'
-priority = 0
-featured = false
-description = ""
-hero = ""
+
+statement = "I live at the intersection of image and sound — where a cut lands like a beat, and a score can make a room feel somewhere else entirely."
+sub = "Filmmaker · Editor · Musician · Budapest"
 +++
-
-# I'm an Editor, Videographer, and Musician based in Budapest, Hungary.
-
-<!-- * 7 years of creative experience
-* Editing, Motion Graphics, Music
-* Remote / Hybrid working -->

@@ -1,16 +1,17 @@
 +++
+title = 'Dobódél Live Session'
+description = "Producing Live Session"
 date = '2026-05-11T11:57:06+02:00'
 draft = false
-title = 'Dobódél Live Session'
-role = "Director"
 
 priority = 2
 featured = false
-description = "Producing Live Session"
-
-hero = ""
-city = "Budapest"
 year = 2025
+city = "Budapest"
+
+role = "Director"
+hero = ""
+gallery = false
 +++
 
 # Overview

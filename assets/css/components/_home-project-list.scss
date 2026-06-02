@@ -1,11 +1,24 @@
 // _home-project-list.scss
 
-.home-projects {
-	h1 {
-		margin: 0;
-		padding: 0;
-	}
+.home-projects__header {
+	margin-bottom: 3rem;
+}
 
+.home-projects__label {
+	font-family: $regular-font;
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	letter-spacing: 0.14em;
+	opacity: 0.4;
+	margin-bottom: 1rem;
+}
+
+.home-projects__title {
+	margin: 0;
+	padding: 0;
+}
+
+.home-projects {
 	.projects {
 		@include reset-spacing;
 		@include reset-list;
@@ -118,7 +131,21 @@
 	}
 }
 
-.learn-more-link {
-	text-align: center;
-	margin-top: 6rem;
+.home-projects {
+	&__all-link {
+		display: block;
+		text-align: right;
+		text-decoration: none;
+		font-family: $regular-font;
+		font-size: 0.75rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		opacity: 0.45;
+		margin-top: 3rem;
+		transition: opacity 0.2s ease;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
 }

@@ -1,5 +1,13 @@
 <footer class="site-footer">
     <hr>
-    <p>&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
+    <div class="site-footer__inner">
+        <p class="site-footer__copy">&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
+        <nav class="site-footer__socials" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/n-adam" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://vimeo.com/adamnagy" target="_blank" rel="noopener">Vimeo</a>
+            <a href="https://www.instagram.com/villanykorte" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://github.com/adamnnagy" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+    </div>
     {{ partial "svg-assets.html" . }}
 </footer>

@@ -1,23 +1,32 @@
 +++
 date = '2025-07-15T10:06:55+02:00'
-draft = true
-title = 'Workflow'
+draft = false
+title = 'How I work'
 priority = 0
 featured = false
-description = ""
-hero = ""
+
+[[steps]]
+number = "00:00:01"
+title = "Discovery"
+description = "We start with a conversation about your vision, goals, and timeline. I want to understand what you're trying to say before we figure out how to say it."
+
+[[steps]]
+number = "00:00:02"
+title = "Pre-production"
+description = "Shot lists, mood boards, location scouts, gear planning — everything needed to walk on set ready to capture exactly what the story calls for."
+
+[[steps]]
+number = "00:00:03"
+title = "Production"
+description = "On-set direction and cinematography, or editing from your existing footage. Focused, efficient, and always in service of the final piece."
+
+[[steps]]
+number = "00:00:04"
+title = "Post-production"
+description = "Colour grading, sound design, music selection, and motion graphics. The edit is where everything comes together — and where I spend most of my time."
+
+[[steps]]
+number = "00:00:05"
+title = "Delivery"
+description = "Final files in the formats you need, optimised for wherever your content will live — broadcast, web, social, or festival."
 +++
-
-# Lorem ipsum dolor sit amet
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-
-## Lorem ipsum dolor sit amet
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-
-## Lorem ipsum dolor sit amet
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-# 

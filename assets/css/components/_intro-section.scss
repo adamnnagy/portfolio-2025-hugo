@@ -1,29 +1,37 @@
 // _intro-section.scss
 
 .intro-section {
-	position: relative;
+	text-align: center;
+	padding: 2rem 0;
 
-	.content {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		height: 100%;
+	@include tablet-up {
+		padding: 3rem 0;
+	}
 
-		li {
-			font-size: 0.95rem;
-			list-style-type: disc;
-			line-height: 1.6;
-			margin-bottom: 0.5rem;
+	&__statement {
+		font-family: $title-font;
+		font-style: italic;
+		font-weight: 300;
+		font-size: 1.4rem;
+		line-height: 1.5;
+		margin: 0 auto;
+		max-width: 760px;
 
-			@include tablet-up {
-				font-size: 1.05rem;
-				margin-bottom: 0.75rem;
-			}
-
-			@include desktop {
-				font-size: 1.1rem;
-				margin-bottom: 1rem;
-			}
+		@include tablet-up {
+			font-size: 1.9rem;
 		}
+
+		@include desktop {
+			font-size: 2.3rem;
+		}
+	}
+
+	&__sub {
+		font-family: $regular-font;
+		font-size: 0.7rem;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		opacity: 0.35;
+		margin: 2rem auto 0;
 	}
 }
