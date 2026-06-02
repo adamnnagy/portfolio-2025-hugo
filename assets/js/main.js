@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 })();
 
-// timecode roll on roles hover
+// timecode glitch on roles hover
 
 (function () {
 	const roles = document.querySelector(".hero-banner .roles");
@@ -199,39 +199,62 @@ document.addEventListener("DOMContentLoaded", () => {
 	const codes = Array.from(roles.querySelectorAll("code"));
 	if (!codes.length) return;
 
-	const SPEED = 8; // multiplier over real time
-
 	function parseSecs(str) {
 		const [h, m, s] = str.split(":").map(Number);
 		return h * 3600 + m * 60 + s;
 	}
 
 	function formatSecs(total) {
-		const h = Math.floor(total / 3600);
-		const m = Math.floor((total % 3600) / 60);
-		const s = total % 60;
+		const t = Math.max(0, Math.floor(total));
+		const h = Math.floor(t / 3600);
+		const m = Math.floor((t % 3600) / 60);
+		const s = t % 60;
 		return [h, m, s].map(n => String(n).padStart(2, "0")).join(":");
 	}
+
+	// seconds-per-second: mix of fast-forward, slow, and reverse
+	const SPEEDS = [-25, -12, -4, 3, 8, 18, 30, 50];
 
 	const originals = codes.map(c => c.textContent.trim());
 	const originSecs = originals.map(parseSecs);
 
 	let isHovered = false;
 	let rafId = null;
-	let startTime = null;
+	let lastTime = null;
+
+	const state = codes.map((_, i) => ({
+		secs: originSecs[i],
+		speed: 8,
+		nextChange: 0,
+	}));
 
 	function tick(now) {
-		if (!startTime) startTime = now;
-		const elapsed = Math.floor((now - startTime) / 1000 * SPEED);
-		codes.forEach((code, i) => {
-			code.textContent = formatSecs(originSecs[i] + elapsed);
+		if (!lastTime) lastTime = now;
+		const dt = (now - lastTime) / 1000;
+		lastTime = now;
+
+		state.forEach((s, i) => {
+			if (now >= s.nextChange) {
+				s.speed = SPEEDS[Math.floor(Math.random() * SPEEDS.length)];
+				// each code gets its own random interval so they stay out of sync
+				s.nextChange = now + 80 + Math.random() * 320;
+			}
+			s.secs += s.speed * dt;
+			if (s.secs < 0) s.secs = 0;
+			codes[i].textContent = formatSecs(s.secs);
 		});
+
 		if (isHovered) rafId = requestAnimationFrame(tick);
 	}
 
 	roles.addEventListener("mouseenter", () => {
 		isHovered = true;
-		startTime = null;
+		lastTime = null;
+		state.forEach((s, i) => {
+			s.secs = originSecs[i];
+			s.speed = SPEEDS[Math.floor(Math.random() * SPEEDS.length)];
+			s.nextChange = 0;
+		});
 		if (rafId) cancelAnimationFrame(rafId);
 		rafId = requestAnimationFrame(tick);
 	});
