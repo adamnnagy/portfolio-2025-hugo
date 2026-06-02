@@ -160,6 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	function showNextScene() {
 		if (!isHovered) return;
+		title.classList.add("is-scene");
 		const next = scenes[sceneIndex % scenes.length];
 		sceneIndex++;
 		scrambleTo(next, () => {
@@ -171,6 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	function restoreTitle() {
 		scrambleTo(originalText, () => {
 			title.innerHTML = originalHTML;
+			title.classList.remove("is-scene");
 		});
 	}
 
@@ -185,6 +187,59 @@ document.addEventListener("DOMContentLoaded", () => {
 		isHovered = false;
 		cancel();
 		restoreTitle();
+	});
+})();
+
+// timecode roll on roles hover
+
+(function () {
+	const roles = document.querySelector(".hero-banner .roles");
+	if (!roles) return;
+
+	const codes = Array.from(roles.querySelectorAll("code"));
+	if (!codes.length) return;
+
+	const SPEED = 8; // multiplier over real time
+
+	function parseSecs(str) {
+		const [h, m, s] = str.split(":").map(Number);
+		return h * 3600 + m * 60 + s;
+	}
+
+	function formatSecs(total) {
+		const h = Math.floor(total / 3600);
+		const m = Math.floor((total % 3600) / 60);
+		const s = total % 60;
+		return [h, m, s].map(n => String(n).padStart(2, "0")).join(":");
+	}
+
+	const originals = codes.map(c => c.textContent.trim());
+	const originSecs = originals.map(parseSecs);
+
+	let isHovered = false;
+	let rafId = null;
+	let startTime = null;
+
+	function tick(now) {
+		if (!startTime) startTime = now;
+		const elapsed = Math.floor((now - startTime) / 1000 * SPEED);
+		codes.forEach((code, i) => {
+			code.textContent = formatSecs(originSecs[i] + elapsed);
+		});
+		if (isHovered) rafId = requestAnimationFrame(tick);
+	}
+
+	roles.addEventListener("mouseenter", () => {
+		isHovered = true;
+		startTime = null;
+		if (rafId) cancelAnimationFrame(rafId);
+		rafId = requestAnimationFrame(tick);
+	});
+
+	roles.addEventListener("mouseleave", () => {
+		isHovered = false;
+		if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
+		codes.forEach((code, i) => { code.textContent = originals[i]; });
 	});
 })();
 

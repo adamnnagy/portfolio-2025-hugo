@@ -90,7 +90,13 @@
 			@include title-text;
 			font-size: 2.5rem;
 			cursor: default;
-			white-space: nowrap;
+			// white-space: nowrap;
+			transition: font-family 0s;
+
+			&.is-scene {
+				font-family: 'Roboto Mono', monospace;
+				font-weight: 500;
+			}
 
 			@include tablet-up {
 				font-size: 4rem;
