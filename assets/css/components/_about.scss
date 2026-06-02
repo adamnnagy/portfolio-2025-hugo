@@ -126,7 +126,7 @@
 
 	&__stat-lbl {
 		font-family: $regular-font;
-		font-size: $regular-font-size;
+		font-size: $regular-font-size * 0.8;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		opacity: 0.5;
