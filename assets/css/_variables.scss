@@ -27,5 +27,9 @@ $nav-padding-tablet-down: 1rem $padding-horizontal-tablet-down;
 $footer-padding-tablet-up: 1rem $padding-horizontal-tablet-up;
 $footer-padding-tablet-down: 1rem $padding-horizontal-tablet-down;
 // $nav-padding: 0rem 5rem;
-$hero-banner-margin-bottom: 1.5rem; // use same value as $uniform-padding
-// $site-nav-height: 1.5rem;
+$hero-banner-margin-bottom: 1.5rem;
+
+// Scroll animations
+$scroll-fade-speed: 1.3s;
+$scroll-fade-ease: ease;
+$scroll-fade-transform-offset: 20px;

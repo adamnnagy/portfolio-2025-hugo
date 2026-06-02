@@ -1,3 +1,5 @@
+// _single-project-page.scss
+
 .content-page {
 	.image-grid {
 		display: grid;
@@ -16,13 +18,16 @@
 	.image-grid.three-col {
 		@include tablet {
 			grid-template-columns: repeat(2, 1fr);
+
 			> :nth-child(3n) {
 				grid-column: span 2;
 			}
 		}
+
 		@include mobile {
 			grid-template-columns: 1fr;
 		}
+
 		@include tablet-up {
 			grid-template-columns: repeat(3, 1fr);
 		}
@@ -58,9 +63,6 @@
 		aspect-ratio: auto;
 	}
 
-	a {
-	}
-
 	h1,
 	h2,
 	h3 {
@@ -76,8 +78,8 @@
 		}
 	}
 
-    p {
-        margin-bottom: 2rem;
-        line-height: 1.75;
-    }
+	p {
+		margin-bottom: 2rem;
+		line-height: 1.75;
+	}
 }

@@ -1,35 +1,19 @@
+// _site-nav.scss
+
 .site-nav {
 	background-color: $secondary-color;
 	font-size: $regular-font-size;
 	@include reset-spacing;
+	padding: $nav-padding-tablet-down;
 
-    padding: $nav-padding-tablet-down;
-
-    @include tablet-up {
-        padding: $nav-padding-tablet-up;
-    }
+	@include tablet-up {
+		padding: $nav-padding-tablet-up;
+	}
 
 	ul {
 		@include reset-spacing;
 		padding: 1rem 0;
 		display: flex;
-		gap: 2rem;
-	}
-
-	li {
-		@include reset-list;
-		text-decoration: none;
-
-		@include hover-blur;
-	}
-	a {
-		color: $primary-color;
-		text-decoration: none;
-		@include hover-lighten($secondary-color, 10%);
-	}
-
-	// Mobile-first responsive design
-	ul {
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 0.75rem;
@@ -47,23 +31,33 @@
 
 		@include desktop {
 			gap: 2rem;
-			// padding: $site-nav-height 2rem;
 		}
 	}
 
 	li {
+		@include reset-list;
+		text-decoration: none;
+		@include hover-blur;
 		width: 100%;
 
 		@include tablet-up {
 			width: auto;
 		}
+
 		a {
 			padding: 0.5rem 1rem;
 			border-radius: 4px;
 			transition: background 0.2s;
+
 			&:hover {
 				background: lighten($secondary-color, 10%);
 			}
 		}
+	}
+
+	a {
+		color: $primary-color;
+		text-decoration: none;
+		@include hover-lighten($secondary-color, 10%);
 	}
 }

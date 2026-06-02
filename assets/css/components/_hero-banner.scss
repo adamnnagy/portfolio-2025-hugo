@@ -1,51 +1,29 @@
+// _hero-banner.scss
+
 .hero-banner {
 	position: relative;
-	// width: calc(100%-2rem);
 	overflow: hidden;
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
-	padding-bottom: 2rem; // space below text
+	padding-bottom: 2rem;
 	color: white;
-
-	margin-bottom: $hero-banner-margin-bottom; // space below banner
-
-    height: calc(100vh - var(--nav-height, 200px));
-
-	@include desktop {
-		height: calc(100vh - var(--nav-height, 200px));
-	}
+	margin-bottom: $hero-banner-margin-bottom;
+	height: calc(100vh - var(--nav-height, 200px));
 
 	@include tablet-down {
-		// height: Max(50vh, 400px); // Adjust height as needed
 		height: calc(100vh - var(--nav-height, 400px));
 	}
 
 	&::after {
 		content: "";
 		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
 		inset: 0;
 		background: white;
 		filter: url(#noiseFilter);
 		mix-blend-mode: overlay;
-		opacity: 0.6; /* Adjust this to control grain intensity */
-		pointer-events: none; /* Allows clicking through to the video/links */
-	}
-
-	.background {
-		@include absolute-cover;
-		@include gradient-overlay(to top, rgba(0, 0, 0, 0.783));
-		z-index: 1;
-	}
-
-	.video {
-		@include absolute-cover;
-		object-fit: cover;
-		z-index: 0;
+		opacity: 0.6;
+		pointer-events: none;
 	}
 
 	.background {
@@ -61,6 +39,12 @@
 			transparent
 		);
 		z-index: 1;
+	}
+
+	.video {
+		@include absolute-cover;
+		object-fit: cover;
+		z-index: 0;
 	}
 
 	.content {
@@ -117,11 +101,6 @@
 			@include large-desktop {
 				font-size: 7rem;
 			}
-
-			span {
-				// font-style: italic;
-				// letter-spacing: 2rem;
-			}
 		}
 
 		@include large-desktop {
@@ -139,6 +118,4 @@
 			}
 		}
 	}
-
-	
 }

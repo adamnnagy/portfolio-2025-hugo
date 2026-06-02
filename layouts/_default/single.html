@@ -2,21 +2,11 @@
 {{ partial "partials/projecthero.html" . }}
 
 <article class="content-page container scroll-fade-in">
-
-
-    {{/*  {{ if .Params.role }}
-    <h1>{{ .Params.title }} | {{ .Params.role }}</h1>
-    {{ else }}
-    <h1>{{ .Title }}</h1>
-    {{ end }}  */}}
-
-    {{/*  <p>{{ .Params.description }}</p>
-    <hr>  */}}
     {{ .Content }}
 
     <footer>
-  <a href="#top">Back to top</a>
-</footer>
+        <a href="#top">Back to top</a>
+    </footer>
 </article>
 
 {{ end }}

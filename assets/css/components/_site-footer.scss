@@ -1,9 +1,10 @@
+// _site-footer.scss
+
 .site-footer {
-    font-weight: 100;
-    padding: $footer-padding-tablet-down;
+	font-weight: 100;
+	padding: $footer-padding-tablet-down;
 
-    @include tablet-up {
-        padding: $footer-padding-tablet-up;
-    }
-
+	@include tablet-up {
+		padding: $footer-padding-tablet-up;
+	}
 }

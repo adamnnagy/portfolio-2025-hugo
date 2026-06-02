@@ -1,7 +1,8 @@
+// _project-list.scss
+
 .project-list {
 	padding: 0;
 	margin: 0;
-
 	display: grid;
 	gap: 1rem;
 	grid-template-columns: repeat(3, 1fr);
@@ -10,88 +11,82 @@
 		grid-template-columns: 1fr;
 	}
 
-    @include tablet {
-        grid-template-columns: repeat(2, 1fr);
-    }
+	@include tablet {
+		grid-template-columns: repeat(2, 1fr);
+	}
 
 	a {
 		display: block;
-        text-decoration: none;
+		text-decoration: none;
 	}
 
 	.project-card {
 		display: grid;
 		background-color: rgba(0, 0, 0, 0.191);
 		grid-template-columns: 1fr;
-
-        // background-color: aqua;
-		
 		gap: 1rem;
 		margin: 2rem 0;
 		list-style: none;
 		border-radius: 20px;
-		transition: background-color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+		transition:
+			background-color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
 			color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
 			transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
 			box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-		// Using cubic-bezier for a more nuanced acceleration/deceleration.
 
-        article {
-            padding: 0 20px;
-        }
+		article {
+			padding: 0 20px;
+		}
 
-        img {
-            width: 100%;
-            height: auto;
-            aspect-ratio: 16 / 9;
-            object-fit: cover;
-            grid-area: 1 / 1 / 2 / 3;
-            transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            position: relative;
-            align-self: end;
-        }
+		img {
+			width: 100%;
+			height: auto;
+			aspect-ratio: 16 / 9;
+			object-fit: cover;
+			grid-area: 1 / 1 / 2 / 3;
+			transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+			position: relative;
+			align-self: end;
+		}
 
-        .project-title {
-            @include reset-spacing;
-            font-weight: 900;
-            font-size: 1.2rem;
+		.project-title {
+			@include reset-spacing;
+			font-weight: 900;
+			font-size: 1.2rem;
 
-            @include tablet-up {
-                font-size: 1.4rem;
-            }
+			@include tablet-up {
+				font-size: 1.4rem;
+			}
 
-            @include desktop {
-                font-size: 1.2rem;
-            }
-        }
+			@include desktop {
+				font-size: 1.2rem;
+			}
+		}
 
-        .description {
-            font-size: 0.95rem;
+		.description {
+			font-size: 0.95rem;
+			grid-row: 2 / 3;
 
-            @include tablet-up {
-                font-size: 1rem;
-            }
-        }
+			@include tablet-up {
+				font-size: 1rem;
+			}
+		}
 
-        .city {
-            font-size: 0.9rem;
-            font-style: italic;
-            transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+		.city {
+			font-size: 0.9rem;
+			font-style: italic;
+			transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
-            @include tablet-up {
-                font-size: 0.95rem;
-            }
-        }
-
-        .description {
-            grid-row: 2 / 3;
-        }
+			@include tablet-up {
+				font-size: 0.95rem;
+			}
+		}
 
 		&:hover {
-			background-color: #34495e; /* Darker background on hover */
-			color: #ffffff; /* Brighter text color on hover */
-			transform: translateY(-5px); /* Lift the card slightly */
-			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* More pronounced shadow */
+			background-color: #34495e;
+			color: #ffffff;
+			transform: translateY(-5px);
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 		}
 	}
 }

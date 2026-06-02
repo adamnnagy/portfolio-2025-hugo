@@ -35,17 +35,17 @@
                         <div class="video-container image-hover">
                             {{ if $video }}
                             {{ with $poster }}
-                            <video class="thumbnail " poster="{{ (.Resize " 600x webp q75").RelPermalink }}" autoplay
+                            <video class="thumbnail" poster="{{ (.Resize "600x webp q75").RelPermalink }}" autoplay
                                 loop muted playsinline>
                                 <source src="{{ $video.RelPermalink }}" type="video/mp4">
                             </video>
                             {{ else }}
-                            <video class="thumbnail " autoplay loop muted playsinline>
+                            <video class="thumbnail" autoplay loop muted playsinline>
                                 <source src="{{ $video.RelPermalink }}" type="video/mp4">
                             </video>
                             {{ end }}
                             {{ else if $poster }}
-                            <img src="{{ ($poster.Resize " 600x webp q75").RelPermalink }}" alt="{{ $.Title }}"
+                            <img src="{{ ($poster.Resize "600x webp q75").RelPermalink }}" alt="{{ $.Title }}"
                                 class="thumbnail image-hover" />
                             {{ end }}
                         </div>
@@ -57,6 +57,6 @@
     </ul>
 
     <a href="{{ "projects/" | relURL }}">
-        <h3 class="learn-more-link">more projects</h2>
+        <h3 class="learn-more-link">more projects</h3>
     </a>
 </div>

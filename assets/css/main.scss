@@ -2,21 +2,18 @@
 @import "mixins";
 @import "fonts";
 
-// 2. Components
+// Components
 @import "components/audio-player";
 @import "components/film-strip-gallery";
 @import "components/site-nav";
 @import "components/site-footer";
 @import "components/hero-banner";
 @import "components/contact-form";
-@import "components/film-strip-gallery";
 @import "components/project-list";
 @import "components/home-project-list";
 @import "components/intro-section";
-@import "components/single-project-page.scss";
-@import "components/about.scss";
-
-// 3. Page Specific Styles (if any)
+@import "components/single-project-page";
+@import "components/about";
 
 html {
 	box-sizing: border-box;
@@ -41,9 +38,6 @@ body {
 	line-height: 150%;
 	padding: 0;
 	margin: 0;
-
-	> section {
-	}
 }
 
 h1,
@@ -53,7 +47,6 @@ h4,
 h5,
 h6 {
 	font-family: $title-font;
-
 }
 
 h1 {
@@ -68,11 +61,6 @@ h1 {
 
 	@include tablet-up {
 		font-size: 3.5rem;
-	}
-
-	@include desktop {
-		// font-size: 4rem;
-		font-size: $heading-font-size;
 	}
 }
 
@@ -89,54 +77,31 @@ h2 {
 	@include tablet-up {
 		font-size: 2.5rem;
 	}
-
-	@include desktop {
-		// font-size: 3.5rem;
-		font-size: $heading-font-size;
-	}
 }
 
 p {
 	font-size: $regular-font-size;
-
-	@include tablet-up {
-	}
 }
 
 .container {
 	@include container;
-
-	section {
-		// padding: $uniform-padding;
-	}
 }
 
 body > section {
-	// padding: 2rem;
 	margin: 0 auto;
-	// max-width: 1200px;
 	@include section-spacing;
 }
 
 a {
 	color: $text-color;
 	text-decoration: underline;
-
-	// @include hover-blur;
 }
 
 ul {
 	@include reset-spacing;
-	// margin: 0;
-	// padding: 0 1rem;
-
 	padding: 0 1rem;
-	@include tablet-up {
-	}
 
 	li {
-		// list-style: none;
-		// padding-bottom: 1rem;
 		@include reset-spacing;
 		line-height: 120%;
 	}
@@ -149,41 +114,23 @@ ul {
 	&.loaded {
 		opacity: 1;
 
-		// Only fade in page container, not children with scroll-fade-in
 		> :not(.scroll-fade-in) {
 			opacity: 1;
 		}
 	}
 }
 
-// variables.scss
-$scroll-fade-speed: 1.3s;
-$scroll-fade-ease: ease;
-$scroll-fade-transform-offset: 20px;
-
-// YourComponent.scss
 .scroll-fade-in {
 	opacity: 0;
 	transform: translateY($scroll-fade-transform-offset);
-	// will-change: opacity, transform;
-
-	// Define transitions for opacity and transform
-	// The 'transition-delay' will be set by the custom property.
-	// We apply the delay here only if the --initial-delay custom property is set.
 	transition:
 		opacity $scroll-fade-speed $scroll-fade-ease var(--initial-delay, 0s),
 		transform $scroll-fade-speed $scroll-fade-ease var(--initial-delay, 0s);
-
-	// Fallback for browsers not supporting custom properties (rare now)
-	// For older browsers, you'd have to use the .is-initial-state class method
-	// transition-delay: var(--initial-delay, 0s); // This needs to be on each property for separate delays
 }
 
 .scroll-fade-in.visible {
 	opacity: 1;
 	transform: translateY(0);
-	// Override the delay to 0s when visible
-	transition-delay: 0s; // This needs to be explicit for both properties or use shorthand
 	transition:
 		opacity $scroll-fade-speed $scroll-fade-ease 0s,
 		transform $scroll-fade-speed $scroll-fade-ease 0s;
@@ -192,8 +139,6 @@ $scroll-fade-transform-offset: 20px;
 .scroll-fade-in.faded-out {
 	opacity: 0.3;
 	transform: translateY($scroll-fade-transform-offset * 2.5);
-	// Ensure no delay when fading out
-	transition-delay: 0s;
 	transition:
 		opacity $scroll-fade-speed $scroll-fade-ease 0s,
 		transform $scroll-fade-speed $scroll-fade-ease 0s;
@@ -202,7 +147,6 @@ $scroll-fade-transform-offset: 20px;
 .content-image {
 	width: 100%;
 	height: auto;
-	// margin: 1rem auto;
 }
 
 .embedded-video {
