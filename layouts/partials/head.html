@@ -1,13 +1,13 @@
 <meta charset="UTF-8" />
 <title>{{ .Title }}</title>
 
-<link rel="icon" href="{{ " favicons/favicon.ico" | relURL }}" sizes="any">
-<link rel="apple-touch-icon" sizes="180x180" href="{{ " favicons/apple-touch-icon.png" | relURL }}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ " favicons/favicon-32x32.png" | relURL }}">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ " favicons/favicon-16x16.png" | relURL }}">
-<link rel="icon" type="image/png" sizes="192x192" href="{{ " favicons/android-chrome-192x192.png" | relURL }}">
-<link rel="icon" type="image/png" sizes="512x512" href="{{ " favicons/android-chrome-512x512.png" | relURL }}">
-<link rel="manifest" href="{{ " favicons/site.webmanifest" | relURL }}">
+<link rel="icon" href="{{ "favicons/favicon.ico" | relURL }}" sizes="any">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "favicons/apple-touch-icon.png" | relURL }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "favicons/favicon-32x32.png" | relURL }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ "favicons/favicon-16x16.png" | relURL }}">
+<link rel="icon" type="image/png" sizes="192x192" href="{{ "favicons/android-chrome-192x192.png" | relURL }}">
+<link rel="icon" type="image/png" sizes="512x512" href="{{ "favicons/android-chrome-512x512.png" | relURL }}">
+<link rel="manifest" href="{{ "favicons/site.webmanifest" | relURL }}">
 
 {{ $styles := resources.Get "/css/main.scss" | css.Sass (dict
 "targetPath" "/css/main.css" "outputStyle" "compressed") |
@@ -24,20 +24,6 @@ resources.Fingerprint }}
     @font-face {
         font-family: 'Inter';
         src: url('{{ "fonts/InterVariable.ttf" | relURL }}') format("truetype-variations");
-        font-weight: 100 900;
-        font-display: swap;
-    }
-
-    @font-face {
-        font-family: 'Neue Regarde';
-        src: url('{{ "fonts/neue_regrade_variable.ttf" | relURL }}') format("truetype-variations");
-        font-weight: 100 900;
-        font-display: swap;
-    }
-
-    @font-face {
-        font-family: 'Monum';
-        src: url('{{ "fonts/monum-vf.ttf" | relURL }}') format("truetype-variations");
         font-weight: 100 900;
         font-display: swap;
     }
