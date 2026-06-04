@@ -13,7 +13,7 @@ org = "iGEM Europe"
 location = "Paris"
 [[params.experience]]
 tag = "ongoing"
-role = "Bandleader · Live session director"
+role = "Bandleader"
 org = "Self-directed"
 location = "Budapest"
 [[params.experience]]
@@ -21,6 +21,11 @@ tag = "2023"
 role = "Video Editor"
 org = "EU MEP satire — commissioned by WWF"
 location = "Brussels, Austria, Sweden"
+[[params.experience]]
+tag = "2020-2021"
+role = "Digital Production Manager"
+org = "Republic Group"
+location = "Budapest"
 [[params.experience]]
 tag = "2020"
 role = "Assistant Editor"
@@ -53,7 +58,7 @@ org = "Engineering project"
 location = "Miskolc"
 [[params.education]]
 tag = "2019"
-role = "Film and New Media, minor: Interactive Media"
+role = "Film and New Media, Minor: Interactive Media"
 org = "New York University"
 location = "Abu Dhabi"
 [[params.education]]
@@ -73,7 +78,7 @@ And yes, I do drink a lot of water. Gotta stay hydrated!
 
 # Experience
 
-Over six years, I've worked internationally across video, interactive media, and creative technology: from post-production pipelines to VR projects
+Over six years, I've worked internationally across video, interactive media, and creative technology: from post-production pipelines to VR projects.
 
 My work has been screened at [international events]({{< relref "/projects/igem-show-videos/" >}}) drawing thousands of participants each year.
 

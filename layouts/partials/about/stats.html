@@ -66,76 +66,119 @@
 
 <script>
     (function () {
-        // Epoch: rough start of remote work (Labocine era). Adjust if needed.
-        const epoch = new Date('2019-10-01T09:00:00').getTime();
-
+        const epoch      = new Date('2019-10-01T09:00:00').getTime();
         const epochWater = new Date('1992-10-30T09:00:00').getTime();
-        const epochTofu = new Date('2020-01-01T00:00:00').getTime();
-        // Rate: ~3.5 coffee per day → 86400 seconds in day → 3.5 coffees every ~86400 seconds
+        const epochTofu  = new Date('2020-01-01T00:00:00').getTime();
+
         const coffeeIntervalsMs = 86400 / 3.5 * 1000;
-
-        // Rate: ~3.5 litres of water per day → 86400 seconds in day → 3.5 coffees every ~86400 seconds
-        const waterIntervalsMs = 86400 / 2.5 * 1000;
-
-        // Rate: ~3 packs per month → 3 / 30.4375 days per pack
-        const tofuIntervalsMs = 86400 / (3 / 30.4375) * 1000;
+        const waterIntervalsMs  = 86400 / 2.5 * 1000;
+        const tofuIntervalsMs   = 86400 / (3 / 30.4375) * 1000;
 
         function getYearsOfExperience() {
-
-            const yearMs = 365.16 * 24 * 3600 * 1000;
-
-            const elapsed = Date.now() - epoch;
-
-            return Math.max(0, Math.floor(elapsed / yearMs))
-
+            return Math.max(0, Math.floor((Date.now() - epoch) / (365.16 * 24 * 3600 * 1000)));
         }
-
         function getCoffeeCount() {
-            const elapsed = Date.now() - epoch;
-            return Math.max(0, Math.floor(elapsed / coffeeIntervalsMs));
+            return Math.max(0, Math.floor((Date.now() - epoch) / coffeeIntervalsMs));
         }
-
         function getWaterCount() {
-            const elapsed = Date.now() - epochWater;
-            return Math.max(0, Math.floor(elapsed / waterIntervalsMs));
+            return Math.max(0, Math.floor((Date.now() - epochWater) / waterIntervalsMs));
+        }
+        function getTofuCount() {
+            return Math.max(0, Math.floor((Date.now() - epochTofu) / tofuIntervalsMs));
         }
 
-        function getTofuCount() {
-            const elapsed = Date.now() - epochTofu;
-            return Math.max(0, Math.floor(elapsed / tofuIntervalsMs));
-        }
+        // ── Live updates (paused during count-up animation) ───────────────────
+
+        let animating = false;
 
         function updateCoffeeCount() {
+            if (animating) return;
             const el = document.getElementById('coffee-counter');
             if (el) el.textContent = getCoffeeCount().toLocaleString();
         }
-
         function updateWaterCount() {
+            if (animating) return;
             const el = document.getElementById('water-counter');
             if (el) el.textContent = getWaterCount().toLocaleString();
         }
-
         function updateTofuCount() {
+            if (animating) return;
             const el = document.getElementById('tofu-counter');
             if (el) el.textContent = getTofuCount().toLocaleString();
         }
-
         function updateYears() {
-
+            if (animating) return;
             const el = document.getElementById('years-of-experience');
-            if (el) el.textContent = getYearsOfExperience().toLocaleString() + "+";
-
+            if (el) el.textContent = getYearsOfExperience().toLocaleString() + '+';
         }
 
+        // Set initial values so hidden stats are populated before reveal
         updateCoffeeCount();
         updateWaterCount();
         updateTofuCount();
         updateYears();
-        // Tick every second so it feels live without hammering the browser
+
         setInterval(updateCoffeeCount, 1000);
         setInterval(updateWaterCount, 1000);
         setInterval(updateTofuCount, 1000);
         setInterval(updateYears, 1000);
+
+        // ── Count-up animation ────────────────────────────────────────────────
+
+        function animateStat(el, target, suffix) {
+            suffix = suffix || '';
+            // Scale duration to magnitude so small and large numbers feel natural
+            const duration = target < 50 ? 500 : target < 500 ? 800 : target < 5000 ? 1200 : 1800;
+            const started  = performance.now();
+            el.textContent = '0' + suffix;
+
+            (function step(now) {
+                const t      = Math.min((now - started) / duration, 1);
+                const eased  = 1 - Math.pow(1 - t, 3); // easeOutCubic
+                el.textContent = Math.round(target * eased).toLocaleString() + suffix;
+                if (t < 1) requestAnimationFrame(step);
+                else el.textContent = target.toLocaleString() + suffix;
+            }(performance.now()));
+        }
+
+        function getTargetForEl(el) {
+            switch (el.id) {
+                case 'years-of-experience': return { val: getYearsOfExperience(), suffix: '+' };
+                case 'coffee-counter':      return { val: getCoffeeCount() };
+                case 'water-counter':       return { val: getWaterCount() };
+                case 'tofu-counter':        return { val: getTofuCount() };
+                default: {
+                    const n = parseInt(el.textContent.replace(/[\s,]/g, ''), 10);
+                    return isNaN(n) ? null : { val: n };
+                }
+            }
+        }
+
+        function animateEl(el) {
+            const t = getTargetForEl(el);
+            if (t) animateStat(el, t.val, t.suffix || '');
+        }
+
+        // ── Trigger on scroll into view ───────────────────────────────────────
+
+        const statsGrid = document.querySelector('.about__stats');
+        if (statsGrid) {
+            const observer = new IntersectionObserver(function (entries) {
+                if (!entries[0].isIntersecting) return;
+                observer.disconnect();
+
+                animating = true;
+                setTimeout(function () { animating = false; }, 2000);
+
+                statsGrid.querySelectorAll('.about__stat-n').forEach(function (el) {
+                    if (el.closest('.about__stat--hidden')) return;
+                    animateEl(el);
+                });
+            }, { threshold: 0.1 });
+            observer.observe(statsGrid);
+        }
+
+        // ── Discover button ───────────────────────────────────────────────────
 
         const discoverBtn = document.getElementById('discover-fact');
         if (discoverBtn) {
@@ -144,6 +187,9 @@
                 if (next) {
                     next.classList.remove('about__stat--hidden');
                     next.classList.add('about__stat--revealed');
+
+                    const numEl = next.querySelector('.about__stat-n');
+                    if (numEl) animateEl(numEl);
                 }
                 if (!document.querySelector('.about__stat--hidden')) {
                     discoverBtn.querySelector('.about__stat-lbl').textContent = 'now you know everything!';

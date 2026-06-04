@@ -25,8 +25,17 @@ Perkupa started from the smoldering ruins of our high school band, Brácsa. I go
 I do a lot in the band. I organize logistics, I make the videos, I often bring musical ideas and work on the arrangements. I designed the graphics, managed the uploads, wrote lyrics and came up with the vocal lines.
 
 {{% image src="images/music-making/perkupa-01.jpeg" alt="Perkupa" class="content-image" %}}
+
+<div class="image-grid two-col">
 {{% image src="images/music-making/perkupa-02.jpeg" alt="Perkupa" class="content-image" %}}
 {{% image src="images/music-making/perkupa-03.jpeg" alt="Perkupa" class="content-image" %}}
+</div>
+<div class="image-grid three-col">
+{{% image src="images/music-making/perkupa-04.jpeg" alt="Perkupa" class="content-image" %}}
+{{% image src="images/music-making/perkupa-05.jpeg" alt="Perkupa" class="content-image" %}}
+{{% image src="images/music-making/perkupa-06.jpeg" alt="Perkupa" class="content-image" %}}
+</div>
+{{% image src="images/music-making/perkupa-07.jpeg" alt="Perkupa" class="content-image" %}}
 
 # Kiel Winde
 
@@ -36,9 +45,24 @@ I do a lot in the band. I organize logistics, I make the videos, I often bring m
 
 Kiel Winde is where humanities majors meet alternative rock and then they decide to go all out with a synth infused party.
 
-{{% image src="images/music-making/kw-01.jpeg" alt="Kiel Winde" class="content-image" %}}
-{{% image src="images/music-making/kw-02.jpeg" alt="Kiel Winde" class="content-image" %}}
-{{% image src="images/music-making/kw-03.jpeg" alt="Kiel Winde" class="content-image" %}}
+I have contributed to Kiel Winde as a lead guitarist, 
+
+<div class="image-grid three-col">
+{{% image src="images/music-making/kw-04.jpg" alt="Kiel Winde" class="content-image" %}}
+{{% image src="images/music-making/kw-05.jpg" alt="Kiel Winde" class="content-image" %}}
+{{% image src="images/music-making/kw-06.jpg" alt="Kiel Winde" class="content-image" %}}
+</div>
+
+Learn more:
+
+https://recorder.blog.hu/2026/03/13/on-_es_kozkritikus_bolcseszpunk_itt_a_kiel_winde_uj_ep-je
+
+https://www.kulter.hu/2026/04/dalrol-dalra-kiel-winde-a-test-mozog-tovabb/
+
+<div class="image-grid two-col">
+{{% image src="images/music-making/kw-07.jpg" alt="Kiel Winde" class="content-image" %}}
+{{% image src="images/music-making/kw-08.jpg" alt="Kiel Winde" class="content-image" %}}
+</div>
 
 # Juhász Zoli
 
@@ -52,6 +76,12 @@ The pictures are from a tour that we did together.
 
 I joined the band with the studio recordings already underway for the album Csillagszemű, however I was invited to contribute to the track Vízfolyás, where I play the guitar.
 
+<div class="image-grid three-col">
 {{% image src="images/music-making/jz-01.jpeg" alt="Juhász Zoli" class="content-image" %}}
 {{% image src="images/music-making/jz-02.jpeg" alt="Juhász Zoli" class="content-image" %}}
 {{% image src="images/music-making/jz-03.jpeg" alt="Juhász Zoli" class="content-image" %}}
+</div>
+
+# Live
+
+{{< concerts-timeline >}}

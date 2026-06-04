@@ -8,7 +8,7 @@
 			"venue": "Auróra",
 			"city": "Budapest",
 			"band": "Kiel Winde",
-			"role": "guitarist, backing vocals",
+			"role": "lead guitarist, backing vocals",
 			"type": "gig",
 			"date_approx": true
 		},
@@ -116,7 +116,7 @@
 			"venue": "Három Holló",
 			"city": "Budapest",
 			"band": "Kiel Winde",
-			"role": "guitarist, backing vocals",
+			"role": "lead guitarist, backing vocals",
 			"type": "gig",
 			"date_approx": false
 		},
@@ -125,7 +125,7 @@
 			"venue": "Három Holló",
 			"city": "Budapest",
 			"band": "Kiel Winde",
-			"role": "guitarist, backing vocals",
+			"role": "lead guitarist, backing vocals",
 			"type": "gig",
 			"date_approx": false
 		},
@@ -134,7 +134,7 @@
 			"venue": "Központ",
 			"city": "Budapest",
 			"band": "Kiel Winde",
-			"role": "guitarist, backing vocals",
+			"role": "lead guitarist, backing vocals",
 			"type": "gig",
 			"date_approx": false
 		},
@@ -143,7 +143,7 @@
 			"venue": "Manyi",
 			"city": "Budapest",
 			"band": "Kiel Winde",
-			"role": "guitarist, backing vocals",
+			"role": "lead guitarist, backing vocals",
 			"type": "gig",
 			"date_approx": false
 		},
@@ -152,7 +152,7 @@
 			"venue": "Lámpás",
 			"city": "Budapest",
 			"band": "Kiel Winde",
-			"role": "guitarist, backing vocals",
+			"role": "lead guitarist, backing vocals",
 			"type": "gig",
 			"date_approx": false
 		},
@@ -206,7 +206,7 @@
 			"venue": "Auróra",
 			"city": "Budapest",
 			"band": "Kiel Winde",
-			"role": "guitarist, backing vocals",
+			"role": "lead guitarist, backing vocals",
 			"type": "gig",
 			"date_approx": false
 		},
@@ -220,11 +220,29 @@
 			"date_approx": false
 		},
 		{
+			"date": "2026-04-22",
+			"venue": "Hybrid Art Space",
+			"city": "Budapest",
+			"band": "Ádám Nagy Solo",
+			"role": "guitarist",
+			"type": "gig",
+			"date_approx": false
+		},
+		{
+			"date": "2026-04-29",
+			"venue": "Hybrid Art Space",
+			"city": "Budapest",
+			"band": "Ádám Nagy Solo",
+			"role": "guitarist",
+			"type": "gig",
+			"date_approx": false
+		},
+		{
 			"date": "2025-04-05",
 			"venue": "Auróra",
 			"city": "Budapest",
 			"band": "Kiel Winde",
-			"role": "guitarist, backing vocals",
+			"role": "lead guitarist, backing vocals",
 			"type": "gig",
 			"date_approx": false
 		}

@@ -1,0 +1,64 @@
+{{ $concerts := sort site.Data.stats.concerts "date" "asc" }}
+{{ $years    := slice }}
+{{ $byYear   := dict }}
+{{ range $concerts }}
+  {{ $year := dateFormat "2006" .date }}
+  {{ if not (index $byYear $year) }}
+    {{ $years = $years | append $year }}
+  {{ end }}
+  {{ $existing := default (slice) (index $byYear $year) }}
+  {{ $byYear = merge $byYear (dict $year ($existing | append .)) }}
+{{ end }}
+
+{{ $yearsDesc   := collections.Reverse $years }}
+{{ $visibleYears := first 3 $yearsDesc }}
+{{ $olderYears   := after 3 $yearsDesc }}
+
+{{ $bandColors := dict
+  "Kiel Winde"      "#6b8fd4"
+  "Perkupa"         "#c47a56"
+  "Juhász Zoli"     "#5db884"
+  "Daytime TV"      "#c4b456"
+  "Brácsa"          "#8888aa"
+  "Ádám Nagy Solo"  "#a07bc4"
+}}
+
+<div class="concerts-timeline">
+
+  {{/* Always-visible: 3 most recent years */}}
+  {{ range $visibleYears }}
+    {{ partial "concerts/year-group.html" (dict "year" . "shows" (index $byYear .) "colors" $bandColors) }}
+  {{ end }}
+
+  {{/* Older years — hidden until expanded */}}
+  {{ if gt (len $olderYears) 0 }}
+    {{ $olderCount := 0 }}
+    {{ range $olderYears }}
+      {{ $olderCount = add $olderCount (len (index $byYear .)) }}
+    {{ end }}
+
+    <div class="concerts-timeline__older" hidden>
+      {{ range $olderYears }}
+        {{ partial "concerts/year-group.html" (dict "year" . "shows" (index $byYear .) "colors" $bandColors) }}
+      {{ end }}
+    </div>
+
+    <button class="concerts-timeline__expand-btn" type="button">
+      {{ $olderCount }} more shows
+    </button>
+
+    <script>
+    (function () {
+      var btn = document.currentScript.previousElementSibling;
+      btn.addEventListener('click', function () {
+        var tl = btn.closest('.concerts-timeline');
+        var older = tl.querySelector('.concerts-timeline__older');
+        older.removeAttribute('hidden');
+        older.classList.add('concerts-timeline__older--revealed');
+        btn.remove();
+      });
+    })();
+    </script>
+  {{ end }}
+
+</div>

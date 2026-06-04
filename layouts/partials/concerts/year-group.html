@@ -1,0 +1,21 @@
+{{ $year     := .year }}
+{{ $shows    := .shows }}
+{{ $colors   := .colors }}
+<div class="concerts-timeline__group">
+  <div class="concerts-timeline__year-header">
+    <div class="concerts-timeline__year-num">{{ $year }}</div>
+    <div class="concerts-timeline__year-count">{{ len $shows }} shows</div>
+  </div>
+  <div class="concerts-timeline__cards">
+    {{ range $shows }}
+      {{ $color := default "rgba(255,255,255,0.35)" (index $colors .band) }}
+      <div class="concerts-timeline__card" style="--dot-color: {{ $color }}">
+        <div class="concerts-timeline__card-band">
+          <span class="concerts-timeline__dot"></span>{{ .band }}
+        </div>
+        <div class="concerts-timeline__card-venue">{{ .venue }}</div>
+        <div class="concerts-timeline__card-meta">{{ dateFormat "Jan" .date }}&thinsp;·&thinsp;{{ .type }}&thinsp;·&thinsp;{{ .city }}</div>
+      </div>
+    {{ end }}
+  </div>
+</div>
