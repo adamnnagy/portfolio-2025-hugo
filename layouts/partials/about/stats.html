@@ -3,12 +3,16 @@
 {{ $stats := site.Data.stats }}
 
 {{/* Derive music stats from concerts array */}}
-{{ $concertCount := len $stats.concerts }}
-{{ $bandNames := slice }}
-{{ range $stats.concerts }}
-  {{ $bandNames = $bandNames | append .band }}
+{{ $concertCount := 0 }}
+{{ $bandCount := 0 }}
+{{ with $stats.concerts }}
+  {{ $concertCount = len . }}
+  {{ $bandNames := slice }}
+  {{ range . }}
+    {{ $bandNames = $bandNames | append .band }}
+  {{ end }}
+  {{ $bandCount = len ($bandNames | uniq) }}
 {{ end }}
-{{ $bandCount := len ($bandNames | uniq) }}
 
 <div class="about__stats scroll-fade-in">
     <div class="about__stat">
@@ -51,6 +55,10 @@
         <div class="about__stat-lbl">Concerts played</div>
     </div>
     <div class="about__stat about__stat--hidden">
+        <div class="about__stat-n" id="tofu-counter">-</div>
+        <div class="about__stat-lbl">Packets of Tofu eaten (and counting)</div>
+    </div>
+    <div class="about__stat about__stat--hidden">
         <div class="about__stat-n">{{ $bandCount }}</div>
         <div class="about__stat-lbl">Bands played in</div>
     </div>
@@ -62,11 +70,15 @@
         const epoch = new Date('2019-10-01T09:00:00').getTime();
 
         const epochWater = new Date('1992-10-30T09:00:00').getTime();
+        const epochTofu = new Date('2020-01-01T00:00:00').getTime();
         // Rate: ~3.5 coffee per day → 86400 seconds in day → 3.5 coffees every ~86400 seconds
         const coffeeIntervalsMs = 86400 / 3.5 * 1000;
 
         // Rate: ~3.5 litres of water per day → 86400 seconds in day → 3.5 coffees every ~86400 seconds
         const waterIntervalsMs = 86400 / 2.5 * 1000;
+
+        // Rate: ~3 packs per month → 3 / 30.4375 days per pack
+        const tofuIntervalsMs = 86400 / (3 / 30.4375) * 1000;
 
         function getYearsOfExperience() {
 
@@ -88,6 +100,11 @@
             return Math.max(0, Math.floor(elapsed / waterIntervalsMs));
         }
 
+        function getTofuCount() {
+            const elapsed = Date.now() - epochTofu;
+            return Math.max(0, Math.floor(elapsed / tofuIntervalsMs));
+        }
+
         function updateCoffeeCount() {
             const el = document.getElementById('coffee-counter');
             if (el) el.textContent = getCoffeeCount().toLocaleString();
@@ -96,6 +113,11 @@
         function updateWaterCount() {
             const el = document.getElementById('water-counter');
             if (el) el.textContent = getWaterCount().toLocaleString();
+        }
+
+        function updateTofuCount() {
+            const el = document.getElementById('tofu-counter');
+            if (el) el.textContent = getTofuCount().toLocaleString();
         }
 
         function updateYears() {
@@ -107,10 +129,12 @@
 
         updateCoffeeCount();
         updateWaterCount();
+        updateTofuCount();
         updateYears();
         // Tick every second so it feels live without hammering the browser
         setInterval(updateCoffeeCount, 1000);
         setInterval(updateWaterCount, 1000);
+        setInterval(updateTofuCount, 1000);
         setInterval(updateYears, 1000);
 
         const discoverBtn = document.getElementById('discover-fact');

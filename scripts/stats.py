@@ -62,10 +62,20 @@ print(f'✓ Letterboxd film count: {film_count}')
 print(f'✓ GitHub commits this year: {github_commits}')
 
 os.makedirs('data', exist_ok=True)
+
+existing = {}
+try:
+    with open('data/stats.json', 'r') as f:
+        existing = json.load(f)
+except (FileNotFoundError, json.JSONDecodeError):
+    pass
+
+existing.update({
+    'films': film_count,
+    'scrobbles': scrobble_count,
+    'commits': github_commits,
+})
+
 with open('data/stats.json', 'w') as f:
-    json.dump({
-        'films': film_count,
-        'scrobbles': scrobble_count,
-        'commits': github_commits,
-    }, f, indent=2)
+    json.dump(existing, f, indent='\t')
 
