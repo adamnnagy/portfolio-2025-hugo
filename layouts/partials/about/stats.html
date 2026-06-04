@@ -2,6 +2,14 @@
 
 {{ $stats := site.Data.stats }}
 
+{{/* Derive music stats from concerts array */}}
+{{ $concertCount := len $stats.concerts }}
+{{ $bandNames := slice }}
+{{ range $stats.concerts }}
+  {{ $bandNames = $bandNames | append .band }}
+{{ end }}
+{{ $bandCount := len ($bandNames | uniq) }}
+
 <div class="about__stats scroll-fade-in">
     <div class="about__stat">
         <div class="about__stat-n" id="years-of-experience">6+</div>
@@ -31,9 +39,20 @@
         <div class="about__stat-n">{{ $stats.scrobbles }}</div>
         <div class="about__stat-lbl">Songs listened to</div>
     </div>
-    <div class="about__stat">
+    <button class="about__stat about__stat--discover" id="discover-fact">
+        <div class="about__stat-lbl">learn another fact</div>
+    </button>
+    <div class="about__stat about__stat--hidden">
         <div class="about__stat-n">{{ $stats.commits }}</div>
         <div class="about__stat-lbl">Github commits this year</div>
+    </div>
+    <div class="about__stat about__stat--hidden">
+        <div class="about__stat-n">{{ $concertCount }}</div>
+        <div class="about__stat-lbl">Concerts played</div>
+    </div>
+    <div class="about__stat about__stat--hidden">
+        <div class="about__stat-n">{{ $bandCount }}</div>
+        <div class="about__stat-lbl">Bands played in</div>
     </div>
 </div>
 
@@ -93,5 +112,20 @@
         setInterval(updateCoffeeCount, 1000);
         setInterval(updateWaterCount, 1000);
         setInterval(updateYears, 1000);
+
+        const discoverBtn = document.getElementById('discover-fact');
+        if (discoverBtn) {
+            discoverBtn.addEventListener('click', function () {
+                const next = document.querySelector('.about__stat--hidden');
+                if (next) {
+                    next.classList.remove('about__stat--hidden');
+                    next.classList.add('about__stat--revealed');
+                }
+                if (!document.querySelector('.about__stat--hidden')) {
+                    discoverBtn.querySelector('.about__stat-lbl').textContent = 'now you know everything!';
+                    discoverBtn.disabled = true;
+                }
+            });
+        }
     })();
 </script>

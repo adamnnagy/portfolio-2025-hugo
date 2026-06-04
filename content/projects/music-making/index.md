@@ -16,6 +16,8 @@ gallery = false
 
 # Perkupa
 
+{{< spotify id="30GuPTkWcK5FyZOyGDjHFg">}}
+
 ## Lead Vocals and Guitar
 
 Perkupa started from the smoldering ruins of our high school band, Brácsa. I got my friends together in 2021 after realizing that my love for music has survived the Covid era. We keep on playing, even though our drummer lives in Copenhagen, which complicates things. Our main creative output comes from our retreats to a secluded country house where we can practice freely for days on end.
@@ -28,6 +30,8 @@ I do a lot in the band. I organize logistics, I make the videos, I often bring m
 
 # Kiel Winde
 
+{{< spotify id="4JIGx5zBX6qEamwwqq7A9U">}}
+
 ## Solo Guitar and Background Vocals
 
 Kiel Winde is where humanities majors meet alternative rock and then they decide to go all out with a synth infused party.
@@ -38,13 +42,15 @@ Kiel Winde is where humanities majors meet alternative rock and then they decide
 
 # Juhász Zoli
 
+{{< spotify id="2tGfWxiNDFCunnom6Tdro4">}}
+
 ## Rhythm Guitar
 
 I play guitar in the solo project of considermearockstar.com. He is an acclaimed artist in Hungary who has been around the musical scene since 2017. He released his first solo album in 2024.
 
 The pictures are from a tour that we did together.
 
-https://open.spotify.com/artist/07aNeZApbFflKJYHiRZLGS?si=vv62B9MMR9uormBWzL-Kbg
+I joined the band with the studio recordings already underway for the album Csillagszemű, however I was invited to contribute to the track Vízfolyás, where I play the guitar.
 
 {{% image src="images/music-making/jz-01.jpeg" alt="Juhász Zoli" class="content-image" %}}
 {{% image src="images/music-making/jz-02.jpeg" alt="Juhász Zoli" class="content-image" %}}

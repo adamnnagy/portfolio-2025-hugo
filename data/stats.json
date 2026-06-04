@@ -1,5 +1,232 @@
 {
-  "films": 1,
-  "scrobbles": 1,
-  "commits": 1
+	"films": 1,
+	"scrobbles": 1,
+	"commits": 1,
+	"concerts": [
+		{
+			"date": "2023-09-19",
+			"venue": "Auróra",
+			"city": "Budapest",
+			"band": "Kiel Winde",
+			"role": "guitarist, backing vocals",
+			"type": "gig",
+			"date_approx": true
+		},
+		{
+			"date": "2024-11-29",
+			"venue": "Expresszó",
+			"city": "Veszprém",
+			"band": "Juhász Zoli",
+			"role": "guitarist",
+			"type": "gig",
+			"date_approx": false
+		},
+		{
+			"date": "2025-05-22",
+			"venue": "Dürer Kert",
+			"city": "Budapest",
+			"band": "Juhász Zoli",
+			"role": "guitarist",
+			"type": "gig",
+			"date_approx": false
+		},
+		{
+			"date": "2024-12-14",
+			"venue": "Akvárium Lokál",
+			"city": "Budapest",
+			"band": "Juhász Zoli",
+			"role": "guitarist",
+			"type": "gig",
+			"date_approx": false
+		},
+		{
+			"date": "2025-07-22",
+			"venue": "Művészetek Völgye",
+			"city": "Taliándörögd",
+			"band": "Juhász Zoli",
+			"role": "guitarist",
+			"type": "festival",
+			"date_approx": false
+		},
+		{
+			"date": "2024-07-20",
+			"venue": "Művészetek Völgye",
+			"city": "Kapolcs",
+			"band": "Juhász Zoli",
+			"role": "guitarist",
+			"type": "festival",
+			"date_approx": false
+		},
+		{
+			"date": "2024-06-20",
+			"venue": "Vénégy Fesztivál",
+			"city": "Nagymaros",
+			"band": "Juhász Zoli",
+			"role": "guitarist",
+			"type": "festival",
+			"date_approx": false
+		},
+		{
+			"date": "2024-06-28",
+			"venue": "Fishing on Orfű",
+			"city": "Orfű",
+			"band": "Juhász Zoli",
+			"role": "guitarist",
+			"type": "festival",
+			"date_approx": false
+		},
+		{
+			"date": "2024-07-04",
+			"venue": "Kolorádó Fesztivál",
+			"city": "Nagykovácsi",
+			"band": "Juhász Zoli",
+			"role": "guitarist",
+			"type": "festival",
+			"date_approx": false
+		},
+		{
+			"date": "2024-07-12",
+			"venue": "Bánkitó Fesztivál",
+			"city": "Bánk",
+			"band": "Juhász Zoli",
+			"role": "guitarist",
+			"type": "festival",
+			"date_approx": false
+		},
+		{
+			"date": "2024-07-30",
+			"venue": "Ördögkatlan",
+			"city": "Nagyharsány",
+			"band": "Juhász Zoli",
+			"role": "guitarist",
+			"type": "festival",
+			"date_approx": false
+		},
+		{
+			"date": "2024-08-03",
+			"venue": "Gyárkert",
+			"city": "Veszprém",
+			"band": "Juhász Zoli",
+			"role": "guitarist",
+			"type": "festival",
+			"date_approx": false
+		},
+		{
+			"date": "2023-07-15",
+			"venue": "Három Holló",
+			"city": "Budapest",
+			"band": "Kiel Winde",
+			"role": "guitarist, backing vocals",
+			"type": "gig",
+			"date_approx": false
+		},
+		{
+			"date": "2023-08-29",
+			"venue": "Három Holló",
+			"city": "Budapest",
+			"band": "Kiel Winde",
+			"role": "guitarist, backing vocals",
+			"type": "gig",
+			"date_approx": false
+		},
+		{
+			"date": "2025-05-07",
+			"venue": "Központ",
+			"city": "Budapest",
+			"band": "Kiel Winde",
+			"role": "guitarist, backing vocals",
+			"type": "gig",
+			"date_approx": false
+		},
+		{
+			"date": "2025-05-31",
+			"venue": "Manyi",
+			"city": "Budapest",
+			"band": "Kiel Winde",
+			"role": "guitarist, backing vocals",
+			"type": "gig",
+			"date_approx": false
+		},
+		{
+			"date": "2025-11-20",
+			"venue": "Lámpás",
+			"city": "Budapest",
+			"band": "Kiel Winde",
+			"role": "guitarist, backing vocals",
+			"type": "gig",
+			"date_approx": false
+		},
+		{
+			"date": "2026-05-14",
+			"venue": "Lámpás",
+			"city": "Budapest",
+			"band": "Perkupa",
+			"role": "guitarist, lead vocals",
+			"type": "gig",
+			"date_approx": false
+		},
+		{
+			"date": "2023-07-20",
+			"venue": "Nyolcésfél",
+			"city": "Budapest",
+			"band": "Perkupa",
+			"role": "guitarist, lead vocals",
+			"type": "gig",
+			"date_approx": false
+		},
+		{
+			"date": "2025-07-30",
+			"venue": "Dobódél Live",
+			"city": "Dobódél",
+			"band": "Perkupa",
+			"role": "guitarist, lead vocals",
+			"type": "live session",
+			"date_approx": false
+		},
+		{
+			"date": "2018-11-01",
+			"venue": "Battle of Bands",
+			"city": "Abu Dhabi",
+			"band": "Daytime TV",
+			"role": "guitarist",
+			"type": "gig",
+			"date_approx": false
+		},
+		{
+			"date": "2019-02-01",
+			"venue": "Lounge Live",
+			"city": "Abu Dhabi",
+			"band": "Daytime TV",
+			"role": "guitarist",
+			"type": "live session",
+			"date_approx": true
+		},
+		{
+			"date": "2024-09-19",
+			"venue": "Auróra",
+			"city": "Budapest",
+			"band": "Kiel Winde",
+			"role": "guitarist, backing vocals",
+			"type": "gig",
+			"date_approx": false
+		},
+		{
+			"date": "2011-03-19",
+			"venue": "Grizzly",
+			"city": "Miskolc",
+			"band": "Brácsa",
+			"role": "guitarist",
+			"type": "gig",
+			"date_approx": false
+		},
+		{
+			"date": "2025-04-05",
+			"venue": "Auróra",
+			"city": "Budapest",
+			"band": "Kiel Winde",
+			"role": "guitarist, backing vocals",
+			"type": "gig",
+			"date_approx": false
+		}
+	]
 }
