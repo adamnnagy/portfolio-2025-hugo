@@ -127,6 +127,10 @@
 		display: none;
 	}
 
+	&__stat--secret {
+		display: none;
+	}
+
 	&__stat--revealed {
 		animation: stat-reveal 0.35s ease both;
 	}

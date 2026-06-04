@@ -24,6 +24,10 @@
         <div class="about__stat-lbl">Countries worked in</div>
     </div>
     <div class="about__stat">
+        <div class="about__stat-n">4</div>
+        <div class="about__stat-lbl">Languages spoken (once)</div>
+    </div>
+    <div class="about__stat">
         <div class="about__stat-n" id="coffee-counter">-</div>
         <div class="about__stat-lbl">Coffees had while working</div>
     </div>
@@ -39,13 +43,13 @@
         <div class="about__stat-n">{{ $stats.films }}</div>
         <div class="about__stat-lbl">Films watched</div>
     </div>
-    <div class="about__stat">
-        <div class="about__stat-n">{{ $stats.scrobbles }}</div>
-        <div class="about__stat-lbl">Songs listened to</div>
-    </div>
     <button class="about__stat about__stat--discover" id="discover-fact">
         <div class="about__stat-lbl">learn another fact</div>
     </button>
+    <div class="about__stat about__stat--hidden">
+        <div class="about__stat-n">{{ $stats.scrobbles }}</div>
+        <div class="about__stat-lbl">Songs listened to</div>
+    </div>
     <div class="about__stat about__stat--hidden">
         <div class="about__stat-n">{{ $stats.commits }}</div>
         <div class="about__stat-lbl">Github commits this year</div>
@@ -59,8 +63,68 @@
         <div class="about__stat-lbl">Packets of Tofu eaten (and counting)</div>
     </div>
     <div class="about__stat about__stat--hidden">
+        <div class="about__stat-n" id="stat-counter">-</div>
+        <div class="about__stat-lbl">Facts revealed (so far)</div>
+    </div>
+    <div class="about__stat about__stat--hidden">
         <div class="about__stat-n">{{ $bandCount }}</div>
         <div class="about__stat-lbl">Bands played in</div>
+    </div>
+    <div class="about__stat about__stat--hidden">
+        <div class="about__stat-n">10</div>
+        <div class="about__stat-lbl">Love for Legos (1-10)</div>
+    </div>
+    <div class="about__stat about__stat--secret">
+        <div class="about__stat-n">1992</div>
+        <div class="about__stat-lbl">Year born</div>
+    </div>
+    <div class="about__stat about__stat--secret">
+        <div class="about__stat-n">1</div>
+        <div class="about__stat-lbl">Sisters</div>
+    </div>
+    <div class="about__stat about__stat--secret">
+        <div class="about__stat-n">3192</div>
+        <div class="about__stat-lbl">Cats petted (approximation)</div>
+    </div>
+    <div class="about__stat about__stat--secret">
+        <div class="about__stat-n">4199</div>
+        <div class="about__stat-lbl">First PIN number</div>
+    </div>
+    <div class="about__stat about__stat--secret">
+        <div class="about__stat-n">7</div>
+        <div class="about__stat-lbl">Favorite number</div>
+    </div>
+    <div class="about__stat about__stat--secret">
+        <div class="about__stat-n">114</div>
+        <div class="about__stat-lbl">Or is it?</div>
+    </div>
+    <div class="about__stat about__stat--secret">
+        <div class="about__stat-n">83</div>
+        <div class="about__stat-lbl">Or is it?...</div>
+    </div>
+    <div class="about__stat about__stat--secret">
+        <div class="about__stat-n">80085</div>
+        <div class="about__stat-lbl">We might never know</div>
+    </div>
+    <div class="about__stat about__stat--secret">
+        <div class="about__stat-n">5</div>
+        <div class="about__stat-lbl">Guitars owned</div>
+    </div>
+    <div class="about__stat about__stat--secret">
+        <div class="about__stat-n">0</div>
+        <div class="about__stat-lbl">Porsches owned</div>
+    </div>
+    <div class="about__stat about__stat--secret">
+        <div class="about__stat-n">110</div>
+        <div class="about__stat-lbl">Hottest temp experienced (Celsius)</div>
+    </div>
+    <div class="about__stat about__stat--secret">
+        <div class="about__stat-n">400</div>
+        <div class="about__stat-lbl">How it felt like (Celsius)</div>
+    </div>
+        <div class="about__stat about__stat--secret">
+        <div class="about__stat-n">-25</div>
+        <div class="about__stat-lbl">Coldest temp experienced (Celsius)</div>
     </div>
 </div>
 
@@ -147,6 +211,7 @@
                 case 'coffee-counter':      return { val: getCoffeeCount() };
                 case 'water-counter':       return { val: getWaterCount() };
                 case 'tofu-counter':        return { val: getTofuCount() };
+                case 'stat-counter':        return { val: revealedCount };
                 default: {
                     const n = parseInt(el.textContent.replace(/[\s,]/g, ''), 10);
                     return isNaN(n) ? null : { val: n };
@@ -180,20 +245,80 @@
 
         // ── Discover button ───────────────────────────────────────────────────
 
+        let revealedCount = 7;
+
+        function updateStatCounter() {
+            const el = document.getElementById('stat-counter');
+            if (el && el.closest('.about__stat--revealed')) {
+                el.textContent = revealedCount.toLocaleString();
+            }
+        }
+
         const discoverBtn = document.getElementById('discover-fact');
         if (discoverBtn) {
-            discoverBtn.addEventListener('click', function () {
-                const next = document.querySelector('.about__stat--hidden');
-                if (next) {
-                    next.classList.remove('about__stat--hidden');
-                    next.classList.add('about__stat--revealed');
+            const btnLbl = discoverBtn.querySelector('.about__stat-lbl');
 
-                    const numEl = next.querySelector('.about__stat-n');
-                    if (numEl) animateEl(numEl);
-                }
-                if (!document.querySelector('.about__stat--hidden')) {
-                    discoverBtn.querySelector('.about__stat-lbl').textContent = 'now you know everything!';
-                    discoverBtn.disabled = true;
+            // phase: 'normal' | 'exhausted' | 'teasing' | 'secret' | 'done'
+            let phase = 'normal';
+            let phaseClicks = 0;
+
+            function revealStat(next) {
+                revealedCount++;
+                updateStatCounter();
+                const numEl = next.querySelector('.about__stat-n');
+                if (numEl) animateEl(numEl);
+            }
+
+            discoverBtn.addEventListener('click', function () {
+                if (phase === 'normal') {
+                    const next = document.querySelector('.about__stat--hidden');
+                    if (next) {
+                        next.classList.remove('about__stat--hidden');
+                        next.classList.add('about__stat--revealed');
+                        revealStat(next);
+                    }
+                    if (!document.querySelector('.about__stat--hidden')) {
+                        phase = 'exhausted';
+                        phaseClicks = 0;
+                        btnLbl.textContent = 'now you know everything!';
+                    }
+                } else if (phase === 'exhausted') {
+                    phaseClicks++;
+                    if (phaseClicks >= 3) {
+                        phase = 'teasing';
+                        phaseClicks = 0;
+                        btnLbl.textContent = 'okay, press me 3 times more to learn the truth';
+                    }
+                } else if (phase === 'teasing') {
+                    phaseClicks++;
+                    if (phaseClicks >= 3) {
+                        phase = 'secret';
+                        btnLbl.textContent = 'learn another fact';
+                        // reveal first secret immediately on phase transition
+                        const next = document.querySelector('.about__stat--secret');
+                        if (next) {
+                            next.classList.remove('about__stat--secret');
+                            next.classList.add('about__stat--revealed');
+                            revealStat(next);
+                        }
+                        if (!document.querySelector('.about__stat--secret')) {
+                            phase = 'done';
+                            btnLbl.textContent = 'now you really know everything!';
+                            discoverBtn.disabled = true;
+                        }
+                    }
+                } else if (phase === 'secret') {
+                    const next = document.querySelector('.about__stat--secret');
+                    if (next) {
+                        next.classList.remove('about__stat--secret');
+                        next.classList.add('about__stat--revealed');
+                        revealStat(next);
+                    }
+                    if (!document.querySelector('.about__stat--secret')) {
+                        phase = 'done';
+                        btnLbl.textContent = 'now you really know everything!';
+                        discoverBtn.disabled = true;
+                    }
                 }
             });
         }
