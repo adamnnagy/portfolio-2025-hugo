@@ -2,7 +2,7 @@
 title = 'Panteézis'
 description = 'A soundtrack to evolving nature.'
 date = '2025-07-13T10:48:35+02:00'
-draft = true
+draft = false
 
 priority = 2
 featured = true
@@ -16,11 +16,9 @@ gallery = true
 
 # Panteézis
 
-*Panteézis* is an ambient album I composed for *Ithaka*, an exhibition by the Budapest-based painter Gabriella Kovács.
+*Panteézis* is an ambient album I composed for *Ithaka*, an exhibition by the Budapest-based painter Gabriella Kovács. The music was designed to deepen the audience's interaction with the paintings, turning the gallery into an immersive audiovisual experience.
 
 {{< audioplayer folder="panteezis" >}}
-
-Created as a companion piece to the exhibition, the music was designed to deepen the interaction between the audience and the paintings, turning the gallery into a more immersive audiovisual experience.
 
 <div class="image-grid three-col">
 
@@ -38,9 +36,9 @@ Created as a companion piece to the exhibition, the music was designed to deepen
 
 </div>
 
-# Process / Workflow
+# Making the Album
 
-The goal of the project was to create music that could exist in dialogue with the paintings rather than simply accompany them. I approached the album as a soundtrack to the exhibition — one that would reflect the atmosphere, textures, and emotional tone of the visual work while maintaining its own identity as a listening experience.
+The goal was to create music that could exist in dialogue with the paintings. I approached the album as a soundtrack to the exhibition — reflecting the atmosphere, textures, and emotional tone of the visual work while maintaining its own identity as a listening experience.
 
 <div class="image-grid two-col">
 
@@ -52,21 +50,17 @@ The goal of the project was to create music that could exist in dialogue with th
 
 ## Preproduction
 
-This project marked my first exploration into ambient composition. During the research and development phase, I drew inspiration from artists such as Ólafur Arnalds, Hermanos Gutiérrez, Thievery Corporation, and Nils Frahm, studying how texture, repetition, and space can shape emotional perception.
+This project was my first exploration into ambient composition. I drew inspiration from Ólafur Arnalds, Hermanos Gutiérrez, Thievery Corporation, and Nils Frahm, studying how texture, repetition, and space can shape emotional perception.
 
 ## Instruments & Production
 
-The organic textures of acoustic guitar and bass became central to the sonic palette of the album, echoing the tactile qualities of the paintings themselves.
+Acoustic guitar and bass became central to the sonic palette, echoing the tactile qualities of the paintings themselves.
 
-I developed the early sketches and demos using the looping functions of the Boss DD-20 Giga Delay alongside my pedalboard setup. Through layered delays, reverbs, and looping techniques, I built an atmospheric sound that balanced organic instrumentation with modern production aesthetics.
-
-Ableton Live served as the primary production environment throughout the project.
+Early sketches and demos were built using the looping functions of the Boss DD-20 Giga Delay alongside my pedalboard. Through layered delays, reverbs, and looping techniques, I built an atmospheric sound balancing organic instrumentation with modern production aesthetics. Ableton Live served as the primary production environment throughout.
 
 # Outcome - Performance: Agave
 
-In 2026, Gabriella Kovács invited me to return and perform music live for her exhibition *Agave*. For these performances, I adapted the *Panteézis* material into a live set built around real-time looping and layered improvisation.
-
-Combining hardware looping devices with Ableton Live, I performed the album live on multiple occasions, including the exhibition’s finissage.
+In 2026, Gabriella Kovács invited me to return and perform live for her exhibition Agave. I adapted the Panteézis material into a live set built around real-time looping and layered improvisation, combining hardware looping devices with Ableton Live. I performed on multiple occasions, including the exhibition's finissage.
 
 {{% youtube id="PJm_b0rna_8" %}}
 
@@ -78,7 +72,7 @@ Combining hardware looping devices with Ableton Live, I performed the album live
 
 </div>
 
-{{% instagram DWzG-P5F1-4 %}}
+<!-- {{% instagram DWzG-P5F1-4 %}} -->
 
 Further reading:
 
