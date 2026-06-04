@@ -10,7 +10,7 @@ featured = false
 [[steps]]
 number = "00:00:01"
 title = "the dream"
-description = "Most projects deep down contain a dream. Whether it's an idea for a video, a website or a social media post, there's a pearl in the middle of it.
+description = "Most projects deep down contain a dream. Whether it's an idea for a video, a website or a social media post, there's a pearl in the middle of it."
 
 [[steps]]
 number = "00:00:02"
@@ -34,7 +34,7 @@ description = "The final version is a myth. Refine until the deadline or until i
 
 +++
 
-Every project starts with understanding the idea properly, which is easier when you're used to thinking in systems. I come from an engineering background, so I'm comfortable with technical constraints, tight timelines, and figuring out the right tool for the job. In practice that means I can jump in at any stage — concept, shoot, edit, or delivery — and orient quickly. 
+Every project starts with understanding the idea properly, and that's easier when you think in systems. I come from an engineering background, so I'm comfortable with technical constraints, tight timelines, and figuring out the right tool for the job. In practice that means I can jump in at any stage — concept, shoot, edit, or delivery — and orient quickly. 
 
 We define the timeline at the start — milestones, feedback windows, a delivery date. Not because I'm rigid about it, but because good work needs a shape to grow into. Endless feedback cycles help no one. 
 
