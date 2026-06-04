@@ -17,7 +17,7 @@
     </div>
     <div class="about__stat">
         <div class="about__stat-n" id="water-counter">-</div>
-        <div class="about__stat-lbl">Litres of Water since 18</div>
+        <div class="about__stat-lbl">Litres of Water drank (and counting)</div>
     </div>
     <div class="about__stat">
         <div class="about__stat-n">1</div>
@@ -29,7 +29,7 @@
     </div>
     <div class="about__stat">
         <div class="about__stat-n">{{ $stats.scrobbles }}</div>
-        <div class="about__stat-lbl">Songs listened</div>
+        <div class="about__stat-lbl">Songs listened to</div>
     </div>
     <div class="about__stat">
         <div class="about__stat-n">{{ $stats.commits }}</div>
@@ -42,12 +42,12 @@
         // Epoch: rough start of remote work (Labocine era). Adjust if needed.
         const epoch = new Date('2019-10-01T09:00:00').getTime();
 
-        const epochWater = new Date('2010-10-30T09:00:00').getTime();
+        const epochWater = new Date('1992-10-30T09:00:00').getTime();
         // Rate: ~3.5 coffee per day → 86400 seconds in day → 3.5 coffees every ~86400 seconds
         const coffeeIntervalsMs = 86400 / 3.5 * 1000;
 
         // Rate: ~3.5 litres of water per day → 86400 seconds in day → 3.5 coffees every ~86400 seconds
-        const waterIntervalsMs = 86400 / 3.5 * 1000;
+        const waterIntervalsMs = 86400 / 2.5 * 1000;
 
         function getYearsOfExperience() {
 

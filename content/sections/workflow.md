@@ -7,13 +7,13 @@ featured = false
 
 [[steps]]
 number = "00:00:01"
-title = "Discovery"
-description = "We start with a conversation about your vision, goals, and timeline. I want to understand what you're trying to say before we figure out how to say it."
+title = "Let's dream"
+description = "Most projects deep down contain a dream. If you dig down enough, you can find that source on the bottom of any promotion. Let's talk about the idea and how to best express it."
 
 [[steps]]
 number = "00:00:02"
-title = "Pre-production"
-description = "Shot lists, mood boards, location scouts, gear planning — everything needed to walk on set ready to capture exactly what the story calls for."
+title = "Ground it."
+description = "Let's start thinking in systems and lay down the blueprints. Write the script, look for inspirations"
 
 [[steps]]
 number = "00:00:03"

@@ -16,9 +16,7 @@ gallery = true
 
 # Labocine | Head of Video (2019–2021)
 
-At [Labocine](https://www.labocine.com/), I led the platform’s video and social media production during a period of rapid audience growth and monthly editorial releases.
-
-Labocine is a streaming platform and online publication focused on the intersection of cinema and science. Its monthly issues curated short films, documentaries, and feature-length works around scientific themes and concepts, creating a space where research and storytelling could meet.
+[Labocine](https://www.labocine.com/) is a streaming platform and online publication focused on the intersection of cinema and science. Its monthly issues curated short films, documentaries, and feature-length works around scientific themes and concepts, creating a space where research and storytelling could meet.
 
 <div class="image-grid three-col">
 {{% image src="images/labocine/labocine-trailer-01.jpeg" alt="placeholder" class="content-image" %}}
@@ -28,15 +26,11 @@ Labocine is a streaming platform and online publication focused on the intersect
 
 {{% image src="images/labocine/labocine-01.jpeg" alt="Labocine issue artwork" class="content-image" %}}
 
-## Responsibilities
-
-My role combined editorial, creative, technical, and marketing responsibilities across the platform’s monthly publishing cycle.
+My role combined editorial, creative, technical, and marketing responsibilities during the platform’s monthly publishing cycle.
 
 ### Video Production & Editing
 
-I edited the monthly trailers for each issue, creating promotional videos that introduced the scientific themes and highlighted featured films. These trailers were used across Labocine’s website, newsletter, and social media channels.
-
-I approached the trailer for each issue so that each clip in it reinforced the monthly issue in some way.
+Each month, I edited a trailer to introduce the issue's scientific theme and highlight its featured films. These were distributed across Labocine's website, newsletter, and social media channels.
 
 <div class="image-grid three-col">
 {{% image src="images/labocine/labocine-trailer-04.jpeg" alt="placeholder" class="content-image" %}}
@@ -44,7 +38,7 @@ I approached the trailer for each issue so that each clip in it reinforced the m
 {{% image src="images/labocine/labocine-trailer-05.jpeg" alt="placeholder" class="content-image" %}}
 </div>
 
-I applied the principle that interesting association between clips will result in a trailer that's fun to watch and one that draws in the audience.
+The approach was consistent: every clip in the trailer had to reinforce the theme of that issue in some way. Interesting associations between clips make a trailer that's fun to watch and draws the audience in. It was equally important that each trailer communicated the novelty of Labocine and positioned the service as a unique product, so I worked carefully to connect scientific concepts to a strong, specific mood.
 
 <div class="image-grid three-col">
 {{% image src="images/labocine/labocine-trailer-07.jpeg" alt="placeholder" class="content-image" %}}
@@ -60,13 +54,11 @@ It was very important for the trailers to communicate the novelty of Labocine an
 
 ### Newsletter & Editorial Communication - The Weekly Waves
 
-I wrote and designed the weekly newsletter campaigns in Mailchimp, helping communicate new releases, editorial features, and platform updates to Labocine’s international audience.
-
-I was on the lookout for interesting news and developments from the science world that combined filmmaking and a scientific interest.
+I wrote and designed the weekly newsletter, The Weekly Waves, in Mailchimp. Each issue communicated new releases, editorial features, and platform updates to Labocine's international audience. I was on the lookout for interesting news that intersected with filmmaking and a scientific interest.
 
 ### Social Media & Audience Growth
 
-I managed the platform’s Instagram presence, creating visual content and promotional assets tailored for social media distribution. I also set up and managed Facebook ad campaigns to support the launch of monthly issues and increase audience reach.
+I managed Labocine's Instagram presence, creating visual content and promotional assets for social media. I also set up and ran Facebook ad campaigns to support monthly issue launches and grow the platform's reach.
 
 <div class="image-grid three-col">
 {{% image src="images/labocine/labocine-scene-01.jpeg" alt="placeholder" class="content-image" %}}
@@ -80,14 +72,10 @@ I managed the platform’s Instagram presence, creating visual content and promo
 {{% image src="images/labocine/labocine-scene-07.jpeg" alt="placeholder" class="content-image" %}}
 </div>
 
-These are screenshots from the "Scenes" section of Labocine - these are short, community-sourced videos from research labs, posted by scientists working there.
+The screenshots above are from the "Scenes" section of Labocine, a collection of short community-sourced videos filmed in research labs by the scientists working there.
 
 [Labocine Instagram](https://www.instagram.com/labocine/)
 
 ### Workflow Automation
 
-To streamline the editing process, I wrote a custom script that automatically downloaded all films associated with the current issue into an organized local workflow. This significantly reduced preparation time for trailer editing and content production.
-
-<!-- The main inspiration for this was the ebook Automate Everyday Tasks with Python. -->
-
-I used the python libraries Beautifulsoup and Selenium to achieve this. Since the videos were hidden behind a login screen, I used web scraping and browser automation. This essentially turned the task of manually downloading source videos to launching a script, saving up to 2 hours / issue.
+To streamline trailer production, I wrote a custom script that automatically downloaded all films associated with a given issue into an organized local workflow. Using the Python libraries BeautifulSoup and Selenium, the script handled login authentication and browser automation to access videos behind a paywall. What had previously required manual downloading was reduced to running a single script, saving up to two hours per issue.

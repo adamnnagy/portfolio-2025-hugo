@@ -14,7 +14,7 @@ hero = ""
 gallery = false
 +++
 
-# Free Shipping - VR (Overview)
+# Free Shipping - VR
 
 Free Shipping was my thesis project at NYU Abu Dhabi for my Film and New Media major. It's an interactive VR experience that focuses on stereotypes regarding ethnicities, specifically, how unconscious bias operates on the cultural level. I worked on this project for three semesters, from January 2018 to May 2019.
 

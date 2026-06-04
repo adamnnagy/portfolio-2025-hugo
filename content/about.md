@@ -65,7 +65,7 @@ location = "Miskolc"
 
 # Hi, I'm Ádám. 
 
-Hi, I'm Ádám, Budapest-based creative technologist and video editor working across science communication, culture, and music. I bring an engineering background to creative work, which means I understand technical concepts quickly, collaborate well across disciplines, and yes, I coded this website.
+A Budapest-based creative technologist and video editor working across science communication, culture, and music. I bring an engineering background to creative work, which means I understand technical concepts quickly, collaborate well across disciplines, and yes, I coded this website.
 
 {{% image src="images/intro/ghana.jpeg" alt="Profile Image" class="content-image scroll-fade-in" %}}
 
@@ -73,19 +73,9 @@ And yes, I do drink a lot of water. Gotta stay hydrated!
 
 # Experience
 
-Over six years working internationally on video, interactive media, and creative technology, from post-production pipelines to VR projects.
+Over six years, I've worked internationally across video, interactive media, and creative technology: from post-production pipelines to VR projects
 
-- Video Producer | iGEM Europe (Paris)
-- Assistant Editor | Happy Holidays (Haifa)
-- Head of Video | Labocine, New York (remote, but heavily invested in bagels)
-- Video Editor | WWF-commissioned EU satire on MEPs and the planet (Brussels)
-- Bandleader + Live Session Director | original music project
-- VR Experience | Racial Biasing, premiered at NYU Abu Dhabi Capstone Festival (2019)
-- Board Game Designer | in collaboration with Karkahana (Kathmandu)
-- Automated Greenhouse | PLC control system design (Miskolc)
-
-
-[My work was screened at annual events]({{< relref "/projects/igem-show-videos/" >}}) attended by thousands of participants from around the world.
+My work has been screened at [international events]({{< relref "/projects/igem-show-videos/" >}}) drawing thousands of participants each year.
 
 I helped [nature restoration efforts in the EU]({{< relref "/projects/wwf/" >}}) to be committed to legislation.
 
