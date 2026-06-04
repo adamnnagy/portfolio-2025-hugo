@@ -2,31 +2,40 @@
 date = '2025-07-15T10:06:55+02:00'
 draft = false
 title = 'How I work'
+sub = ""
+
 priority = 0
 featured = false
 
 [[steps]]
 number = "00:00:01"
-title = "Let's dream"
-description = "Most projects deep down contain a dream. If you dig down enough, you can find that source on the bottom of any promotion. Let's talk about the idea and how to best express it."
+title = "the dream"
+description = "Most projects deep down contain a dream. Whether it's an idea for a video, a website or a social media post, there's a pearl in the middle of it.
 
 [[steps]]
 number = "00:00:02"
-title = "Ground it."
-description = "Let's start thinking in systems and lay down the blueprints. Write the script, look for inspirations"
+title = "Ground it"
+description = "Make the dream into a plan. Start thinking in systems and lay down the blueprints. Collect references, scripts, set timelines, constraints."
 
 [[steps]]
 number = "00:00:03"
-title = "Production"
-description = "On-set direction and cinematography, or editing from your existing footage. Focused, efficient, and always in service of the final piece."
+title = "The Studio"
+description = "The vision becomes reality. The plans become tangible, ideas find the form, mind turns into matter."
 
 [[steps]]
 number = "00:00:04"
-title = "Post-production"
-description = "Colour grading, sound design, music selection, and motion graphics. The edit is where everything comes together — and where I spend most of my time."
+title = "Inside the edit"
+description = "This is where I live. Everything gets pulled apart and put back together: the picture gets locked, the sound gets designed, music becomes score, the color becomes aesthetic  — until it holds."
 
 [[steps]]
 number = "00:00:05"
-title = "Delivery"
-description = "Final files in the formats you need, optimised for wherever your content will live — broadcast, web, social, or festival."
+title = "v5__final__finalfinal"
+description = "The final version is a myth. Refine until the deadline or until it feels right. Whichever comes first."
+
 +++
+
+Every project starts with understanding the idea properly, which is easier when you're used to thinking in systems. I come from an engineering background, so I'm comfortable with technical constraints, tight timelines, and figuring out the right tool for the job. In practice that means I can jump in at any stage — concept, shoot, edit, or delivery — and orient quickly. 
+
+We define the timeline at the start — milestones, feedback windows, a delivery date. Not because I'm rigid about it, but because good work needs a shape to grow into. Endless feedback cycles help no one. 
+
+If you're not sure what you need yet, that's fine too. Bring me in for a stretch of time and we figure it out together.

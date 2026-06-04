@@ -15,6 +15,23 @@
 		padding: 0;
 	}
 
+    &__sub {
+		font-family: $regular-font;
+		font-size: 0.9rem;
+		opacity: 0.5;
+		margin: 0 0 3rem;
+		line-height: 1.7;
+	}
+
+    p {
+		font-family: $regular-font;
+		font-size: 0.9rem;
+		opacity: 0.5;
+		margin: 0 0 3rem;
+		line-height: 1.7;
+
+    }
+
 	&__steps {
 		display: grid;
 		grid-template-columns: 1fr;
