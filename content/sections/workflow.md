@@ -7,10 +7,14 @@ sub = ""
 priority = 0
 featured = false
 
+screenplay = """<div class="screenplay"><p class="screenplay__scene-heading">EXT. NIGHT. IN THE WOODS.</p><p class="screenplay__action">DAVID LYNCH is walking through the woods, talking to young filmmakers.</p><p class="screenplay__character">DAVID LYNCH</p><p class="screenplay__dialogue">Ideas are like fish. If you want to catch little fish, you can stay in the shallow water. But if you want to catch the big fish, you've got to go deeper. Down deep, the fish are more powerful and more pure. They're huge and abstract. And they're very beautiful.</p></div>"""
+
 [[steps]]
 number = "00:00:01"
 title = "the dream"
 description = "Most projects deep down contain a dream. Whether it's an idea for a video, a website or a social media post, there's a pearl in the middle of it."
+screenplay = """<div class="screenplay"><p class="screenplay__character">DAVID LYNCH</p><p class="screenplay__dialogue">Ideas are like fish. If you want to catch little fish, you can stay in the shallow water. But if you want to catch the big fish, you've got to go deeper. Down deep, the fish are more powerful and more pure. They're huge and abstract. And they're very beautiful.</p></div>"""
+
 
 [[steps]]
 number = "00:00:02"

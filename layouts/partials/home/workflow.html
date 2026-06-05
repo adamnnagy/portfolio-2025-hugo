@@ -8,11 +8,20 @@
         <div class="workflow-step">
             <code class="workflow-step__number">{{ .number }}</code>
             <h3 class="workflow-step__title">{{ .title }}.</h3>
+            {{ if .screenplay }}
+                {{ $normal := printf `<p class="workflow-step__desc">%s</p>` .description }}
+                {{ partial "toggle-text.html" (dict "normal" $normal "alternate" .screenplay) }}
+            {{ else }}
             <p class="workflow-step__desc">{{ .description }}</p>
+            {{ end }}
         </div>
         {{ end }}
     </div>
+    {{ if .Params.screenplay }}
+        {{ partial "toggle-text.html" (dict "normal" .Content "alternate" .Params.screenplay) }}
+    {{ else }}
     {{ .Content }}
+    {{ end }}
     {{ end }}
 </section>
 {{ end }}
