@@ -1,0 +1,45 @@
+// _toggle-text.scss
+
+.toggle-text {
+	cursor: pointer;
+	user-select: none;
+
+	&__alternate {
+		display: none;
+	}
+
+	&--alt &__normal {
+		display: none;
+	}
+
+	&--alt &__alternate {
+		display: block;
+		animation: toggle-text-in 0.3s ease both;
+	}
+
+	&__hint {
+		display: block;
+		font-family: $regular-font;
+		font-size: 0.65rem;
+		text-transform: uppercase;
+		letter-spacing: 0.18em;
+		opacity: 0.3;
+		margin-top: 2rem;
+		transition: opacity 0.2s;
+
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+}
+
+@keyframes toggle-text-in {
+	from {
+		opacity: 0;
+		transform: translateY(6px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

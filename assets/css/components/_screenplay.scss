@@ -1,0 +1,38 @@
+// _screenplay.scss
+
+.screenplay {
+	text-align: left;
+	max-width: 520px;
+	margin: 0 auto;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 0.88rem;
+	line-height: 1.6;
+
+	@include tablet-up {
+		font-size: 0.95rem;
+	}
+
+	&__scene-heading {
+		text-transform: uppercase;
+		font-weight: bold;
+		margin: 0 0 1.2em;
+		letter-spacing: 0.04em;
+	}
+
+	&__action {
+		margin: 0 0 1.2em;
+	}
+
+	&__character {
+		text-transform: uppercase;
+		text-align: center;
+		margin: 0;
+		font-weight: bold;
+	}
+
+	&__dialogue {
+		max-width: 320px;
+		margin: 0 auto 1.2em;
+		text-align: center;
+	}
+}

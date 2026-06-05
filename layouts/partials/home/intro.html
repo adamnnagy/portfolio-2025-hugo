@@ -1,12 +1,13 @@
 {{ with site.GetPage "sections/intro" }}
 <div class="intro-section">
-    {{ if .Params.statement }}
-    <p class="intro-section__statement">{{ .Params.statement }}</p>
-    {{ if .Params.sub }}
-    <p class="intro-section__sub">{{ .Params.sub }}</p>
-    {{ end }}
-    {{ else }}
-    {{ .Content }}
-    {{ end }}
+    {{ $normal    := printf `<p class="intro-section__statement">%s</p>` .Params.statement }}
+    {{ $alternate := partial "home/intro-screenplay.html" . }}
+    {{ partial "toggle-text.html" (dict
+        "normal"   $normal
+        "alternate" $alternate
+        "hint"     "an alternate take &rarr;"
+        "hintBack" "&larr; back to reality"
+    ) }}
+    {{ if .Params.sub }}<p class="intro-section__sub">{{ .Params.sub }}</p>{{ end }}
 </div>
 {{ end }}

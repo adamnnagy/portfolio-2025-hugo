@@ -390,6 +390,14 @@ document.addEventListener("DOMContentLoaded", () => {
 	init('*');
 })();
 
+// toggle-text
+
+document.querySelectorAll('.toggle-text').forEach(function (el) {
+    el.addEventListener('click', function () {
+        el.classList.toggle('toggle-text--alt');
+    });
+});
+
 // get navbar height
 
 const nav = document.querySelector(".site-nav");

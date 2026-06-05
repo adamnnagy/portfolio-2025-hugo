@@ -1,0 +1,12 @@
+{{ $hint     := .hint     | default "an alternate take &rarr;" }}
+{{ $hintBack := .hintBack | default "&larr; back" }}
+<div class="toggle-text">
+    <div class="toggle-text__normal">
+        {{ .normal | safeHTML }}
+        <span class="toggle-text__hint">{{ $hint | safeHTML }}</span>
+    </div>
+    <div class="toggle-text__alternate">
+        {{ .alternate | safeHTML }}
+        <span class="toggle-text__hint">{{ $hintBack | safeHTML }}</span>
+    </div>
+</div>
