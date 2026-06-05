@@ -157,6 +157,42 @@
 			"date_approx": false
 		},
 		{
+			"date": "2026-03-20",
+			"venue": "Robot",
+			"city": "Budapest",
+			"band": "Kiel Winde",
+			"role": "lead guitarist, backing vocals",
+			"type": "gig",
+			"date_approx": false
+		},
+		{
+			"date": "2025-09-12",
+			"venue": "Robot",
+			"city": "Budapest",
+			"band": "Kiel Winde",
+			"role": "lead guitarist, backing vocals",
+			"type": "festival",
+			"date_approx": false
+		},
+		{
+			"date": "2026-06-06",
+			"venue": "Palócfeszt",
+			"city": "Balassagyarmat",
+			"band": "Kiel Winde",
+			"role": "lead guitarist, backing vocals",
+			"type": "festival",
+			"date_approx": false
+		},
+		{
+			"date": "2026-06-17",
+			"venue": "Három Holló",
+			"city": "Budapest",
+			"band": "Kiel Winde",
+			"role": "lead guitarist, backing vocals",
+			"type": "unplugged",
+			"date_approx": false
+		},
+		{
 			"date": "2026-05-14",
 			"venue": "Lámpás",
 			"city": "Budapest",
@@ -220,6 +256,24 @@
 			"date_approx": false
 		},
 		{
+			"date": "2011-01-15",
+			"venue": "Grizzly",
+			"city": "Miskolc",
+			"band": "Brácsa",
+			"role": "guitarist",
+			"type": "gig",
+			"date_approx": false
+		},
+		{
+			"date": "2011-05-28",
+			"venue": "Grizzly",
+			"city": "Miskolc",
+			"band": "Brácsa",
+			"role": "guitarist",
+			"type": "gig",
+			"date_approx": false
+		},
+		{
 			"date": "2026-04-22",
 			"venue": "Hybrid Art Space",
 			"city": "Budapest",
@@ -231,6 +285,15 @@
 		{
 			"date": "2026-04-29",
 			"venue": "Hybrid Art Space",
+			"city": "Budapest",
+			"band": "Ádám Nagy Solo",
+			"role": "guitarist",
+			"type": "gig",
+			"date_approx": false
+		},
+		{
+			"date": "2026-08-18",
+			"venue": "Bacsó Bár",
 			"city": "Budapest",
 			"band": "Ádám Nagy Solo",
 			"role": "guitarist",

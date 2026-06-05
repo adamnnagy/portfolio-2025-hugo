@@ -1,3 +1,35 @@
+// Text style levels
+@mixin text-label {
+	font-family: $regular-font;
+	font-size: 0.7rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.14em;
+	opacity: 0.55;
+}
+
+@mixin text-body-muted {
+	font-family: $regular-font;
+	font-size: 0.9rem;
+	font-weight: 400;
+	line-height: 1.7;
+	opacity: 0.7;
+}
+
+@mixin text-desc {
+	font-family: $regular-font;
+	font-size: 0.9rem;
+	font-weight: 400;
+	line-height: 1.75;
+	opacity: 0.65;
+}
+
+@mixin text-counter {
+	font-size: 0.75rem;
+	font-weight: 200;
+	opacity: 0.35;
+}
+
 // Typography mixins
 @mixin title-text {
 	font-family: $title-font;

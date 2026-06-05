@@ -2,11 +2,7 @@
 
 .contact-section {
 	&__label {
-		font-family: $regular-font;
-		font-size: 0.7rem;
-		text-transform: uppercase;
-		letter-spacing: 0.14em;
-		opacity: 0.4;
+		@include text-label;
 		margin-bottom: 1rem;
 	}
 
@@ -25,11 +21,8 @@
 	}
 
 	&__sub {
-		font-family: $regular-font;
-		font-size: 0.9rem;
-		opacity: 0.5;
+		@include text-body-muted;
 		margin: 0 0 3rem;
-		line-height: 1.7;
 	}
 
 	&__form {
@@ -58,11 +51,8 @@
 	}
 
 	&__field-label {
-		font-family: $regular-font;
+		@include text-label;
 		font-size: 0.65rem;
-		text-transform: uppercase;
-		letter-spacing: 0.14em;
-		opacity: 0.4;
 	}
 
 	input,

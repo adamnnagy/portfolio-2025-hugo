@@ -62,3 +62,52 @@
   {{ end }}
 
 </div>
+
+<script>
+(function () {
+  var tl = document.currentScript.previousElementSibling;
+
+  var counter = document.createElement('div');
+  counter.className = 'concerts-timeline__band-counter';
+  document.body.appendChild(counter);
+
+  var leaveTimer;
+
+  function activate(band) {
+    clearTimeout(leaveTimer);
+    var cards = tl.querySelectorAll('.concerts-timeline__card');
+    var count = 0;
+    cards.forEach(function (c) {
+      if (c.dataset.band === band) {
+        c.classList.add('concerts-timeline__card--active');
+        count++;
+      } else {
+        c.classList.remove('concerts-timeline__card--active');
+      }
+    });
+    tl.classList.add('concerts-timeline--hovering');
+    counter.textContent = count + ' show' + (count !== 1 ? 's' : '') + ' played with ' + band;
+    counter.classList.add('concerts-timeline__band-counter--visible');
+  }
+
+  function deactivate() {
+    leaveTimer = setTimeout(function () {
+      tl.classList.remove('concerts-timeline--hovering');
+      tl.querySelectorAll('.concerts-timeline__card--active').forEach(function (c) {
+        c.classList.remove('concerts-timeline__card--active');
+      });
+      counter.classList.remove('concerts-timeline__band-counter--visible');
+    }, 60);
+  }
+
+  tl.addEventListener('mouseover', function (e) {
+    var card = e.target.closest('.concerts-timeline__card');
+    if (card) activate(card.dataset.band);
+  });
+
+  tl.addEventListener('mouseout', function (e) {
+    var card = e.target.closest('.concerts-timeline__card');
+    if (card && !card.contains(e.relatedTarget)) deactivate();
+  });
+})();
+</script>

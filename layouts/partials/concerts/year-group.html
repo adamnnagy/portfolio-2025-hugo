@@ -9,7 +9,7 @@
   <div class="concerts-timeline__cards">
     {{ range $shows }}
       {{ $color := default "rgba(255,255,255,0.35)" (index $colors .band) }}
-      <div class="concerts-timeline__card" style="--dot-color: {{ $color }}">
+      <div class="concerts-timeline__card" data-band="{{ .band }}" style="--dot-color: {{ $color }}">
         <div class="concerts-timeline__card-band">
           <span class="concerts-timeline__dot"></span>{{ .band }}
         </div>

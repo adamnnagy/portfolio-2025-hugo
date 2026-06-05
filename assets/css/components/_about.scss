@@ -217,11 +217,8 @@
 	}
 
 	&__section-label {
-		font-family: $regular-font;
+		@include text-label;
 		font-size: $regular-font-size;
-		text-transform: uppercase;
-		letter-spacing: 0.14em;
-		opacity: 0.4;
 		margin-bottom: 1rem;
 		display: flex;
 		align-items: center;

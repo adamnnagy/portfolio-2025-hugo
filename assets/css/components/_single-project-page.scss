@@ -143,12 +143,9 @@
 		}
 
 		a {
-			text-decoration: none;
-			font-family: $regular-font;
-			font-size: 0.7rem;
-			text-transform: uppercase;
+			@include text-label;
 			letter-spacing: 0.12em;
-			opacity: 0.4;
+			text-decoration: none;
 			transition: opacity 0.2s ease;
 
 			&:hover {
@@ -163,12 +160,9 @@
 		border-top: 1px solid rgba($text-color, 0.1);
 
 		a {
-			text-decoration: none;
-			font-family: $regular-font;
-			font-size: 0.7rem;
-			text-transform: uppercase;
+			@include text-label;
 			letter-spacing: 0.12em;
-			opacity: 0.4;
+			text-decoration: none;
 			transition: opacity 0.2s ease;
 
 			&:hover {
@@ -237,6 +231,39 @@
 		border-radius: 10px;
 		padding: 11px 13px;
 		flex: 0 0 auto;
+		transition: opacity 0.25s ease;
+	}
+
+	&--hovering &__card {
+		opacity: 0.18;
+	}
+
+	&--hovering &__card--active {
+		opacity: 1;
+	}
+
+	&__band-counter {
+		position: fixed;
+		bottom: 2rem;
+		left: 50%;
+		transform: translateX(-50%);
+		background: rgba($primary-color, 0.88);
+		border: 1px solid rgba($text-color, 0.18);
+		border-radius: 20px;
+		padding: 8px 20px;
+		font-family: $regular-font;
+		font-size: 0.75rem;
+		letter-spacing: 0.02em;
+		white-space: nowrap;
+		pointer-events: none;
+		opacity: 0;
+		transition: opacity 0.25s ease;
+		z-index: 100;
+		backdrop-filter: blur(8px);
+
+		&--visible {
+			opacity: 1;
+		}
 	}
 
 	&__card-band {
