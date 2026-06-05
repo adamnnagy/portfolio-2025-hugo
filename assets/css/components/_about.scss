@@ -112,6 +112,10 @@
 		gap: 12px;
 		margin-bottom: 2.5rem;
 
+		@include mobile {
+			grid-template-columns: 1fr;
+		}
+
 		@include tablet-up {
 			grid-template-columns: repeat(4, 1fr);
 		}
@@ -136,6 +140,7 @@
 	}
 
 	&__stat--discover {
+		font: inherit;
 		background: none;
 		cursor: pointer;
 		border-style: dashed;
