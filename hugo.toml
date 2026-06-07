@@ -2,6 +2,7 @@ baseURL = "https://adamnagy.studio"
 languageCode = 'en-us'
 title = 'Ádám Nagy'
 publishDir = "public"
+enableRobotsTXT = true
 
 [markup.goldmark.renderer]
   unsafe = true
@@ -10,12 +11,28 @@ publishDir = "public"
   block = true
   title = true
 
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+
+[outputs]
+  home    = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  page    = ["HTML"]
+
 [params]
 heroBackground = "images/hero-bg.jpg"
 heroSubtitle = "Creative work across film, code and design"
 heroVideo = "videos/hero.mp4"
+jobTitle = "Filmmaker, Editor, Musician & Creative Technologist"
+ogDefaultImage = "images/hero.png"
+socialProfiles = [
+  "https://www.linkedin.com/in/n-adam",
+  "https://vimeo.com/adamnagy",
+  "https://www.instagram.com/villanykorte",
+  "https://github.com/adamnnagy"
+]
 
-relativeURLs = true
 canonifyURLs = true
 
 googleAnalytics = "G-7Y6CBE25PD"

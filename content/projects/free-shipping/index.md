@@ -14,7 +14,7 @@ hero = ""
 gallery = false
 +++
 
-# Free Shipping - VR
+## Free Shipping - VR
 
 Free Shipping was my thesis project at NYU Abu Dhabi for my Film and New Media major. It's an interactive VR experience that focuses on stereotypes regarding ethnicities, specifically, how unconscious bias operates on the cultural level. I worked on this project for three semesters, from January 2018 to May 2019.
 
@@ -23,7 +23,7 @@ Free Shipping was my thesis project at NYU Abu Dhabi for my Film and New Media m
 {{% image src="images/free-shipping/freeshipping-08.jpg" alt="A screenshot from the VR experience" class="content-image" %}}
 </div>
 
-# My role
+## My role
 
 I developed Free Shipping as VR experience end-to-end in Unreal Engine 4 — designing and sourcing 3D models, writing all the game logic, and handling the interactions. It was a solo project in terms of direction and development, with collaborators brought in for playtesting and voice recording. I received meaningful mentorship from Scandar Copti, Academy Award nominee director and my professor at the time.
 
@@ -35,7 +35,7 @@ I gamified the experience of unconscious/racial biasing. Inspired by games like 
 
 I placed the player inside a warehouse, sorting items from a conveyer belt into trucks labelled by ethnicity: African, Middle Eastern, Caucasian, and Hispanic. The items, that I've drawn from real testimonials and personal accounts represent cultural belongings that people associate with those communities. The game doesn't tell you it's wrong, but it rewards you for being fast.
 
-# Research & Data
+## Research & Data
 
 <div class="image-grid two-col">
 {{% image src="images/free-shipping/freeshipping-01.jpg" alt="A screenshot from the VR experience" class="content-image" %}}
@@ -49,7 +49,7 @@ The item selection wasn't arbitrary. I collected data from personal testimonials
 {{% image src="images/free-shipping/presentation/freeshipping-presentation-05.jpeg" alt="A screenshot from the VR experience" class="content-image" %}}
 </div>
 
-# Game Design
+## Game Design
 
 {{% image src="images/free-shipping/presentation/freeshipping-presentation-06.jpeg" alt="A screenshot from the VR experience" class="content-image" %}}
 
@@ -71,7 +71,7 @@ Sound is a key layer. I recorded narration with Ruobing Zhao, a fellow student. 
 
 {{% image src="images/free-shipping/freeshipping-code-01.jpg" alt="A screenshot from the VR experience" class="content-image" %}}
 
-# Why VR?
+## Why VR?
 
 Where screens and traditional controllers create a type of distance, VR creates immersion. Every decision the player makes hits differently this way. I wanted to bring them closer to their own thought process as they sort through the boxes. The player participates in the biasing and in doing so, is forced to acknowledge it.
 
@@ -96,11 +96,11 @@ Excellence at the game was measured by points that the players scored, which app
 
 {{% image src="images/free-shipping/presentation/freeshipping-presentation-08.jpeg" alt="A screenshot from the VR experience" class="content-image" %}}
 
-# Influences
+## Influences
 
 Beyond the games, I drew heavily from the Implicit Association Test (IAT), a tool used to measure unconscious bias through timed, snap decisions. The time pressure in Free Shipping mirrors that structure: you don't have time to deliberate, so your instincts take over.
 
-# Reception
+## Reception
 
 Free Shipping premiered at the NYU Abu Dhabi Capstone Festival. Demand was high enough that I was asked to add extra viewing slots on the spot. I was also invited to present at a roundtable discussion and class talks. It became one of the more referenced projects from the cohort, partly because it was one of the few that used mixed media to tell a story.
 

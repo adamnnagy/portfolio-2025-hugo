@@ -1,0 +1,62 @@
+{{- $desc := .Description | default (.Summary | plainify | truncate 160) -}}
+{{- $title := "" -}}
+{{- if .IsHome -}}{{- $title = .Site.Title -}}{{- else -}}{{- $title = printf "%s | %s" .Title .Site.Title -}}{{- end -}}
+{{- $url := .Permalink -}}
+{{- $image := "" -}}
+{{- with .Resources.GetMatch "cover.*" -}}
+  {{- $image = (.Resize "1200x webp q75").Permalink -}}
+{{- else -}}
+  {{- with resources.Get $.Site.Params.ogDefaultImage -}}
+    {{- $image = .Permalink -}}
+  {{- end -}}
+{{- end -}}
+
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:description" content="{{ $desc }}" />
+<meta property="og:url" content="{{ $url }}" />
+<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
+{{- with $image }}
+<meta property="og:image" content="{{ . }}" />
+{{- end }}
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ $title }}" />
+<meta name="twitter:description" content="{{ $desc }}" />
+{{- with $image }}
+<meta name="twitter:image" content="{{ . }}" />
+{{- end }}
+
+{{- if or .IsHome (eq .Layout "about") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ .Site.Title | jsonify }},
+  "url": {{ .Site.BaseURL | jsonify }},
+  "jobTitle": {{ .Site.Params.jobTitle | jsonify }},
+  "sameAs": {{ .Site.Params.socialProfiles | jsonify }}
+}
+</script>
+{{- else if eq .Type "projects" }}
+{{ $year := .Params.year }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": {{ .Title | jsonify }},
+  "description": {{ $desc | jsonify }},
+  "url": {{ $url | jsonify }},
+  "author": {
+    "@type": "Person",
+    "name": {{ .Site.Title | jsonify }},
+    "url": {{ .Site.BaseURL | jsonify }}
+  }{{ if and $year (gt $year 0) }},
+  "dateCreated": "{{ $year }}"{{ end }}{{ with .Params.city }},
+  "locationCreated": {
+    "@type": "Place",
+    "name": {{ . | jsonify }}
+  }{{ end }}
+}
+</script>
+{{- end }}

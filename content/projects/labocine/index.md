@@ -14,7 +14,7 @@ hero = "Labocine-720p.mp4"
 gallery = true
 +++
 
-# Labocine | Head of Video (2019–2021)
+## Labocine | Head of Video (2019–2021)
 
 [Labocine](https://www.labocine.com/) is a streaming platform and online publication focused on the intersection of cinema and science. Its monthly issues curated short films, documentaries, and feature-length works around scientific themes and concepts, creating a space where research and storytelling could meet.
 

@@ -1,6 +1,6 @@
 +++
 title = 'Puppet Gene'
-description = ""
+description = "Assistant editor on The Puppet Gene, a 2019 short documentary about a Hungarian family's shadow puppet theatre in Pécs, directed by Waleed Al Madani."
 date = '2025-07-13T12:16:35+02:00'
 draft = true
 
@@ -14,12 +14,12 @@ hero = ""
 gallery = false
 +++
 
-# The Puppet Gene
+## The Puppet Gene
 A short documentary by Waleed Al Madani | Abu Dhabi
 
 **Role** Assistant Editor
 
-# Synopsis:
+## Synopsis:
 
 Lili Pilári is directing her first shadow puppet theater performance where fish and sea mammals meet in the oceans’ deepest and best underwater circus (Sea show) to watch some wholesome talents in singing and gymnastics. With the help of her brother Áron and her parents Gábor Pilári & Zsuzsanna Vajda, she seeks to spread love and joy in the hearts of the kids in their magical family run puppet theater located in the small city of Pécs on the southern Hungarian border.
 
@@ -35,12 +35,12 @@ While she takes us in to a journey of magic and art in making her show, we get a
 {{% image src="images/puppet-gene/puppet-gene-05.jpg" alt="placeholder" class="content-image" %}}
 </div>
 
-# Runtime
+## Runtime
 
 12’ - Hungary, 2019
 Hungarian (Arabic and English subtitles Available)
 
-# Selections:
+## Selections:
 
 Cinalfama Lisbon Screening and Awards (Lisbon, 2019)
 

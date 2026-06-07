@@ -25,7 +25,7 @@ gallery = false
 </div>
 
 
-# Perkupa
+## Perkupa
 
 {{< spotify id="30GuPTkWcK5FyZOyGDjHFg">}}
 
@@ -33,7 +33,12 @@ gallery = false
 
 Perkupa started from the smoldering ruins of our high school band, Brácsa. I got my friends together in 2021 after realizing that my love for music has survived the Covid era. We keep on playing, even though our drummer lives in Copenhagen, which complicates things. Our main creative output comes from our retreats to a secluded country house where we can practice freely for days on end.
 
-I do a lot in the band. I organize logistics, I make the videos, I often bring musical ideas and work on the arrangements. I designed the graphics, managed the uploads, wrote lyrics and came up with the vocal lines.
+I do a lot in the band. Apart from being the main songwriter, I organize logistics, I make the videos and organize concerts. I design the graphics, manage the uploads and distribution.
+
+While Perkupa is mainly a project-band, meeting every summer for retreats for songwriting and then recordings, it had three main live shows:
+- 2023, [Nyolcésfél](https://artkartell.hu/vizit/530-)
+- 2025, [Dobódél Live Show]({{< relref "/projects/dobodel-live-perkupa/" >}})
+- 2026 May, show in [Lámpás](https://www.facebook.com/lampaspub/)
 
 {{% image src="images/music-making/perkupa-01.jpeg" alt="Perkupa" class="content-image" %}}
 
@@ -41,6 +46,9 @@ I do a lot in the band. I organize logistics, I make the videos, I often bring m
 {{% image src="images/music-making/perkupa-02.jpeg" alt="Perkupa" class="content-image" %}}
 {{% image src="images/music-making/perkupa-03.jpeg" alt="Perkupa" class="content-image" %}}
 </div>
+
+{{< instagram CwiBF9psDN0 >}}
+
 <div class="image-grid three-col">
 {{% image src="images/music-making/perkupa-04.jpeg" alt="Perkupa" class="content-image" %}}
 {{% image src="images/music-making/perkupa-05.jpeg" alt="Perkupa" class="content-image" %}}
@@ -48,17 +56,19 @@ I do a lot in the band. I organize logistics, I make the videos, I often bring m
 </div>
 {{% image src="images/music-making/perkupa-07.jpeg" alt="Perkupa" class="content-image" %}}
 
-# Kiel Winde | from 2023
+## Kiel Winde | from 2023
 
 {{< spotify id="4JIGx5zBX6qEamwwqq7A9U">}}
 
-## Solo Guitar and Background Vocals
+## Lead Guitar and Background Vocals
 
 Kiel Winde is where humanities majors meet alternative rock and then they decide to go all out with a synth infused party.
 
-I contribute to Kiel Winde as the lead guitarist. I joined the band in 2023
+I contribute to Kiel Winde as the lead guitarist and background vocalist. I joined the band in 2023 and my guitar work and songwriting ideas have immediately resonated with 
 
-During my tenure with Kiel Winde, the band has grown into a prominent band of the Budapest club scene. 
+During my tenure with Kiel Winde, the band has grown into a prominent band of the Budapest club scene. It performs regularly in Budapest and has won two awards at talent shows.
+- NKA (National Cultural Fund) organized "Öröm a Zene" - Palócnapok: Studio time
+- I. Lámpás Tehetségmutató - Studio Time with Ákos Dióssy (Kispál és a Borz)
 
 <div class="image-grid three-col">
 {{% image src="images/music-making/kw-04.jpg" alt="Kiel Winde" class="content-image" %}}
@@ -76,7 +86,7 @@ Going song by song, [](https://www.kulter.hu/2026/04/dalrol-dalra-kiel-winde-a-t
 {{% image src="images/music-making/kw-08.jpg" alt="Kiel Winde" class="content-image" %}}
 </div>
 
-# Juhász Zoli | from 2024
+## Juhász Zoli | from 2024
 
 {{< spotify id="2tGfWxiNDFCunnom6Tdro4">}}
 
@@ -100,10 +110,10 @@ The pictures are from a tour that we did together.
 {{% image src="images/music-making/jz-03.jpeg" alt="Juhász Zoli" class="content-image" %}}
 </div>
 
-# Nagy Ádám Solo
+## Nagy Ádám Solo
 
 Performing solo is a relatively new endeavour for me. However, it all leads back to this. I started as a singer-songwriter where I performed open mics, and this is the place where I can use all of the skillset I refined during my band work. All the hours spent with writing lyrics for Perkupa, coming up with song ideas and jamming 
 
-# Live
+## Live
 
 {{< concerts-timeline >}}

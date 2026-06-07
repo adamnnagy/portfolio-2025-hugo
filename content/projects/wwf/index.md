@@ -14,7 +14,7 @@ hero = "Marchegg,-Austria-720p.mp4"
 gallery = false
 +++
 
-# Overview
+## Overview
 
 Director: Ádám Miklósi, Arrabona Studios
 
@@ -33,7 +33,7 @@ national parks in Austria, Tivedens nationalpark in Sweden, and in Brussels in f
 of the EU Council. They were shown at internal campaign events and some were shared 
 on social media and YouTube.
 
-# Process
+## Process
 
 I worked with a combination of proxies and original media throughout the project, 
 and adapted the organizational structure of the director, who requested the project 
@@ -56,7 +56,7 @@ well as the beauty of nature.
 The final stage involved polishing the interviews and cuts before handing the 
 project over for color grading.
 
-# Auenreservat Marchegg and Donauauen
+## Auenreservat Marchegg and Donauauen
 
 <div class="image-grid three-col">
 {{% image src="images/wwf/wwf-austria-01.jpg" alt="placeholder" class="content-image" %}}
@@ -82,7 +82,7 @@ has reconnected previously cut-off side branches of the Danube.
 
 {{% youtube id="H7O2UdOk1Ic" %}}
 
-# Tivedens nationalpark
+## Tivedens nationalpark
 
 <div class="image-grid three-col">
 {{% image src="images/wwf/wwf-sweden-01.jpg" alt="placeholder" class="content-image" %}}
@@ -109,7 +109,7 @@ how forests can support local communities through tourism while remaining intact
 {{% image src="images/wwf/wwf-sweden-02.jpg" alt="placeholder" class="content-image" %}}
 </div>
 
-# Run4Destruction
+## Run4Destruction
 
 A short parody video filmed in front of the EU Council, satirizing MEPs who voted 
 against the EU Nature Restoration Law.
@@ -120,7 +120,7 @@ against the EU Nature Restoration Law.
 {{% image src="images/wwf/wwf-sweden-02.jpg" alt="placeholder" class="content-image" %}}
 </div>
 
-# Results
+## Results
 
 On June 17, 2024, [the Nature Restoration Law was adopted](https://www.forbes.com/sites/ninaseega/2024/06/24/historic-nature-law-passes-in-europe-now-we-need-to-finance-it/) 
 by the EU Environmental Council and became law.

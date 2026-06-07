@@ -14,7 +14,7 @@ hero = "Shane-720p.mp4"
 gallery = false
 +++
 
-# Olympic Dark Horse - Shane Tusup
+## Olympic Dark Horse - Shane Tusup
 
 Director: Ádám Miklósi, Arrabona Studios
 
@@ -49,13 +49,13 @@ However, this partnership did not end well. Swimmers slowly left Tusup's team, t
 Tusup since abandoned the project and doesn't coach swimmers anymore.
 
 
-# Process
+## Process
 
 I worked on this with a one-day turnaround, working closely with the director, Ádám Miklósi. I received low-resolution proxies and a project file and I produced a rough cut under 24 hours for the 15 minute episode.
 
 The director and I aimed for a cinematic style that told the story with clarity. My goal was to ensure that the episode featured the emotional growth that the full-length documentary would have respecting the overarching narrative. It was important to add depth (and length) to the dramatic beats.
 
-# Results
+## Results
 
 The episode I edited remains the most watched video in the series (30k views as of May 2026).
 

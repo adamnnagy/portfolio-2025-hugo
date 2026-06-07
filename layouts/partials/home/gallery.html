@@ -14,7 +14,7 @@
                     <source src="{{ .RelPermalink }}" type="video/mp4" />
                 </video>
                 {{ else if in (slice "jpg" "jpeg" "png" "webp") .MediaType.SubType }}
-                <img src="{{ .RelPermalink }}" alt="{{ .Name }}">
+                <img src="{{ .RelPermalink }}" alt="{{ $item.Title }}">
                 {{ end }}
             </div>
 

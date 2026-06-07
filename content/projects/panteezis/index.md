@@ -14,7 +14,7 @@ hero = "Panteezis-720p.mp4"
 gallery = true
 +++
 
-# Panteézis
+## Panteézis
 
 *Panteézis* is an ambient album I composed for *Ithaka*, an exhibition by the Budapest-based painter Gabriella Kovács. The music was designed to deepen the audience's interaction with the paintings, turning the gallery into an immersive audiovisual experience.
 
@@ -36,7 +36,7 @@ gallery = true
 
 </div>
 
-# Making the Album
+## Making the Album
 
 The goal was to create music that could exist in dialogue with the paintings. I approached the album as a soundtrack to the exhibition — reflecting the atmosphere, textures, and emotional tone of the visual work while maintaining its own identity as a listening experience.
 
@@ -58,7 +58,7 @@ Acoustic guitar and bass became central to the sonic palette, echoing the tactil
 
 Early sketches and demos were built using the looping functions of the Boss DD-20 Giga Delay alongside my pedalboard. Through layered delays, reverbs, and looping techniques, I built an atmospheric sound balancing organic instrumentation with modern production aesthetics. Ableton Live served as the primary production environment throughout.
 
-# Outcome - Performance: Agave
+## Outcome - Performance: Agave
 
 In 2026, Gabriella Kovács invited me to return and perform live for her exhibition Agave. I adapted the Panteézis material into a live set built around real-time looping and layered improvisation, combining hardware looping devices with Ableton Live. I performed on multiple occasions, including the exhibition's finissage.
 

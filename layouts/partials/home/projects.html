@@ -1,6 +1,6 @@
 <div class="home-projects__header">
     <div class="home-projects__label">Selected work</div>
-    <h1 class="home-projects__title">Featured projects</h1>
+    <h2 class="home-projects__title">Featured projects</h2>
 </div>
 <div class="home-projects">
     <ul class="projects">
@@ -18,7 +18,7 @@
                     <div class="project-card">
                         <div class="content">
                             <div class="main-text">
-                                <h1 class="title">{{ .Title }}</h1>
+                                <h2 class="title">{{ .Title }}</h2>
                                 <h3 class="role">{{ .Params.role }}</h3>
                             </div>
                             <p class="description">{{ .Params.description }} <br>
@@ -48,7 +48,7 @@
                             </video>
                             {{ end }}
                             {{ else if $poster }}
-                            <img src="{{ ($poster.Resize "600x webp q75").RelPermalink }}" alt="{{ $.Title }}"
+                            <img src="{{ ($poster.Resize "600x webp q75").RelPermalink }}" alt="{{ .Title }}"
                                 class="thumbnail image-hover" />
                             {{ end }}
                         </div>

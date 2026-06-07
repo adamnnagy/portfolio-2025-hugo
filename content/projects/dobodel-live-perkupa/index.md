@@ -14,13 +14,13 @@ hero = ""
 gallery = false
 +++
 
-# Overview
+## Overview
 
 Recording of a live session for my band in the countryside of Hungary.
 
 **Roles** Directing, Editing, Color Grading, Songwriting, Performing, Mixing / Mastering
 
-# Process
+## Process
 
 The project combined songwriting, live performance, cinematography, recording techniques and mixing and mastering.
 
@@ -70,7 +70,7 @@ After the crew handed over the footage and recordings, I handled all aspects of 
 
 I also handled promotion on social media and distribution across Spotify / YouTube / Instagram.
 
-# Results
+## Results
 
 The reels that promoted the track on Instagram reached beyond the band's follower count. While none of the videos went viral, all of the reels had high view counts relative to the band's size.
 

@@ -3,7 +3,7 @@ date = '2025-07-13T10:48:12+02:00'
 draft = false
 title = 'About + Contact'
 layout = 'about'
-description = "about"
+description = "Budapest-based filmmaker, editor, musician and creative technologist with 6+ years across science communication, documentary editing, VR development and ambient music."
 hero = "videos/about-hero.mp4"
 
 [[params.experience]]

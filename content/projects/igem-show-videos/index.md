@@ -22,7 +22,7 @@ gallery = true
 
 </div>
 
-# iGEM | Creative Video Production
+## iGEM | Creative Video Production
 
 I produced large-scale visual content for [iGEM](https://igem.org/), one of the world's largest synthetic biology organizations. Across a typical year, I delivered five major stage videos and roughly twenty supporting productions, reaching an audience of 4,500 participants from over 50 countries at the organization's [flagship event](https://jamboree.igem.org/2026) in Paris.
 
@@ -42,7 +42,7 @@ Working between Paris and Budapest, I led projects ranging from scientific expla
 {{% image src="images/igem/workshop-01.jpg" alt="placeholder" class="content-image" %}}
 </div>
 
-# Explainer Videos
+## Explainer Videos
 
 **Role:** Direction, Concept, Script, Editing, Storyboarding, Sound Design
 
@@ -90,7 +90,7 @@ These videos were widely celebrated and **laid the groundwork for the cinematic 
 
 [Back to top](#top)
 
-# Live Show & Stage Production | The Biobrick Trophy
+## Live Show & Stage Production | The Biobrick Trophy
 
 **Role:** Concept, Editor, Cinematographer, Sound Designer, Color Grading, VFX
 
@@ -147,7 +147,7 @@ The titles of the values were added to the bricks in post.
 
 [Back to top](#top)
 
-# Story & Brand Videos
+## Story & Brand Videos
 
 These projects focused on communicating **the vision, values, and cultural identity** of iGEM and the broader field of synthetic biology.
 
@@ -175,6 +175,6 @@ The video was praised by the board and the stakeholders and **it became a refere
 
 [Back to top](#top)
 
-# Tools & Techniques
+## Tools & Techniques
 
 Adobe Premiere Pro, After Effects, DaVinci Resolve, Storyboarding, Scriptwriting, Sound Design, Motion Graphics, Color Grading, Live Event Production, Multi-Screen Content Design, VFX
