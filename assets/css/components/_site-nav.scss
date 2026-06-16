@@ -37,7 +37,6 @@
 	li {
 		@include reset-list;
 		text-decoration: none;
-		@include hover-blur;
 		width: 100%;
 
 		@include tablet-up {

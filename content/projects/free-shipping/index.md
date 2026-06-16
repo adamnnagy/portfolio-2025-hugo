@@ -4,7 +4,7 @@ description = "VR Thesis Project @ NYU"
 date = '2025-07-16T13:17:24+02:00'
 draft = false
 
-priority = 1
+priority = 3
 featured = false
 year = 0
 city = "Abu Dhabi"

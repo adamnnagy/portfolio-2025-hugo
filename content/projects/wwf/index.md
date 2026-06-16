@@ -4,7 +4,7 @@ description = "Campaign videos for Nature Restoration Law"
 date = '2025-07-13T12:16:35+02:00'
 draft = false
 
-priority = 3
+priority = 2
 featured = true
 year = 2019
 city = "Budapest/Remote"
