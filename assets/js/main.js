@@ -411,5 +411,65 @@ function updateNavHeight() {
 window.addEventListener("resize", updateNavHeight);
 updateNavHeight();
 
+// hamburger nav
 
+(function () {
+	const body = document.body;
+	const toggle = document.getElementById("nav-toggle");
+	const overlay = document.getElementById("nav-overlay");
+	const overlayClose = document.getElementById("nav-overlay-close");
+
+	if (!toggle) return;
+
+	function getScrollThreshold() {
+		return nav ? nav.offsetHeight : 60;
+	}
+
+	function openMenu() {
+		body.classList.add("nav-open");
+		toggle.setAttribute("aria-expanded", "true");
+		if (overlay) overlay.setAttribute("aria-hidden", "false");
+	}
+
+	function closeMenu() {
+		body.classList.remove("nav-open");
+		toggle.setAttribute("aria-expanded", "false");
+		if (overlay) overlay.setAttribute("aria-hidden", "true");
+	}
+
+	toggle.addEventListener("click", function () {
+		body.classList.contains("nav-open") ? closeMenu() : openMenu();
+	});
+
+	if (overlayClose) overlayClose.addEventListener("click", closeMenu);
+
+	// Close when a nav link is clicked (handles same-page navigation too)
+	document.querySelectorAll("#nav-overlay a, #nav-float-items a").forEach(function (a) {
+		a.addEventListener("click", closeMenu);
+	});
+
+	// Escape key
+	document.addEventListener("keydown", function (e) {
+		if (e.key === "Escape") closeMenu();
+	});
+
+	// Scroll detection with rAF
+	function checkScroll() {
+		if (window.scrollY > getScrollThreshold()) {
+			body.classList.add("nav-scrolled");
+		} else {
+			body.classList.remove("nav-scrolled");
+			closeMenu();
+		}
+	}
+
+	window.addEventListener("scroll", function () {
+		requestAnimationFrame(checkScroll);
+	}, { passive: true });
+
+	// Also re-check on resize (nav height changes between breakpoints)
+	window.addEventListener("resize", checkScroll);
+
+	checkScroll();
+})();
 

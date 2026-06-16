@@ -1,9 +1,37 @@
 <header>
+    {{/* Top-of-page nav bar — scrolls away naturally */}}
     <nav class="site-nav">
         <ul>
-            <li><a href="{{"" | relURL}}">Home</a></li>
+            <li><a href="{{ "" | relURL }}">Home</a></li>
             <li><a href="{{ "projects/" | relURL }}">Projects</a></li>
             <li><a href="{{ "about/" | relURL }}">About + Contact</a></li>
         </ul>
     </nav>
+
+    {{/* Fixed floating widget — appears after scrolling past nav */}}
+    <div class="nav-float" id="nav-float">
+        {{/* Desktop: inline items expand left from the toggle */}}
+        <div class="nav-float__items" id="nav-float-items">
+            <ul>
+                <li><a href="{{ "" | relURL }}">Home</a></li>
+                <li><a href="{{ "projects/" | relURL }}">Projects</a></li>
+                <li><a href="{{ "about/" | relURL }}">About + Contact</a></li>
+            </ul>
+        </div>
+        <button class="nav-float__toggle" id="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    {{/* Mobile full-screen overlay */}}
+    <div class="nav-overlay" id="nav-overlay" aria-hidden="true">
+        <button class="nav-overlay__close" id="nav-overlay-close" aria-label="Close navigation"></button>
+        <ul class="nav-overlay__list">
+            <li><a href="{{ "" | relURL }}">Home</a></li>
+            <li><a href="{{ "projects/" | relURL }}">Projects</a></li>
+            <li><a href="{{ "about/" | relURL }}">About + Contact</a></li>
+        </ul>
+    </div>
 </header>
