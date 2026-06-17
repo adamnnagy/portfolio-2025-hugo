@@ -84,4 +84,203 @@
 
 </div>
 
+{{/* ── Hidden resume PDF template (captured by html2pdf.js on button click) ── */}}
+{{ $stats := site.Data.stats }}
+
+<div id="resume-pdf" aria-hidden="true" style="display:none; width:794px; background:#131415; color:#ffffff; font-family:'Inter',Helvetica,Arial,sans-serif; padding:48px 52px; box-sizing:border-box; line-height:1.4; font-size:14px;">
+
+    {{/* Header */}}
+    <div style="display:flex; justify-content:space-between; align-items:flex-end; padding-bottom:18px; border-bottom:1px solid rgba(255,255,255,0.12); margin-bottom:22px;">
+        <div style="font-size:36px; font-weight:700; line-height:1; letter-spacing:-1.5px; text-transform:lowercase;">
+            ádám.<br>
+            <span style="font-style:italic; font-weight:400; opacity:0.5;">creative</span><br>
+            technologist.
+        </div>
+        <div style="text-align:right; max-width:240px;">
+            <div style="font-size:8.5px; line-height:1.85; text-transform:uppercase; letter-spacing:1.4px; opacity:0.6;">
+                Budapest-based<br>
+                Video editor · Science comm · Music<br>
+                6+ years experience · Engineering background
+            </div>
+            <div style="display:flex; gap:4px; flex-wrap:wrap; justify-content:flex-end; margin-top:8px;">
+                <span style="font-size:8px; padding:2px 7px; border:1px solid rgba(255,255,255,0.5); border-radius:20px; font-weight:600; white-space:nowrap;">Budapest</span>
+                <span style="font-size:8px; padding:2px 7px; border:1px solid rgba(255,255,255,0.2); border-radius:20px; opacity:0.7; white-space:nowrap;">Paris</span>
+                <span style="font-size:8px; padding:2px 7px; border:1px solid rgba(255,255,255,0.2); border-radius:20px; opacity:0.7; white-space:nowrap;">Haifa</span>
+                <span style="font-size:8px; padding:2px 7px; border:1px solid rgba(255,255,255,0.2); border-radius:20px; opacity:0.7; white-space:nowrap;">Abu Dhabi</span>
+                <span style="font-size:8px; padding:2px 7px; border:1px solid rgba(255,255,255,0.2); border-radius:20px; opacity:0.7; white-space:nowrap;">New York</span>
+                <span style="font-size:8px; padding:2px 7px; border:1px solid rgba(255,255,255,0.2); border-radius:20px; opacity:0.7; white-space:nowrap;">Kathmandu</span>
+            </div>
+        </div>
+    </div>
+
+    {{/* Description */}}
+    <p style="font-size:10.5px; line-height:1.75; opacity:0.68; margin:0 0 22px 0;">{{ .Params.description }}</p>
+
+    {{/* Experience + Education (two columns) */}}
+    <div style="display:grid; grid-template-columns:3fr 2fr; gap:32px; margin-bottom:22px; align-items:start;">
+
+        {{/* Experience */}}
+        <div>
+            <div style="font-size:8px; font-weight:400; text-transform:uppercase; letter-spacing:2px; opacity:0.55; padding-bottom:10px; border-bottom:1px solid rgba(255,255,255,0.12); margin-bottom:8px;">Experience</div>
+            {{ range .Params.experience }}
+            <div style="display:grid; grid-template-columns:58px 1fr; gap:10px; padding:6px 0; border-bottom:1px solid rgba(255,255,255,0.06);">
+                <div style="font-size:7.5px; text-transform:uppercase; letter-spacing:0.5px; opacity:0.35; padding-top:2px; line-height:1.3;">{{ .tag }}</div>
+                <div>
+                    <div style="font-size:10.5px; font-weight:600; line-height:1.3;">{{ .role }}</div>
+                    {{ with .org }}<div style="font-size:9px; opacity:0.5; margin-top:1px; line-height:1.3;">{{ . }}</div>{{ end }}
+                    {{ with .location }}<div style="font-size:8.5px; opacity:0.35; font-style:italic; margin-top:1px; line-height:1.3;">{{ . }}</div>{{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+
+        {{/* Education */}}
+        <div>
+            <div style="font-size:8px; font-weight:400; text-transform:uppercase; letter-spacing:2px; opacity:0.55; padding-bottom:10px; border-bottom:1px solid rgba(255,255,255,0.12); margin-bottom:8px;">Education</div>
+            {{ range .Params.education }}
+            <div style="display:grid; grid-template-columns:40px 1fr; gap:10px; padding:6px 0; border-bottom:1px solid rgba(255,255,255,0.06);">
+                <div style="font-size:7.5px; text-transform:uppercase; letter-spacing:0.5px; opacity:0.35; padding-top:2px; line-height:1.3;">{{ .tag }}</div>
+                <div>
+                    <div style="font-size:10.5px; font-weight:600; line-height:1.3;">{{ .role }}</div>
+                    {{ with .org }}<div style="font-size:9px; opacity:0.5; margin-top:1px; line-height:1.3;">{{ . }}</div>{{ end }}
+                    {{ with .location }}<div style="font-size:8.5px; opacity:0.35; font-style:italic; margin-top:1px; line-height:1.3;">{{ . }}</div>{{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+
+    </div>
+
+    {{/* First 7 facts — full-width row at the bottom */}}
+    <div>
+        <div style="font-size:8px; font-weight:400; text-transform:uppercase; letter-spacing:2px; opacity:0.55; padding-bottom:10px; border-bottom:1px solid rgba(255,255,255,0.12); margin-bottom:12px;">By the numbers</div>
+        <div style="display:grid; grid-template-columns:repeat(7,1fr); gap:8px;">
+
+            <div style="padding:10px 8px; border:1px solid rgba(255,255,255,0.1); border-radius:3px;">
+                <div id="pdf-years" style="font-size:20px; font-weight:700; line-height:1;">6+</div>
+                <div style="font-size:7px; text-transform:uppercase; letter-spacing:1px; opacity:0.5; margin-top:4px; line-height:1.4;">Years experience</div>
+            </div>
+
+            <div style="padding:10px 8px; border:1px solid rgba(255,255,255,0.1); border-radius:3px;">
+                <div style="font-size:20px; font-weight:700; line-height:1;">7</div>
+                <div style="font-size:7px; text-transform:uppercase; letter-spacing:1px; opacity:0.5; margin-top:4px; line-height:1.4;">Countries worked in</div>
+            </div>
+
+            <div style="padding:10px 8px; border:1px solid rgba(255,255,255,0.1); border-radius:3px;">
+                <div style="font-size:20px; font-weight:700; line-height:1;">4</div>
+                <div style="font-size:7px; text-transform:uppercase; letter-spacing:1px; opacity:0.5; margin-top:4px; line-height:1.4;">Languages spoken (once)</div>
+            </div>
+
+            <div style="padding:10px 8px; border:1px solid rgba(255,255,255,0.1); border-radius:3px;">
+                <div id="pdf-coffee" style="font-size:20px; font-weight:700; line-height:1;">—</div>
+                <div style="font-size:7px; text-transform:uppercase; letter-spacing:1px; opacity:0.5; margin-top:4px; line-height:1.4;">Coffees had while working</div>
+            </div>
+
+            <div style="padding:10px 8px; border:1px solid rgba(255,255,255,0.1); border-radius:3px;">
+                <div id="pdf-water" style="font-size:20px; font-weight:700; line-height:1;">—</div>
+                <div style="font-size:7px; text-transform:uppercase; letter-spacing:1px; opacity:0.5; margin-top:4px; line-height:1.4;">Litres of water drank</div>
+            </div>
+
+            <div style="padding:10px 8px; border:1px solid rgba(255,255,255,0.1); border-radius:3px;">
+                <div style="font-size:20px; font-weight:700; line-height:1;">1</div>
+                <div style="font-size:7px; text-transform:uppercase; letter-spacing:1px; opacity:0.5; margin-top:4px; line-height:1.4;">Silver screen appearances</div>
+            </div>
+
+            <div style="padding:10px 8px; border:1px solid rgba(255,255,255,0.1); border-radius:3px;">
+                <div style="font-size:20px; font-weight:700; line-height:1;">{{ $stats.films }}</div>
+                <div style="font-size:7px; text-transform:uppercase; letter-spacing:1px; opacity:0.5; margin-top:4px; line-height:1.4;">Films watched</div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script>
+(function () {
+    var btn = document.getElementById('download-resume');
+    if (!btn) return;
+
+    function loadScript(src) {
+        return new Promise(function (resolve, reject) {
+            var s = document.createElement('script');
+            s.src = src;
+            s.onload = resolve;
+            s.onerror = reject;
+            document.head.appendChild(s);
+        });
+    }
+
+    btn.addEventListener('click', function () {
+        var originalText = btn.textContent;
+        btn.disabled = true;
+        btn.textContent = 'preparing…';
+
+        // Populate live counters into the PDF element
+        var now        = Date.now();
+        var epoch      = new Date('2019-10-01T09:00:00').getTime();
+        var epochWater = new Date('1992-10-30T09:00:00').getTime();
+        var coffeeMs   = 86400 / 3.5 * 1000;
+        var waterMs    = 86400 / 2.5 * 1000;
+
+        var yearsVal  = Math.max(0, Math.floor((now - epoch) / (365.16 * 24 * 3600 * 1000)));
+        var coffeeVal = Math.max(0, Math.floor((now - epoch) / coffeeMs));
+        var waterVal  = Math.max(0, Math.floor((now - epochWater) / waterMs));
+
+        var yearsEl  = document.getElementById('pdf-years');
+        var coffeeEl = document.getElementById('pdf-coffee');
+        var waterEl  = document.getElementById('pdf-water');
+        if (yearsEl)  yearsEl.textContent  = yearsVal + '+';
+        if (coffeeEl) coffeeEl.textContent = coffeeVal.toLocaleString();
+        if (waterEl)  waterEl.textContent  = waterVal.toLocaleString();
+
+        var el = document.getElementById('resume-pdf');
+
+        // Place behind the page's dark background so html2canvas can find and
+        // render it at a known position without the user seeing anything.
+        el.style.display       = 'block';
+        el.style.position      = 'fixed';
+        el.style.top           = '0';
+        el.style.left          = '0';
+        el.style.zIndex        = '-1';
+        el.style.pointerEvents = 'none';
+
+        function cleanup() {
+            el.style.display       = 'none';
+            el.style.position      = '';
+            el.style.top           = '';
+            el.style.left          = '';
+            el.style.zIndex        = '';
+            el.style.pointerEvents = '';
+            btn.disabled           = false;
+            btn.textContent        = originalText;
+        }
+
+        function generate() {
+            html2pdf().set({
+                margin:      0,
+                filename:    'adam-nagy-resume.pdf',
+                image:       { type: 'jpeg', quality: 0.97 },
+                html2canvas: { scale: 2, useCORS: true, backgroundColor: '#131415', logging: false, scrollX: 0, scrollY: 0 },
+                jsPDF:       { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            }).from(el).save().then(cleanup).catch(function (err) {
+                console.error('PDF generation failed:', err);
+                cleanup();
+            });
+        }
+
+        if (window.html2pdf) {
+            generate();
+        } else {
+            loadScript('https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js')
+                .then(generate)
+                .catch(function (err) {
+                    console.error('Failed to load html2pdf.js:', err);
+                    cleanup();
+                });
+        }
+    });
+})();
+</script>
+
 {{ end }}

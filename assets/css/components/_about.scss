@@ -346,6 +346,37 @@
 		font-size: 0.8rem;
 	}
 
+	// ─── Resume download button ───────────────────────────────────────────────
+
+	&__resume-btn {
+		font-family: $regular-font;
+		font-size: 0.7rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		background: none;
+		color: inherit;
+		cursor: pointer;
+		padding: 5px 14px;
+		border: 1px solid rgba($text-color, 0.25);
+		border-radius: 3px;
+		opacity: 0.55;
+		display: inline-block;
+		margin-top: 1rem;
+		transition:
+			opacity 0.2s ease,
+			border-color 0.2s ease;
+
+		&:hover {
+			opacity: 1;
+			border-color: rgba($text-color, 0.6);
+		}
+
+		&:disabled {
+			cursor: default;
+			opacity: 0.3;
+		}
+	}
+
 	// ─── Socials ──────────────────────────────────────────────────────────────
 
 	&__socials {
