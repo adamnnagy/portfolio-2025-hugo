@@ -72,7 +72,7 @@ location = "Miskolc"
 
 A Budapest-based creative technologist and video editor working across science communication, culture, and music. I bring an engineering background to creative work, which means I understand technical concepts quickly, collaborate well across disciplines, and yes, I coded this website.
 
-{{% image src="images/about/avatar-oman.jpeg" alt="Profile Image" class="content-image scroll-fade-in" %}}
+{{% image src="images/about/presentation.jpg" alt="Profile Image" class="content-image scroll-fade-in" %}}
 
 And yes, I do drink a lot of water. Gotta stay hydrated!
 
