@@ -180,7 +180,7 @@
 			"city": "Balassagyarmat",
 			"band": "Kiel Winde",
 			"role": "lead guitarist, backing vocals",
-			"type": "festival",
+			"type": "talent show",
 			"date_approx": false
 		},
 		{
@@ -190,6 +190,15 @@
 			"band": "Kiel Winde",
 			"role": "lead guitarist, backing vocals",
 			"type": "unplugged",
+			"date_approx": false
+		},
+		{
+			"date": "2026-06-20",
+			"venue": "Helynekem",
+			"city": "Miskolc",
+			"band": "Kiel Winde",
+			"role": "lead guitarist, backing vocals",
+			"type": "talent show",
 			"date_approx": false
 		},
 		{

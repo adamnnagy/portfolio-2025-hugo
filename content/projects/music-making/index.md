@@ -37,7 +37,7 @@ So far, we have published 8 songs, performed 3 shows, and written countless song
 
 I do a lot in the band. Apart from being the main songwriter, I organize logistics, I make the videos and organize concerts. I design the graphics, manage the uploads and distribution.
 
-While Perkupa is mainly a project-band, meeting every summer for retreats for songwriting and then recordings, it had three main live shows:
+While Perkupa is mainly a project-band, meeting every summer for retreats for songwriting and then recordings, it had three live shows:
 - 2023, [Nyolcésfél](https://artkartell.hu/vizit/530-)
 - 2025, [Dobódél Live Show]({{< relref "/projects/dobodel-live-perkupa/" >}})
 - 2026 May, show in [Lámpás](https://www.facebook.com/lampaspub/)
@@ -55,7 +55,7 @@ While Perkupa is mainly a project-band, meeting every summer for retreats for so
 {{% image src="images/music-making/perkupa-04.jpeg" alt="Perkupa" class="content-image" %}}
 {{% image src="images/music-making/perkupa-05.jpeg" alt="Perkupa" class="content-image" %}}
 {{% image src="images/music-making/perkupa-06.jpeg" alt="Perkupa" class="content-image" %}}
-</div>
+</div>\
 {{% image src="images/music-making/perkupa-07.jpeg" alt="Perkupa" class="content-image" %}}
 
 ## Kiel Winde
@@ -66,11 +66,12 @@ While Perkupa is mainly a project-band, meeting every summer for retreats for so
 
 Kiel Winde is where humanities majors meet punk and then they decide to go all out with a synth infused party.
 
-I contribute to Kiel Winde as the lead guitarist and background vocalist. I joined the band in 2023 after it was already an established band. My guitar work and songwriting ideas have immediately resonated with the band. I contribute to the sound design, melodies and guitar solos. My guitar work is featured on the most recent EP, ["A test mozog tovább"](https://www.youtube.com/watch?v=KpvW8Fe801Y&list=OLAK5uy_nqDZQfUiz3A8son447J8ip1P7ZkG04fnE).
+I contribute to Kiel Winde as the lead guitarist and background vocalist. I joined in 2023 when Kiel Winde was already an established band. My guitar work and songwriting ideas have immediately resonated with the rest of the group. I contribute to the songwriting, sound design, melodies and guitar solos. My guitar work is featured on the most recent EP, ["A test mozog tovább"](https://www.youtube.com/watch?v=KpvW8Fe801Y&list=OLAK5uy_nqDZQfUiz3A8son447J8ip1P7ZkG04fnE).
 
-During my tenure with Kiel Winde, the band has grown into a prominent band of the Budapest club scene. It performs regularly in Budapest, and received recognitions at talent shows in Hungary in the form of two awards:
-- NKA (National Cultural Fund) organized "Öröm a Zene" - Palócnapok: Studio time
-- I. Lámpás Tehetségmutató - Studio Time with Ákos Dióssy (Kispál és a Borz)
+During my tenure with Kiel Winde, the band has grown into a prominent band of the Budapest club scene. It performs regularly in Budapest, and received recognitions at talent shows:
+- NKA (National Cultural Fund) organized "Öröm a Zene" - Balassagyarmat. Special Prize, Studio time
+- NKA (National Cultural Fund) organized "Öröm a Zene" - Miskolc. 2nd Place, 3 Special Prizes
+- I. Lámpás Tehetségmutató - Special Prize, Studio Time with Ákos Dióssy (Kispál és a Borz)
 
 {{% image src="images/music-making/kw-09.jpg" alt="Kiel Winde" class="content-image" %}}
 
