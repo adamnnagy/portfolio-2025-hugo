@@ -1,3 +1,4 @@
+{{ if ne .Layout "artisjus-jelentkezes" }}
 <footer class="site-footer">
     <hr>
     <div class="site-footer__inner">
@@ -9,5 +10,8 @@
             <a href="https://github.com/adamnnagy" target="_blank" rel="noopener">GitHub</a>
         </nav>
     </div>
+{{ end }}
     {{ partial "svg-assets.html" . }}
+{{ if ne .Layout "artisjus-jelentkezes" }}
 </footer>
+{{ end }}

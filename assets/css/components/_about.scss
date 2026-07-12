@@ -199,6 +199,53 @@
 		margin-top: 4px;
 	}
 
+	&__stat-heading {
+		grid-column: 1 / -1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		font-family: $regular-font;
+		font-weight: 600;
+		font-size: 1rem;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		padding: 1rem;
+		margin-top: 0.75rem;
+		border: 1px dashed rgba($text-color, 0.25);
+		border-radius: 4px;
+		opacity: 0.8;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	&__discover-bar {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 1000;
+		background: $primary-color;
+		border-bottom: 1px solid rgba($text-color, 0.12);
+		padding: 0.75rem $padding-horizontal-tablet-down;
+
+		@include tablet-up {
+			padding: 0.75rem $padding-horizontal-tablet-up;
+		}
+
+		.about__stat--discover {
+			width: 100%;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+	}
+
+	&__discover-bar + &__stats {
+		margin-top: 4.5rem;
+	}
+
 	@keyframes stat-reveal {
 		from {
 			opacity: 0;

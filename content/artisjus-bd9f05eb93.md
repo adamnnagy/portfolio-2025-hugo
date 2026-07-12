@@ -1,0 +1,15 @@
++++
+date = '2026-07-12T18:05:22+02:00'
+draft = true
+title = 'Artisjus Jelentkezes'
+layout = 'artisjus-jelentkezes'
+priority = 0
+featured = false
+description = ""
+hero = ""
+role = ""
+city = ""
+
+[_build]
+list = 'never'
++++

@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+<div class="about">
+
+    <section class="container">
+        {{ partial "about/stats-hu.html" . }}
+    </section>
+
+    <section class="content-page container">
+        {{ .Content }}
+    </section>
+
+</div>
+{{ end }}
