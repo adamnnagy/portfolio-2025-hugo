@@ -8,6 +8,13 @@
             Your browser does not support the video tag.
         </video>
         <div class="background"></div>
+        <div class="content">
+            <h1 class="title" data-scenes='{{ site.Data.scene_headings.scenes | jsonify }}'><span>{{ .Params.title }}</span></h1>
+        </div>
+    </section>
+
+    <section class="container">
+        {{ partial "artisjus/welcome.html" . }}
     </section>
 
     <section class="container">

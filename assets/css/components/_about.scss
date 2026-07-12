@@ -140,6 +140,10 @@
 		display: none;
 	}
 
+	&__stat-hidden {
+		display: none;
+	}
+
 	&__stat--revealed {
 		animation: stat-reveal 0.35s ease both;
 	}
@@ -225,10 +229,8 @@
 	}
 
 	&__discover-bar {
-		position: fixed;
+		position: sticky;
 		top: 0;
-		left: 0;
-		right: 0;
 		z-index: 1000;
 		background: $primary-color;
 		border-bottom: 1px solid rgba($text-color, 0.12);
@@ -243,10 +245,6 @@
 			max-width: 1200px;
 			margin: 0 auto;
 		}
-	}
-
-	&__discover-bar + &__stats {
-		margin-top: 4.5rem;
 	}
 
 	@keyframes stat-reveal {

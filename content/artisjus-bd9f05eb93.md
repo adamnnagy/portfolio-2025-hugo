@@ -1,7 +1,7 @@
 +++
 date = '2026-07-12T18:05:22+02:00'
 draft = false
-title = 'Artisjus Jelentkezes'
+title = 'Bemutatkozás'
 layout = 'artisjus-jelentkezes'
 priority = 0
 featured = false
