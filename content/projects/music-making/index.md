@@ -42,7 +42,7 @@ Perkupa has so far successfully organized three shows:
 - 2025, [Dobódél Live Show]({{< relref "/projects/dobodel-live-perkupa/" >}})
 - 2026 May, show in [Lámpás](https://www.facebook.com/lampaspub/)
 
-{{% image src="images/music-making/perkupa-01.jpeg" alt="Perkupa" class="content-image" %}}
+<!-- {{% image src="images/music-making/perkupa-01.jpeg" alt="Perkupa" class="content-image" %}} -->
 
 <div class="image-grid two-col">
 {{% image src="images/music-making/perkupa-02.jpeg" alt="Perkupa" class="content-image" %}}
@@ -75,6 +75,10 @@ During my tenure with Kiel Winde, the band has grown into a prominent band of th
 
 {{% image src="images/music-making/kw-09.jpg" alt="Kiel Winde" class="content-image" %}}
 
+<div class="image-grid two-col">
+{{% image src="images/music-making/kw-10.jpg" alt="Kiel Winde" class="content-image" %}}
+{{% image src="images/music-making/kw-11.jpg" alt="Kiel Winde" class="content-image" %}}
+</div>
 
 <div class="image-grid three-col">
 {{% image src="images/music-making/kw-04.jpg" alt="Kiel Winde" class="content-image" %}}
@@ -85,7 +89,7 @@ During my tenure with Kiel Winde, the band has grown into a prominent band of th
 Learn more:
 [Interview](https://recorder.blog.hu/2026/03/13/on-_es_kozkritikus_bolcseszpunk_itt_a_kiel_winde_uj_ep-je) about the 2026 EP, A test mozog tovább.
 
-Going song by song, [](https://www.kulter.hu/2026/04/dalrol-dalra-kiel-winde-a-test-mozog-tovabb/)
+Bálint, lead singer of the band, is providing a song-by-song analysis for [Kültér](https://www.kulter.hu/2026/04/dalrol-dalra-kiel-winde-a-test-mozog-tovabb/).
 
 <div class="image-grid two-col">
 {{% image src="images/music-making/kw-07.jpg" alt="Kiel Winde" class="content-image" %}}
