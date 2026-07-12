@@ -2,6 +2,14 @@
 
 <div class="about">
 
+    <section class="hero-banner fade-in-page">
+        <video autoplay muted loop playsinline class="video">
+            <source src="{{ "projects/music-making/hero.mp4" | relURL }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="background"></div>
+    </section>
+
     <section class="container">
         {{ partial "about/stats-hu.html" . }}
     </section>

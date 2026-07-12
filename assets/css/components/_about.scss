@@ -27,11 +27,16 @@
 
     .container {
         padding: 0.5rem $padding-horizontal-tablet-down;
-        
+
         @include tablet-up {
             padding: 0.5rem $padding-horizontal-tablet-up;
         }
     }
+
+	// No site-nav on this page, so let the hero banner take the full viewport
+	.hero-banner {
+		height: 100vh;
+	}
 
 	&__header {
 		display: grid;

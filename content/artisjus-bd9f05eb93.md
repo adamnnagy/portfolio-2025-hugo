@@ -6,7 +6,8 @@ layout = 'artisjus-jelentkezes'
 priority = 0
 featured = false
 description = ""
-hero = ""
+
+hero = "hero.mp4"
 role = ""
 city = ""
 
