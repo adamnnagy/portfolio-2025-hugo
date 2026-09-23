@@ -33,7 +33,8 @@ def get_scrobble_count():
 
 
 def get_letterboxd_filmcount():
-    url = f'https://letterboxd.com/{LETTERBOXD_USERNAME}/'
+    # The profile page sits behind a Cloudflare challenge; the films page doesn't.
+    url = f'https://letterboxd.com/{LETTERBOXD_USERNAME}/films/'
     req = urllib.request.Request(url, headers={
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
@@ -52,7 +53,7 @@ def get_letterboxd_filmcount():
                 raise
             time.sleep(3 * attempt)
 
-    match = re.search(rf'<a href="/{LETTERBOXD_USERNAME}/films/"[^>]*>[\s\S]*?<span class="value">([\d,]+)<\/span>', html)
+    match = re.search(r'title="([\d,]+)(?:&nbsp;|\s)films?"', html)
 
     if not match:
         raise Exception('Could not find film count')
